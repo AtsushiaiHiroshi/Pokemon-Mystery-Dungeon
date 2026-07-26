@@ -1,0 +1,112 @@
+.pmd-dialog {
+  --pmd-blue: #285b88;
+  --pmd-gold: #f1b93c;
+  --pmd-cream: #fff8df;
+  --pmd-ink: #263442;
+}
+
+.pmd-dialog .window-content {
+  background:
+    radial-gradient(circle at 100% 0, rgb(241 185 60 / 22%), transparent 34%),
+    linear-gradient(160deg, #fffdf4, #e7f3fb);
+}
+
+.pmd-sheet {
+  color: var(--pmd-ink);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.pmd-sheet header {
+  align-items: center;
+  background: linear-gradient(120deg, #173d61, var(--pmd-blue));
+  border: 2px solid var(--pmd-gold);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.pmd-sheet header i {
+  color: var(--pmd-gold);
+  font-size: 2rem;
+}
+
+.pmd-sheet h2,
+.pmd-sheet p {
+  margin: 0;
+}
+
+.pmd-grid {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pmd-card {
+  background: rgb(255 255 255 / 78%);
+  border: 1px solid #9bb7ca;
+  border-radius: 8px;
+  padding: 0.65rem;
+}
+
+.pmd-card h3 {
+  border-bottom: 2px solid var(--pmd-gold);
+  color: var(--pmd-blue);
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.2rem;
+}
+
+.pmd-fields {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pmd-fields label {
+  display: grid;
+  font-size: 0.82rem;
+  font-weight: 700;
+  gap: 0.15rem;
+}
+
+.pmd-fields input,
+.pmd-fields select,
+.pmd-fields textarea {
+  background: var(--pmd-cream);
+  border: 1px solid #8aa6b9;
+  color: #1d2a33;
+  min-width: 0;
+}
+
+.pmd-meter {
+  align-items: center;
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: 1fr auto;
+}
+
+.pmd-meter progress {
+  accent-color: var(--pmd-gold);
+  height: 0.9rem;
+  width: 100%;
+}
+
+.pmd-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.pmd-help {
+  font-size: 0.78rem;
+  opacity: 0.82;
+}
+
+@media (max-width: 620px) {
+  .pmd-grid,
+  .pmd-fields {
+    grid-template-columns: 1fr;
+  }
+}
