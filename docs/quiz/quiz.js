@@ -17,12 +17,67 @@ const ui = {
   backButton: document.querySelector("#backButton"), nextButton: document.querySelector("#nextButton"),
   resultNature: document.querySelector("#resultNature"), resultDescription: document.querySelector("#resultDescription"),
   candidates: document.querySelector("#candidates"), candidateCount: document.querySelector("#candidateCount"),
-  copyButton: document.querySelector("#copyButton"), copyStatus: document.querySelector("#copyStatus"), restartButton: document.querySelector("#restartButton")
+  copyButton: document.querySelector("#copyButton"), copyStatus: document.querySelector("#copyStatus"), restartButton: document.querySelector("#restartButton"),
+  ambienceToggle: document.querySelector("#ambienceToggle")
 };
 const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", mode: "quick" };
+const ambience = { context: null, master: null, oscillators: [], lfo: null, active: false };
 
 const escapeHTML = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
 const shuffle = list => [...list].sort(() => Math.random() - 0.5);
+
+function setAmbienceButton() {
+  ui.ambienceToggle.textContent = ambience.active ? "🔊 Ambiente activado" : "🔇 Activar ambiente";
+  ui.ambienceToggle.setAttribute("aria-pressed", String(ambience.active));
+}
+
+function stopAmbience() {
+  if (!ambience.context) return;
+  ambience.oscillators.forEach(oscillator => { try { oscillator.stop(); } catch {} });
+  if (ambience.lfo) { try { ambience.lfo.stop(); } catch {} }
+  ambience.oscillators = [];
+  ambience.lfo = null;
+  ambience.active = false;
+  ambience.context.close();
+  ambience.context = null;
+  ambience.master = null;
+  setAmbienceButton();
+}
+
+async function startAmbience() {
+  if (ambience.active) return;
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContextClass) { ui.ambienceToggle.textContent = "Audio no disponible"; return; }
+  try {
+    ambience.context = new AudioContextClass();
+    await ambience.context.resume();
+    ambience.master = ambience.context.createGain();
+    ambience.master.gain.value = 0.035;
+    ambience.master.connect(ambience.context.destination);
+    [130.81, 196, 261.63].forEach((frequency, index) => {
+      const oscillator = ambience.context.createOscillator();
+      const gain = ambience.context.createGain();
+      oscillator.type = index === 1 ? "triangle" : "sine";
+      oscillator.frequency.value = frequency;
+      gain.gain.value = index === 0 ? 0.62 : 0.28;
+      oscillator.connect(gain).connect(ambience.master);
+      oscillator.start();
+      ambience.oscillators.push(oscillator);
+    });
+    ambience.lfo = ambience.context.createOscillator();
+    const lfoGain = ambience.context.createGain();
+    ambience.lfo.type = "sine";
+    ambience.lfo.frequency.value = 0.045;
+    lfoGain.gain.value = 0.012;
+    ambience.lfo.connect(lfoGain).connect(ambience.master.gain);
+    ambience.lfo.start();
+    ambience.active = true;
+    setAmbienceButton();
+  } catch {
+    stopAmbience();
+    ui.ambienceToggle.textContent = "Audio no disponible";
+  }
+}
 
 function show(section) {
   [ui.loading, ui.error, ui.start, ui.quiz, ui.result].forEach(element => { element.hidden = element !== section; });
@@ -42,6 +97,7 @@ async function loadData() {
 }
 
 function startQuiz(mode = "quick") {
+  startAmbience();
   state.mode = mode;
   const questionCount = mode === "complete" ? state.quiz.questions.length : QUICK_QUESTION_COUNT;
   state.questions = mode === "complete" ? [...state.quiz.questions] : shuffle(state.quiz.questions).slice(0, questionCount);
@@ -133,4 +189,5 @@ ui.nextButton.addEventListener("click", nextQuestion);
 ui.answers.addEventListener("click", event => { const button = event.target.closest("[data-answer]"); if (button) chooseAnswer(Number(button.dataset.answer)); });
 ui.restartButton.addEventListener("click", () => show(ui.start));
 ui.copyButton.addEventListener("click", copyResult);
+ui.ambienceToggle.addEventListener("click", () => { if (ambience.active) stopAmbience(); else startAmbience(); });
 loadData();
