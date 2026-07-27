@@ -25,7 +25,7 @@ const ui = {
 ui.backgroundVideo = document.querySelector("#pmdBackgroundVideo");
 const ULTRA_BEASTS = new Set(["nihilego", "buzzwole", "pheromosa", "xurkitree", "celesteela", "kartana", "guzzlord", "stakataka", "blacephalon", "poipole", "naganadel"]);
 const PARADOX_POKEMON = new Set(["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "roaring-moon", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "walking-wake", "raging-bolt", "gouging-fire", "iron-leaves", "iron-crown", "iron-boulder"]);
-const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", scores: {}, mode: "quick", narrative: [], narrativeIndex: 0 };
+const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", scores: {}, mode: "quick", narrative: [], narrativeIndex: 0, autoAdvanceTimer: null };
 const selectionSound = new Audio("https://nrosa01.github.io/pmd-quiz-online/audio/select-sound.mp3");
 selectionSound.preload = "auto";
 let soundEnabled = true;
@@ -47,8 +47,15 @@ function playSelectionSound() {
 function startAmbience() {
   if (!soundEnabled) return;
   document.body.classList.add("has-video");
-  ui.backgroundVideo?.play().then(() => { ui.backgroundVideo.muted = false; }).catch(() => {});
+  if (!ui.backgroundVideo) return;
+  ui.backgroundVideo.volume = 0.5;
+  ui.backgroundVideo.muted = false;
+  ui.backgroundVideo.play().catch(() => {});
 }
+
+ui.backgroundVideo?.addEventListener("pause", () => {
+  if (soundEnabled) ui.backgroundVideo.play().catch(() => {});
+});
 
 function show(section) {
   [ui.loading, ui.error, ui.start, ui.quiz, ui.result].forEach(element => { element.hidden = element !== section; });
@@ -70,6 +77,8 @@ async function loadData() {
 
 function startQuiz(mode = "quick") {
   document.body.classList.remove("result-mode", "narrative-mode");
+  if (state.autoAdvanceTimer) window.clearTimeout(state.autoAdvanceTimer);
+  state.autoAdvanceTimer = null;
   state.mode = mode;
   const questionCount = mode === "complete" ? state.quiz.questions.length : QUICK_QUESTION_COUNT;
   state.questions = mode === "complete" ? [...state.quiz.questions] : shuffle(state.quiz.questions).slice(0, questionCount);
@@ -99,9 +108,15 @@ function renderQuestion() {
 }
 
 function chooseAnswer(index) {
+  if (state.autoAdvanceTimer) window.clearTimeout(state.autoAdvanceTimer);
   state.answers[state.index] = index;
   playSelectionSound();
   renderQuestion();
+  ui.nextButton.disabled = true;
+  state.autoAdvanceTimer = window.setTimeout(() => {
+    state.autoAdvanceTimer = null;
+    nextQuestion();
+  }, 320);
 }
 
 function nextQuestion() {
@@ -212,6 +227,8 @@ ui.answers.addEventListener("click", event => { const button = event.target.clos
 function restartQuiz(event) {
   event?.preventDefault();
   document.body.classList.remove("result-mode", "narrative-mode");
+  if (state.autoAdvanceTimer) window.clearTimeout(state.autoAdvanceTimer);
+  state.autoAdvanceTimer = null;
   state.questions = [];
   state.answers = [];
   state.index = 0;
