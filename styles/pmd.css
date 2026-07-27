@@ -75,6 +75,63 @@
   background:
     radial-gradient(circle at 100% 0, rgb(241 185 60 / 22%), transparent 34%),
     linear-gradient(160deg, #fffdf4, #e7f3fb);
+  color: var(--pmd-ink);
+  text-shadow: none;
+}
+
+/* Los DialogV2 de PMD heredan colores claros del tema oscuro de Foundry.
+   Fijamos texto, títulos, ayudas y botones para conservar contraste sobre
+   nuestro fondo claro, incluido el aviso de actualización de contenido. */
+.pmd-dialog .window-content,
+.pmd-dialog .window-content p,
+.pmd-dialog .window-content label,
+.pmd-dialog .window-content span,
+.pmd-dialog .window-content li,
+.pmd-dialog .window-content strong,
+.pmd-dialog .window-content small {
+  color: #263442;
+  text-shadow: none;
+}
+
+.pmd-dialog .window-content h1,
+.pmd-dialog .window-content h2,
+.pmd-dialog .window-content h3,
+.pmd-dialog .window-content h4 {
+  color: #173d61;
+  text-shadow: none;
+}
+
+.pmd-dialog .window-content a {
+  color: #155a91;
+  text-decoration: underline;
+}
+
+.pmd-dialog .dialog-buttons button,
+.pmd-dialog .window-content button {
+  background: #285b88;
+  border: 1px solid #173d61;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+  text-shadow: none;
+}
+
+.pmd-dialog .dialog-buttons button:hover,
+.pmd-dialog .window-content button:hover {
+  background: #173d61;
+  color: #ffffff;
+}
+
+.pmd-dialog .dialog-buttons button[data-action="no"],
+.pmd-dialog .dialog-buttons button[data-action="cancel"] {
+  background: #fff8df;
+  border-color: #b06c00;
+  color: #173d61;
+}
+
+.pmd-dialog .dialog-buttons button[data-action="no"]:hover,
+.pmd-dialog .dialog-buttons button[data-action="cancel"]:hover {
+  background: #f1b93c;
 }
 
 .pmd-sheet {
