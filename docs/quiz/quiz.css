@@ -77,5 +77,13 @@ code { color: var(--gold-2); }
 .candidate b { position: absolute; right: 9px; top: 8px; color: var(--gold-2); font-size: .64rem; letter-spacing: .08em; }
 .copy-status { min-height: 1.5em; margin: 0; color: var(--gold-2); text-align: center; }
 footer { margin-top: 30px; color: #9fa8c2; font-size: .8rem; text-align: center; }
+
+/* Presentación inspirada en PMD: resultado dividido entre recomendaciones y radar. */
+.result-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr); gap: 20px; align-items: start; }
+.result-left { display: grid; gap: 20px; min-width: 0; }
+.result-grid > .personality-card { position: sticky; top: 20px; min-width: 0; }
+body::before { background-size: contain; animation-duration: 90s, 10s; }
+body::after { background-size: contain; animation-duration: 90s, 10s; }
+@media (max-width: 820px) { .result-grid { grid-template-columns: 1fr; } .result-grid > .personality-card { position: static; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; } }
 @media (max-width: 560px) { .quiz-app { width: min(100% - 20px, 920px); padding-top: 30px; } .status-card, .start-card { padding: 34px 20px; } .quiz-card { padding: 20px 16px; } .result-toolbar { align-items: flex-start; flex-direction: column; } .actions, .result-actions { flex-direction: column-reverse; } .button { width: 100%; } .mode-grid { grid-template-columns: 1fr; } }

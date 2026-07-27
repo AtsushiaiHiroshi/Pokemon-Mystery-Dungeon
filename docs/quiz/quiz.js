@@ -26,13 +26,17 @@ const PARADOX_POKEMON = new Set(["great-tusk", "scream-tail", "brute-bonnet", "f
 const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", scores: {}, mode: "quick" };
 const selectionSound = new Audio("https://nrosa01.github.io/pmd-quiz-online/audio/select-sound.mp3");
 selectionSound.preload = "auto";
+const ambienceSound = new Audio("https://nrosa01.github.io/pmd-quiz-online/audio/quiz-music.ogg");
+ambienceSound.preload = "auto";
+ambienceSound.loop = true;
+ambienceSound.volume = 0.1;
 let soundEnabled = true;
 
 const escapeHTML = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
 const shuffle = list => [...list].sort(() => Math.random() - 0.5);
 
 function setSoundButton() {
-  ui.ambienceToggle.textContent = soundEnabled ? "🔊 Sonido de respuestas" : "🔇 Sonido silenciado";
+  ui.ambienceToggle.textContent = soundEnabled ? "🔊 Música y sonidos" : "🔇 Sonido silenciado";
   ui.ambienceToggle.setAttribute("aria-pressed", String(soundEnabled));
 }
 
@@ -40,6 +44,11 @@ function playSelectionSound() {
   if (!soundEnabled) return;
   selectionSound.currentTime = 0;
   selectionSound.play().catch(() => {});
+}
+
+function startAmbience() {
+  if (!soundEnabled) return;
+  ambienceSound.play().catch(() => {});
 }
 
 function show(section) {
@@ -143,12 +152,14 @@ function candidateList() {
   // evolvesFrom === null identifica la primera etapa, aunque tenga evoluciones.
   // Sólo Pikachu puede saltarse esta regla por ser una excepción PMD.
   // Los Ultraentes quedan fuera salvo Poipole; las formas Paradoja no se ofrecen.
-  const eligible = pokemon => pokemon?.quizEligible !== false && !PARADOX_POKEMON.has(pokemon?.identifier) && (!ULTRA_BEASTS.has(pokemon?.identifier) || pokemon?.identifier === "poipole") && (pokemon?.evolvesFrom == null || pokemon?.name === "Pikachu");
+  const eligible = pokemon => pokemon?.quizEligible !== false && !PARADOX_POKEMON.has(pokemon?.identifier) && (!ULTRA_BEASTS.has(pokemon?.identifier) || pokemon?.identifier === "poipole") && (!pokemon?.legendary || pokemon?.identifier === "kubfu") && !pokemon?.mythical && (pokemon?.evolvesFrom == null || pokemon?.name === "Pikachu" || pokemon?.identifier === "kubfu");
   const expanded = state.pokemon.filter(pokemon => eligible(pokemon) && pokemon.types?.some(type => preferredTypes.includes(type)));
+  const pmdStarters = new Set(state.quiz.pmdStarters ?? []);
   const offset = state.quiz.natures.indexOf(state.nature) * 37;
   const candidates = [];
   const add = name => { const pokemon = state.pokemon.find(entry => entry.name === name); if (eligible(pokemon) && !candidates.some(entry => entry.id === pokemon.id)) candidates.push(pokemon); };
   base.forEach(add);
+  shuffle([...pmdStarters]).forEach(name => { if (candidates.length < 10) add(name); });
   for (let index = 0; index < expanded.length && candidates.length < 10; index += 1) add(expanded[(offset + index * 17) % expanded.length].name);
   return candidates;
 }
@@ -170,13 +181,18 @@ async function copyResult() {
   catch { ui.copyStatus.textContent = text; }
 }
 
-ui.modeButtons.forEach(button => button.addEventListener("click", () => startQuiz(button.dataset.mode)));
+ui.modeButtons.forEach(button => button.addEventListener("click", () => { startAmbience(); startQuiz(button.dataset.mode); }));
 ui.retry.addEventListener("click", loadData);
 ui.backButton.addEventListener("click", previousQuestion);
 ui.nextButton.addEventListener("click", nextQuestion);
 ui.answers.addEventListener("click", event => { const button = event.target.closest("[data-answer]"); if (button) chooseAnswer(Number(button.dataset.answer)); });
 ui.restartButton.addEventListener("click", () => show(ui.start));
 ui.copyButton.addEventListener("click", copyResult);
-ui.ambienceToggle.addEventListener("click", () => { soundEnabled = !soundEnabled; setSoundButton(); });
+ui.ambienceToggle.addEventListener("click", () => {
+  soundEnabled = !soundEnabled;
+  if (soundEnabled) startAmbience(); else { ambienceSound.pause(); selectionSound.pause(); }
+  setSoundButton();
+});
+document.addEventListener("pointerdown", startAmbience, { once: true });
 setSoundButton();
 loadData();

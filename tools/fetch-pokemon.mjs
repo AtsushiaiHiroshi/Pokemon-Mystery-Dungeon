@@ -12,7 +12,9 @@ const names = new Map(parse(speciesNamesCSV).filter(row => row[1] === "7").map(r
 const typeNames = new Map(parse(typeNamesCSV).filter(row => row[1] === "7").map(row => [row[0], row[2]]));
 const species = new Map(parse(speciesCSV).map(row => [row[0], {
   generation: Number(row[2] ?? 1),
-  evolvesFrom: row[3] ? Number(row[3]) : null
+  evolvesFrom: row[3] ? Number(row[3]) : null,
+  legendary: row[16] === "1",
+  mythical: row[17] === "1"
 }]));
 // Los Ultraentes no forman parte de la selección inicial salvo Poipole.
 // Las formas Paradoja tampoco se ofrecen: no pertenecen a una línea evolutiva.
@@ -39,9 +41,11 @@ const all = parse(pokemonCSV).filter(row => Number(row[0]) >= 1 && Number(row[0]
     types: typesByPokemon.get(row[0]) ?? ["normal"],
     generation: species.get(row[0])?.generation ?? 1,
     evolvesFrom: species.get(row[0])?.evolvesFrom ?? null,
+    legendary: species.get(row[0])?.legendary ?? false,
+    mythical: species.get(row[0])?.mythical ?? false,
     // La primera etapa puede tener evoluciones; lo que excluimos son las
     // especies que ya evolucionan desde otra. Pikachu es la excepción.
-    quizEligible: !paradoxPokemon.has(row[1]) && (!ultraBeasts.has(row[1]) || row[1] === "poipole") && (species.get(row[0])?.evolvesFrom == null || row[1] === "pikachu"),
+    quizEligible: !paradoxPokemon.has(row[1]) && (!ultraBeasts.has(row[1]) || row[1] === "poipole") && (!species.get(row[0])?.legendary || row[1] === "kubfu") && !species.get(row[0])?.mythical && (species.get(row[0])?.evolvesFrom == null || row[1] === "pikachu" || row[1] === "kubfu"),
     sprite: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${row[0]}.png`,
     source: "PokeAPI"
   }));

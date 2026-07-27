@@ -12,7 +12,7 @@
       <p class="eyebrow">Pokémon Mystery Dungeon</p>
       <h1>¿Qué Pokémon eres?</h1>
       <p class="intro">Responde unas preguntas sobre tu forma de actuar y descubre tu naturaleza Pokémon. El resultado es independiente de Foundry VTT.</p>
-      <button id="ambienceToggle" class="sound-toggle" type="button" aria-pressed="true">🔊 Sonido de respuestas</button>
+      <button id="ambienceToggle" class="sound-toggle" type="button" aria-pressed="true">🔊 Música y sonidos</button>
     </header>
 
     <section id="loading" class="card status-card" aria-live="polite">
@@ -62,31 +62,35 @@
     </section>
 
     <section id="result" class="result" hidden aria-live="polite">
-      <div class="result-heading">
-        <p class="eyebrow">Pareces ser...</p>
-        <h2><span id="resultNature"></span></h2>
-        <p id="resultDescription" class="result-description"></p>
-      </div>
-      <div class="card personality-card">
-        <div class="result-toolbar">
-          <h3>Tu test de personalidad</h3>
-          <span class="tag">Naturalezas</span>
-        </div>
-        <div id="personalityChart" class="personality-chart" role="img" aria-label="Gráfico de tu test de personalidad"></div>
-      </div>
-      <div class="card result-card">
+      <div class="result-grid">
+        <div class="result-left">
+          <div class="result-heading">
+            <p class="eyebrow">Pareces ser...</p>
+            <h2><span id="resultNature"></span></h2>
+            <p id="resultDescription" class="result-description"></p>
+          </div>
+          <div class="card result-card">
         <div class="result-toolbar">
           <h3>Pokémon recomendados</h3>
           <span id="candidateCount" class="tag"></span>
         </div>
         <p class="hint">Las primeras opciones proceden del test inspirado en los juegos PMD. Las demás se amplían usando especies de todas las generaciones disponibles.</p>
         <div id="candidates" class="candidate-grid"></div>
+          </div>
+          <div class="result-actions">
+            <button id="copyButton" class="button secondary" type="button">Copiar resultado</button>
+            <button id="restartButton" class="button primary" type="button">Repetir test</button>
+          </div>
+          <p id="copyStatus" class="copy-status" aria-live="polite"></p>
+        </div>
+        <div class="card personality-card">
+          <div class="result-toolbar">
+            <h3>Tu test de personalidad</h3>
+            <span class="tag">Naturalezas</span>
+          </div>
+          <div id="personalityChart" class="personality-chart" role="img" aria-label="Gráfico de tu test de personalidad"></div>
+        </div>
       </div>
-      <div class="result-actions">
-        <button id="copyButton" class="button secondary" type="button">Copiar resultado</button>
-        <button id="restartButton" class="button primary" type="button">Repetir test</button>
-      </div>
-      <p id="copyStatus" class="copy-status" aria-live="polite"></p>
     </section>
 
     <footer>Herramienta fanmade para Pokémon Mystery Dungeon · Los datos del test proceden del proyecto inspirado en PMD.</footer>
