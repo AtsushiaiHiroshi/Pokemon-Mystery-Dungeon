@@ -405,7 +405,7 @@ async function createStarterContent() {
   if (!game.user.isGM) return;
   await importStarterCompendia();
   await game.settings.set(MODULE_ID, "starterCreated", true);
-  await game.settings.set(MODULE_ID, "contentVersion", 5);
+  await game.settings.set(MODULE_ID, "contentVersion", 6);
   ui.notifications.info(game.i18n.localize("PMD.SetupDone"));
 }
 
@@ -506,7 +506,7 @@ Hooks.once("ready", async () => {
     data: actorData
   };
   console.info("Pokémon Mystery Dungeon | Listo para D&D 5e.");
-  if (game.user.isGM && game.settings.get(MODULE_ID, "contentVersion") < 5) {
+  if (game.user.isGM && game.settings.get(MODULE_ID, "contentVersion") < 6) {
     const create = await foundry.applications.api.DialogV2.confirm({
       window: { title: game.i18n.localize("PMD.Title") },
       classes: ["pmd-dialog"],

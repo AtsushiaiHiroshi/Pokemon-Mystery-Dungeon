@@ -18,6 +18,12 @@ code { color: var(--gold-2); }
 @keyframes spin { to { transform: rotate(360deg); } }
 .start-icon { margin: 0 auto 18px; color: var(--gold); font-size: 3rem; }
 .start-card p { max-width: 620px; margin: 18px auto 28px; color: var(--muted); }
+.mode-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; max-width: 680px; margin: 0 auto 22px; }
+.mode-card { display: grid; gap: 7px; min-height: 150px; border: 1px solid var(--line); border-radius: 14px; padding: 20px; background: #191e30; color: var(--text); text-align: left; font: inherit; cursor: pointer; transition: transform .15s, border-color .15s, background .15s; }
+.mode-card:hover { transform: translateY(-2px); border-color: var(--gold); background: #292d43; }
+.mode-icon { color: var(--gold-2); font-size: 1.7rem; }
+.mode-card strong { font-size: 1.25rem; }
+.mode-card small { color: var(--muted); font-size: .88rem; }
 .button { border: 1px solid var(--line); border-radius: 9px; padding: 11px 18px; color: var(--text); font: inherit; font-weight: 800; cursor: pointer; transition: transform .15s, background .15s, border-color .15s; }
 .button:hover:not(:disabled) { transform: translateY(-1px); border-color: var(--gold); }
 .button:disabled { cursor: not-allowed; opacity: .42; }
@@ -52,4 +58,4 @@ code { color: var(--gold-2); }
 .candidate b { position: absolute; right: 9px; top: 8px; color: var(--gold-2); font-size: .64rem; letter-spacing: .08em; }
 .copy-status { min-height: 1.5em; margin: 0; color: var(--gold-2); text-align: center; }
 footer { margin-top: 30px; color: #9fa8c2; font-size: .8rem; text-align: center; }
-@media (max-width: 560px) { .quiz-app { width: min(100% - 20px, 920px); padding-top: 30px; } .status-card, .start-card { padding: 34px 20px; } .quiz-card { padding: 20px 16px; } .result-toolbar { align-items: flex-start; flex-direction: column; } .actions, .result-actions { flex-direction: column-reverse; } .button { width: 100%; } }
+@media (max-width: 560px) { .quiz-app { width: min(100% - 20px, 920px); padding-top: 30px; } .status-card, .start-card { padding: 34px 20px; } .quiz-card { padding: 20px 16px; } .result-toolbar { align-items: flex-start; flex-direction: column; } .actions, .result-actions { flex-direction: column-reverse; } .button { width: 100%; } .mode-grid { grid-template-columns: 1fr; } }

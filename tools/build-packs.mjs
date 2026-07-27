@@ -353,8 +353,8 @@ async function writePack(name, documentType, documents) {
   console.log(`${name}: ${documents.length} documentos`);
 }
 
-await writePack("pmd-starter-moves-v4", "Item", allMoves);
-await writePack("pmd-starter-items-v4", "Item", allItems);
-await writePack("pmd-starter-pokemon-v4", "Actor", starterPokemon);
-await writePack("pmd-pokemon-v4", "Actor", allPokemon);
-await writePack("pmd-rules-v4", "JournalEntry", rules);
+await writePack("pmd-starter-moves-v5", "Item", allMoves);
+await writePack("pmd-starter-items-v5", "Item", allItems);
+await writePack("pmd-starter-pokemon-v5", "Actor", starterPokemon);
+await writePack("pmd-pokemon-v5", "Actor", allPokemon);
+await writePack("pmd-rules-v5", "JournalEntry", rules);

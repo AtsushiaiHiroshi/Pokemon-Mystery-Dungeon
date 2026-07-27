@@ -2,7 +2,7 @@
   "id": "pokemon-mystery-dungeon",
   "title": "Pokémon Mystery Dungeon para D&D 5e",
   "description": "Capa de reglas y herramientas para dirigir aventuras de Pokémon Mystery Dungeon usando D&D 5e.",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "authors": [
     {
       "name": "AtsushiaiHiroshi"
@@ -48,7 +48,7 @@
     {
       "name": "pmd-starter-moves",
       "label": "PMD - Movimientos Pokémon (WikiDex)",
-      "path": "packs/pmd-starter-moves-v4",
+      "path": "packs/pmd-starter-moves-v5",
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
@@ -59,7 +59,7 @@
     {
       "name": "pmd-starter-items",
       "label": "PMD - Objetos de mazmorra (WikiDex)",
-      "path": "packs/pmd-starter-items-v4",
+      "path": "packs/pmd-starter-items-v5",
       "type": "Item",
       "system": "dnd5e",
       "ownership": {
@@ -70,7 +70,7 @@
     {
       "name": "pmd-starter-pokemon",
       "label": "PMD - Pokémon iniciales",
-      "path": "packs/pmd-starter-pokemon-v4",
+      "path": "packs/pmd-starter-pokemon-v5",
       "type": "Actor",
       "system": "dnd5e",
       "ownership": {
@@ -81,7 +81,7 @@
     {
       "name": "pmd-pokemon",
       "label": "PMD - Pokémon (todas las generaciones)",
-      "path": "packs/pmd-pokemon-v4",
+      "path": "packs/pmd-pokemon-v5",
       "type": "Actor",
       "system": "dnd5e",
       "ownership": {
@@ -92,7 +92,7 @@
     {
       "name": "pmd-rules",
       "label": "PMD - Reglas para D&D 5e",
-      "path": "packs/pmd-rules-v4",
+      "path": "packs/pmd-rules-v5",
       "type": "JournalEntry",
       "system": "dnd5e",
       "ownership": {

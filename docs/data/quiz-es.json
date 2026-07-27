@@ -2484,7 +2484,8 @@
     ],
     "Activa": [
       "Shinx",
-      "Pikachu"
+      "Pikachu",
+      "Meowth"
     ],
     "Grosera": [
       "Riolu",
@@ -2536,5 +2537,27 @@
     "Mansa": "Eres una persona... ¡callada! ¡Y muy calmada! Se te dan bien los números y siempre analizas la situación antes de tomar una decisión. Pocas veces te equivocas, ya que decides con calma y tras razonar las cosas con lógica. A veces te cuesta saber lo que piensan los demás y la gente piensa que eres un poco insensible. Deberías expresar más tus sentimientos. Alguien como tú podría ser...",
     "Alocada": "Eres una persona... impulsiva. A veces, hasta un poco impaciente. Más de una vez has salido de casa y se te ha olvidado cerrar la puerta con llave. Y no haces más que perder paraguas. ¡Incluso hasta puedes haber salido a la calle en zapatillas de andar por casa! ¡Y qué me dices de las camisetas del revés! Bueno, ¡igual eso ha sido demasiado! ¡Perdona! ¡Que sepas que a tus amigos les encanta esta faceta tuya! Alguien como tú podría ser... ¡Espera! ¡Otra cosa! ¡A veces cuentas los secretos de tus amigos sin querer! ¡Perdona, pero tenía que decírtelo! Como iba diciendo...alguien como tú podría ser...",
     "Audaz": "Eres una persona... ¡audaz! ¡Eres tan valiente que nunca te echas atrás! Aunque, a veces, tu osadía te hace pasarte un poco de la raya. No te da vergüenza llevarte a casa las sobras de la cena en el restaurante, ¿verdad? Si alguien te invita a cenar, ¡no te da ningún reparo pedir un montón de comida! No te desconcierta hacer cosas que otros se pensarían dos veces. ¡A veces ni te enteras de que has decepcionado a alguien! Tienes potencial para ser una gran persona... ¡porque nunca te rindes! Alguien audaz como tú podría ser..."
-  }
+  },
+  "initialPokemon": [
+    "Torchic",
+    "Treecko",
+    "Charmander",
+    "Bulbasaur",
+    "Pikachu",
+    "Totodile",
+    "Eevee",
+    "Piplup",
+    "Chimchar",
+    "Skitty",
+    "Cyndaquil",
+    "Turtwig",
+    "Shinx",
+    "Meowth",
+    "Riolu",
+    "Chikorita",
+    "Phanpy",
+    "Vulpix",
+    "Mudkip",
+    "Squirtle"
+  ]
 }

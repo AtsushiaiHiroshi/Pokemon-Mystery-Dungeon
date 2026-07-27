@@ -29,8 +29,20 @@
     <section id="start" class="card start-card" hidden>
       <div class="start-icon" aria-hidden="true">✦</div>
       <h2>Un nuevo comienzo</h2>
-      <p>Se seleccionarán 8 preguntas al azar del banco completo. Al terminar verás tu naturaleza y recomendaciones ampliadas con Pokémon de las generaciones 1 a 9.</p>
-      <button id="startButton" class="button primary" type="button">Comenzar test</button>
+      <p>Elige cuánto quieres profundizar. Ambos modos calculan tu naturaleza y recomiendan Pokémon iniciales de todas las generaciones.</p>
+      <div class="mode-grid">
+        <button class="mode-card" type="button" data-mode="quick">
+          <span class="mode-icon" aria-hidden="true">⚡</span>
+          <strong>Test rápido</strong>
+          <small>8 preguntas · resultado en pocos minutos</small>
+        </button>
+        <button class="mode-card" type="button" data-mode="complete">
+          <span class="mode-icon" aria-hidden="true">✦</span>
+          <strong>Test completo</strong>
+          <small>64 preguntas · máxima precisión</small>
+        </button>
+      </div>
+      <p class="hint">Las recomendaciones sólo muestran Pokémon sin evolución previa, primeras preevoluciones o especies sin evolución. Pikachu es la excepción permitida.</p>
     </section>
 
     <section id="quiz" class="card quiz-card" hidden aria-live="polite">

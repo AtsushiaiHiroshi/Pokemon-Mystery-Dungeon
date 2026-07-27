@@ -10,7 +10,10 @@ const [pokemonCSV, speciesNamesCSV, pokemonTypesCSV, typeNamesCSV, speciesCSV] =
 ]);
 const names = new Map(parse(speciesNamesCSV).filter(row => row[1] === "7").map(row => [row[0], row[2]]));
 const typeNames = new Map(parse(typeNamesCSV).filter(row => row[1] === "7").map(row => [row[0], row[2]]));
-const generations = new Map(parse(speciesCSV).map(row => [row[0], row[2]]));
+const species = new Map(parse(speciesCSV).map(row => [row[0], {
+  generation: Number(row[2] ?? 1),
+  evolvesFrom: row[3] ? Number(row[3]) : null
+}]));
 const typesByPokemon = new Map();
 for (const row of parse(pokemonTypesCSV)) {
   const list = typesByPokemon.get(row[0]) ?? [];
@@ -23,7 +26,9 @@ const all = parse(pokemonCSV).filter(row => Number(row[0]) >= 1 && Number(row[0]
     name: names.get(row[0]) ?? row[1],
     identifier: row[1],
     types: typesByPokemon.get(row[0]) ?? ["normal"],
-    generation: Number(generations.get(row[1]) ?? 1),
+    generation: species.get(row[0])?.generation ?? 1,
+    evolvesFrom: species.get(row[0])?.evolvesFrom ?? null,
+    quizEligible: species.get(row[0])?.evolvesFrom == null || row[1] === "pikachu",
     sprite: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${row[0]}.png`,
     source: "PokeAPI"
   }));

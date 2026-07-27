@@ -11,6 +11,8 @@ packs/**/LOG*
 packs/pmd-*/
 !packs/pmd-*-v4/
 !packs/pmd-*-v4/**
+!packs/pmd-*-v5/
+!packs/pmd-*-v5/**
 __pycache__/
 *.pyc
 

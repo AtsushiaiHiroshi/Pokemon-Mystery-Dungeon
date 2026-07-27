@@ -1,4 +1,4 @@
-const QUESTION_COUNT = 8;
+const QUICK_QUESTION_COUNT = 8;
 const DATA_BASE = "../data";
 const TYPE_PREFERENCES = {
   Fuerte: ["Lucha", "Acero"], Dócil: ["Planta", "Normal"], Osada: ["Fuego", "Lucha"], Alegre: ["Agua", "Eléctrico"],
@@ -10,7 +10,7 @@ const TYPE_PREFERENCES = {
 const ui = {
   loading: document.querySelector("#loading"), error: document.querySelector("#error"), errorText: document.querySelector("#errorText"),
   start: document.querySelector("#start"), quiz: document.querySelector("#quiz"), result: document.querySelector("#result"),
-  startButton: document.querySelector("#startButton"), retry: document.querySelector("#retry"), answers: document.querySelector("#answers"),
+  modeButtons: document.querySelectorAll("[data-mode]"), retry: document.querySelector("#retry"), answers: document.querySelector("#answers"),
   questionNumber: document.querySelector("#questionNumber"), questionTitle: document.querySelector("#questionTitle"),
   progressLabel: document.querySelector("#progressLabel"), progressPercent: document.querySelector("#progressPercent"),
   progressBar: document.querySelector("#progressBar"), progressTrack: document.querySelector(".progress-track"),
@@ -19,7 +19,7 @@ const ui = {
   candidates: document.querySelector("#candidates"), candidateCount: document.querySelector("#candidateCount"),
   copyButton: document.querySelector("#copyButton"), copyStatus: document.querySelector("#copyStatus"), restartButton: document.querySelector("#restartButton")
 };
-const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "" };
+const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", mode: "quick" };
 
 const escapeHTML = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
 const shuffle = list => [...list].sort(() => Math.random() - 0.5);
@@ -41,8 +41,10 @@ async function loadData() {
   }
 }
 
-function startQuiz() {
-  state.questions = shuffle(state.quiz.questions).slice(0, QUESTION_COUNT);
+function startQuiz(mode = "quick") {
+  state.mode = mode;
+  const questionCount = mode === "complete" ? state.quiz.questions.length : QUICK_QUESTION_COUNT;
+  state.questions = mode === "complete" ? [...state.quiz.questions] : shuffle(state.quiz.questions).slice(0, questionCount);
   state.answers = [];
   state.index = 0;
   state.nature = "";
@@ -96,10 +98,11 @@ function calculateResult() {
 function candidateList() {
   const base = state.quiz.naturetopokemon[state.nature] ?? [];
   const preferredTypes = TYPE_PREFERENCES[state.nature] ?? [];
-  const expanded = state.pokemon.filter(pokemon => pokemon.types?.some(type => preferredTypes.includes(type)));
+  const eligible = pokemon => pokemon?.quizEligible !== false && (pokemon?.evolvesFrom == null || pokemon?.name === "Pikachu");
+  const expanded = state.pokemon.filter(pokemon => eligible(pokemon) && pokemon.types?.some(type => preferredTypes.includes(type)));
   const offset = state.quiz.natures.indexOf(state.nature) * 37;
   const candidates = [];
-  const add = name => { const pokemon = state.pokemon.find(entry => entry.name === name); if (pokemon && !candidates.some(entry => entry.id === pokemon.id)) candidates.push(pokemon); };
+  const add = name => { const pokemon = state.pokemon.find(entry => entry.name === name); if (eligible(pokemon) && !candidates.some(entry => entry.id === pokemon.id)) candidates.push(pokemon); };
   base.forEach(add);
   for (let index = 0; index < expanded.length && candidates.length < 10; index += 1) add(expanded[(offset + index * 17) % expanded.length].name);
   return candidates;
@@ -109,7 +112,8 @@ function renderResult() {
   const candidates = candidateList();
   ui.resultNature.textContent = state.nature;
   ui.resultDescription.textContent = state.quiz.naturedescription[state.nature] ?? "";
-  ui.candidateCount.textContent = `${candidates.length} opciones · generaciones 1–9`;
+  const modeLabel = state.mode === "complete" ? "test completo" : "test rápido";
+  ui.candidateCount.textContent = `${candidates.length} opciones · ${modeLabel} · generaciones 1–9`;
   ui.candidates.innerHTML = candidates.map((pokemon, index) => `<article class="candidate ${index < 2 ? "original" : "expanded"}"><img src="${escapeHTML(pokemon.sprite)}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="this.hidden=true"><div><h4>${escapeHTML(pokemon.name)}</h4><p>${escapeHTML(pokemon.types.join(" / "))}</p><span>Generación ${pokemon.generation}</span></div>${index < 2 ? "<b>PMD</b>" : ""}</article>`).join("");
   show(ui.result);
 }
@@ -120,7 +124,7 @@ async function copyResult() {
   catch { ui.copyStatus.textContent = text; }
 }
 
-ui.startButton.addEventListener("click", startQuiz);
+ui.modeButtons.forEach(button => button.addEventListener("click", () => startQuiz(button.dataset.mode)));
 ui.retry.addEventListener("click", loadData);
 ui.backButton.addEventListener("click", previousQuestion);
 ui.nextButton.addEventListener("click", nextQuestion);
