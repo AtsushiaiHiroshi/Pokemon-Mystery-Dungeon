@@ -28,6 +28,8 @@ const all = parse(pokemonCSV).filter(row => Number(row[0]) >= 1 && Number(row[0]
     types: typesByPokemon.get(row[0]) ?? ["normal"],
     generation: species.get(row[0])?.generation ?? 1,
     evolvesFrom: species.get(row[0])?.evolvesFrom ?? null,
+    // La primera etapa puede tener evoluciones; lo que excluimos son las
+    // especies que ya evolucionan desde otra. Pikachu es la excepción.
     quizEligible: species.get(row[0])?.evolvesFrom == null || row[1] === "pikachu",
     sprite: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${row[0]}.png`,
     source: "PokeAPI"

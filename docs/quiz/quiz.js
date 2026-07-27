@@ -98,6 +98,8 @@ function calculateResult() {
 function candidateList() {
   const base = state.quiz.naturetopokemon[state.nature] ?? [];
   const preferredTypes = TYPE_PREFERENCES[state.nature] ?? [];
+  // evolvesFrom === null identifica la primera etapa, aunque tenga evoluciones.
+  // Sólo Pikachu puede saltarse esta regla por ser una excepción PMD.
   const eligible = pokemon => pokemon?.quizEligible !== false && (pokemon?.evolvesFrom == null || pokemon?.name === "Pikachu");
   const expanded = state.pokemon.filter(pokemon => eligible(pokemon) && pokemon.types?.some(type => preferredTypes.includes(type)));
   const offset = state.quiz.natures.indexOf(state.nature) * 37;
