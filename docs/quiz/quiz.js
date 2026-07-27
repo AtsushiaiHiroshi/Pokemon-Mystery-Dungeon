@@ -20,6 +20,8 @@ const ui = {
   copyButton: document.querySelector("#copyButton"), copyStatus: document.querySelector("#copyStatus"), restartButton: document.querySelector("#restartButton"),
   ambienceToggle: document.querySelector("#ambienceToggle")
 };
+const ULTRA_BEASTS = new Set(["nihilego", "buzzwole", "pheromosa", "xurkitree", "celesteela", "kartana", "guzzlord", "stakataka", "blacephalon", "poipole", "naganadel"]);
+const PARADOX_POKEMON = new Set(["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "roaring-moon", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "walking-wake", "raging-bolt", "gouging-fire", "iron-leaves", "iron-crown", "iron-boulder"]);
 const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", mode: "quick" };
 const selectionSound = new Audio("https://nrosa01.github.io/pmd-quiz-online/audio/select-sound.mp3");
 selectionSound.preload = "auto";
@@ -116,7 +118,8 @@ function candidateList() {
   const preferredTypes = TYPE_PREFERENCES[state.nature] ?? [];
   // evolvesFrom === null identifica la primera etapa, aunque tenga evoluciones.
   // Sólo Pikachu puede saltarse esta regla por ser una excepción PMD.
-  const eligible = pokemon => pokemon?.quizEligible !== false && (pokemon?.evolvesFrom == null || pokemon?.name === "Pikachu");
+  // Los Ultraentes quedan fuera salvo Poipole; las formas Paradoja no se ofrecen.
+  const eligible = pokemon => pokemon?.quizEligible !== false && !PARADOX_POKEMON.has(pokemon?.identifier) && (!ULTRA_BEASTS.has(pokemon?.identifier) || pokemon?.identifier === "poipole") && (pokemon?.evolvesFrom == null || pokemon?.name === "Pikachu");
   const expanded = state.pokemon.filter(pokemon => eligible(pokemon) && pokemon.types?.some(type => preferredTypes.includes(type)));
   const offset = state.quiz.natures.indexOf(state.nature) * 37;
   const candidates = [];

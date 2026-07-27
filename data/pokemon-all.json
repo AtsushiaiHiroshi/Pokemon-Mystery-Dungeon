@@ -10699,7 +10699,7 @@
     ],
     "generation": 7,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/793.png",
     "source": "PokeAPI"
   },
@@ -10713,7 +10713,7 @@
     ],
     "generation": 7,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/794.png",
     "source": "PokeAPI"
   },
@@ -10727,7 +10727,7 @@
     ],
     "generation": 7,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/795.png",
     "source": "PokeAPI"
   },
@@ -10740,7 +10740,7 @@
     ],
     "generation": 7,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/796.png",
     "source": "PokeAPI"
   },
@@ -10754,7 +10754,7 @@
     ],
     "generation": 7,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/797.png",
     "source": "PokeAPI"
   },
@@ -10768,7 +10768,7 @@
     ],
     "generation": 7,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/798.png",
     "source": "PokeAPI"
   },
@@ -10782,7 +10782,7 @@
     ],
     "generation": 7,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/799.png",
     "source": "PokeAPI"
   },
@@ -10864,7 +10864,7 @@
     ],
     "generation": 7,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/805.png",
     "source": "PokeAPI"
   },
@@ -10878,7 +10878,7 @@
     ],
     "generation": 7,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/806.png",
     "source": "PokeAPI"
   },
@@ -13275,7 +13275,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/984.png",
     "source": "PokeAPI"
   },
@@ -13289,7 +13289,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/985.png",
     "source": "PokeAPI"
   },
@@ -13303,7 +13303,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/986.png",
     "source": "PokeAPI"
   },
@@ -13317,7 +13317,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/987.png",
     "source": "PokeAPI"
   },
@@ -13331,7 +13331,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/988.png",
     "source": "PokeAPI"
   },
@@ -13345,7 +13345,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/989.png",
     "source": "PokeAPI"
   },
@@ -13359,7 +13359,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/990.png",
     "source": "PokeAPI"
   },
@@ -13373,7 +13373,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/991.png",
     "source": "PokeAPI"
   },
@@ -13387,7 +13387,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/992.png",
     "source": "PokeAPI"
   },
@@ -13401,7 +13401,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/993.png",
     "source": "PokeAPI"
   },
@@ -13415,7 +13415,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/994.png",
     "source": "PokeAPI"
   },
@@ -13429,7 +13429,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/995.png",
     "source": "PokeAPI"
   },
@@ -13568,7 +13568,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1005.png",
     "source": "PokeAPI"
   },
@@ -13624,7 +13624,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1009.png",
     "source": "PokeAPI"
   },
@@ -13638,7 +13638,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1010.png",
     "source": "PokeAPI"
   },
@@ -13777,7 +13777,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1020.png",
     "source": "PokeAPI"
   },
@@ -13791,7 +13791,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1021.png",
     "source": "PokeAPI"
   },
@@ -13805,7 +13805,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1022.png",
     "source": "PokeAPI"
   },
@@ -13819,7 +13819,7 @@
     ],
     "generation": 9,
     "evolvesFrom": null,
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1023.png",
     "source": "PokeAPI"
   },

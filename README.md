@@ -37,10 +37,11 @@ base de las generaciones 1–9 con avatares oficiales de PokeAPI.
 
 El test PMD no se ejecuta dentro de Foundry ni modifica actores. Es una página
 interactiva independiente en [`docs/quiz/index.html`](docs/quiz/index.html), con
-un modo rápido de 8 preguntas y uno completo de 64 preguntas, 16 naturalezas y
+un modo rápido de 10 preguntas y uno completo de 64 preguntas, 16 naturalezas y
 recomendaciones ampliadas a las generaciones 1–9. El resultado ofrece la primera
 etapa de cada línea evolutiva, pero no sus evoluciones posteriores; Pikachu es
-la excepción y Meowth se mantiene entre las opciones iniciales.
+la excepción y Meowth se mantiene entre las opciones iniciales. Se excluyen los
+Pokémon Paradoja y los Ultraentes, salvo Poipole.
 Para probarla localmente, ejecuta `python -m http.server --directory docs` desde
 la carpeta del módulo y abre `http://localhost:8000/quiz/`. El workflow de
 GitHub Pages publica automáticamente `docs/` al hacer merge en `main`.

@@ -2,7 +2,7 @@
 
 Esta es una página web independiente del módulo de Foundry VTT. Ofrece un test rápido de 10 preguntas y un test completo de 64 preguntas. Carga el banco de preguntas y las especies desde `../data/` y no modifica actores ni perfiles de Foundry.
 
-Las recomendaciones muestran la primera etapa de cada línea evolutiva, aunque esa especie pueda evolucionar —por ejemplo Pichu, Meowth o Chimchar—, y también especies sin evolución. No se ofrecen sus formas evolucionadas; Pikachu se mantiene como excepción para conservar su papel de inicial PMD. Meowth está incluido entre las opciones iniciales.
+Las recomendaciones muestran la primera etapa de cada línea evolutiva, aunque esa especie pueda evolucionar —por ejemplo Pichu, Meowth o Chimchar—, y también especies sin evolución. No se ofrecen sus formas evolucionadas; Pikachu se mantiene como excepción para conservar su papel de inicial PMD. Meowth está incluido entre las opciones iniciales. Se excluyen los Pokémon Paradoja y los Ultraentes, salvo Poipole.
 
 El fondo usa las mismas capas animadas y el mismo sonido de selección que el sitio fanmade de referencia. El botón permite silenciarlo. Se respeta la preferencia `prefers-reduced-motion` para reducir las animaciones.
 
