@@ -169,7 +169,7 @@ function renderResult() {
   ui.resultDescription.textContent = state.quiz.naturedescription[state.nature] ?? "";
   const modeLabel = state.mode === "complete" ? "test completo" : "test rápido";
   ui.candidateCount.textContent = `${candidates.length} opciones · ${modeLabel} · generaciones 1–9`;
-  ui.candidates.innerHTML = candidates.map((pokemon, index) => `<article class="candidate ${index < 2 ? "original" : "expanded"}"><img src="${escapeHTML(pokemon.sprite)}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="this.hidden=true"><div><h4>${escapeHTML(pokemon.name)}</h4><p>${escapeHTML(pokemon.types.join(" / "))}</p><span>Generación ${pokemon.generation}</span></div>${index < 2 ? "<b>PMD</b>" : ""}</article>`).join("");
+  ui.candidates.innerHTML = candidates.map((pokemon, index) => `<article class="candidate-avatar ${index < 2 ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${escapeHTML(pokemon.sprite)}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="this.hidden=true"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${index < 2 ? "<b>PMD</b>" : ""}</article>`).join("");
   show(ui.result);
 }
 
@@ -184,7 +184,18 @@ ui.retry.addEventListener("click", loadData);
 ui.backButton.addEventListener("click", previousQuestion);
 ui.nextButton.addEventListener("click", nextQuestion);
 ui.answers.addEventListener("click", event => { const button = event.target.closest("[data-answer]"); if (button) chooseAnswer(Number(button.dataset.answer)); });
-ui.restartButton.addEventListener("click", () => show(ui.start));
+function restartQuiz(event) {
+  event?.preventDefault();
+  state.questions = [];
+  state.answers = [];
+  state.index = 0;
+  state.nature = "";
+  state.scores = {};
+  ui.copyStatus.textContent = "";
+  show(ui.start);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+ui.restartButton.addEventListener("click", restartQuiz);
 ui.copyButton.addEventListener("click", copyResult);
 ui.ambienceToggle.addEventListener("click", () => {
   soundEnabled = !soundEnabled;
