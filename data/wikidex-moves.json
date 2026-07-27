@@ -17,12 +17,12 @@
   },
   {
     "index": 2,
-    "name": "Golpe Kárate",
+    "name": "Golpe Karate",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Karate Chop",
     "generation": 1,
     "description": "Da un golpe cortante. Suele ser crítico.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 50,
     "accuracy": 100,
@@ -161,7 +161,7 @@
   },
   {
     "index": 11,
-    "name": "Agarre",
+    "name": "Fuerza de Garra",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Vise Grip",
     "generation": 1,
@@ -209,7 +209,7 @@
   },
   {
     "index": 14,
-    "name": "Danza Espada",
+    "name": "Danza de Espadas",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Swords Dance",
     "generation": 1,
@@ -241,7 +241,7 @@
   },
   {
     "index": 16,
-    "name": "Tornado",
+    "name": "Ráfaga de Aire",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Gust",
     "generation": 1,
@@ -257,7 +257,7 @@
   },
   {
     "index": 17,
-    "name": "Ataque Ala",
+    "name": "Ataque de Ala",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Wing Attack",
     "generation": 1,
@@ -273,7 +273,7 @@
   },
   {
     "index": 18,
-    "name": "Remolino",
+    "name": "Torbellino",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Whirlwind",
     "generation": 1,
@@ -321,7 +321,7 @@
   },
   {
     "index": 21,
-    "name": "Atizar",
+    "name": "Golpazo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Slam",
     "generation": 1,
@@ -374,7 +374,7 @@
     "englishName": "Double Kick",
     "generation": 1,
     "description": "Propina dos patadas seguidas, una con cada pie.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 30,
     "accuracy": 100,
@@ -406,7 +406,7 @@
     "englishName": "Jump Kick",
     "generation": 1,
     "description": "Da un salto y pega una patada. Si falla, se lesiona.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 100,
     "accuracy": 95,
@@ -422,7 +422,7 @@
     "englishName": "Rolling Kick",
     "generation": 1,
     "description": "Da una patada rápida y circular. Puede hacer retroceder al objetivo.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 60,
     "accuracy": 85,
@@ -465,7 +465,7 @@
   },
   {
     "index": 30,
-    "name": "Cornada",
+    "name": "Ataque Cuerno",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Horn Attack",
     "generation": 1,
@@ -497,7 +497,7 @@
   },
   {
     "index": 32,
-    "name": "Perforador",
+    "name": "Cuerno Taladro",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Horn Drill",
     "generation": 1,
@@ -513,7 +513,7 @@
   },
   {
     "index": 33,
-    "name": "Placaje",
+    "name": "Tacleada",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Tackle",
     "generation": 1,
@@ -529,7 +529,7 @@
   },
   {
     "index": 34,
-    "name": "Golpe Cuerpo",
+    "name": "Golpe de Cuerpo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Body Slam",
     "generation": 1,
@@ -577,7 +577,7 @@
   },
   {
     "index": 37,
-    "name": "Saña",
+    "name": "Golpiza",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Thrash",
     "generation": 1,
@@ -609,7 +609,7 @@
   },
   {
     "index": 39,
-    "name": "Agitacola",
+    "name": "Látigo de Cola",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Tail Whip",
     "generation": 1,
@@ -625,7 +625,7 @@
   },
   {
     "index": 40,
-    "name": "Picotazo Veneno",
+    "name": "Piquete Venenoso",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3f/latest/20251020084849/Tipo_veneno_LPZA.png/75px-Tipo_veneno_LPZA.png",
     "englishName": "Poison Sting",
     "generation": 1,
@@ -641,7 +641,7 @@
   },
   {
     "index": 41,
-    "name": "Doble Ataque",
+    "name": "Doble Aguijón",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/71/latest/20251020124243/Tipo_insecto_LPZA.png/75px-Tipo_insecto_LPZA.png",
     "englishName": "Twineedle",
     "generation": 1,
@@ -657,7 +657,7 @@
   },
   {
     "index": 42,
-    "name": "Pin Misil",
+    "name": "Misil Aguja",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/71/latest/20251020124243/Tipo_insecto_LPZA.png/75px-Tipo_insecto_LPZA.png",
     "englishName": "Pin Missile",
     "generation": 1,
@@ -689,7 +689,7 @@
   },
   {
     "index": 44,
-    "name": "Mordisco",
+    "name": "Mordida",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Bite",
     "generation": 1,
@@ -769,7 +769,7 @@
   },
   {
     "index": 49,
-    "name": "Bomba Sónica",
+    "name": "Explosión Sónica",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Sonic Boom",
     "generation": 1,
@@ -829,10 +829,7 @@
     "pp": 25,
     "priority": 0,
     "selfDamage": false,
-    "source": "WikiDex — Lista de movimientos",
-    "aliases": [
-      "Ascuas"
-    ]
+    "source": "WikiDex — Lista de movimientos"
   },
   {
     "index": 53,
@@ -868,7 +865,7 @@
   },
   {
     "index": 55,
-    "name": "Pistola Agua",
+    "name": "Chorro de Agua",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Water Gun",
     "generation": 1,
@@ -916,7 +913,7 @@
   },
   {
     "index": 58,
-    "name": "Rayo Hielo",
+    "name": "Rayo de Hielo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/32/latest/20251020084942/Tipo_hielo_LPZA.png/75px-Tipo_hielo_LPZA.png",
     "englishName": "Ice Beam",
     "generation": 1,
@@ -1049,7 +1046,7 @@
     "englishName": "Submission",
     "generation": 1,
     "description": "El usuario se lanza al suelo con el oponente en brazos y también se hace un poco de daño.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 80,
     "accuracy": 80,
@@ -1065,7 +1062,7 @@
     "englishName": "Low Kick",
     "generation": 1,
     "description": "Patada baja que derriba al objetivo. Cuanto más pesa este, más daño le causa.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": null,
     "accuracy": 100,
@@ -1081,7 +1078,7 @@
     "englishName": "Counter",
     "generation": 1,
     "description": "Devuelve un ataque físico por duplicado.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": null,
     "accuracy": 100,
@@ -1097,7 +1094,7 @@
     "englishName": "Seismic Toss",
     "generation": 1,
     "description": "Aprovecha la gravedad para derribar al objetivo. Le resta tantos PS como nivel tenga el usuario.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": null,
     "accuracy": 100,
@@ -1124,7 +1121,7 @@
   },
   {
     "index": 71,
-    "name": "Absorber",
+    "name": "Absorción",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Absorb",
     "generation": 1,
@@ -1140,7 +1137,7 @@
   },
   {
     "index": 72,
-    "name": "Megaagotar",
+    "name": "Megadrenado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Mega Drain",
     "generation": 1,
@@ -1172,7 +1169,7 @@
   },
   {
     "index": 74,
-    "name": "Desarrollo",
+    "name": "Crecimiento",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Growth",
     "generation": 1,
@@ -1188,7 +1185,7 @@
   },
   {
     "index": 75,
-    "name": "Hoja Afilada",
+    "name": "Hojas Navaja",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Razor Leaf",
     "generation": 1,
@@ -1220,7 +1217,7 @@
   },
   {
     "index": 77,
-    "name": "Polvo Veneno",
+    "name": "Polvo Venenoso",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3f/latest/20251020084849/Tipo_veneno_LPZA.png/75px-Tipo_veneno_LPZA.png",
     "englishName": "Poison Powder",
     "generation": 1,
@@ -1268,7 +1265,7 @@
   },
   {
     "index": 80,
-    "name": "Danza Pétalo",
+    "name": "Danza de Pétalos",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Petal Dance",
     "generation": 1,
@@ -1284,7 +1281,7 @@
   },
   {
     "index": 81,
-    "name": "Disparo Demora",
+    "name": "Disparo de Seda",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/71/latest/20251020124243/Tipo_insecto_LPZA.png/75px-Tipo_insecto_LPZA.png",
     "englishName": "String Shot",
     "generation": 1,
@@ -1348,7 +1345,7 @@
   },
   {
     "index": 85,
-    "name": "Rayo",
+    "name": "Atactrueno",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20251020084932/Tipo_el%C3%A9ctrico_LPZA.png/75px-Tipo_el%C3%A9ctrico_LPZA.png",
     "englishName": "Thunderbolt",
     "generation": 1,
@@ -1492,7 +1489,7 @@
   },
   {
     "index": 94,
-    "name": "Psíquico",
+    "name": "Fuerza Psíquica",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Psychic",
     "generation": 1,
@@ -1620,7 +1617,7 @@
   },
   {
     "index": 102,
-    "name": "Mimético",
+    "name": "Mímica",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Mimic",
     "generation": 1,
@@ -1636,7 +1633,7 @@
   },
   {
     "index": 103,
-    "name": "Chirrido",
+    "name": "Chillido",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Screech",
     "generation": 1,
@@ -1732,7 +1729,7 @@
   },
   {
     "index": 109,
-    "name": "Rayo Confuso",
+    "name": "Rayo de Confusión",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/8/89/latest/20251020084910/Tipo_fantasma_LPZA.png/75px-Tipo_fantasma_LPZA.png",
     "englishName": "Confuse Ray",
     "generation": 1,
@@ -1764,7 +1761,7 @@
   },
   {
     "index": 111,
-    "name": "Rizo Defensa",
+    "name": "Hacerse Bolita",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Defense Curl",
     "generation": 1,
@@ -1844,7 +1841,7 @@
   },
   {
     "index": 116,
-    "name": "Foco Energía",
+    "name": "Centrar Energía",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Focus Energy",
     "generation": 1,
@@ -1956,7 +1953,7 @@
   },
   {
     "index": 123,
-    "name": "Polución",
+    "name": "Humo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3f/latest/20251020084849/Tipo_veneno_LPZA.png/75px-Tipo_veneno_LPZA.png",
     "englishName": "Smog",
     "generation": 1,
@@ -1988,7 +1985,7 @@
   },
   {
     "index": 125,
-    "name": "Hueso Palo",
+    "name": "Maza de Hueso",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/e/e4/latest/20251020084855/Tipo_tierra_LPZA.png/75px-Tipo_tierra_LPZA.png",
     "englishName": "Bone Club",
     "generation": 1,
@@ -2084,7 +2081,7 @@
   },
   {
     "index": 131,
-    "name": "Clavo Cañón",
+    "name": "Cañón de Púas",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Spike Cannon",
     "generation": 1,
@@ -2164,12 +2161,12 @@
   },
   {
     "index": 136,
-    "name": "Patada Salto Alta",
+    "name": "Patada Salto Alto",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "High Jump Kick",
     "generation": 1,
     "description": "El usuario salta muy alto y propina un rodillazo al objetivo. Si falla, se hiere a sí mismo.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 130,
     "accuracy": 90,
@@ -2180,7 +2177,7 @@
   },
   {
     "index": 137,
-    "name": "Deslumbrar",
+    "name": "Fulmirada",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Glare",
     "generation": 1,
@@ -2276,7 +2273,7 @@
   },
   {
     "index": 143,
-    "name": "Ataque Aéreo",
+    "name": "Ataque Celestial",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Sky Attack",
     "generation": 1,
@@ -2324,7 +2321,7 @@
   },
   {
     "index": 146,
-    "name": "Puño Mareo",
+    "name": "Puño Mareador",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Dizzy Punch",
     "generation": 1,
@@ -2340,7 +2337,7 @@
   },
   {
     "index": 147,
-    "name": "Espora",
+    "name": "Esporas",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Spore",
     "generation": 1,
@@ -2452,7 +2449,7 @@
   },
   {
     "index": 154,
-    "name": "Golpes Furia",
+    "name": "Garras Furiosas",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Fury Swipes",
     "generation": 1,
@@ -2580,7 +2577,7 @@
   },
   {
     "index": 162,
-    "name": "Superdiente",
+    "name": "Supercolmillo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Super Fang",
     "generation": 1,
@@ -2644,7 +2641,7 @@
   },
   {
     "index": 166,
-    "name": "Esquema",
+    "name": "Boceto",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Sketch",
     "generation": 2,
@@ -2665,7 +2662,7 @@
     "englishName": "Triple Kick",
     "generation": 2,
     "description": "Propina hasta tres patadas seguidas, la potencia de las cuales aumenta cada vez que acierta.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 10,
     "accuracy": 90,
@@ -2740,7 +2737,7 @@
   },
   {
     "index": 172,
-    "name": "Rueda Fuego",
+    "name": "Rueda Ígnea",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Flame Wheel",
     "generation": 2,
@@ -2857,7 +2854,7 @@
     "englishName": "Reversal",
     "generation": 2,
     "description": "Ataque desesperado que causa más daño cuantos menos PS tenga el usuario.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": null,
     "accuracy": 100,
@@ -2884,7 +2881,7 @@
   },
   {
     "index": 181,
-    "name": "Nieve Polvo",
+    "name": "Polvo de Nieve",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/32/latest/20251020084942/Tipo_hielo_LPZA.png/75px-Tipo_hielo_LPZA.png",
     "englishName": "Powder Snow",
     "generation": 2,
@@ -2916,12 +2913,12 @@
   },
   {
     "index": 183,
-    "name": "Ultrapuño",
+    "name": "Superpuño",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Mach Punch",
     "generation": 2,
     "description": "Puñetazo de velocidad fulminante. Este movimiento tiene prioridad alta.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 40,
     "accuracy": 100,
@@ -2932,7 +2929,7 @@
   },
   {
     "index": 184,
-    "name": "Cara Susto",
+    "name": "Cara Aterradora",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Scary Face",
     "generation": 2,
@@ -2948,7 +2945,7 @@
   },
   {
     "index": 185,
-    "name": "Finta",
+    "name": "Ataque Finta",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Feint Attack",
     "generation": 2,
@@ -3028,7 +3025,7 @@
   },
   {
     "index": 190,
-    "name": "Pulpocañón",
+    "name": "Octazuca",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Octazooka",
     "generation": 2,
@@ -3076,7 +3073,7 @@
   },
   {
     "index": 193,
-    "name": "Profecía",
+    "name": "Visión",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Foresight",
     "generation": 2,
@@ -3092,7 +3089,7 @@
   },
   {
     "index": 194,
-    "name": "Mismo Destino",
+    "name": "Lazo del Destino",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/8/89/latest/20251020084910/Tipo_fantasma_LPZA.png/75px-Tipo_fantasma_LPZA.png",
     "englishName": "Destiny Bond",
     "generation": 2,
@@ -3124,7 +3121,7 @@
   },
   {
     "index": 196,
-    "name": "Viento Hielo",
+    "name": "Viento Helado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/32/latest/20251020084942/Tipo_hielo_LPZA.png/75px-Tipo_hielo_LPZA.png",
     "englishName": "Icy Wind",
     "generation": 2,
@@ -3145,7 +3142,7 @@
     "englishName": "Detect",
     "generation": 2,
     "description": "Frena todos los ataques, pero puede fallar si se usa repetidamente.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "de estado",
     "power": null,
     "accuracy": null,
@@ -3156,7 +3153,7 @@
   },
   {
     "index": 198,
-    "name": "Ataque Óseo",
+    "name": "Hueso Veloz",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/e/e4/latest/20251020084855/Tipo_tierra_LPZA.png/75px-Tipo_tierra_LPZA.png",
     "englishName": "Bone Rush",
     "generation": 2,
@@ -3268,7 +3265,7 @@
   },
   {
     "index": 205,
-    "name": "Rodar",
+    "name": "Rodada",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4c/latest/20251020084900/Tipo_roca_LPZA.png/75px-Tipo_roca_LPZA.png",
     "englishName": "Rollout",
     "generation": 2,
@@ -3284,7 +3281,7 @@
   },
   {
     "index": 206,
-    "name": "Falso Tortazo",
+    "name": "Falsa Bofetada",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "False Swipe",
     "generation": 2,
@@ -3316,7 +3313,7 @@
   },
   {
     "index": 208,
-    "name": "Batido",
+    "name": "Licuado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Milk Drink",
     "generation": 2,
@@ -3428,7 +3425,7 @@
   },
   {
     "index": 215,
-    "name": "Cascabel Cura",
+    "name": "Cascabel Sanador",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Heal Bell",
     "generation": 2,
@@ -3460,7 +3457,7 @@
   },
   {
     "index": 217,
-    "name": "Presente",
+    "name": "Obsequio",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Present",
     "generation": 2,
@@ -3508,7 +3505,7 @@
   },
   {
     "index": 220,
-    "name": "Divide Dolor",
+    "name": "Dividedolor",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Pain Split",
     "generation": 2,
@@ -3561,7 +3558,7 @@
     "englishName": "Dynamic Punch",
     "generation": 2,
     "description": "Puñetazo con toda la fuerza concentrada que causa confusión.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 100,
     "accuracy": 50,
@@ -3588,7 +3585,7 @@
   },
   {
     "index": 225,
-    "name": "Dragoaliento",
+    "name": "Aliento Dragón",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3b/latest/20251020084947/Tipo_drag%C3%B3n_LPZA.png/75px-Tipo_drag%C3%B3n_LPZA.png",
     "englishName": "Dragon Breath",
     "generation": 2,
@@ -3684,7 +3681,7 @@
   },
   {
     "index": 231,
-    "name": "Cola Férrea",
+    "name": "Cola de Hierro",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Iron Tail",
     "generation": 2,
@@ -3700,7 +3697,7 @@
   },
   {
     "index": 232,
-    "name": "Garra Metal",
+    "name": "Garra de Metal",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Metal Claw",
     "generation": 2,
@@ -3721,7 +3718,7 @@
     "englishName": "Vital Throw",
     "generation": 2,
     "description": "El usuario ataca el último, pero no falla.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 70,
     "accuracy": null,
@@ -3732,7 +3729,7 @@
   },
   {
     "index": 234,
-    "name": "Sol Matinal",
+    "name": "Sol Matutino",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Morning Sun",
     "generation": 2,
@@ -3796,12 +3793,12 @@
   },
   {
     "index": 238,
-    "name": "Tajo Cruzado",
+    "name": "Golpe Cruzado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Cross Chop",
     "generation": 2,
     "description": "Golpe doble con las manos que suele asestar un golpe crítico.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 100,
     "accuracy": 80,
@@ -3812,7 +3809,7 @@
   },
   {
     "index": 239,
-    "name": "Ciclón",
+    "name": "Tornado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3b/latest/20251020084947/Tipo_drag%C3%B3n_LPZA.png/75px-Tipo_drag%C3%B3n_LPZA.png",
     "englishName": "Twister",
     "generation": 2,
@@ -3828,7 +3825,7 @@
   },
   {
     "index": 240,
-    "name": "Danza Lluvia",
+    "name": "Danza de Lluvia",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Rain Dance",
     "generation": 2,
@@ -3876,7 +3873,7 @@
   },
   {
     "index": 243,
-    "name": "Manto Espejo",
+    "name": "Escudo Espejo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Mirror Coat",
     "generation": 2,
@@ -3924,7 +3921,7 @@
   },
   {
     "index": 246,
-    "name": "Poder Pasado",
+    "name": "Poder Antiguo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4c/latest/20251020084900/Tipo_roca_LPZA.png/75px-Tipo_roca_LPZA.png",
     "englishName": "Ancient Power",
     "generation": 2,
@@ -3977,7 +3974,7 @@
     "englishName": "Rock Smash",
     "generation": 2,
     "description": "Propina un gran puñetazo que puede reducir la Defensa del objetivo.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 40,
     "accuracy": 100,
@@ -3988,7 +3985,7 @@
   },
   {
     "index": 250,
-    "name": "Torbellino",
+    "name": "Remolino",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Whirlpool",
     "generation": 2,
@@ -4068,7 +4065,7 @@
   },
   {
     "index": 255,
-    "name": "Escupir",
+    "name": "Escupida",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Spit Up",
     "generation": 3,
@@ -4148,7 +4145,7 @@
   },
   {
     "index": 260,
-    "name": "Camelo",
+    "name": "Halago",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Flatter",
     "generation": 3,
@@ -4180,7 +4177,7 @@
   },
   {
     "index": 262,
-    "name": "Legado",
+    "name": "Recuerdo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Memento",
     "generation": 3,
@@ -4212,12 +4209,12 @@
   },
   {
     "index": 264,
-    "name": "Puño Certero",
+    "name": "Puño Centrado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Focus Punch",
     "generation": 3,
     "description": "Se concentra para dar un puñetazo. Falla si se sufre un golpe antes de su uso.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 150,
     "accuracy": 100,
@@ -4292,7 +4289,7 @@
   },
   {
     "index": 269,
-    "name": "Mofa",
+    "name": "Provocación",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Taunt",
     "generation": 3,
@@ -4308,7 +4305,7 @@
   },
   {
     "index": 270,
-    "name": "Refuerzo",
+    "name": "Refuerzos",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Helping Hand",
     "generation": 3,
@@ -4409,7 +4406,7 @@
     "englishName": "Superpower",
     "generation": 3,
     "description": "Ataque de gran potencia, pero que reduce el Ataque y la Defensa del usuario.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 120,
     "accuracy": 100,
@@ -4457,7 +4454,7 @@
     "englishName": "Revenge",
     "generation": 3,
     "description": "Ataque que produce el doble de daño si el usuario resulta herido en el mismo turno.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 60,
     "accuracy": 100,
@@ -4468,12 +4465,12 @@
   },
   {
     "index": 280,
-    "name": "Demolición",
+    "name": "Karatazo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Brick Break",
     "generation": 3,
     "description": "Ataca al objetivo con un potente golpe con el filo de la mano capaz de destruir barreras como Pantalla de Luz y Reflejo.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 75,
     "accuracy": 100,
@@ -4628,7 +4625,7 @@
   },
   {
     "index": 290,
-    "name": "Daño Secreto",
+    "name": "Poder Secreto",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Secret Power",
     "generation": 3,
@@ -4665,7 +4662,7 @@
     "englishName": "Arm Thrust",
     "generation": 3,
     "description": "Golpea fuertemente al objetivo con la palma de las manos de dos a cinco veces seguidas.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 15,
     "accuracy": 100,
@@ -4740,7 +4737,7 @@
   },
   {
     "index": 297,
-    "name": "Danza Pluma",
+    "name": "Danza de Plumas",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Feather Dance",
     "generation": 3,
@@ -4756,7 +4753,7 @@
   },
   {
     "index": 298,
-    "name": "Danza Caos",
+    "name": "Danza del Caos",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Teeter Dance",
     "generation": 3,
@@ -4788,7 +4785,7 @@
   },
   {
     "index": 300,
-    "name": "Chapoteo Lodo",
+    "name": "Chapoteo de Lodo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/e/e4/latest/20251020084855/Tipo_tierra_LPZA.png/75px-Tipo_tierra_LPZA.png",
     "englishName": "Mud Sport",
     "generation": 3,
@@ -4820,7 +4817,7 @@
   },
   {
     "index": 302,
-    "name": "Brazo Pincho",
+    "name": "Brazo Aguja",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Needle Arm",
     "generation": 3,
@@ -4836,7 +4833,7 @@
   },
   {
     "index": 303,
-    "name": "Relajo",
+    "name": "Relajar",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Slack Off",
     "generation": 3,
@@ -4852,7 +4849,7 @@
   },
   {
     "index": 304,
-    "name": "Vozarrón",
+    "name": "Hipervoz",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Hyper Voice",
     "generation": 3,
@@ -4900,7 +4897,7 @@
   },
   {
     "index": 307,
-    "name": "Anillo Ígneo",
+    "name": "Anillo de Fuego",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Blast Burn",
     "generation": 3,
@@ -4948,7 +4945,7 @@
   },
   {
     "index": 310,
-    "name": "Impresionar",
+    "name": "Impresión",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/8/89/latest/20251020084910/Tipo_fantasma_LPZA.png/75px-Tipo_fantasma_LPZA.png",
     "englishName": "Astonish",
     "generation": 3,
@@ -5012,7 +5009,7 @@
   },
   {
     "index": 314,
-    "name": "Aire Afilado",
+    "name": "Aire Cortante",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Air Cutter",
     "generation": 3,
@@ -5028,7 +5025,7 @@
   },
   {
     "index": 315,
-    "name": "Sofoco",
+    "name": "Supercalor",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Overheat",
     "generation": 3,
@@ -5060,7 +5057,7 @@
   },
   {
     "index": 317,
-    "name": "Tumba Rocas",
+    "name": "Tumba de Rocas",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4c/latest/20251020084900/Tipo_roca_LPZA.png/75px-Tipo_roca_LPZA.png",
     "englishName": "Rock Tomb",
     "generation": 3,
@@ -5076,7 +5073,7 @@
   },
   {
     "index": 318,
-    "name": "Viento Plata",
+    "name": "Viento Plateado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/71/latest/20251020124243/Tipo_insecto_LPZA.png/75px-Tipo_insecto_LPZA.png",
     "englishName": "Silver Wind",
     "generation": 3,
@@ -5092,7 +5089,7 @@
   },
   {
     "index": 319,
-    "name": "Eco Metálico",
+    "name": "Sonido Metálico",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Metal Sound",
     "generation": 3,
@@ -5108,7 +5105,7 @@
   },
   {
     "index": 320,
-    "name": "Silbato",
+    "name": "Silbato de Hoja",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Grass Whistle",
     "generation": 3,
@@ -5156,7 +5153,7 @@
   },
   {
     "index": 323,
-    "name": "Salpicar",
+    "name": "Columna de Agua",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Water Spout",
     "generation": 3,
@@ -5204,7 +5201,7 @@
   },
   {
     "index": 326,
-    "name": "Paranormal",
+    "name": "Extrasensorial",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Extrasensory",
     "generation": 3,
@@ -5220,12 +5217,12 @@
   },
   {
     "index": 327,
-    "name": "Gancho Alto",
+    "name": "Corte Elevado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Sky Uppercut",
     "generation": 3,
     "description": "Gancho ascendente de gran ímpetu.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 85,
     "accuracy": 90,
@@ -5236,7 +5233,7 @@
   },
   {
     "index": 328,
-    "name": "Bucle Arena",
+    "name": "Tumba de Arena",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/e/e4/latest/20251020084855/Tipo_tierra_LPZA.png/75px-Tipo_tierra_LPZA.png",
     "englishName": "Sand Tomb",
     "generation": 3,
@@ -5252,7 +5249,7 @@
   },
   {
     "index": 329,
-    "name": "Frío Polar",
+    "name": "Frío Extremo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/32/latest/20251020084942/Tipo_hielo_LPZA.png/75px-Tipo_hielo_LPZA.png",
     "englishName": "Sheer Cold",
     "generation": 3,
@@ -5284,7 +5281,7 @@
   },
   {
     "index": 331,
-    "name": "Semilladora",
+    "name": "Bala Semilla",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Bullet Seed",
     "generation": 3,
@@ -5300,7 +5297,7 @@
   },
   {
     "index": 332,
-    "name": "Golpe Aéreo",
+    "name": "As Aéreo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Aerial Ace",
     "generation": 3,
@@ -5316,7 +5313,7 @@
   },
   {
     "index": 333,
-    "name": "Carámbano",
+    "name": "Lanza de Hielo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/32/latest/20251020084942/Tipo_hielo_LPZA.png/75px-Tipo_hielo_LPZA.png",
     "englishName": "Icicle Spear",
     "generation": 3,
@@ -5332,7 +5329,7 @@
   },
   {
     "index": 334,
-    "name": "Defensa Férrea",
+    "name": "Defensa de Hierro",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Iron Defense",
     "generation": 3,
@@ -5417,7 +5414,7 @@
     "englishName": "Bulk Up",
     "generation": 3,
     "description": "Robustece el cuerpo para aumentar el Ataque y la Defensa.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "de estado",
     "power": null,
     "accuracy": null,
@@ -5428,7 +5425,7 @@
   },
   {
     "index": 340,
-    "name": "Bote",
+    "name": "Rebote",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Bounce",
     "generation": 3,
@@ -5444,7 +5441,7 @@
   },
   {
     "index": 341,
-    "name": "Disparo Lodo",
+    "name": "Disparo de Lodo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/e/e4/latest/20251020084855/Tipo_tierra_LPZA.png/75px-Tipo_tierra_LPZA.png",
     "englishName": "Mud Shot",
     "generation": 3,
@@ -5460,7 +5457,7 @@
   },
   {
     "index": 342,
-    "name": "Cola Veneno",
+    "name": "Cola Venenosa",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3f/latest/20251020084849/Tipo_veneno_LPZA.png/75px-Tipo_veneno_LPZA.png",
     "englishName": "Poison Tail",
     "generation": 3,
@@ -5492,7 +5489,7 @@
   },
   {
     "index": 344,
-    "name": "Placaje Eléctrico",
+    "name": "Tacleada de Voltios",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20251020084932/Tipo_el%C3%A9ctrico_LPZA.png/75px-Tipo_el%C3%A9ctrico_LPZA.png",
     "englishName": "Volt Tackle",
     "generation": 3,
@@ -5508,7 +5505,7 @@
   },
   {
     "index": 345,
-    "name": "Hoja Mágica",
+    "name": "Hojas Mágicas",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Magical Leaf",
     "generation": 3,
@@ -5524,7 +5521,7 @@
   },
   {
     "index": 346,
-    "name": "Hidrochorro",
+    "name": "Chapoteo de Agua",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Water Sport",
     "generation": 3,
@@ -5572,7 +5569,7 @@
   },
   {
     "index": 349,
-    "name": "Danza Dragón",
+    "name": "Danza de Dragón",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3b/latest/20251020084947/Tipo_drag%C3%B3n_LPZA.png/75px-Tipo_drag%C3%B3n_LPZA.png",
     "englishName": "Dragon Dance",
     "generation": 3,
@@ -5604,7 +5601,7 @@
   },
   {
     "index": 351,
-    "name": "Onda Voltio",
+    "name": "Onda de Choque",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20251020084932/Tipo_el%C3%A9ctrico_LPZA.png/75px-Tipo_el%C3%A9ctrico_LPZA.png",
     "englishName": "Shock Wave",
     "generation": 3,
@@ -5620,7 +5617,7 @@
   },
   {
     "index": 352,
-    "name": "Hidropulso",
+    "name": "Pulso de Agua",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Water Pulse",
     "generation": 3,
@@ -5636,7 +5633,7 @@
   },
   {
     "index": 353,
-    "name": "Deseo Oculto",
+    "name": "Deseo Final",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Doom Desire",
     "generation": 3,
@@ -5652,7 +5649,7 @@
   },
   {
     "index": 354,
-    "name": "Psicoataque",
+    "name": "Psicoimpulso",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Psycho Boost",
     "generation": 3,
@@ -5716,12 +5713,12 @@
   },
   {
     "index": 358,
-    "name": "Espabila",
+    "name": "Despabilador",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Wake-Up Slap",
     "generation": 4,
     "description": "Inflige gran daño a objetivos dormidos. Sin embargo, los bofetones también los despiertan.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 70,
     "accuracy": 100,
@@ -5732,12 +5729,12 @@
   },
   {
     "index": 359,
-    "name": "Machada",
+    "name": "Brazo Martillo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Hammer Arm",
     "generation": 4,
     "description": "Propina un golpe devastador con el puño, pero reduce la Velocidad del usuario.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 100,
     "accuracy": 90,
@@ -5764,7 +5761,7 @@
   },
   {
     "index": 361,
-    "name": "Deseo Cura",
+    "name": "Deseo Sanador",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Healing Wish",
     "generation": 4,
@@ -5780,7 +5777,7 @@
   },
   {
     "index": 362,
-    "name": "Salmuera",
+    "name": "Agua Salada",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Brine",
     "generation": 4,
@@ -5876,7 +5873,7 @@
   },
   {
     "index": 368,
-    "name": "Represión Metal",
+    "name": "Explosión Metálica",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Metal Burst",
     "generation": 4,
@@ -5908,23 +5905,28 @@
   },
   {
     "index": 370,
-    "name": "A Bocajarro",
+    "name": "Combate Cercano",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Close Combat",
     "generation": 4,
-    "description": "Ataca ferozmente al objetivo sin protegerse, lo cual reduce la Defensa y la Defensa Especial del usuario.",
-    "type": "pelea",
+    "description": "Ataca ferozmente al objetivo sin protegerse; después de usarlo, el usuario reduce temporalmente su Ataque y Defensa durante el combate.",
+    "type": "lucha",
     "category": "físico",
     "power": 120,
     "accuracy": 100,
     "pp": 5,
     "priority": 0,
     "selfDamage": false,
-    "source": "WikiDex — Lista de movimientos"
+    "source": "WikiDex — Lista de movimientos",
+    "aliases": [
+      "Cuerpo a Cuerpo",
+      "A Bocajarro",
+      "Cuerpo a Cuerpo"
+    ]
   },
   {
     "index": 371,
-    "name": "Vendetta",
+    "name": "Revancha",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Payback",
     "generation": 4,
@@ -5940,7 +5942,7 @@
   },
   {
     "index": 372,
-    "name": "Buena Baza",
+    "name": "Garantía",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Assurance",
     "generation": 4,
@@ -6020,7 +6022,7 @@
   },
   {
     "index": 377,
-    "name": "Anticura",
+    "name": "Anticuración",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Heal Block",
     "generation": 4,
@@ -6036,7 +6038,7 @@
   },
   {
     "index": 378,
-    "name": "Estrujón",
+    "name": "Apretón",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Wring Out",
     "generation": 4,
@@ -6068,7 +6070,7 @@
   },
   {
     "index": 380,
-    "name": "Bilis",
+    "name": "Ácido Gástrico",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3f/latest/20251020084849/Tipo_veneno_LPZA.png/75px-Tipo_veneno_LPZA.png",
     "englishName": "Gastro Acid",
     "generation": 4,
@@ -6084,7 +6086,7 @@
   },
   {
     "index": 381,
-    "name": "Conjuro",
+    "name": "Cántico Suerte",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Lucky Chant",
     "generation": 4,
@@ -6180,7 +6182,7 @@
   },
   {
     "index": 387,
-    "name": "Última Baza",
+    "name": "Último Recurso",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Last Resort",
     "generation": 4,
@@ -6260,7 +6262,7 @@
   },
   {
     "index": 392,
-    "name": "Acua Aro",
+    "name": "Acuaanillo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Aqua Ring",
     "generation": 4,
@@ -6276,7 +6278,7 @@
   },
   {
     "index": 393,
-    "name": "Levitón",
+    "name": "Superimán",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20251020084932/Tipo_el%C3%A9ctrico_LPZA.png/75px-Tipo_el%C3%A9ctrico_LPZA.png",
     "englishName": "Magnet Rise",
     "generation": 4,
@@ -6292,7 +6294,7 @@
   },
   {
     "index": 394,
-    "name": "Envite Ígneo",
+    "name": "Erupción",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Flare Blitz",
     "generation": 4,
@@ -6308,12 +6310,12 @@
   },
   {
     "index": 395,
-    "name": "Palmeo",
+    "name": "Fuerza de Palma",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Force Palm",
     "generation": 4,
     "description": "Ataca al objetivo con una onda de choque y puede llegar a paralizarlo.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 60,
     "accuracy": 100,
@@ -6324,12 +6326,12 @@
   },
   {
     "index": 396,
-    "name": "Esfera Aural",
+    "name": "Aura Esfera",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Aura Sphere",
     "generation": 4,
     "description": "Libera una inmensa descarga de aura desde su interior. No falla nunca.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "especial",
     "power": 80,
     "accuracy": null,
@@ -6356,7 +6358,7 @@
   },
   {
     "index": 398,
-    "name": "Puya Nociva",
+    "name": "Golpe Venenoso",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3f/latest/20251020084849/Tipo_veneno_LPZA.png/75px-Tipo_veneno_LPZA.png",
     "englishName": "Poison Jab",
     "generation": 4,
@@ -6372,7 +6374,7 @@
   },
   {
     "index": 399,
-    "name": "Pulso Umbrío",
+    "name": "Pulso Oscuro",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Dark Pulse",
     "generation": 4,
@@ -6388,7 +6390,7 @@
   },
   {
     "index": 400,
-    "name": "Tajo Umbrío",
+    "name": "Corte Umbrío",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Night Slash",
     "generation": 4,
@@ -6404,7 +6406,7 @@
   },
   {
     "index": 401,
-    "name": "Acua Cola",
+    "name": "Cola de Agua",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Aqua Tail",
     "generation": 4,
@@ -6420,7 +6422,7 @@
   },
   {
     "index": 402,
-    "name": "Bomba Germen",
+    "name": "Bomba Semilla",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Seed Bomb",
     "generation": 4,
@@ -6436,7 +6438,7 @@
   },
   {
     "index": 403,
-    "name": "Tajo Aéreo",
+    "name": "Corte Aéreo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Air Slash",
     "generation": 4,
@@ -6532,12 +6534,12 @@
   },
   {
     "index": 409,
-    "name": "Puño Drenaje",
+    "name": "Puño Drenador",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Drain Punch",
     "generation": 4,
     "description": "Un golpe que drena energía. El usuario recupera la mitad de los PS arrebatados al objetivo.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 75,
     "accuracy": 100,
@@ -6548,12 +6550,12 @@
   },
   {
     "index": 410,
-    "name": "Onda Vacío",
+    "name": "Onda de Vacío",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Vacuum Wave",
     "generation": 4,
     "description": "Gira los puños y libera una onda de vacío contra el objetivo. Este movimiento tiene prioridad alta.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "especial",
     "power": 40,
     "accuracy": 100,
@@ -6564,12 +6566,12 @@
   },
   {
     "index": 411,
-    "name": "Onda Certera",
+    "name": "Ataque Centrado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Focus Blast",
     "generation": 4,
     "description": "Agudiza la concentración mental y libera su poder. Puede reducir la Defensa Especial del objetivo.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "especial",
     "power": 120,
     "accuracy": 70,
@@ -6580,7 +6582,7 @@
   },
   {
     "index": 412,
-    "name": "Energibola",
+    "name": "Bola de Energía",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Energy Ball",
     "generation": 4,
@@ -6596,7 +6598,7 @@
   },
   {
     "index": 413,
-    "name": "Pájaro Osado",
+    "name": "Ave Brava",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Brave Bird",
     "generation": 4,
@@ -6612,7 +6614,7 @@
   },
   {
     "index": 414,
-    "name": "Tierra Viva",
+    "name": "Poder Terrestre",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/e/e4/latest/20251020084855/Tipo_tierra_LPZA.png/75px-Tipo_tierra_LPZA.png",
     "englishName": "Earth Power",
     "generation": 4,
@@ -6628,7 +6630,7 @@
   },
   {
     "index": 415,
-    "name": "Trapicheo",
+    "name": "Trueque",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Switcheroo",
     "generation": 4,
@@ -6724,7 +6726,7 @@
   },
   {
     "index": 421,
-    "name": "Garra Umbría",
+    "name": "Garra de Sombra",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/8/89/latest/20251020084910/Tipo_fantasma_LPZA.png/75px-Tipo_fantasma_LPZA.png",
     "englishName": "Shadow Claw",
     "generation": 4,
@@ -6740,7 +6742,7 @@
   },
   {
     "index": 422,
-    "name": "Colmillo Rayo",
+    "name": "Colmillo Trueno",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20251020084932/Tipo_el%C3%A9ctrico_LPZA.png/75px-Tipo_el%C3%A9ctrico_LPZA.png",
     "englishName": "Thunder Fang",
     "generation": 4,
@@ -6772,7 +6774,7 @@
   },
   {
     "index": 424,
-    "name": "Colmillo Ígneo",
+    "name": "Colmillo Fuego",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Fire Fang",
     "generation": 4,
@@ -6900,7 +6902,7 @@
   },
   {
     "index": 432,
-    "name": "Despejar",
+    "name": "Desempañar",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Defog",
     "generation": 4,
@@ -6932,7 +6934,7 @@
   },
   {
     "index": 434,
-    "name": "Cometa Draco",
+    "name": "Meteoro Dragón",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3b/latest/20251020084947/Tipo_drag%C3%B3n_LPZA.png/75px-Tipo_drag%C3%B3n_LPZA.png",
     "englishName": "Draco Meteor",
     "generation": 4,
@@ -6964,7 +6966,7 @@
   },
   {
     "index": 436,
-    "name": "Humareda",
+    "name": "Bomba de Lava",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Lava Plume",
     "generation": 4,
@@ -6980,7 +6982,7 @@
   },
   {
     "index": 437,
-    "name": "Lluevehojas",
+    "name": "Tormenta de Hojas",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Leaf Storm",
     "generation": 4,
@@ -7076,7 +7078,7 @@
   },
   {
     "index": 443,
-    "name": "Bomba Imán",
+    "name": "Magnetobomba",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Magnet Bomb",
     "generation": 4,
@@ -7124,7 +7126,7 @@
   },
   {
     "index": 446,
-    "name": "Trampa Rocas",
+    "name": "Trampa de Rocas",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4c/latest/20251020084900/Tipo_roca_LPZA.png/75px-Tipo_roca_LPZA.png",
     "englishName": "Stealth Rock",
     "generation": 4,
@@ -7140,7 +7142,7 @@
   },
   {
     "index": 447,
-    "name": "Hierba Lazo",
+    "name": "Nudo de Pasto",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Grass Knot",
     "generation": 4,
@@ -7156,7 +7158,7 @@
   },
   {
     "index": 448,
-    "name": "Cháchara",
+    "name": "Parloteo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Chatter",
     "generation": 4,
@@ -7172,7 +7174,7 @@
   },
   {
     "index": 449,
-    "name": "Sentencia",
+    "name": "Juicio Final",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Judgment",
     "generation": 4,
@@ -7236,7 +7238,7 @@
   },
   {
     "index": 453,
-    "name": "Acua Jet",
+    "name": "Acuajet",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Aqua Jet",
     "generation": 4,
@@ -7300,7 +7302,7 @@
   },
   {
     "index": 457,
-    "name": "Testarazo",
+    "name": "Topetazo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4c/latest/20251020084900/Tipo_roca_LPZA.png/75px-Tipo_roca_LPZA.png",
     "englishName": "Head Smash",
     "generation": 4,
@@ -7332,7 +7334,7 @@
   },
   {
     "index": 459,
-    "name": "Distorsión",
+    "name": "Rugido Temporal",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3b/latest/20251020084947/Tipo_drag%C3%B3n_LPZA.png/75px-Tipo_drag%C3%B3n_LPZA.png",
     "englishName": "Roar of Time",
     "generation": 4,
@@ -7348,7 +7350,7 @@
   },
   {
     "index": 460,
-    "name": "Corte Vacío",
+    "name": "Corte Espacial",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3b/latest/20251020084947/Tipo_drag%C3%B3n_LPZA.png/75px-Tipo_drag%C3%B3n_LPZA.png",
     "englishName": "Spacial Rend",
     "generation": 4,
@@ -7364,7 +7366,7 @@
   },
   {
     "index": 461,
-    "name": "Danza Lunar",
+    "name": "Danza de la Luna",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Lunar Dance",
     "generation": 4,
@@ -7380,7 +7382,7 @@
   },
   {
     "index": 462,
-    "name": "Agarrón",
+    "name": "Garra Aplastante",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Crush Grip",
     "generation": 4,
@@ -7412,7 +7414,7 @@
   },
   {
     "index": 464,
-    "name": "Brecha Negra",
+    "name": "Abismo Negro",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Dark Void",
     "generation": 4,
@@ -7444,7 +7446,7 @@
   },
   {
     "index": 466,
-    "name": "Viento Aciago",
+    "name": "Viento Ominoso",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/8/89/latest/20251020084910/Tipo_fantasma_LPZA.png/75px-Tipo_fantasma_LPZA.png",
     "englishName": "Ominous Wind",
     "generation": 4,
@@ -7492,7 +7494,7 @@
   },
   {
     "index": 469,
-    "name": "Vasta Guardia",
+    "name": "Guardia Amplia",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4c/latest/20251020084900/Tipo_roca_LPZA.png/75px-Tipo_roca_LPZA.png",
     "englishName": "Wide Guard",
     "generation": 5,
@@ -7508,7 +7510,7 @@
   },
   {
     "index": 470,
-    "name": "Isoguardia",
+    "name": "Guardia Dividida",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Guard Split",
     "generation": 5,
@@ -7524,7 +7526,7 @@
   },
   {
     "index": 471,
-    "name": "Isofuerza",
+    "name": "Fuerza Dividida",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Power Split",
     "generation": 5,
@@ -7556,7 +7558,7 @@
   },
   {
     "index": 473,
-    "name": "Psicocarga",
+    "name": "Choque Psíquico",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Psyshock",
     "generation": 5,
@@ -7668,12 +7670,12 @@
   },
   {
     "index": 480,
-    "name": "Llave Corsé",
+    "name": "Llave Tempestad",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Storm Throw",
     "generation": 5,
     "description": "Lanza un golpe devastador. Siempre asesta un golpe crítico.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 60,
     "accuracy": 100,
@@ -7684,7 +7686,7 @@
   },
   {
     "index": 481,
-    "name": "Pirotecnia",
+    "name": "Golpe de Fuego",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Flame Burst",
     "generation": 5,
@@ -7700,7 +7702,7 @@
   },
   {
     "index": 482,
-    "name": "Onda Tóxica",
+    "name": "Ola de Lodo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3f/latest/20251020084849/Tipo_veneno_LPZA.png/75px-Tipo_veneno_LPZA.png",
     "englishName": "Sludge Wave",
     "generation": 5,
@@ -7716,7 +7718,7 @@
   },
   {
     "index": 483,
-    "name": "Danza Aleteo",
+    "name": "Danza del Aleteo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/71/latest/20251020124243/Tipo_insecto_LPZA.png/75px-Tipo_insecto_LPZA.png",
     "englishName": "Quiver Dance",
     "generation": 5,
@@ -7732,7 +7734,7 @@
   },
   {
     "index": 484,
-    "name": "Cuerpo Pesado",
+    "name": "Golpe Pesado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Heavy Slam",
     "generation": 5,
@@ -7764,7 +7766,7 @@
   },
   {
     "index": 486,
-    "name": "Bola Voltio",
+    "name": "Electrobola",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20251020084932/Tipo_el%C3%A9ctrico_LPZA.png/75px-Tipo_el%C3%A9ctrico_LPZA.png",
     "englishName": "Electro Ball",
     "generation": 5,
@@ -7796,7 +7798,7 @@
   },
   {
     "index": 488,
-    "name": "Nitrocarga",
+    "name": "Carga de Fuego",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Flame Charge",
     "generation": 5,
@@ -7828,12 +7830,12 @@
   },
   {
     "index": 490,
-    "name": "Puntapié",
+    "name": "Barredora",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Low Sweep",
     "generation": 5,
     "description": "Ataque rápido dirigido a los pies del objetivo que le hace perder Velocidad.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 65,
     "accuracy": 100,
@@ -7908,7 +7910,7 @@
   },
   {
     "index": 495,
-    "name": "Cede Paso",
+    "name": "Ceda el Paso",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "After You",
     "generation": 5,
@@ -7972,7 +7974,7 @@
   },
   {
     "index": 499,
-    "name": "Niebla Clara",
+    "name": "Humo Claro",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3f/latest/20251020084849/Tipo_veneno_LPZA.png/75px-Tipo_veneno_LPZA.png",
     "englishName": "Clear Smog",
     "generation": 5,
@@ -7988,7 +7990,7 @@
   },
   {
     "index": 500,
-    "name": "Poder Reserva",
+    "name": "Poder Acumulado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Stored Power",
     "generation": 5,
@@ -8004,12 +8006,12 @@
   },
   {
     "index": 501,
-    "name": "Anticipo",
+    "name": "Defensa Rápida",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Quick Guard",
     "generation": 5,
     "description": "Se protege a sí mismo y a sus aliados de movimientos con prioridad.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "de estado",
     "power": null,
     "accuracy": null,
@@ -8020,7 +8022,7 @@
   },
   {
     "index": 502,
-    "name": "Cambio de Banda",
+    "name": "Cambio de Lado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Ally Switch",
     "generation": 5,
@@ -8068,7 +8070,7 @@
   },
   {
     "index": 505,
-    "name": "Pulso Cura",
+    "name": "Pulso Sanador",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Heal Pulse",
     "generation": 5,
@@ -8137,7 +8139,7 @@
     "englishName": "Circle Throw",
     "generation": 5,
     "description": "Lanza por los aires al objetivo y hace que salga otro Pokémon. Si es uno salvaje, acaba el combate.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 60,
     "accuracy": 90,
@@ -8148,7 +8150,7 @@
   },
   {
     "index": 510,
-    "name": "Calcinación",
+    "name": "Incinerar",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Incinerate",
     "generation": 5,
@@ -8180,7 +8182,7 @@
   },
   {
     "index": 512,
-    "name": "Acróbata",
+    "name": "Acrobacia",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Acrobatics",
     "generation": 5,
@@ -8233,7 +8235,7 @@
     "englishName": "Final Gambit",
     "generation": 5,
     "description": "El usuario se sacrifica causándole un daño al objetivo equivalente a sus propios PS perdidos.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "especial",
     "power": null,
     "accuracy": 100,
@@ -8324,7 +8326,7 @@
   },
   {
     "index": 521,
-    "name": "Voltiocambio",
+    "name": "Cambiavoltaje",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20251020084932/Tipo_el%C3%A9ctrico_LPZA.png/75px-Tipo_el%C3%A9ctrico_LPZA.png",
     "englishName": "Volt Switch",
     "generation": 5,
@@ -8340,7 +8342,7 @@
   },
   {
     "index": 522,
-    "name": "Estoicismo",
+    "name": "Lucha Insecto",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/71/latest/20251020124243/Tipo_insecto_LPZA.png/75px-Tipo_insecto_LPZA.png",
     "englishName": "Struggle Bug",
     "generation": 5,
@@ -8372,7 +8374,7 @@
   },
   {
     "index": 524,
-    "name": "Vaho Gélido",
+    "name": "Vaho Helado",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/32/latest/20251020084942/Tipo_hielo_LPZA.png/75px-Tipo_hielo_LPZA.png",
     "englishName": "Frost Breath",
     "generation": 5,
@@ -8388,7 +8390,7 @@
   },
   {
     "index": 525,
-    "name": "Cola Dragón",
+    "name": "Cola de Dragón",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3b/latest/20251020084947/Tipo_drag%C3%B3n_LPZA.png/75px-Tipo_drag%C3%B3n_LPZA.png",
     "englishName": "Dragon Tail",
     "generation": 5,
@@ -8436,7 +8438,7 @@
   },
   {
     "index": 528,
-    "name": "Voltio Cruel",
+    "name": "Carga Salvaje",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20251020084932/Tipo_el%C3%A9ctrico_LPZA.png/75px-Tipo_el%C3%A9ctrico_LPZA.png",
     "englishName": "Wild Charge",
     "generation": 5,
@@ -8468,7 +8470,7 @@
   },
   {
     "index": 530,
-    "name": "Golpe Bis",
+    "name": "Golpe Dual",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3b/latest/20251020084947/Tipo_drag%C3%B3n_LPZA.png/75px-Tipo_drag%C3%B3n_LPZA.png",
     "englishName": "Dual Chop",
     "generation": 5,
@@ -8484,7 +8486,7 @@
   },
   {
     "index": 531,
-    "name": "Arrumaco",
+    "name": "Sello de Corazón",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Heart Stamp",
     "generation": 5,
@@ -8500,7 +8502,7 @@
   },
   {
     "index": 532,
-    "name": "Asta Drenaje",
+    "name": "Drenacuerno",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Horn Leech",
     "generation": 5,
@@ -8516,12 +8518,12 @@
   },
   {
     "index": 533,
-    "name": "Espada Santa",
+    "name": "Espada Sagrada",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Sacred Sword",
     "generation": 5,
     "description": "El usuario ataca con una espada, ignorando cualquier cambio en las características del objetivo.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 90,
     "accuracy": 100,
@@ -8532,7 +8534,7 @@
   },
   {
     "index": 534,
-    "name": "Concha Filo",
+    "name": "Coraza Afilada",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Razor Shell",
     "generation": 5,
@@ -8548,7 +8550,7 @@
   },
   {
     "index": 535,
-    "name": "Golpe Calor",
+    "name": "Golpe de Calor",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Heat Crash",
     "generation": 5,
@@ -8580,7 +8582,7 @@
   },
   {
     "index": 537,
-    "name": "Rodillo de Púas",
+    "name": "Aplanadora",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/71/latest/20251020124243/Tipo_insecto_LPZA.png/75px-Tipo_insecto_LPZA.png",
     "englishName": "Steamroller",
     "generation": 5,
@@ -8596,7 +8598,7 @@
   },
   {
     "index": 538,
-    "name": "Rizo Algodón",
+    "name": "Guardialgodón",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Cotton Guard",
     "generation": 5,
@@ -8612,7 +8614,7 @@
   },
   {
     "index": 539,
-    "name": "Pulso Noche",
+    "name": "Pulso Nocturno",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Night Daze",
     "generation": 5,
@@ -8644,7 +8646,7 @@
   },
   {
     "index": 541,
-    "name": "Plumerazo",
+    "name": "Golpe de Cola",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Tail Slap",
     "generation": 5,
@@ -8660,7 +8662,7 @@
   },
   {
     "index": 542,
-    "name": "Vendaval",
+    "name": "Huracán",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Hurricane",
     "generation": 5,
@@ -8676,7 +8678,7 @@
   },
   {
     "index": 543,
-    "name": "Ariete",
+    "name": "Carga de Cabeza",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Head Charge",
     "generation": 5,
@@ -8756,12 +8758,12 @@
   },
   {
     "index": 548,
-    "name": "Sable Místico",
+    "name": "Espada Secreta",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2e/latest/20251020124236/Tipo_pelea_LPZA.png/75px-Tipo_pelea_LPZA.png",
     "englishName": "Secret Sword",
     "generation": 5,
     "description": "Ensarta al objetivo con un largo cuerno dotado de un poder místico que provoca daño físico.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "especial",
     "power": 85,
     "accuracy": 100,
@@ -8820,7 +8822,7 @@
   },
   {
     "index": 552,
-    "name": "Danza Llama",
+    "name": "Danza de Llamas",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Fiery Dance",
     "generation": 5,
@@ -8884,7 +8886,7 @@
   },
   {
     "index": 556,
-    "name": "Chuzos",
+    "name": "Carámbano",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/32/latest/20251020084942/Tipo_hielo_LPZA.png/75px-Tipo_hielo_LPZA.png",
     "englishName": "Icicle Crash",
     "generation": 5,
@@ -8953,7 +8955,7 @@
     "englishName": "Flying Press",
     "generation": 6,
     "description": "El usuario se lanza sobre su objetivo. Este movimiento es de tipo Lucha y tipo Volador al mismo tiempo.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 100,
     "accuracy": 95,
@@ -8969,7 +8971,7 @@
     "englishName": "Mat Block",
     "generation": 6,
     "description": "El usuario usa un tatami para escudarse de los ataques enemigos. Protege también a los aliados. No funciona contra movimientos de estado.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "de estado",
     "power": null,
     "accuracy": null,
@@ -9012,7 +9014,7 @@
   },
   {
     "index": 564,
-    "name": "Red Viscosa",
+    "name": "Red Pegajosa",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/71/latest/20251020124243/Tipo_insecto_LPZA.png/75px-Tipo_insecto_LPZA.png",
     "englishName": "Sticky Web",
     "generation": 6,
@@ -9108,7 +9110,7 @@
   },
   {
     "index": 570,
-    "name": "Carga Parábola",
+    "name": "Carga Parabólica",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20251020084932/Tipo_el%C3%A9ctrico_LPZA.png/75px-Tipo_el%C3%A9ctrico_LPZA.png",
     "englishName": "Parabolic Charge",
     "generation": 6,
@@ -9140,7 +9142,7 @@
   },
   {
     "index": 572,
-    "name": "Tormenta Floral",
+    "name": "Tormenta de Pétalos",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Petal Blizzard",
     "generation": 6,
@@ -9172,7 +9174,7 @@
   },
   {
     "index": 574,
-    "name": "Voz Cautivadora",
+    "name": "Voz Encantadora",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/df/latest/20251020084956/Tipo_hada_LPZA.png/75px-Tipo_hada_LPZA.png",
     "englishName": "Disarming Voice",
     "generation": 6,
@@ -9220,7 +9222,7 @@
   },
   {
     "index": 577,
-    "name": "Beso Drenaje",
+    "name": "Beso Drenador",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/df/latest/20251020084956/Tipo_hada_LPZA.png/75px-Tipo_hada_LPZA.png",
     "englishName": "Draining Kiss",
     "generation": 6,
@@ -9268,7 +9270,7 @@
   },
   {
     "index": 580,
-    "name": "Campo de Hierba",
+    "name": "Campo de Césped",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Grassy Terrain",
     "generation": 6,
@@ -9316,7 +9318,7 @@
   },
   {
     "index": 583,
-    "name": "Carantoña",
+    "name": "Juego Rudo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/df/latest/20251020084956/Tipo_hada_LPZA.png/75px-Tipo_hada_LPZA.png",
     "englishName": "Play Rough",
     "generation": 6,
@@ -9508,7 +9510,7 @@
   },
   {
     "index": 595,
-    "name": "Llama Embrujada",
+    "name": "Fuego Místico",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Mystical Fire",
     "generation": 6,
@@ -9588,7 +9590,7 @@
   },
   {
     "index": 600,
-    "name": "Polvo Explosivo",
+    "name": "Pólvora",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/71/latest/20251020124243/Tipo_insecto_LPZA.png/75px-Tipo_insecto_LPZA.png",
     "englishName": "Powder",
     "generation": 6,
@@ -9732,7 +9734,7 @@
   },
   {
     "index": 609,
-    "name": "Moflete Estático",
+    "name": "Frote",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20251020084932/Tipo_el%C3%A9ctrico_LPZA.png/75px-Tipo_el%C3%A9ctrico_LPZA.png",
     "englishName": "Nuzzle",
     "generation": 6,
@@ -9764,7 +9766,7 @@
   },
   {
     "index": 611,
-    "name": "Acoso",
+    "name": "Infestación",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/71/latest/20251020124243/Tipo_insecto_LPZA.png/75px-Tipo_insecto_LPZA.png",
     "englishName": "Infestation",
     "generation": 6,
@@ -9785,7 +9787,7 @@
     "englishName": "Power-Up Punch",
     "generation": 6,
     "description": "Cada vez que golpea a un oponente se endurecen sus puños. Si acierta al objetivo, el Ataque del usuario aumenta.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 40,
     "accuracy": 100,
@@ -9796,7 +9798,7 @@
   },
   {
     "index": 613,
-    "name": "Ala Mortífera",
+    "name": "Ala del Olvido",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Oblivion Wing",
     "generation": 6,
@@ -9908,7 +9910,7 @@
   },
   {
     "index": 620,
-    "name": "Ascenso Draco",
+    "name": "Ascenso Dracónico",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Dragon Ascent",
     "generation": 6,
@@ -9961,7 +9963,7 @@
     "englishName": "All-Out Pummeling",
     "generation": 7,
     "description": "Emplea el Poder Z para lanzar una sarta de golpes demoledores contra el objetivo. Su potencia depende de la del movimiento original.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": null,
     "accuracy": null,
@@ -9972,7 +9974,7 @@
   },
   {
     "index": null,
-    "name": "Picado Supersónico",
+    "name": "Picada Supersónica",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Supersonic Skystrike",
     "generation": 7,
@@ -10212,7 +10214,7 @@
   },
   {
     "index": null,
-    "name": "Arrumaco Sideral",
+    "name": "Tacleada Sideral",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/df/latest/20251020084956/Tipo_hada_LPZA.png/75px-Tipo_hada_LPZA.png",
     "englishName": "Twinkle Tackle",
     "generation": 7,
@@ -10356,7 +10358,7 @@
   },
   {
     "index": 666,
-    "name": "Cura Floral",
+    "name": "Flores Sanadoras",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/df/latest/20251020084956/Tipo_hada_LPZA.png/75px-Tipo_hada_LPZA.png",
     "englishName": "Floral Healing",
     "generation": 7,
@@ -10404,7 +10406,7 @@
   },
   {
     "index": 669,
-    "name": "Cuchilla Solar",
+    "name": "Cuchillada Solar",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Solar Blade",
     "generation": 7,
@@ -10468,7 +10470,7 @@
   },
   {
     "index": 673,
-    "name": "Aguzar",
+    "name": "Agudizar",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Laser Focus",
     "generation": 7,
@@ -10484,7 +10486,7 @@
   },
   {
     "index": 674,
-    "name": "Piñón Auxiliar",
+    "name": "Engranajes",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Gear Up",
     "generation": 7,
@@ -10500,7 +10502,7 @@
   },
   {
     "index": 675,
-    "name": "Golpe Mordaza",
+    "name": "Golpe al Cuello",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Throat Chop",
     "generation": 7,
@@ -10596,7 +10598,7 @@
   },
   {
     "index": 681,
-    "name": "Chulería",
+    "name": "Arrogancia",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Power Trip",
     "generation": 7,
@@ -10676,7 +10678,7 @@
   },
   {
     "index": 686,
-    "name": "Danza Despertar",
+    "name": "Danza Revelación",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Revelation Dance",
     "generation": 7,
@@ -10964,7 +10966,7 @@
   },
   {
     "index": 704,
-    "name": "Coraza Trampa",
+    "name": "Trampa Coraza",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Shell Trap",
     "generation": 7,
@@ -11172,7 +11174,7 @@
   },
   {
     "index": 717,
-    "name": "Furia Natural",
+    "name": "Ira Natural",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/df/latest/20251020084956/Tipo_hada_LPZA.png/75px-Tipo_hada_LPZA.png",
     "englishName": "Nature's Madness",
     "generation": 7,
@@ -11316,7 +11318,7 @@
   },
   {
     "index": 726,
-    "name": "Somanta amistosa",
+    "name": "Paliza amistosa",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/df/latest/20251020084956/Tipo_hada_LPZA.png/75px-Tipo_hada_LPZA.png",
     "englishName": "Let's Snuggle Forever",
     "generation": 7,
@@ -11396,7 +11398,7 @@
   },
   {
     "index": 731,
-    "name": "Pikapicado",
+    "name": "Pikaída",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Floaty Fall",
     "generation": 7,
@@ -11673,7 +11675,7 @@
     "englishName": "No Retreat",
     "generation": 8,
     "description": "El usuario aumenta todas sus características, pero ya no puede huir ni ser cambiado por otro.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "de estado",
     "power": null,
     "accuracy": null,
@@ -11700,7 +11702,7 @@
   },
   {
     "index": 750,
-    "name": "Polvo Mágico",
+    "name": "Polvo Magia",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Magic Powder",
     "generation": 8,
@@ -11753,7 +11755,7 @@
     "englishName": "Octolock",
     "generation": 8,
     "description": "Retiene al objetivo e impide que pueda huir o ser cambiado por otro, a la vez que reduce su Defensa y su Defensa Especial cada turno.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "de estado",
     "power": null,
     "accuracy": 100,
@@ -11881,7 +11883,7 @@
     "englishName": "Max Knuckle",
     "generation": 8,
     "description": "Ataque de tipo Lucha ejecutado por un Pokémon Dinamax. Aumenta el Ataque de tu bando.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": null,
     "accuracy": null,
@@ -12121,7 +12123,7 @@
     "englishName": "Body Press",
     "generation": 8,
     "description": "El usuario usa el cuerpo para lanzar su ataque. Cuanto mayor es la Defensa del usuario, más daño provoca.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 80,
     "accuracy": 100,
@@ -12164,7 +12166,7 @@
   },
   {
     "index": 779,
-    "name": "Cepo",
+    "name": "Trampa Presión",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Snap Trap",
     "generation": 8,
@@ -12196,7 +12198,7 @@
   },
   {
     "index": 781,
-    "name": "Tajo Supremo",
+    "name": "Corte Supremo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Behemoth Blade",
     "generation": 8,
@@ -12212,7 +12214,7 @@
   },
   {
     "index": 782,
-    "name": "Embate Supremo",
+    "name": "Golpe Supremo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Behemoth Bash",
     "generation": 8,
@@ -12260,7 +12262,7 @@
   },
   {
     "index": 785,
-    "name": "Punzada Rama",
+    "name": "Ramazo Punzante",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Branch Poke",
     "generation": 8,
@@ -12409,7 +12411,7 @@
     "englishName": "Meteor Assault",
     "generation": 8,
     "description": "El usuario agita violentamente su grueso puerro para atacar, pero el mareo que le provocan las sacudidas le obliga a descansar en el siguiente turno.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 150,
     "accuracy": 100,
@@ -12468,7 +12470,7 @@
   },
   {
     "index": 798,
-    "name": "Allanador Férreo",
+    "name": "Ferroaplanadora",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Steel Roller",
     "generation": 8,
@@ -12484,7 +12486,7 @@
   },
   {
     "index": 799,
-    "name": "Ráfaga Escamas",
+    "name": "Disparo Escamas",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3b/latest/20251020084947/Tipo_drag%C3%B3n_LPZA.png/75px-Tipo_drag%C3%B3n_LPZA.png",
     "englishName": "Scale Shot",
     "generation": 8,
@@ -12681,7 +12683,7 @@
     "englishName": "Coaching",
     "generation": 8,
     "description": "El usuario imparte indicaciones precisas a sus aliados, que ven aumentados su Ataque y su Defensa.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "de estado",
     "power": null,
     "accuracy": null,
@@ -12724,7 +12726,7 @@
   },
   {
     "index": 814,
-    "name": "Ala Bis",
+    "name": "Aletazo Doble",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/cc/latest/20251020084843/Tipo_volador_LPZA.png/75px-Tipo_volador_LPZA.png",
     "englishName": "Dual Wingbeat",
     "generation": 8,
@@ -12756,7 +12758,7 @@
   },
   {
     "index": 816,
-    "name": "Cura Selvática",
+    "name": "Selva Sanadora",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/7/7b/latest/20251020084928/Tipo_planta_LPZA.png/75px-Tipo_planta_LPZA.png",
     "englishName": "Jungle Healing",
     "generation": 8,
@@ -12788,7 +12790,7 @@
   },
   {
     "index": 818,
-    "name": "Azote Torrencial",
+    "name": "Golpe Torrencial",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Surging Strikes",
     "generation": 8,
@@ -12836,7 +12838,7 @@
   },
   {
     "index": 821,
-    "name": "Mirada Heladora",
+    "name": "Mirada Glacial",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/ba/latest/20251020084937/Tipo_ps%C3%ADquico_LPZA.png/75px-Tipo_ps%C3%ADquico_LPZA.png",
     "englishName": "Freezing Glare",
     "generation": 8,
@@ -12873,7 +12875,7 @@
     "englishName": "Thunderous Kick",
     "generation": 8,
     "description": "El usuario desconcierta al objetivo con movimientos centelleantes y le propina una patada que, además, reduce su Defensa.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 90,
     "accuracy": 100,
@@ -13044,7 +13046,7 @@
   },
   {
     "index": 834,
-    "name": "Envite Acuático",
+    "name": "Acuatacleada",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Wave Crash",
     "generation": 8,
@@ -13097,7 +13099,7 @@
     "englishName": "Victory Dance",
     "generation": 8,
     "description": "Ejecuta una danza frenética que invoca la victoria y aumenta el Ataque, la Defensa y la Velocidad.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "de estado",
     "power": null,
     "accuracy": null,
@@ -13108,7 +13110,7 @@
   },
   {
     "index": 838,
-    "name": "Arremetida",
+    "name": "Asalto Frontal",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/e/e4/latest/20251020084855/Tipo_tierra_LPZA.png/75px-Tipo_tierra_LPZA.png",
     "englishName": "Headlong Rush",
     "generation": 8,
@@ -13193,7 +13195,7 @@
     "englishName": "Triple Arrows",
     "generation": 8,
     "description": "Propina un talonazo y lanza tres flechas. Suele asestar un golpe crítico y puede reducir la Defensa del objetivo o amedrentarlo.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 90,
     "accuracy": 100,
@@ -13220,7 +13222,7 @@
   },
   {
     "index": 845,
-    "name": "Tajo Metralla",
+    "name": "Corte Metralla",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5e/latest/20251020084951/Tipo_siniestro_LPZA.png/75px-Tipo_siniestro_LPZA.png",
     "englishName": "Ceaseless Edge",
     "generation": 8,
@@ -13268,7 +13270,7 @@
   },
   {
     "index": 848,
-    "name": "Simún de Arena",
+    "name": "Tifón de Arena",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/e/e4/latest/20251020084855/Tipo_tierra_LPZA.png/75px-Tipo_tierra_LPZA.png",
     "englishName": "Sandsear Storm",
     "generation": 8,
@@ -13353,7 +13355,7 @@
     "englishName": "Axe Kick",
     "generation": 9,
     "description": "Lanza una patada al aire para, acto seguido, golpear con el talón. Si falla, se hiere a sí mismo. Puede confundir al objetivo.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 120,
     "accuracy": 90,
@@ -13396,7 +13398,7 @@
   },
   {
     "index": 856,
-    "name": "Oído Cocina",
+    "name": "Emplatar",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3b/latest/20251020084947/Tipo_drag%C3%B3n_LPZA.png/75px-Tipo_drag%C3%B3n_LPZA.png",
     "englishName": "Order Up",
     "generation": 9,
@@ -13524,7 +13526,7 @@
   },
   {
     "index": 864,
-    "name": "Salazón",
+    "name": "Salación",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4c/latest/20251020084900/Tipo_roca_LPZA.png/75px-Tipo_roca_LPZA.png",
     "englishName": "Salt Cure",
     "generation": 9,
@@ -13572,7 +13574,7 @@
   },
   {
     "index": 867,
-    "name": "Decalcomanía",
+    "name": "Plagio",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Doodle",
     "generation": 9,
@@ -13588,7 +13590,7 @@
   },
   {
     "index": 868,
-    "name": "Deslome",
+    "name": "Fileteo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/33/latest/20251020085001/Tipo_normal_LPZA.png/75px-Tipo_normal_LPZA.png",
     "englishName": "Fillet Away",
     "generation": 9,
@@ -13636,7 +13638,7 @@
   },
   {
     "index": 871,
-    "name": "Canto Ardiente",
+    "name": "Canto Ígneo",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Torch Song",
     "generation": 9,
@@ -13753,7 +13755,7 @@
     "englishName": "Collision Course",
     "generation": 9,
     "description": "El usuario choca contra el suelo mientras se transforma y provoca una explosión primigenia. La potencia del movimiento aumenta si el ataque es supereficaz.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 100,
     "accuracy": 100,
@@ -13796,7 +13798,7 @@
   },
   {
     "index": 881,
-    "name": "Fría Acogida",
+    "name": "Respuesta Fría",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/32/latest/20251020084942/Tipo_hielo_LPZA.png/75px-Tipo_hielo_LPZA.png",
     "englishName": "Chilly Reception",
     "generation": 9,
@@ -14020,7 +14022,7 @@
   },
   {
     "index": 895,
-    "name": "Tajo Acuático",
+    "name": "Corte Acuático",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084923/Tipo_agua_LPZA.png/75px-Tipo_agua_LPZA.png",
     "englishName": "Aqua Cutter",
     "generation": 9,
@@ -14089,7 +14091,7 @@
     "englishName": "Combat Torque",
     "generation": 9,
     "description": "-",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 100,
     "accuracy": 100,
@@ -14212,7 +14214,7 @@
   },
   {
     "index": 907,
-    "name": "Láser Veleidoso",
+    "name": "Láser Caprichoso",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/3b/latest/20251020084947/Tipo_drag%C3%B3n_LPZA.png/75px-Tipo_drag%C3%B3n_LPZA.png",
     "englishName": "Fickle Beam",
     "generation": 9,
@@ -14260,7 +14262,7 @@
   },
   {
     "index": 910,
-    "name": "Filo Potente",
+    "name": "Corte Potente",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4c/latest/20251020084900/Tipo_roca_LPZA.png/75px-Tipo_roca_LPZA.png",
     "englishName": "Mighty Cleave",
     "generation": 9,
@@ -14276,7 +14278,7 @@
   },
   {
     "index": 911,
-    "name": "Tajo Taquión",
+    "name": "Corte Taquión",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/46/latest/20251020084914/Tipo_acero_LPZA.png/75px-Tipo_acero_LPZA.png",
     "englishName": "Tachyon Cutter",
     "generation": 9,
@@ -14340,7 +14342,7 @@
   },
   {
     "index": 915,
-    "name": "Cólera Ardiente",
+    "name": "Furia Ardiente",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/9/97/latest/20251020084919/Tipo_fuego_LPZA.png/75px-Tipo_fuego_LPZA.png",
     "englishName": "Temper Flare",
     "generation": 9,
@@ -14356,7 +14358,7 @@
   },
   {
     "index": 916,
-    "name": "Plancha Voltaica",
+    "name": "Golpe Voltaico",
     "img": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/c/c6/latest/20251020084932/Tipo_el%C3%A9ctrico_LPZA.png/75px-Tipo_el%C3%A9ctrico_LPZA.png",
     "englishName": "Supercell Slam",
     "generation": 9,
@@ -14393,7 +14395,7 @@
     "englishName": "Upper Hand",
     "generation": 9,
     "description": "Se anticipa al objetivo golpeándolo rápidamente con la palma y lo amedrenta. Falla si el objetivo no está preparando un movimiento de prioridad alta.",
-    "type": "pelea",
+    "type": "lucha",
     "category": "físico",
     "power": 65,
     "accuracy": 100,

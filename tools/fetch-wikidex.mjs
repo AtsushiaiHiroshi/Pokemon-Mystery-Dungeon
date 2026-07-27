@@ -6,6 +6,38 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data");
 const WIKI = "https://www.wikidex.net";
 
+// WikiDex suele publicar primero el nombre de España.  El módulo usa la
+// localización del doblaje latino de la serie y de los juegos de Pokémon.
+const LATAM_MOVE_NAMES = {
+  "A Bocajarro": "Combate Cercano",
+  "Ascuas": "Brasas",
+  "Ataque Rápido": "Ataque Rápido",
+  "Pistola Agua": "Pistola de Agua",
+  "Psicocorte": "Psicocorte"
+};
+
+const LATAM_TYPE_NAMES = {
+  pelea: "lucha",
+  "físico": "físico",
+  "especial": "especial",
+  estado: "estado"
+};
+
+function latamName(name) {
+  const cleanName = String(name ?? "").trim();
+  if (/^Aparato\s+/i.test(cleanName)) return cleanName.replace(/^Aparato/i, "Esfera");
+  return LATAM_MOVE_NAMES[cleanName] ?? cleanName;
+}
+
+function latamDescription(description, englishName = "") {
+  if (englishName === "Close Combat") {
+    return "Ataca ferozmente al objetivo sin protegerse; después de usarlo, el usuario reduce temporalmente su Ataque y Defensa durante el combate.";
+  }
+  return String(description ?? "")
+    .replace(/usuario/gi, "usuario")
+    .replace(/Pokémon de tipo pelea/gi, "Pokémon de tipo Lucha");
+}
+
 function clean(html) {
   return html
     .replace(/<br\s*\/?>/gi, " / ")
@@ -32,10 +64,12 @@ function imageFromCell(cell) {
 }
 
 function spanishName(cell) {
+  const latino = cell.match(/<span[^>]*lang="(?:es-LA|es-419)"[^>]*>([\s\S]*?)<\/span>/i);
+  if (latino) return latamName(clean(latino[1]));
   const castellano = cell.match(/<span[^>]*lang="es-ES"[^>]*>([\s\S]*?)<\/span>/i);
-  if (castellano) return clean(castellano[1]);
+  if (castellano) return latamName(clean(castellano[1]));
   const links = [...cell.matchAll(/<a[^>]*>([\s\S]*?)<\/a>/gi)].map(m => clean(m[1])).filter(Boolean);
-  return links[0] ?? clean(cell).split(" / ")[0];
+  return latamName(links[0] ?? clean(cell).split(" / ")[0]);
 }
 
 function typeFromCell(cell) {
@@ -72,8 +106,8 @@ function parseMoveTable(html) {
       img: imageFromCell(data[1]) ?? imageFromCell(data[4]) ?? imageFromCell(data[5]),
       englishName: clean(data[1]).split(" / ").at(-1),
       generation: Number(data[2].match(/alt="(\d+)"/i)?.[1] ?? clean(data[2]).match(/\d+/)?.[0] ?? 0),
-      description,
-      type: typeFromCell(data[4]),
+      description: latamDescription(description, clean(data[1]).split(" / ").at(-1)),
+      type: LATAM_TYPE_NAMES[typeFromCell(data[4])] ?? typeFromCell(data[4]),
       category: categoryFromCell(data[5]),
       power,
       accuracy: numberOrNull(clean(data[7])),
@@ -114,7 +148,7 @@ function parseObjectTables(html) {
     for (const row of tableMatch[0].matchAll(/<tr[\s\S]*?<\/tr>/gi)) {
       const cells = [...row[0].matchAll(/<(?:th|td)[^>]*>([\s\S]*?)<\/(?:th|td)>/gi)].map(match => match[1]);
       if (cells.length < 4) continue;
-      const name = clean(cells[0]).split("(")[0].replace(/\s*\/\s*$/, "").trim();
+      const name = latamName(clean(cells[0]).split("(")[0].replace(/\s*\/\s*$/, "").trim());
       if (!name || /^Objeto$/i.test(name) || objects.some(object => object.name === name)) continue;
       objects.push({
         name,
@@ -135,7 +169,10 @@ const moveHTML = await (await fetch(`${WIKI}/wiki/Lista_de_movimientos`)).text()
 const moves = parseMoveTable(moveHTML);
 for (const move of moves) {
   // Terminología solicitada para el doblaje de la serie; se conserva el nombre WikiDex como alias.
-  if (move.name === "Ascuas") {
+  if (move.englishName === "Close Combat") {
+    move.aliases = [move.name, "A Bocajarro", "Cuerpo a Cuerpo"];
+    move.name = "Combate Cercano";
+  } else if (move.name === "Ascuas") {
     move.aliases = ["Ascuas"];
     move.name = "Brasas";
   }

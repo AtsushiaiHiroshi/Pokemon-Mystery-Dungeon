@@ -10,7 +10,7 @@ const MODULE_ID = "pokemon-mystery-dungeon";
 const WIKIDEX_ITEM_FALLBACK = "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png";
 const TYPE_KEYS = {
   normal: "normal", fuego: "fire", fire: "fire", agua: "water", water: "water", planta: "grass", grass: "grass",
-  eléctrico: "electric", electrico: "electric", electric: "electric", hielo: "ice", ice: "ice", lucha: "fighting", fighting: "fighting",
+  eléctrico: "electric", electrico: "electric", electric: "electric", hielo: "ice", ice: "ice", lucha: "fighting", pelea: "fighting", fighting: "fighting",
   veneno: "poison", poison: "poison", tierra: "ground", ground: "ground", volador: "flying", flying: "flying", psíquico: "psychic", psiquico: "psychic", psychic: "psychic",
   bicho: "bug", bug: "bug", roca: "rock", rock: "rock", fantasma: "ghost", ghost: "ghost", dragón: "dragon", dragon: "dragon", siniestro: "dark", dark: "dark", acero: "steel", steel: "steel", hada: "fairy", fairy: "fairy"
 };
@@ -55,10 +55,25 @@ const activity = ({ key, name, damage = "1d6", damageType = "bludgeoning", range
       })
 });
 
-function move({ key, name, type, category, pp, damage, damageType, range = 5, text, generation = 0, power = null, accuracy = null, priority = 0, selfDamage = false, img = null }) {
+function move({ key, name, type, category, pp, damage, damageType, range = 5, text, generation = 0, power = null, accuracy = null, priority = 0, selfDamage = false, img = null, englishName = "" }) {
   const aid = `${key}Act`;
   const normalizedCategory = /estado|status/i.test(category) ? "status" : /especial|special/i.test(category) ? "special" : "physical";
   const isStatus = normalizedCategory === "status";
+  const isCloseCombat = englishName === "Close Combat" || /combate cercano/i.test(name);
+  const moveEffects = isCloseCombat ? [{
+    _id: id(`${key}Debuff`),
+    name: "Combate Cercano: debilitado",
+    img: "icons/svg/downgrade.svg",
+    origin: null,
+    transfer: false,
+    disabled: false,
+    changes: [
+      { key: "system.abilities.str.value", mode: 2, value: "-1", priority: 20 },
+      { key: "system.attributes.ac.value", mode: 2, value: "-1", priority: 20 }
+    ],
+    duration: { rounds: 10, turns: null, seconds: 60, startRound: null, startTurn: null, combat: null, startTime: null, expiry: "duration" },
+    flags: { [MODULE_ID]: { pmd: true, kind: "battle-debuff", end: "fin del combate" } }
+  }] : [];
   return {
     _id: id(key),
     name,
@@ -66,15 +81,15 @@ function move({ key, name, type, category, pp, damage, damageType, range = 5, te
     img: img ?? "icons/svg/explosion.svg",
     system: {
       description: {
-        value: `<h2>${name}</h2><p><strong>Tipo:</strong> ${type} · <strong>Categoría:</strong> ${category} · <strong>PP:</strong> ${pp}</p><p>${text}</p><p><strong>Generación:</strong> ${generation || "—"} · <strong>Potencia Pokémon:</strong> ${power ?? "—"} · <strong>Precisión:</strong> ${accuracy ?? "—"}% · <strong>Prioridad:</strong> ${priority}</p>${selfDamage ? "<p><strong>Daño al usuario:</strong> Sí; revisa el efecto de retroceso al usarlo.</p>" : ""}<p>La actividad incluida usa el ataque y bonificador de competencia de D&amp;D 5e. El GM puede cambiar daño, alcance y salvación desde la pestaña Actividades.</p>`,
+        value: `<h2>${name}</h2><p><strong>Tipo:</strong> ${type} · <strong>Categoría:</strong> ${category} · <strong>PP:</strong> ${pp}</p><p>${text}</p><p><strong>Generación:</strong> ${generation || "—"} · <strong>Potencia Pokémon:</strong> ${power ?? "—"} · <strong>Precisión:</strong> ${accuracy ?? "—"}% · <strong>Prioridad:</strong> ${priority}</p>${selfDamage ? "<p><strong>Daño al usuario:</strong> Sí; revisa el efecto de retroceso al usarlo.</p>" : ""}${isCloseCombat ? "<p><strong>Efecto PMD:</strong> después de usar Combate Cercano, el usuario recibe -1 a Fuerza y -1 a Defensa durante la batalla.</p>" : ""}<p>La actividad incluida usa el ataque y bonificador de competencia de D&amp;D 5e. El GM puede cambiar daño, alcance y salvación desde la pestaña Actividades.</p>`,
         chat: ""
       },
       source: { custom: "Adaptación PMD para D&D 5e" },
       activation: { type: "action", cost: 1, condition: "" },
       uses: { spent: 0, max: String(pp), recovery: [{ period: "lr", type: "recoverAll" }] },
-      activities: isStatus ? {} : { [id(aid)]: activity({ key: aid, name, damage, damageType, range }) }
+      activities: isStatus ? {} : { [id(aid)]: { ...activity({ key: aid, name, damage, damageType, range }), effects: moveEffects } }
     },
-    effects: [],
+    effects: moveEffects,
     folder: null,
     sort: 0,
     ownership: { default: 0 },
@@ -92,7 +107,9 @@ function move({ key, name, type, category, pp, damage, damageType, range = 5, te
           accuracy,
           priority,
           selfDamage,
-          generation
+          generation,
+          englishName,
+          effects: moveEffects
         }
       }
     }
@@ -102,8 +119,8 @@ function move({ key, name, type, category, pp, damage, damageType, range = 5, te
 const moves = [
   move({ key: "pmdTackle", name: "Placaje", type: "Normal", category: "Físico", pp: 10, damage: "1d6", damageType: "bludgeoning", text: "Golpe corporal básico contra una criatura adyacente." }),
   move({ key: "pmdQuickAttack", name: "Ataque Rápido", type: "Normal", category: "Físico", pp: 6, damage: "1d4", damageType: "force", range: 10, text: "Una embestida veloz. El GM puede conceder ventaja cuando la ficción favorezca la prioridad." }),
-  move({ key: "pmdEmber", name: "Ascuas", type: "Fuego", category: "Especial", pp: 8, damage: "1d6", damageType: "fire", range: 30, text: "Proyecta brasas contra un objetivo. Puede encender objetos inflamables desatendidos." }),
-  move({ key: "pmdWaterGun", name: "Pistola Agua", type: "Agua", category: "Especial", pp: 8, damage: "1d6", damageType: "cold", range: 30, text: "Dispara agua a presión. El tipo Pokémon se conserva en el perfil PMD; el daño D&D es configurable." }),
+  move({ key: "pmdEmber", name: "Brasas", type: "Fuego", category: "Especial", pp: 8, damage: "1d6", damageType: "fire", range: 30, text: "Proyecta brasas contra un objetivo. Puede encender objetos inflamables desatendidos." }),
+  move({ key: "pmdWaterGun", name: "Pistola de Agua", type: "Agua", category: "Especial", pp: 8, damage: "1d6", damageType: "cold", range: 30, text: "Dispara agua a presión. El tipo Pokémon se conserva en el perfil PMD; el daño D&D es configurable." }),
   move({ key: "pmdVineWhip", name: "Látigo Cepa", type: "Planta", category: "Físico", pp: 8, damage: "1d6", damageType: "slashing", range: 15, text: "Azota a distancia corta con una liana." }),
   move({ key: "pmdThunderShock", name: "Impactrueno", type: "Eléctrico", category: "Especial", pp: 8, damage: "1d6", damageType: "lightning", range: 30, text: "Descarga eléctrica dirigida contra una criatura." }),
   move({ key: "pmdPowderSnow", name: "Nieve Polvo", type: "Hielo", category: "Especial", pp: 6, damage: "1d6", damageType: "cold", range: 15, text: "Ráfaga helada de corto alcance." }),
@@ -135,8 +152,35 @@ function consumable({ key, name, uses = 1, text, activityData = null, img = null
   };
 }
 
+function guildBadge() {
+  return {
+    _id: id("pmdGuildBadge"),
+    name: "Insignia del Gremio",
+    type: "equipment",
+    img: "icons/equipment/neck/amulet-round-gold.webp",
+    system: {
+      description: { value: "Insignia que identifica a un integrante del Gremio de Exploradores y registra sus misiones y rango.", chat: "" },
+      source: { custom: "Adaptación PMD" },
+      quantity: 1,
+      price: { value: 0, denomination: "sp" },
+      weight: { value: 0, units: "lb" },
+      equipped: true,
+      attunement: "none",
+      identified: true,
+      type: { value: "trinket", baseItem: "" },
+      properties: [],
+      activities: {}
+    },
+    effects: [],
+    folder: null,
+    sort: 0,
+    ownership: { default: 0 },
+    flags: { [MODULE_ID]: { starter: true, item: { kind: "guild-badge", pricePoke: 0 } } }
+  };
+}
+
 const damageTypes = {
-  normal: "bludgeoning", lucha: "bludgeoning", volador: "slashing", veneno: "poison",
+  normal: "bludgeoning", lucha: "bludgeoning", pelea: "bludgeoning", volador: "slashing", veneno: "poison",
   tierra: "bludgeoning", roca: "bludgeoning", bicho: "piercing", fantasma: "necrotic",
   acero: "slashing", fuego: "fire", agua: "cold", planta: "slashing", eléctrico: "lightning",
   hielo: "cold", psíquico: "psychic", siniestro: "necrotic", hada: "radiant", dragón: "acid"
@@ -170,7 +214,8 @@ async function loadWikiMoves() {
       priority: record.priority,
       selfDamage: record.selfDamage,
       generation: record.generation,
-      img: record.img
+      img: record.img,
+      englishName: record.englishName
     }));
   } catch {
     return moves;
@@ -181,11 +226,11 @@ const allMoves = await loadWikiMoves();
 
 const starterMoveNames = {
   Bulbasaur: ["Placaje", "Gruñido", "Látigo Cepa"], Charmander: ["Placaje", "Gruñido", "Brasas", "Garra"],
-  Squirtle: ["Placaje", "Gruñido", "Pistola Agua"], Pikachu: ["Placaje", "Gruñido", "Impactrueno", "Ataque Rápido"],
-  Chikorita: ["Placaje", "Gruñido", "Látigo Cepa"], Cyndaquil: ["Placaje", "Gruñido", "Brasas"], Totodile: ["Placaje", "Gruñido", "Pistola Agua"],
+  Squirtle: ["Placaje", "Gruñido", "Pistola de Agua"], Pikachu: ["Placaje", "Gruñido", "Impactrueno", "Ataque Rápido"],
+  Chikorita: ["Placaje", "Gruñido", "Látigo Cepa"], Cyndaquil: ["Placaje", "Gruñido", "Brasas"], Totodile: ["Placaje", "Gruñido", "Pistola de Agua"],
   Treecko: ["Placaje", "Gruñido", "Látigo Cepa"], Torchic: ["Placaje", "Gruñido", "Brasas"], Mudkip: ["Placaje", "Gruñido", "Pistola Agua"],
-  Turtwig: ["Placaje", "Gruñido", "Látigo Cepa"], Chimchar: ["Placaje", "Gruñido", "Brasas"], Piplup: ["Placaje", "Gruñido", "Pistola Agua"],
-  Snivy: ["Placaje", "Gruñido", "Látigo Cepa"], Tepig: ["Placaje", "Gruñido", "Brasas"], Oshawott: ["Placaje", "Gruñido", "Pistola Agua"],
+  Turtwig: ["Placaje", "Gruñido", "Látigo Cepa"], Chimchar: ["Placaje", "Gruñido", "Brasas"], Piplup: ["Placaje", "Gruñido", "Pistola de Agua"],
+  Snivy: ["Placaje", "Gruñido", "Látigo Cepa"], Tepig: ["Placaje", "Gruñido", "Brasas"], Oshawott: ["Placaje", "Gruñido", "Pistola de Agua"],
   Riolu: ["Placaje", "Gruñido", "Ataque Rápido"]
 };
 const speciesTypes = {
@@ -203,7 +248,7 @@ function pokemonActor(record, index) {
   const types = (record.types?.length ? record.types : (speciesTypes[record.name] ?? ["normal"])).map(typeKey);
   const type1 = types[0] ?? "normal";
   const type2 = types[1] ?? "";
-  const typeStarterMove = { fuego: "Brasas", agua: "Pistola Agua", planta: "Látigo Cepa", eléctrico: "Impactrueno", hielo: "Nieve Polvo", roca: "Lanzarrocas", tierra: "Bofetón Lodo", lucha: "Ataque Rápido" };
+  const typeStarterMove = { fuego: "Brasas", agua: "Pistola de Agua", planta: "Látigo Cepa", eléctrico: "Impactrueno", hielo: "Nieve Polvo", roca: "Lanzarrocas", tierra: "Bofetón Lodo", lucha: "Ataque Rápido" };
   const names = starterMoveNames[record.name] ?? ["Placaje", "Gruñido", typeStarterMove[type1]].filter(Boolean);
   const moveItems = names.map((name, moveIndex) => {
     const source = allMoves.find(item => item.name === name) ?? allMoves.find(item => item.name.includes(name));
@@ -275,7 +320,7 @@ async function loadWikiItems() {
   try {
     const records = JSON.parse(await readFile(path.join(ROOT, "data", "wikidex-items.json"), "utf8"));
     if (!records.length) return items;
-    return records.map((record, index) => {
+    const itemsFromWiki = records.map((record, index) => {
       const item = consumable({
         key: `pmdItem${String(index).padStart(5, "0")}`,
         name: record.name,
@@ -284,9 +329,12 @@ async function loadWikiItems() {
       });
       item.system.type.value = "misc";
       item.system.source.custom = record.source;
-      item.flags[MODULE_ID].item = { kind: "dungeon-item", englishName: record.englishName, price: record.price };
+      const pricePoke = Number(String(record.price ?? "").replace(/[^0-9]/g, "")) || 0;
+      item.flags[MODULE_ID].item = { kind: "dungeon-item", englishName: record.englishName, price: record.price, pricePoke };
+      item.system.description.value += `<p><strong>Precio:</strong> ${pricePoke ? `${pricePoke} Poké` : "No indicado"}</p>`;
       return item;
     });
+    return [guildBadge(), ...itemsFromWiki];
   } catch {
     return items;
   }
@@ -353,8 +401,8 @@ async function writePack(name, documentType, documents) {
   console.log(`${name}: ${documents.length} documentos`);
 }
 
-await writePack("pmd-starter-moves-v5", "Item", allMoves);
-await writePack("pmd-starter-items-v5", "Item", allItems);
-await writePack("pmd-starter-pokemon-v5", "Actor", starterPokemon);
-await writePack("pmd-pokemon-v5", "Actor", allPokemon);
-await writePack("pmd-rules-v5", "JournalEntry", rules);
+await writePack("pmd-starter-moves-v6", "Item", allMoves);
+await writePack("pmd-starter-items-v6", "Item", allItems);
+await writePack("pmd-starter-pokemon-v6", "Actor", starterPokemon);
+await writePack("pmd-pokemon-v6", "Actor", allPokemon);
+await writePack("pmd-rules-v6", "JournalEntry", rules);

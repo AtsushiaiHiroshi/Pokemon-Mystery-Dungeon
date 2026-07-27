@@ -212,10 +212,11 @@
 }
 
 .pmd-card h3,
-.pmd-sheet header h2,
-.pmd-sheet header p {
+.pmd-sheet header h2 {
   color: #173d61;
 }
+
+.pmd-sheet header p { color: #fff8df; }
 
 .pmd-actions button,
 .pmd-integrated button,
@@ -289,6 +290,40 @@
   border: 1px solid #6f91aa;
   color: #172532;
   min-width: 0;
+}
+
+.pmd-notes-field {
+  color: #173d61;
+  display: grid;
+  font-size: 0.78rem;
+  font-weight: 700;
+  gap: 0.15rem;
+  margin-top: 0.5rem;
+}
+
+.pmd-notes-field textarea {
+  background: #fffdf4;
+  border: 1px solid #6f91aa;
+  color: #172532;
+  min-height: 3.5rem;
+  resize: vertical;
+}
+
+.pmd-survival-help {
+  background: #fff8df;
+  border-left: 4px solid #b06c00;
+  color: #263442;
+  font-size: 0.76rem;
+  margin-top: 0.45rem;
+  padding: 0.35rem 0.5rem;
+}
+
+.pmd-inline-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: flex-end;
 }
 
 .pmd-integrated-footer {

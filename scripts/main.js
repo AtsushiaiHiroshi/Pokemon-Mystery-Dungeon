@@ -50,6 +50,8 @@ const DEFAULT_DATA = {
   ppMax: 10,
   friendship: 0,
   adventureTokens: 0,
+  poke: 0,
+  exhaustion: 0,
   notes: ""
 };
 
@@ -63,6 +65,82 @@ function actorData(actor) {
     foundry.utils.deepClone(actor.getFlag(MODULE_ID, "profile") ?? {}),
     { inplace: false }
   );
+}
+
+const PMD_STATUS_DEFINITIONS = [
+  ["pmd-burned", "Quemado", "icons/magic/fire/flame-burning-hand.webp"],
+  ["pmd-frozen", "Congelado", "icons/magic/water/ice-crystal-white.webp"],
+  ["pmd-cursed", "Maldito", "icons/magic/death/skull-horned-worn-fire-blue.webp"],
+  ["pmd-hungry", "Hambriento", "icons/consumables/food/bowl-stew-meat-brown.webp"],
+  ["pmd-confused", "Confundido", "icons/magic/control/hypnosis-mesmerism-eye.webp"],
+  ["pmd-asleep", "Dormido", "icons/magic/control/sleep-bubble-purple.webp"],
+  ["pmd-paralyzed", "Paralizado", "icons/magic/lightning/bolt-strike-blue.webp"],
+  ["pmd-badly-poisoned", "Envenenado gravemente", "icons/creatures/abilities/poison-breath-green.webp"]
+];
+
+async function setPmdEffect(actor, id, label, icon, active, changes = []) {
+  if (!actor?.isOwner) return;
+  const owned = actor.effects?.filter(effect => effect.getFlag?.(MODULE_ID, "pmdCondition") === id) ?? [];
+  if (!active) {
+    if (owned.length) await actor.deleteEmbeddedDocuments("ActiveEffect", owned.map(effect => effect.id));
+    return;
+  }
+  const [current, ...duplicates] = owned;
+  if (duplicates.length) await actor.deleteEmbeddedDocuments("ActiveEffect", duplicates.map(effect => effect.id));
+  const data = { name: label, icon, disabled: false, changes, flags: { [MODULE_ID]: { pmdCondition: id } } };
+  if (current) await current.update(data);
+  else await actor.createEmbeddedDocuments("ActiveEffect", [data]);
+}
+
+async function syncPmdState(actor, profile = actorData(actor)) {
+  if (!actor?.isOwner) return;
+  const legacyExhaustion = actor.effects?.filter(effect => /^Exhaustion(?:\s+\d+)?(?:\s+\(Copy\))?$/i.test(effect.name) && !effect.getFlag?.(MODULE_ID, "pmdCondition")) ?? [];
+  if (legacyExhaustion.length) await actor.deleteEmbeddedDocuments("ActiveEffect", legacyExhaustion.map(effect => effect.id));
+  const poke = Math.max(0, Number(profile.poke ?? 0));
+  await actor.update({
+    "system.currency.pp": 0, "system.currency.gp": 0, "system.currency.ep": 0,
+    "system.currency.sp": poke, "system.currency.cp": 0
+  });
+  const hunger = Number(profile.hunger ?? 0);
+  await setPmdEffect(actor, "pmd-hungry", "Hambriento", "icons/consumables/food/bowl-stew-meat-brown.webp", hunger <= 0);
+  const exhaustion = Math.clamp(Number(profile.exhaustion ?? 0), 0, 6);
+  await setPmdEffect(actor, "pmd-exhaustion", `Agotamiento ${exhaustion}`, "icons/magic/symbols/triangle-glowing-blue.webp", exhaustion > 0, [
+    { key: "system.attributes.ac.value", mode: 2, value: String(-exhaustion), priority: 10 }
+  ]);
+}
+
+async function changeExhaustion(actor, delta = 1) {
+  const d = actorData(actor);
+  d.exhaustion = Math.clamp(Number(d.exhaustion ?? 0) + Number(delta), 0, 6);
+  await actor.setFlag(MODULE_ID, "profile", d);
+  await syncPmdState(actor, d);
+  ui.notifications.info(`${actor.name}: Agotamiento ${d.exhaustion}/6`);
+}
+
+async function tickHunger(actor) {
+  const d = actorData(actor);
+  if (d.hunger > 0) {
+    d.hunger = Math.max(0, d.hunger - 1);
+    await actor.setFlag(MODULE_ID, "profile", d);
+  } else {
+    const hp = actor.system.attributes?.hp;
+    if (hp && hp.value > 0) await actor.update({ "system.attributes.hp.value": Math.max(0, hp.value - 1) });
+  }
+  await syncPmdState(actor, d);
+}
+
+function decoratePokeCurrency(element) {
+  for (const denomination of ["pp", "gp", "ep", "cp"]) {
+    const input = element.querySelector(`[name="system.currency.${denomination}"]`);
+    const wrapper = input?.closest(".form-group, .currency-field, label, .resource") ?? input?.parentElement;
+    if (wrapper) wrapper.style.display = "none";
+  }
+  const pokeInput = element.querySelector('[name="system.currency.sp"]');
+  if (pokeInput) {
+    pokeInput.setAttribute("aria-label", "Poké");
+    const label = pokeInput.closest("label")?.querySelector("span, .label, .resource-label");
+    if (label) label.textContent = "Poké";
+  }
 }
 
 function optionList(selected, allowEmpty = false) {
@@ -176,17 +254,33 @@ function integratedPokemonSection(actor) {
       <label>Tipo principal<select data-pmd-field="type1">${optionList(d.type1)}</select></label>
       <label>Tipo secundario<select data-pmd-field="type2">${optionList(d.type2, true)}</select></label>
       <label>Hambre<input type="number" min="0" data-pmd-field="hunger" value="${d.hunger}"></label>
+      <label>Hambre máxima<input type="number" min="1" data-pmd-field="hungerMax" value="${d.hungerMax}"></label>
       <label>PP generales<input type="number" min="0" data-pmd-field="pp" value="${d.pp}"></label>
+      <label>PP máximos<input type="number" min="1" data-pmd-field="ppMax" value="${d.ppMax}"></label>
+      <label>Equipo<input data-pmd-field="team" value="${esc(d.team)}" placeholder="Nombre del equipo"></label>
+      <label>Rango<input data-pmd-field="rank" value="${esc(d.rank)}"></label>
+      <label>Puntos de rango<input type="number" min="0" data-pmd-field="rankPoints" value="${d.rankPoints}"></label>
+      <label>Amistad<input type="number" min="0" data-pmd-field="friendship" value="${d.friendship}"></label>
+      <label>Fichas de aventura<input type="number" min="0" data-pmd-field="adventureTokens" value="${d.adventureTokens}"></label>
+      <label>Poké<input type="number" min="0" data-pmd-field="poke" value="${d.poke}"></label>
+      <label>Agotamiento<input type="number" min="0" max="6" data-pmd-field="exhaustion" value="${d.exhaustion}"></label>
+      <label>Aura<input data-pmd-field="aura" value="${esc(d.aura)}"></label>
+      <label>Origen / vida anterior<input data-pmd-field="origin" value="${esc(d.origin)}"></label>
     </div>
-    <div class="pmd-integrated-footer"><div><strong>Movimientos PMD:</strong> ${moves.length ? moves.map(item => `<button type="button" class="pmd-inline-move" data-pmd-item-id="${item.id}">${esc(item.name)} <small>${moveData(item).pp.value}/${moveData(item).pp.max} PP</small></button>`).join("") : "Arrastra movimientos desde el compendio a esta hoja."}</div><button type="button" data-pmd-inline-save><i class="fas fa-save"></i> Guardar perfil PMD</button></div>
+    <label class="pmd-notes-field">Notas de aventura<textarea data-pmd-field="notes">${esc(d.notes)}</textarea></label>
+    <div class="pmd-survival-help"><strong>Hambriento:</strong> al llegar a 0, el estado se activa y el hambre consume 1 PG por turno de combate.</div>
+    <div class="pmd-integrated-footer"><div><strong>Movimientos PMD:</strong> ${moves.length ? moves.map(item => `<button type="button" class="pmd-inline-move" data-pmd-item-id="${item.id}">${esc(item.name)} <small>${moveData(item).pp.value}/${moveData(item).pp.max} PP</small></button>`).join("") : "Arrastra movimientos desde el compendio a esta hoja."}</div><div class="pmd-inline-actions"><button type="button" data-pmd-inline-hunger>Gastar 10 hambre</button><button type="button" data-pmd-inline-exhaustion>+1 agotamiento</button><button type="button" data-pmd-inline-save><i class="fas fa-save"></i> Guardar perfil PMD</button></div></div>
   </section>`;
 }
 
 async function saveIntegratedProfile(actor, box, application) {
   const d = actorData(actor);
-  for (const key of ["species", "nature", "type1", "type2"]) d[key] = box.querySelector(`[data-pmd-field="${key}"]`)?.value ?? d[key];
-  for (const key of ["hunger", "pp"]) d[key] = Math.max(0, Number(box.querySelector(`[data-pmd-field="${key}"]`)?.value ?? d[key]));
+  for (const key of ["species", "nature", "type1", "type2", "team", "rank", "aura", "origin", "notes"]) d[key] = box.querySelector(`[data-pmd-field="${key}"]`)?.value ?? d[key];
+  for (const key of ["hunger", "hungerMax", "pp", "ppMax", "rankPoints", "friendship", "adventureTokens", "poke", "exhaustion"]) d[key] = Math.max(0, Number(box.querySelector(`[data-pmd-field="${key}"]`)?.value ?? d[key]));
+  d.hungerMax = Math.max(1, d.hungerMax); d.ppMax = Math.max(1, d.ppMax);
+  d.hunger = Math.clamp(d.hunger, 0, d.hungerMax); d.pp = Math.clamp(d.pp, 0, d.ppMax); d.exhaustion = Math.clamp(d.exhaustion, 0, 6);
   await actor.setFlag(MODULE_ID, "profile", d);
+  await syncPmdState(actor, d);
   ui.notifications.info("Perfil Pokémon guardado en la hoja.");
   await application.render({ force: true });
 }
@@ -279,13 +373,15 @@ function moveSheetBanner(item) {
 async function saveFromDialog(actor, dialog) {
   const form = dialog.element.querySelector("form");
   if (!form) return;
-  const raw = new foundry.applications.ux.FormDataExtended(form).object;
+  const raw = foundry.utils.mergeObject(actorData(actor), new foundry.applications.ux.FormDataExtended(form).object, { inplace: false });
   for (const key of ["rankPoints", "hunger", "hungerMax", "pp", "ppMax", "friendship", "adventureTokens"]) {
     raw[key] = Number(raw[key] || 0);
   }
   raw.hunger = Math.clamp(raw.hunger, 0, Math.max(1, raw.hungerMax));
   raw.pp = Math.clamp(raw.pp, 0, Math.max(1, raw.ppMax));
+  raw.exhaustion = Math.clamp(Number(raw.exhaustion || 0), 0, 6);
   await actor.setFlag(MODULE_ID, "profile", raw);
+  await syncPmdState(actor, raw);
   ui.notifications.info(game.i18n.localize("PMD.Saved"));
 }
 
@@ -294,6 +390,7 @@ async function updateResource(actor, key, delta) {
   const maxKey = `${key}Max`;
   d[key] = Math.clamp(Number(d[key]) + delta, 0, Number(d[maxKey]));
   await actor.setFlag(MODULE_ID, "profile", d);
+  await syncPmdState(actor, d);
 }
 
 async function rollCheck(actor) {
@@ -405,7 +502,7 @@ async function createStarterContent() {
   if (!game.user.isGM) return;
   await importStarterCompendia();
   await game.settings.set(MODULE_ID, "starterCreated", true);
-  await game.settings.set(MODULE_ID, "contentVersion", 6);
+  await game.settings.set(MODULE_ID, "contentVersion", 7);
   ui.notifications.info(game.i18n.localize("PMD.SetupDone"));
 }
 
@@ -426,9 +523,7 @@ async function importStarterCompendia() {
       const data = document.toObject();
       delete data._id;
       data.folder = itemFolder.id;
-      const existing = game.items.find(item =>
-        item.name === data.name && item.getFlag(MODULE_ID, "starter")
-      );
+      const existing = game.items.find(item => item.name === data.name && (item.getFlag(MODULE_ID, "starter") || item.getFlag(MODULE_ID, "item")?.kind));
       if (existing) await existing.update(data);
       else await Item.create(data);
     }
@@ -449,6 +544,11 @@ async function importStarterCompendia() {
 }
 
 Hooks.once("init", () => {
+  const legacyLabels = { Blinded: "Cegado", Charmed: "Hechizado", Deafened: "Ensordecido", Exhaustion: "Agotamiento", Frightened: "Asustado", Grappled: "Agarrado", Incapacitated: "Incapacitado", Invisible: "Invisible", Paralyzed: "Paralizado", Petrified: "Petrificado", Poisoned: "Envenenado", Prone: "Derribado", Restrained: "Restringido", Stunned: "Aturdido", Unconscious: "Inconsciente" };
+  for (const status of CONFIG.statusEffects ?? []) if (legacyLabels[status.label]) status.label = legacyLabels[status.label];
+  const customStatuses = PMD_STATUS_DEFINITIONS.map(([id, label, icon]) => ({ id, label, icon, flags: { [MODULE_ID]: { pmd: true } } }));
+  const existingStatusIds = new Set((CONFIG.statusEffects ?? []).map(status => status.id));
+  CONFIG.statusEffects = [...(CONFIG.statusEffects ?? []), ...customStatuses.filter(status => !existingStatusIds.has(status.id))];
   game.settings.register(MODULE_ID, "starterCreated", {
     name: "Contenido inicial creado",
     scope: "world",
@@ -501,12 +601,15 @@ Hooks.once("ready", async () => {
     open: openPanel,
     mission: generateMission,
     typeCalculator,
+    changeExhaustion,
+    tickHunger,
+    syncPmdState,
     createStarterContent,
     importStarterCompendia,
     data: actorData
   };
   console.info("Pokémon Mystery Dungeon | Listo para D&D 5e.");
-  if (game.user.isGM && game.settings.get(MODULE_ID, "contentVersion") < 6) {
+  if (game.user.isGM && game.settings.get(MODULE_ID, "contentVersion") < 7) {
     const create = await foundry.applications.api.DialogV2.confirm({
       window: { title: game.i18n.localize("PMD.Title") },
       classes: ["pmd-dialog"],
@@ -519,12 +622,19 @@ Hooks.once("ready", async () => {
   }
 });
 
+Hooks.on("updateCombat", async (combat, changed) => {
+  if (!changed.turn || !game.user.isGM) return;
+  const combatant = combat.combatant;
+  if (combatant?.actor?.getFlag(MODULE_ID, "profile")) await tickHunger(combatant.actor);
+});
+
 Hooks.on("renderApplicationV2", (application, element) => {
   if (!(element instanceof HTMLElement)) return;
   if (isActorSheet(application) && !element.querySelector("[data-pmd-sheet-banner]")) {
     const actor = application.document ?? application.actor;
     element.insertAdjacentHTML("afterbegin", pokemonSheetBanner(actor));
     element.querySelector("[data-pmd-sheet-banner]")?.insertAdjacentHTML("afterend", integratedPokemonSection(actor));
+    decoratePokeCurrency(element);
     const button = element.querySelector("[data-pmd-open-profile]");
     button?.addEventListener("click", event => {
       event.preventDefault();
@@ -536,6 +646,14 @@ Hooks.on("renderApplicationV2", (application, element) => {
       event.preventDefault();
       event.stopPropagation();
       void saveIntegratedProfile(actor, box, application);
+    }, { capture: true });
+    box?.querySelector("[data-pmd-inline-hunger]")?.addEventListener("click", async event => {
+      event.preventDefault(); event.stopPropagation();
+      await updateResource(actor, "hunger", -10); await application.render({ force: true });
+    }, { capture: true });
+    box?.querySelector("[data-pmd-inline-exhaustion]")?.addEventListener("click", async event => {
+      event.preventDefault(); event.stopPropagation();
+      await changeExhaustion(actor, 1); await application.render({ force: true });
     }, { capture: true });
     box?.querySelectorAll("[data-pmd-item-id]").forEach(moveButton => moveButton.addEventListener("click", event => {
       event.preventDefault();
@@ -572,7 +690,8 @@ Hooks.on("renderActorDirectory", (application, html) => {
     const actor = await Actor.create({
       name: "Pokémon",
       type: "character",
-      flags: { [MODULE_ID]: { profile: { species: "", type1: "", type2: "", hunger: 100, hungerMax: 100, pp: 20, ppMax: 20, friendship: 0, rank: "Normal", rankPoints: 0, nature: "" } } }
+      system: { currency: { pp: 0, gp: 0, ep: 0, sp: 0, cp: 0 } },
+      flags: { [MODULE_ID]: { profile: { ...DEFAULT_DATA, species: "", type1: "", type2: "", pp: 20, ppMax: 20 } } }
     });
     await actor?.sheet?.render(true);
   });
