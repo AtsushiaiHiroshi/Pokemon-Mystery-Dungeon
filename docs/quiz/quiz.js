@@ -21,15 +21,12 @@ const ui = {
   copyButton: document.querySelector("#copyButton"), copyStatus: document.querySelector("#copyStatus"), restartButton: document.querySelector("#restartButton"),
   ambienceToggle: document.querySelector("#ambienceToggle")
 };
+ui.backgroundVideo = document.querySelector("#pmdBackgroundVideo");
 const ULTRA_BEASTS = new Set(["nihilego", "buzzwole", "pheromosa", "xurkitree", "celesteela", "kartana", "guzzlord", "stakataka", "blacephalon", "poipole", "naganadel"]);
 const PARADOX_POKEMON = new Set(["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "roaring-moon", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "walking-wake", "raging-bolt", "gouging-fire", "iron-leaves", "iron-crown", "iron-boulder"]);
 const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", scores: {}, mode: "quick" };
 const selectionSound = new Audio("https://nrosa01.github.io/pmd-quiz-online/audio/select-sound.mp3");
 selectionSound.preload = "auto";
-const ambienceSound = new Audio("https://nrosa01.github.io/pmd-quiz-online/audio/quiz-music.ogg");
-ambienceSound.preload = "auto";
-ambienceSound.loop = true;
-ambienceSound.volume = 0.1;
 let soundEnabled = true;
 
 const escapeHTML = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
@@ -48,7 +45,8 @@ function playSelectionSound() {
 
 function startAmbience() {
   if (!soundEnabled) return;
-  ambienceSound.play().catch(() => {});
+  document.body.classList.add("has-video");
+  ui.backgroundVideo?.play().then(() => { ui.backgroundVideo.muted = false; }).catch(() => {});
 }
 
 function show(section) {
@@ -190,9 +188,11 @@ ui.restartButton.addEventListener("click", () => show(ui.start));
 ui.copyButton.addEventListener("click", copyResult);
 ui.ambienceToggle.addEventListener("click", () => {
   soundEnabled = !soundEnabled;
-  if (soundEnabled) startAmbience(); else { ambienceSound.pause(); selectionSound.pause(); }
+  if (soundEnabled) startAmbience(); else { ui.backgroundVideo?.pause(); if (ui.backgroundVideo) ui.backgroundVideo.muted = true; selectionSound.pause(); }
   setSoundButton();
 });
 document.addEventListener("pointerdown", startAmbience, { once: true });
+ui.backgroundVideo?.addEventListener("error", () => document.body.classList.remove("has-video"));
+ui.backgroundVideo?.play().then(() => document.body.classList.add("has-video")).catch(() => {});
 setSoundButton();
 loadData();

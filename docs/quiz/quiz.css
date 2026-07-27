@@ -5,6 +5,8 @@ body { position: relative; isolation: isolate; margin: 0; min-height: 100vh; ove
 body::before, body::after { position: fixed; z-index: 0; inset: 0; pointer-events: none; content: ""; }
 body::before { inset: 0; background-image: url("https://nrosa01.github.io/pmd-quiz-online/img/others/dreambackloop.png"); background-repeat: repeat-x; background-position: 0 0; background-size: auto 100%; image-rendering: pixelated; animation: pmd-scroll-back 360s linear infinite, pmd-hue-shift 10s linear infinite; }
 body::after { z-index: 0; background-image: linear-gradient(rgba(5, 7, 14, .52), rgba(5, 7, 14, .68)), url("https://nrosa01.github.io/pmd-quiz-online/img/others/dreamfrontloop.png"); background-repeat: repeat-x; background-position: 100% 0; background-size: auto 100%; image-rendering: pixelated; animation: pmd-scroll-front 360s linear infinite, pmd-hue-shift-reverse 10s linear infinite; }
+.pmd-background-video { position: fixed; z-index: 0; inset: 0; width: 100vw; height: 100vh; object-fit: cover; pointer-events: none; filter: brightness(.52) saturate(1.08); }
+body.has-video::before, body.has-video::after { display: none; }
 @keyframes pmd-scroll-back { from { background-position: 0 0; } to { background-position: 100% 0; } }
 @keyframes pmd-scroll-front { from { background-position: 100% 0; } to { background-position: 0 0; } }
 @keyframes pmd-hue-shift { from { filter: hue-rotate(0deg) saturate(1.12); } to { filter: hue-rotate(360deg) saturate(1.12); } }
