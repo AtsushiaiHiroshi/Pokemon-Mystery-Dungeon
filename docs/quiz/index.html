@@ -12,7 +12,7 @@
       <p class="eyebrow">Pokémon Mystery Dungeon</p>
       <h1>¿Qué Pokémon eres?</h1>
       <p class="intro">Responde unas preguntas sobre tu forma de actuar y descubre tu naturaleza Pokémon. El resultado es independiente de Foundry VTT.</p>
-      <button id="ambienceToggle" class="sound-toggle" type="button" aria-pressed="false">🔇 Activar ambiente</button>
+      <button id="ambienceToggle" class="sound-toggle" type="button" aria-pressed="true">🔊 Sonido de respuestas</button>
     </header>
 
     <section id="loading" class="card status-card" aria-live="polite">
@@ -35,7 +35,7 @@
         <button class="mode-card" type="button" data-mode="quick">
           <span class="mode-icon" aria-hidden="true">⚡</span>
           <strong>Test rápido</strong>
-          <small>8 preguntas · resultado en pocos minutos</small>
+          <small>10 preguntas · resultado en pocos minutos</small>
         </button>
         <button class="mode-card" type="button" data-mode="complete">
           <span class="mode-icon" aria-hidden="true">✦</span>
@@ -48,7 +48,7 @@
 
     <section id="quiz" class="card quiz-card" hidden aria-live="polite">
       <div class="progress-row">
-        <span id="progressLabel">Pregunta 1 de 8</span>
+        <span id="progressLabel">Pregunta 1 de 10</span>
         <span id="progressPercent">0%</span>
       </div>
       <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-labelledby="progressLabel"><div id="progressBar"></div></div>
