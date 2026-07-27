@@ -30,23 +30,30 @@
       <button id="retry" class="button primary" type="button">Reintentar</button>
     </section>
 
-    <section id="start" class="card start-card" hidden>
-      <div class="start-icon" aria-hidden="true">✦</div>
-      <h2>Bienvenido a un mundo desconocido</h2>
-      <p>Antes de comenzar tu aventura, descubre qué Pokémon despierta en ti. Tu naturaleza guiará tus primeros pasos por este nuevo mundo.</p>
-      <div class="mode-grid">
-        <button class="mode-card" type="button" data-mode="quick">
-          <span class="mode-icon" aria-hidden="true">⚡</span>
-          <strong>Test rápido</strong>
-          <small>10 preguntas · resultado en pocos minutos</small>
-        </button>
-        <button class="mode-card" type="button" data-mode="complete">
-          <span class="mode-icon" aria-hidden="true">✦</span>
-          <strong>Test completo</strong>
-          <small>64 preguntas · máxima precisión</small>
-        </button>
+    <section id="start" class="welcome-screen" hidden>
+      <div class="welcome-copy">
+        <p class="eyebrow welcome-eyebrow">Un sueño sin final</p>
+        <div class="start-icon" aria-hidden="true">✦</div>
+        <h2>El mundo se vuelve silencio…</h2>
+        <p class="welcome-line">Tu último recuerdo se disuelve como una sombra bajo el agua.</p>
+        <p class="welcome-line">No sientes tu cuerpo. No reconoces tus manos. Solo escuchas una voz que te llama desde muy lejos.</p>
+        <p class="welcome-line welcome-question">Cuando abras los ojos, ya no serás quien eras.</p>
+        <h3>¿Qué Pokémon despertará en ti?</h3>
+        <div class="mode-grid">
+          <button class="mode-card" type="button" data-mode="quick">
+            <span class="mode-icon" aria-hidden="true">⚡</span>
+            <strong>Despertar rápido</strong>
+            <small>10 preguntas · una primera impresión</small>
+          </button>
+          <button class="mode-card" type="button" data-mode="complete">
+            <span class="mode-icon" aria-hidden="true">✦</span>
+            <strong>Despertar completo</strong>
+            <small>64 preguntas · conoce tu naturaleza</small>
+          </button>
+        </div>
+        <p class="welcome-hint">Tu naturaleza guiará tus primeros pasos en este nuevo mundo.</p>
+        <p class="hint">Las recomendaciones incluyen primeras etapas de todas las generaciones; no se muestran formas evolucionadas, salvo Pikachu.</p>
       </div>
-      <p class="hint">Las recomendaciones incluyen primeras etapas aunque tengan evolución —por ejemplo Pichu, Meowth o Chimchar—, pero no muestran sus formas evolucionadas. Pikachu es la excepción permitida.</p>
     </section>
 
     <section id="quiz" class="card quiz-card" hidden aria-live="polite">
