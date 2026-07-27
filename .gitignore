@@ -2,6 +2,7 @@
 Thumbs.db
 node_modules/
 pokemon-mystery-dungeon.zip
+tmp/
 
 # Foundry/LevelDB runtime lock and log files are recreated locally.
 packs/**/LOCK
