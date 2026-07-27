@@ -1,0 +1,10 @@
+{
+  "PMD.Title": "Pokémon Mystery Dungeon",
+  "PMD.OpenPanel": "PMD Sheet",
+  "PMD.Setup": "Create PMD starter content",
+  "PMD.SetupDone": "Pokémon Mystery Dungeon starter content created.",
+  "PMD.NoActor": "Select a token or use the option from an actor.",
+  "PMD.Saved": "PMD data saved.",
+  "PMD.Restored": "Hunger and PP restored.",
+  "PMD.Mission": "Generate mystery mission"
+}

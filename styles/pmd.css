@@ -1,0 +1,314 @@
+.pmd-dialog {
+  --pmd-blue: #285b88;
+  --pmd-gold: #f1b93c;
+  --pmd-cream: #fff8df;
+  --pmd-ink: #263442;
+}
+
+.pmd-sheet-banner {
+  align-items: center;
+  background: linear-gradient(110deg, #173d61, #285b88);
+  border: 2px solid #f1b93c;
+  border-radius: 8px;
+  color: white;
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: auto 1fr auto;
+  margin: 0.5rem;
+  padding: 0.55rem 0.75rem;
+  position: relative;
+  pointer-events: auto;
+  z-index: 20;
+}
+
+.pmd-sheet-banner > i {
+  color: #f1b93c;
+  font-size: 1.5rem;
+}
+
+.pmd-sheet-banner div {
+  display: grid;
+}
+
+.pmd-sheet-banner span {
+  font-size: 0.78rem;
+  opacity: 0.9;
+}
+
+.pmd-sheet-banner button {
+  background: #fff8df;
+  border: 1px solid #f1b93c;
+  color: #173d61;
+  white-space: nowrap;
+  cursor: pointer;
+  pointer-events: auto;
+  position: relative;
+  z-index: 21;
+}
+
+[data-pmd-create-actor] {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.35rem;
+}
+
+/* Contraste mínimo para directorios y menús oscuros de Foundry. */
+.directory .directory-item,
+.directory .directory-item a,
+.directory .document-name,
+.directory .header-actions button,
+.directory .search input {
+  color: #f8f4e8;
+  text-shadow: 0 1px 2px #000;
+}
+
+.directory .search input::placeholder {
+  color: #d9d1c0;
+  opacity: 1;
+}
+
+.pmd-move-banner {
+  background: linear-gradient(110deg, #4b326f, #285b88);
+}
+
+.pmd-dialog .window-content {
+  background:
+    radial-gradient(circle at 100% 0, rgb(241 185 60 / 22%), transparent 34%),
+    linear-gradient(160deg, #fffdf4, #e7f3fb);
+}
+
+.pmd-sheet {
+  color: var(--pmd-ink);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.pmd-sheet header {
+  align-items: center;
+  background: linear-gradient(120deg, #173d61, var(--pmd-blue));
+  border: 2px solid var(--pmd-gold);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.pmd-sheet header i {
+  color: var(--pmd-gold);
+  font-size: 2rem;
+}
+
+.pmd-sheet h2,
+.pmd-sheet p {
+  margin: 0;
+}
+
+.pmd-grid {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pmd-card {
+  background: rgb(255 255 255 / 78%);
+  border: 1px solid #9bb7ca;
+  border-radius: 8px;
+  padding: 0.65rem;
+}
+
+.pmd-card h3 {
+  border-bottom: 2px solid var(--pmd-gold);
+  color: var(--pmd-blue);
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.2rem;
+}
+
+.pmd-fields {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pmd-fields label {
+  display: grid;
+  font-size: 0.82rem;
+  font-weight: 700;
+  gap: 0.15rem;
+  color: #173d61;
+}
+
+.pmd-fields input,
+.pmd-fields select,
+.pmd-fields textarea {
+  background: var(--pmd-cream);
+  border: 1px solid #8aa6b9;
+  color: #1d2a33;
+  min-width: 0;
+}
+
+.pmd-help,
+.pmd-card p,
+.pmd-card span,
+.pmd-quiz-question label {
+  color: #263442;
+}
+
+.pmd-card h3,
+.pmd-sheet header h2,
+.pmd-sheet header p {
+  color: #173d61;
+}
+
+.pmd-actions button,
+.pmd-integrated button,
+.pmd-quiz button {
+  background: #285b88;
+  border: 1px solid #173d61;
+  color: #fff8df;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.pmd-actions button:hover,
+.pmd-integrated button:hover,
+.pmd-quiz button:hover {
+  background: #173d61;
+  color: #ffffff;
+}
+
+.pmd-integrated {
+  background: #f7f1df;
+  border: 2px solid #285b88;
+  border-radius: 8px;
+  color: #173d61;
+  margin: 0.35rem 0.5rem 0.75rem;
+  padding: 0.65rem;
+  position: relative;
+  z-index: 20;
+}
+
+.pmd-integrated-title {
+  align-items: center;
+  border-bottom: 2px solid #f1b93c;
+  display: flex;
+  gap: 0.55rem;
+  margin-bottom: 0.55rem;
+  padding-bottom: 0.4rem;
+}
+
+.pmd-integrated-title > i {
+  color: #b06c00;
+  font-size: 1.4rem;
+}
+
+.pmd-integrated-title div {
+  display: grid;
+  flex: 1;
+}
+
+.pmd-integrated-title span {
+  color: #405466;
+  font-size: 0.75rem;
+}
+
+.pmd-inline-grid {
+  display: grid;
+  gap: 0.45rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.pmd-inline-grid label {
+  color: #173d61;
+  display: grid;
+  font-size: 0.75rem;
+  font-weight: 700;
+  gap: 0.15rem;
+}
+
+.pmd-inline-grid input,
+.pmd-inline-grid select {
+  background: #fffdf4;
+  border: 1px solid #6f91aa;
+  color: #172532;
+  min-width: 0;
+}
+
+.pmd-integrated-footer {
+  align-items: center;
+  color: #263442;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin-top: 0.55rem;
+}
+
+.pmd-inline-move {
+  margin: 0.15rem;
+  padding: 0.2rem 0.35rem;
+}
+
+.pmd-inline-move small {
+  color: #fff8df;
+  font-size: 0.7rem;
+}
+
+.pmd-quiz-question h2,
+.pmd-quiz h2 {
+  color: #173d61;
+}
+
+.pmd-quiz-question select,
+.pmd-quiz select {
+  background: #fffdf4;
+  border: 1px solid #6f91aa;
+  color: #172532;
+  display: block;
+  margin-top: 0.35rem;
+  padding: 0.45rem;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .pmd-inline-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .pmd-integrated-footer { align-items: stretch; flex-direction: column; }
+}
+
+.pmd-meter {
+  align-items: center;
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: 1fr auto;
+}
+
+.pmd-meter progress {
+  accent-color: var(--pmd-gold);
+  height: 0.9rem;
+  width: 100%;
+}
+
+.pmd-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.pmd-help {
+  font-size: 0.78rem;
+  opacity: 0.82;
+}
+
+@media (max-width: 620px) {
+  .pmd-grid,
+  .pmd-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .pmd-sheet-banner {
+    grid-template-columns: auto 1fr;
+  }
+
+  .pmd-sheet-banner button {
+    grid-column: 1 / -1;
+  }
+}
