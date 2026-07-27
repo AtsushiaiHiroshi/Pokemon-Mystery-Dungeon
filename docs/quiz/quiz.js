@@ -16,6 +16,7 @@ const ui = {
   progressBar: document.querySelector("#progressBar"), progressTrack: document.querySelector(".progress-track"),
   backButton: document.querySelector("#backButton"), nextButton: document.querySelector("#nextButton"),
   resultNature: document.querySelector("#resultNature"), resultDescription: document.querySelector("#resultDescription"),
+  resultStory: document.querySelector("#resultStory"), revealResult: document.querySelector("#revealResult"),
   personalityChart: document.querySelector("#personalityChart"),
   candidates: document.querySelector("#candidates"), candidateCount: document.querySelector("#candidateCount"),
   copyButton: document.querySelector("#copyButton"), copyStatus: document.querySelector("#copyStatus"), restartButton: document.querySelector("#restartButton"),
@@ -171,7 +172,10 @@ function renderResult() {
   ui.resultDescription.textContent = state.quiz.naturedescription[state.nature] ?? "";
   const modeLabel = state.mode === "complete" ? "test completo" : "test rápido";
   ui.candidateCount.textContent = `${candidates.length} opciones · ${modeLabel} · generaciones 1–9`;
-  ui.candidates.innerHTML = candidates.map((pokemon, index) => `<article class="candidate-avatar ${index < 2 ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${escapeHTML(pokemon.sprite)}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="this.hidden=true"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${index < 2 ? "<b>PMD</b>" : ""}</article>`).join("");
+  const pmdStarters = new Set(state.quiz.pmdStarters ?? []);
+  ui.candidates.innerHTML = candidates.map((pokemon, index) => { const isPmd = pmdStarters.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${escapeHTML(pokemon.sprite)}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="this.hidden=true"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
+  ui.resultStory.textContent = `La voz se desvanece. Algo nuevo despierta dentro de ti… ${state.nature}, esa será la primera huella de tu nueva vida.`;
+  ui.result.classList.add("pending");
   show(ui.result);
 }
 
@@ -199,6 +203,7 @@ function restartQuiz(event) {
 }
 ui.restartButton.addEventListener("click", restartQuiz);
 ui.copyButton.addEventListener("click", copyResult);
+ui.revealResult.addEventListener("click", () => { ui.result.classList.remove("pending"); window.scrollTo({ top: 0, behavior: "smooth" }); });
 ui.ambienceToggle.addEventListener("click", () => {
   soundEnabled = !soundEnabled;
   if (soundEnabled) startAmbience(); else { ui.backgroundVideo?.pause(); if (ui.backgroundVideo) ui.backgroundVideo.muted = true; selectionSound.pause(); }

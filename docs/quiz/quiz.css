@@ -91,11 +91,19 @@ body::after { background-size: contain; animation-duration: 90s, 10s; }
 .quiz-card { background-color: rgba(34, 32, 34, .75); border: 15px solid transparent; border-image: url("https://nrosa01.github.io/pmd-quiz-online/img/others/pmdtextbox.png") 43 round; backdrop-filter: blur(16px); }
 .candidate-grid { grid-template-columns: repeat(5, minmax(72px, 1fr)); gap: 14px; }
 .candidate-avatar { position: relative; display: grid; place-items: center; min-height: 116px; border: 1px solid var(--line); border-radius: 12px; padding: 8px; background: rgba(25, 30, 48, .82); transition: transform .15s, border-color .15s, background .15s; }
+.candidate-avatar { min-width: 0; overflow: hidden; }
 .candidate-avatar:hover { transform: translateY(-3px); border-color: var(--gold); background: rgba(41, 45, 67, .95); }
 .candidate-avatar.original { border-color: #a77c28; }
-.candidate-avatar img { width: 104px; height: 104px; object-fit: contain; }
+.candidate-avatar img { width: min(100%, 84px); max-width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; }
 .candidate-avatar b { position: absolute; right: 7px; top: 5px; color: var(--gold-2); font-size: .58rem; letter-spacing: .08em; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.result.pending { min-height: calc(100vh - 170px); display: grid; place-items: center; }
+.result.pending .result-heading { max-width: 720px; margin: 0 auto; padding: 30px 20px; }
+.result.pending .result-heading .eyebrow { font-size: 1.05rem; }
+.result.pending .result-heading h2 { font-size: clamp(2.8rem, 9vw, 6rem); }
+.result.pending .result-grid, .result.pending .result-actions, .result.pending .copy-status { display: none; }
+.result-story { max-width: 620px; margin: 20px auto 28px; color: rgba(247, 245, 238, .9); font-size: 1.1rem; }
+.continue-button { min-width: 180px; }
 #start { width: 100%; min-height: calc(100vh - 170px); margin: 0 auto; display: grid; place-items: center; background: transparent; }
 .welcome-copy { width: min(760px, 100%); padding: 42px 22px 54px; text-align: center; text-shadow: 0 2px 14px rgba(0, 0, 0, .72); }
 .welcome-eyebrow { margin-bottom: 18px; opacity: .9; }
