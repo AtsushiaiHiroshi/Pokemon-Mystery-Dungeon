@@ -25,7 +25,7 @@ const ui = {
 ui.backgroundVideo = document.querySelector("#pmdBackgroundVideo");
 const ULTRA_BEASTS = new Set(["nihilego", "buzzwole", "pheromosa", "xurkitree", "celesteela", "kartana", "guzzlord", "stakataka", "blacephalon", "poipole", "naganadel"]);
 const PARADOX_POKEMON = new Set(["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "roaring-moon", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "walking-wake", "raging-bolt", "gouging-fire", "iron-leaves", "iron-crown", "iron-boulder"]);
-const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", scores: {}, mode: "quick" };
+const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", scores: {}, mode: "quick", narrative: [], narrativeIndex: 0 };
 const selectionSound = new Audio("https://nrosa01.github.io/pmd-quiz-online/audio/select-sound.mp3");
 selectionSound.preload = "auto";
 let soundEnabled = true;
@@ -69,6 +69,7 @@ async function loadData() {
 }
 
 function startQuiz(mode = "quick") {
+  document.body.classList.remove("result-mode", "narrative-mode");
   state.mode = mode;
   const questionCount = mode === "complete" ? state.quiz.questions.length : QUICK_QUESTION_COUNT;
   state.questions = mode === "complete" ? [...state.quiz.questions] : shuffle(state.quiz.questions).slice(0, questionCount);
@@ -166,6 +167,7 @@ function candidateList() {
 }
 
 function renderResult() {
+  document.body.classList.add("result-mode", "narrative-mode");
   const candidates = candidateList();
   renderRadarChart(state.scores);
   ui.resultNature.textContent = state.nature;
@@ -173,10 +175,27 @@ function renderResult() {
   const modeLabel = state.mode === "complete" ? "test completo" : "test rápido";
   ui.candidateCount.textContent = `${candidates.length} opciones · ${modeLabel} · generaciones 1–9`;
   const pmdStarters = new Set(state.quiz.pmdStarters ?? []);
-  ui.candidates.innerHTML = candidates.map((pokemon, index) => { const isPmd = pmdStarters.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${escapeHTML(pokemon.sprite)}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="this.hidden=true"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
-  ui.resultStory.textContent = `La voz se desvanece. Algo nuevo despierta dentro de ti… ${state.nature}, esa será la primera huella de tu nueva vida.`;
+  const visibleCandidates = candidates.slice(0, 2);
+  const iconSprite = pokemon => `https://nrosa01.github.io/pmd-quiz-online/img/pokemonicons/${String(pokemon.name).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "")}.png`;
+  ui.candidates.innerHTML = visibleCandidates.map(pokemon => { const isPmd = pmdStarters.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${iconSprite(pokemon)}" data-fallback="${escapeHTML(pokemon.sprite)}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback}else{this.hidden=true}"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
+  ui.candidateCount.textContent = "2 Pokémon · resultado de tu test";
+  state.narrative = buildNarrative(state.nature, state.quiz.naturedescription[state.nature] ?? "");
+  state.narrativeIndex = 0;
+  ui.resultStory.textContent = state.narrative[0];
+  ui.revealResult.textContent = "Continuar";
   ui.result.classList.add("pending");
   show(ui.result);
+}
+
+function buildNarrative(nature, description) {
+  return [
+    "Eras una persona…",
+    description,
+    `Tus decisiones revelan una naturaleza ${nature}. Incluso en los momentos difíciles, esa forma de ser siempre encontró un camino.`,
+    "La oscuridad se vuelve ligera. Una voz te pregunta si estás listo para comenzar de nuevo…",
+    "Cuando abres los ojos, el viento huele distinto y tus manos ya no son las de antes.",
+    "Alguien como tú podría ser…"
+  ];
 }
 
 async function copyResult() {
@@ -192,6 +211,7 @@ ui.nextButton.addEventListener("click", nextQuestion);
 ui.answers.addEventListener("click", event => { const button = event.target.closest("[data-answer]"); if (button) chooseAnswer(Number(button.dataset.answer)); });
 function restartQuiz(event) {
   event?.preventDefault();
+  document.body.classList.remove("result-mode", "narrative-mode");
   state.questions = [];
   state.answers = [];
   state.index = 0;
@@ -203,7 +223,18 @@ function restartQuiz(event) {
 }
 ui.restartButton.addEventListener("click", restartQuiz);
 ui.copyButton.addEventListener("click", copyResult);
-ui.revealResult.addEventListener("click", () => { ui.result.classList.remove("pending"); window.scrollTo({ top: 0, behavior: "smooth" }); });
+ui.revealResult.addEventListener("click", () => {
+  playSelectionSound();
+  if (state.narrativeIndex < state.narrative.length - 1) {
+    state.narrativeIndex += 1;
+    ui.resultStory.textContent = state.narrative[state.narrativeIndex];
+    ui.revealResult.textContent = state.narrativeIndex === state.narrative.length - 1 ? "Descubrir mi Pokémon" : "Continuar";
+    return;
+  }
+  ui.result.classList.remove("pending");
+  document.body.classList.remove("narrative-mode");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 ui.ambienceToggle.addEventListener("click", () => {
   soundEnabled = !soundEnabled;
   if (soundEnabled) startAmbience(); else { ui.backgroundVideo?.pause(); if (ui.backgroundVideo) ui.backgroundVideo.muted = true; selectionSound.pause(); }
