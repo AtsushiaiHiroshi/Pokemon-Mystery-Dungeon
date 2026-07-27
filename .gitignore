@@ -2,3 +2,17 @@
 Thumbs.db
 node_modules/
 pokemon-mystery-dungeon.zip
+
+# Foundry/LevelDB runtime lock and log files are recreated locally.
+packs/**/LOCK
+packs/**/LOG*
+# Only the current generated v4 compendia are shipped; older local copies are runtime artifacts.
+packs/pmd-*/
+!packs/pmd-*-v4/
+!packs/pmd-*-v4/**
+__pycache__/
+*.pyc
+
+# Re-apply runtime exclusions after the v4 allow-list.
+packs/**/LOCK
+packs/**/LOG*

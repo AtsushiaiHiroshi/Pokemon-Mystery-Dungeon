@@ -1,0 +1,757 @@
+{
+  "Equipo de rescate rojo y azul": [
+    {
+      "name": "Bulbasaur",
+      "types": [
+        "planta",
+        "veneno"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Charmander",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Squirtle",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Chikorita",
+      "types": [
+        "planta"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Cyndaquil",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Totodile",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Treecko",
+      "types": [
+        "planta"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Torchic",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Mudkip",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Pikachu",
+      "types": [
+        "eléctrico"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Meowth",
+      "types": [
+        "normal"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Psyduck",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Machop",
+      "types": [
+        "lucha"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Cubone",
+      "types": [
+        "tierra"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Eevee",
+      "types": [
+        "normal"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Skitty",
+      "types": [
+        "normal"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    }
+  ],
+  "Exploradores del tiempo y oscuridad": [
+    {
+      "name": "Bulbasaur",
+      "types": [
+        "planta",
+        "veneno"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Charmander",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Squirtle",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Chikorita",
+      "types": [
+        "planta"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Cyndaquil",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Totodile",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Treecko",
+      "types": [
+        "planta"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Torchic",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Mudkip",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Pikachu",
+      "types": [
+        "eléctrico"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Meowth",
+      "types": [
+        "normal"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Munchlax",
+      "types": [
+        "normal"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Turtwig",
+      "types": [
+        "planta"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Piplup",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Chimchar",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Skitty",
+      "types": [
+        "normal"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    }
+  ],
+  "Exploradores del cielo": [
+    {
+      "name": "Bulbasaur",
+      "types": [
+        "planta",
+        "veneno"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Charmander",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Squirtle",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Chikorita",
+      "types": [
+        "planta"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Cyndaquil",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Totodile",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Treecko",
+      "types": [
+        "planta"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Torchic",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Mudkip",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Pikachu",
+      "types": [
+        "eléctrico"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Meowth",
+      "types": [
+        "normal"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Munchlax",
+      "types": [
+        "normal"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Turtwig",
+      "types": [
+        "planta"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Piplup",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Chimchar",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Skitty",
+      "types": [
+        "normal"
+      ],
+      "source": "WikiDex — saga Pokémon Mundo misterioso"
+    },
+    {
+      "name": "Vulpix",
+      "types": [],
+      "source": "WikiDex — Exploradores del cielo"
+    },
+    {
+      "name": "Riolu",
+      "types": [],
+      "source": "WikiDex — Exploradores del cielo"
+    },
+    {
+      "name": "Phanpy",
+      "types": [],
+      "source": "WikiDex — Exploradores del cielo"
+    },
+    {
+      "name": "Eevee",
+      "types": [],
+      "source": "WikiDex — Exploradores del cielo"
+    },
+    {
+      "name": "Shinx",
+      "types": [],
+      "source": "WikiDex — Exploradores del cielo"
+    }
+  ],
+  "Portales al infinito": [
+    {
+      "name": "Pikachu",
+      "types": [],
+      "source": "WikiDex — Portales al infinito"
+    },
+    {
+      "name": "Snivy",
+      "types": [],
+      "source": "WikiDex — Portales al infinito"
+    },
+    {
+      "name": "Tepig",
+      "types": [],
+      "source": "WikiDex — Portales al infinito"
+    },
+    {
+      "name": "Oshawott",
+      "types": [],
+      "source": "WikiDex — Portales al infinito"
+    },
+    {
+      "name": "Axew",
+      "types": [],
+      "source": "WikiDex — Portales al infinito"
+    }
+  ],
+  "Mundo megamisterioso": [
+    {
+      "name": "Bulbasaur",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Charmander",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Squirtle",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Pikachu",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Chikorita",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Cyndaquil",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Totodile",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Treecko",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Torchic",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Mudkip",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Turtwig",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Chimchar",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Piplup",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Riolu",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Snivy",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Tepig",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Oshawott",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Chespin",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Fennekin",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    },
+    {
+      "name": "Froakie",
+      "types": [],
+      "source": "WikiDex — Mundo megamisterioso"
+    }
+  ],
+  "Equipo de rescate DX": [
+    {
+      "name": "Bulbasaur",
+      "types": [
+        "planta",
+        "veneno"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Charmander",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Squirtle",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Chikorita",
+      "types": [
+        "planta"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Cyndaquil",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Totodile",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Treecko",
+      "types": [
+        "planta"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Torchic",
+      "types": [
+        "fuego"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Mudkip",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Pikachu",
+      "types": [
+        "eléctrico"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Meowth",
+      "types": [
+        "normal"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Psyduck",
+      "types": [
+        "agua"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Machop",
+      "types": [
+        "lucha"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Cubone",
+      "types": [
+        "tierra"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Eevee",
+      "types": [
+        "normal"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    },
+    {
+      "name": "Skitty",
+      "types": [
+        "normal"
+      ],
+      "source": "WikiDex — Equipo de rescate DX"
+    }
+  ],
+  "Boukendan — Escuadrón Llama": [
+    {
+      "name": "Charmander",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Cyndaquil",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Torchic",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Chimchar",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Vulpix",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Growlithe",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Eevee",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Teddiursa",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Buneary",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    }
+  ],
+  "Boukendan — Escuadrón Tormenta": [
+    {
+      "name": "Squirtle",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Totodile",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Mudkip",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Piplup",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Wooper",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Azurill",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Phanpy",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Riolu",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Wynaut",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    }
+  ],
+  "Boukendan — Escuadrón Luz": [
+    {
+      "name": "Pichu",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Pikachu",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Shinx",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Pachirisu",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Elekid",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Mareep",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Psyduck",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Togepi",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    },
+    {
+      "name": "Meowth",
+      "types": [],
+      "source": "WikiDex — Pokémon Fushigi no Dungeon: Boukendan"
+    }
+  ]
+}

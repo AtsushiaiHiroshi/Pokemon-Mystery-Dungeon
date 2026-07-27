@@ -140,6 +140,142 @@ function panelHTML(actor) {
     </form>`;
 }
 
+function isActorSheet(application) {
+  const document = application.document ?? application.actor;
+  return document?.documentName === "Actor" && ["character", "npc"].includes(document.type);
+}
+
+function isItemSheet(application) {
+  return application.document?.documentName === "Item";
+}
+
+function pokemonSheetBanner(actor) {
+  const d = actorData(actor);
+  const types = [d.type1, d.type2].filter(Boolean).map(type => TYPE_LABELS[type] ?? type).join(" / ");
+  return `
+    <section class="pmd-sheet-banner" data-pmd-sheet-banner data-pmd-actor-id="${actor?.id ?? ""}">
+      <i class="fas fa-paw"></i>
+      <div>
+        <strong>${d.species ? esc(d.species) : "Perfil Pokémon sin configurar"}</strong>
+        <span>${types || "Elige especie, tipos y naturaleza"}</span>
+      </div>
+      <button type="button" data-pmd-open-profile>
+        <i class="fas fa-pen-to-square"></i> Editar perfil Pokémon
+      </button>
+    </section>`;
+}
+
+function integratedPokemonSection(actor) {
+  const d = actorData(actor);
+  const moves = actor.items?.filter(item => item.getFlag(MODULE_ID, "move")?.kind === "move") ?? [];
+  return `<section class="pmd-integrated" data-pmd-integrated>
+    <div class="pmd-integrated-title"><i class="fas fa-paw"></i><div><strong>Capa Pokémon Mystery Dungeon</strong><span>Perfil, supervivencia y movimientos integrados en esta hoja D&amp;D 5e</span></div></div>
+    <div class="pmd-inline-grid">
+      <label>Especie<input data-pmd-field="species" value="${esc(d.species)}" placeholder="Ej. Pikachu"></label>
+      <label>Naturaleza<input data-pmd-field="nature" value="${esc(d.nature)}" placeholder="Ej. Alegre"></label>
+      <label>Tipo principal<select data-pmd-field="type1">${optionList(d.type1)}</select></label>
+      <label>Tipo secundario<select data-pmd-field="type2">${optionList(d.type2, true)}</select></label>
+      <label>Hambre<input type="number" min="0" data-pmd-field="hunger" value="${d.hunger}"></label>
+      <label>PP generales<input type="number" min="0" data-pmd-field="pp" value="${d.pp}"></label>
+    </div>
+    <div class="pmd-integrated-footer"><div><strong>Movimientos PMD:</strong> ${moves.length ? moves.map(item => `<button type="button" class="pmd-inline-move" data-pmd-item-id="${item.id}">${esc(item.name)} <small>${moveData(item).pp.value}/${moveData(item).pp.max} PP</small></button>`).join("") : "Arrastra movimientos desde el compendio a esta hoja."}</div><button type="button" data-pmd-inline-save><i class="fas fa-save"></i> Guardar perfil PMD</button></div>
+  </section>`;
+}
+
+async function saveIntegratedProfile(actor, box, application) {
+  const d = actorData(actor);
+  for (const key of ["species", "nature", "type1", "type2"]) d[key] = box.querySelector(`[data-pmd-field="${key}"]`)?.value ?? d[key];
+  for (const key of ["hunger", "pp"]) d[key] = Math.max(0, Number(box.querySelector(`[data-pmd-field="${key}"]`)?.value ?? d[key]));
+  await actor.setFlag(MODULE_ID, "profile", d);
+  ui.notifications.info("Perfil Pokémon guardado en la hoja.");
+  await application.render({ force: true });
+}
+
+function moveData(item) {
+  return foundry.utils.mergeObject({
+    kind: "move",
+    type: "normal",
+    category: "physical",
+    pp: { value: 5, max: 5 },
+    stabEligible: true,
+    power: null,
+    accuracy: null,
+    priority: 0,
+    selfDamage: false,
+    save: { ability: "", dc: "" },
+    source: { document: "", page: null }
+  }, foundry.utils.deepClone(item.getFlag(MODULE_ID, "move") ?? {}), { inplace: false });
+}
+
+async function openMoveEditor(item) {
+  if (!item?.isOwner) return ui.notifications.warn("No tienes permiso para editar este objeto.");
+  const d = moveData(item);
+  const result = await foundry.applications.api.DialogV2.prompt({
+    window: { title: `Datos Pokémon: ${item.name}` },
+    classes: ["pmd-dialog"],
+    content: `<form class="pmd-sheet">
+      <p class="pmd-help">El ataque, daño, alcance, objetivo y salvación se editan en las Activities normales de dnd5e. Aquí solo se guardan los datos Pokémon.</p>
+      <div class="pmd-fields">
+        <label>Tipo<select name="type">${optionList(d.type)}</select></label>
+        <label>Categoría<select name="category">
+          ${["physical", "special", "status"].map(value =>
+            `<option value="${value}" ${d.category === value ? "selected" : ""}>${value === "physical" ? "Físico" : value === "special" ? "Especial" : "Estado"}</option>`
+          ).join("")}
+        </select></label>
+        ${field("PP actuales", "ppValue", d.pp.value, "number", 'min="0"')}
+        ${field("PP máximos", "ppMax", d.pp.max, "number", 'min="0"')}
+        ${field("Potencia Pokémon", "power", d.power ?? "", "number", 'min="0"')}
+        ${field("Precisión (%)", "accuracy", d.accuracy ?? "", "number", 'min="0" max="100"')}
+        ${field("Prioridad", "priority", d.priority ?? 0, "number")}
+        <label>Salvación<select name="saveAbility"><option value="">Sin salvación</option>${["str", "dex", "con", "int", "wis", "cha"].map(value => `<option value="${value}" ${d.save?.ability === value ? "selected" : ""}>${value.toUpperCase()}</option>`).join("")}</select></label>
+        ${field("CD de salvación", "saveDC", d.save?.dc ?? "", "text")}
+        ${field("Documento fuente", "sourceDocument", d.source.document)}
+        ${field("Página fuente", "sourcePage", d.source.page ?? "", "number", 'min="1"')}
+        <label><input type="checkbox" name="stabEligible" ${d.stabEligible ? "checked" : ""}> Puede recibir STAB</label>
+        <label><input type="checkbox" name="selfDamage" ${d.selfDamage ? "checked" : ""}> Aplica daño o retroceso al usuario</label>
+      </div>
+    </form>`,
+    ok: {
+      label: "Guardar datos Pokémon",
+      callback: (_event, button) => new foundry.applications.ux.FormDataExtended(button.form).object
+    }
+  });
+  if (!result) return;
+  const ppMax = Math.max(0, Number(result.ppMax || 0));
+  await item.setFlag(MODULE_ID, "move", {
+    kind: "move",
+    type: result.type,
+    category: result.category,
+    pp: { value: Math.clamp(Number(result.ppValue || 0), 0, ppMax), max: ppMax },
+    power: result.power === "" ? null : Number(result.power),
+    accuracy: result.accuracy === "" ? null : Number(result.accuracy),
+    priority: Number(result.priority || 0),
+    selfDamage: Boolean(result.selfDamage),
+    save: { ability: result.saveAbility ?? "", dc: result.saveDC ?? "" },
+    stabEligible: Boolean(result.stabEligible),
+    source: {
+      document: result.sourceDocument ?? "",
+      page: result.sourcePage ? Number(result.sourcePage) : null
+    }
+  });
+  ui.notifications.info(`Datos Pokémon de ${item.name} guardados.`);
+}
+
+function moveSheetBanner(item) {
+  const d = moveData(item);
+  return `
+    <section class="pmd-sheet-banner pmd-move-banner" data-pmd-item-banner data-pmd-item-id="${item?.id ?? ""}">
+      <i class="fas fa-burst"></i>
+      <div>
+        <strong>Movimiento ${TYPE_LABELS[d.type] ?? d.type}</strong>
+        <span>${d.category} · ${d.pp.value}/${d.pp.max} PP</span>
+      </div>
+      <button type="button" data-pmd-edit-move>
+        <i class="fas fa-pen-to-square"></i> Editar datos Pokémon
+      </button>
+    </section>`;
+}
+
 async function saveFromDialog(actor, dialog) {
   const form = dialog.element.querySelector("form");
   if (!form) return;
@@ -267,49 +403,49 @@ async function openPanel(actor) {
 
 async function createStarterContent() {
   if (!game.user.isGM) return;
-  const folder = game.folders.find(f => f.name === "Pokémon Mystery Dungeon" && f.type === "JournalEntry")
-    ?? await Folder.create({ name: "Pokémon Mystery Dungeon", type: "JournalEntry", color: "#285b88" });
-  if (!game.journal.find(j => j.getFlag(MODULE_ID, "starter"))) {
-    await JournalEntry.create({
-      name: "Guía rápida - Pokémon Mystery Dungeon",
-      folder: folder.id,
-      flags: { [MODULE_ID]: { starter: true } },
-      pages: [{
-        name: "Reglas de campaña",
-        type: "text",
-        text: {
-          format: CONST.JOURNAL_ENTRY_PAGE_FORMATS.HTML,
-          content: `<h1>Pokémon Mystery Dungeon para D&D 5e</h1>
-            <p>Usa las reglas normales de D&D 5e para características, habilidades, CA, PG, iniciativa y salvaciones. Cada Actor añade un perfil PMD con especie, tipos, equipo, hambre, PP, amistad y fichas de aventura.</p>
-            <h2>Exploración</h2><ul>
-              <li>Reduce el hambre en 10 al cambiar de planta o tras una escena exigente.</li>
-              <li>A hambre 0, aplica un nivel de agotamiento según las reglas de D&D 5e.</li>
-              <li>Un descanso completo restaura hambre y PP; el Director puede exigir comida y un lugar seguro.</li>
-            </ul>
-            <h2>Movimientos Pokémon</h2><p>Créelos como conjuros o rasgos. Usa el ataque, CD, daño, alcance y actividades del objeto de D&D 5e. Gasta PP desde la ficha PMD cuando corresponda y consulta la calculadora elemental.</p>
-            <h2>Caer debilitado</h2><p>Usa las salvaciones contra muerte de D&D 5e. En una mazmorra, el Director puede activar una insignia de rescate para evacuar al equipo cuando nadie pueda revivir al caído.</p>
-            <h2>Rangos</h2><p>Normal, Bronce, Plata, Oro, Diamante y Gran Maestro. Otorga puntos por misiones y ajusta el acceso a encargos y recompensas.</p>`
-        }
-      }]
-    });
-  }
-  const itemFolder = game.folders.find(f => f.name === "Movimientos Pokémon" && f.type === "Item")
-    ?? await Folder.create({ name: "Movimientos Pokémon", type: "Item", color: "#f1b93c" });
-  const examples = [
-    ["Movimiento Pokémon - Plantilla de ataque", "feat", "Duplica este rasgo. Configura una actividad de ataque de D&D 5e, su alcance, daño y tipo elemental. Registra el coste de PP en la descripción."],
-    ["Semilla Revivir", "consumable", "Cuando el portador cae a 0 PG, puede consumir esta semilla para recuperar PG según el criterio del Director."],
-    ["Orbe de Escape", "consumable", "Permite evacuar al equipo de una Mazmorra Misteriosa salvo que una regla de la escena lo impida."]
-  ];
-  for (const [name, type, description] of examples) {
-    if (game.items.some(i => i.name === name && i.getFlag(MODULE_ID, "starter"))) continue;
-    await Item.create({
-      name, type, folder: itemFolder.id,
-      flags: { [MODULE_ID]: { starter: true } },
-      system: { description: { value: `<p>${description}</p>` } }
-    });
-  }
+  await importStarterCompendia();
   await game.settings.set(MODULE_ID, "starterCreated", true);
+  await game.settings.set(MODULE_ID, "contentVersion", 5);
   ui.notifications.info(game.i18n.localize("PMD.SetupDone"));
+}
+
+async function importStarterCompendia() {
+  if (!game.user.isGM) return;
+  const itemFolder = game.folders.find(f => f.name === "PMD — Contenido inicial" && f.type === "Item")
+    ?? await Folder.create({ name: "PMD — Contenido inicial", type: "Item", color: "#f1b93c" });
+  const journalFolder = game.folders.find(f => f.name === "Pokémon Mystery Dungeon" && f.type === "JournalEntry")
+    ?? await Folder.create({ name: "Pokémon Mystery Dungeon", type: "JournalEntry", color: "#285b88" });
+  const packNames = ["pmd-starter-moves", "pmd-starter-items"];
+  for (const packName of packNames) {
+    const pack = game.packs.get(`${MODULE_ID}.${packName}`);
+    if (!pack) {
+      console.warn(`${MODULE_ID} | No se encontró el compendio ${packName}.`);
+      continue;
+    }
+    for (const document of await pack.getDocuments()) {
+      const data = document.toObject();
+      delete data._id;
+      data.folder = itemFolder.id;
+      const existing = game.items.find(item =>
+        item.name === data.name && item.getFlag(MODULE_ID, "starter")
+      );
+      if (existing) await existing.update(data);
+      else await Item.create(data);
+    }
+  }
+  const rulesPack = game.packs.get(`${MODULE_ID}.pmd-rules`);
+  if (rulesPack) {
+    for (const document of await rulesPack.getDocuments()) {
+      const data = document.toObject();
+      delete data._id;
+      data.folder = journalFolder.id;
+      const existing = game.journal.find(entry =>
+        entry.name === data.name && entry.getFlag(MODULE_ID, "starter")
+      );
+      if (existing) await existing.update(data);
+      else await JournalEntry.create(data);
+    }
+  }
 }
 
 Hooks.once("init", () => {
@@ -319,6 +455,13 @@ Hooks.once("init", () => {
     config: false,
     type: Boolean,
     default: false
+  });
+  game.settings.register(MODULE_ID, "contentVersion", {
+    name: "Versión del contenido PMD instalado",
+    scope: "world",
+    config: false,
+    type: Number,
+    default: 0
   });
   game.settings.registerMenu(MODULE_ID, "starterContent", {
     name: "PMD.Setup",
@@ -336,25 +479,104 @@ Hooks.once("init", () => {
 });
 
 Hooks.once("ready", async () => {
+  // Delegación de respaldo: algunas hojas dnd5e vuelven a pintar el formulario y
+  // eliminan listeners locales; el botón debe seguir funcionando en modo normal y edición.
+  document.addEventListener("click", event => {
+    const profileButton = event.target.closest?.("[data-pmd-open-profile]");
+    if (profileButton && !event.defaultPrevented) {
+      event.preventDefault();
+      event.stopPropagation();
+      const actorId = profileButton.closest("[data-pmd-actor-id]")?.dataset.pmdActorId;
+      void openPanel(game.actors.get(actorId));
+    }
+    const moveButton = event.target.closest?.("[data-pmd-edit-move]");
+    if (moveButton && !event.defaultPrevented) {
+      event.preventDefault();
+      event.stopPropagation();
+      const itemId = moveButton.closest("[data-pmd-item-id]")?.dataset.pmdItemId;
+      void openMoveEditor(game.items.get(itemId));
+    }
+  });
   game.pmd = {
     open: openPanel,
     mission: generateMission,
     typeCalculator,
     createStarterContent,
+    importStarterCompendia,
     data: actorData
   };
   console.info("Pokémon Mystery Dungeon | Listo para D&D 5e.");
-  if (game.user.isGM && !game.settings.get(MODULE_ID, "starterCreated")) {
+  if (game.user.isGM && game.settings.get(MODULE_ID, "contentVersion") < 5) {
     const create = await foundry.applications.api.DialogV2.confirm({
       window: { title: game.i18n.localize("PMD.Title") },
       classes: ["pmd-dialog"],
-      content: `<p>El módulo está listo. ¿Quieres crear ahora la guía rápida, la plantilla de Movimiento Pokémon y los objetos iniciales?</p>`,
-      yes: { label: "Crear contenido", icon: "fas fa-paw" },
+      content: `<p>Hay una actualización de contenido PMD disponible. Incluye 902 movimientos, objetos de mazmorra, 121 candidatos de las entregas de Mundo Misterioso, 1025 especies de las generaciones 1–9, avatares y un test de personalidad PMD.</p><p>¿Quieres importarla al mundo? No se borrará ningún Actor ni documento propio.</p>`,
+      yes: { label: "Importar y actualizar", icon: "fas fa-paw" },
       no: { label: "Más tarde" },
       rejectClose: false
     });
     if (create) await createStarterContent();
   }
+});
+
+Hooks.on("renderApplicationV2", (application, element) => {
+  if (!(element instanceof HTMLElement)) return;
+  if (isActorSheet(application) && !element.querySelector("[data-pmd-sheet-banner]")) {
+    const actor = application.document ?? application.actor;
+    element.insertAdjacentHTML("afterbegin", pokemonSheetBanner(actor));
+    element.querySelector("[data-pmd-sheet-banner]")?.insertAdjacentHTML("afterend", integratedPokemonSection(actor));
+    const button = element.querySelector("[data-pmd-open-profile]");
+    button?.addEventListener("click", event => {
+      event.preventDefault();
+      event.stopPropagation();
+      void openPanel(actor);
+    }, { capture: true });
+    const box = element.querySelector("[data-pmd-integrated]");
+    box?.querySelector("[data-pmd-inline-save]")?.addEventListener("click", event => {
+      event.preventDefault();
+      event.stopPropagation();
+      void saveIntegratedProfile(actor, box, application);
+    }, { capture: true });
+    box?.querySelectorAll("[data-pmd-item-id]").forEach(moveButton => moveButton.addEventListener("click", event => {
+      event.preventDefault();
+      event.stopPropagation();
+      void game.items.get(moveButton.dataset.pmdItemId)?.sheet?.render(true);
+    }, { capture: true }));
+  }
+  if (isItemSheet(application)) {
+    const item = application.document;
+    const isMove = item.getFlag(MODULE_ID, "move")?.kind === "move";
+    if (isMove && !element.querySelector("[data-pmd-item-banner]")) {
+      element.insertAdjacentHTML("afterbegin", moveSheetBanner(item));
+      element.querySelector("[data-pmd-edit-move]")?.addEventListener("click", event => {
+        event.preventDefault();
+        event.stopPropagation();
+        void openMoveEditor(item);
+      }, { capture: true });
+    }
+  }
+});
+
+Hooks.on("renderActorDirectory", (application, html) => {
+  const root = html instanceof HTMLElement ? html : html?.[0];
+  if (!root || root.querySelector("[data-pmd-create-actor]")) return;
+  const actions = root.querySelector(".header-actions") ?? root.querySelector("header");
+  if (!actions) return;
+  const button = document.createElement("button");
+  button.type = "button";
+  button.dataset.pmdCreateActor = "true";
+  button.innerHTML = '<i class="fas fa-paw"></i> Crear Pokémon';
+  button.title = "Crea un Actor personaje con perfil PMD listo para configurar";
+  button.addEventListener("click", async event => {
+    event.preventDefault();
+    const actor = await Actor.create({
+      name: "Pokémon",
+      type: "character",
+      flags: { [MODULE_ID]: { profile: { species: "", type1: "", type2: "", hunger: 100, hungerMax: 100, pp: 20, ppMax: 20, friendship: 0, rank: "Normal", rankPoints: 0, nature: "" } } }
+    });
+    await actor?.sheet?.render(true);
+  });
+  actions.prepend(button);
 });
 
 Hooks.on("getActorDirectoryEntryContext", (_html, options) => {

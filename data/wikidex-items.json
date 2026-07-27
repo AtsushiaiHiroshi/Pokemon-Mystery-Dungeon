@@ -1,0 +1,2782 @@
+[
+  {
+    "name": "Alejosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Stayaway Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Deja Petrificado al Pokémon atacado y lo teletransporta a un punto cercano a las escaleras.",
+    "affects": "Enemigo enfrente.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Arenoesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Sandy Orb)",
+    "price": "150 Poké",
+    "locations": "Bazar Kecleon",
+    "description": "Objeto que cambia el tiempo a tormenta de arena durante varios turnos.",
+    "affects": "Todos los Pokémon en el piso.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Arrojaesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Hurl Orb)",
+    "price": "300 Poké",
+    "locations": "Bazar Kecleon , Monte Acero , Mar Maravilla , Sima Silenciosa",
+    "description": "Lanza al Pokémon enemigo contra otro enemigo, causándole daño.",
+    "affects": "Enemigo enfrente.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Asaltosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Pounce Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Permite saltar y ponerse justo enfrente de un Pokémon, por alejado que esté. Si no hay ninguno, se llegará hasta la pared.",
+    "affects": "Especial.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aspirosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Trawl Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Acerca todos los objetos que haya en el piso y los coloca a los pies del Pokémon. Cuidado: ¡No usar cuando hay Tiendas Kecleon ! En Pokémon Mundo megamisterioso, no acercará objetos de una Tienda Kecleon.",
+    "affects": "Usuario.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Asustaesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Shocker Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Cambia el estado del enemigo a Acobardado , haciendo que lance sus ataques en la dirección contraria.",
+    "affects": "Enemigo enfrente.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Birloesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Mug Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Causa daño al rival. También le roba su objeto, que será el que lleve el Pokémon a partir de entonces.",
+    "affects": "Enemigo enfrente.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Contraesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Rebound Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Cambia el estado a Minicontra . Devuelve ¼ del daño sufrido por ataques convencionales o movimientos de ataque físico. Si se debilita, no puede devolver el daño.",
+    "affects": "Usuario.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Dosfiloesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Two-Edge Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Reduce a 1 los PS de todos los enemigos en la sala. Si acierta, también reduce a la mitad los PS del usuario.",
+    "affects": "Enemigos en la sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Escalosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Stairs Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Revela la ubicación de las escaleras en el piso.",
+    "affects": "Especial.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Escanosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Scanner Orb)",
+    "price": "300 Poké",
+    "locations": "Tienda Kecleon , Bosque Tétrico , Sima Silenciosa",
+    "description": "Revela la ubicación de todos los objetos sin dueño que hay en el piso. También revela la ubicación de los objetos de las tiendas, por lo que podemos saber si en el piso actual hay alguna tienda.",
+    "affects": "Usuario.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Escobaesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Trapbust Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Destruye todas las trampas de la sala.",
+    "affects": "Sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Evadesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Evasion Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Objeto que sube un nivel la evasión del Pokémon.",
+    "affects": "Usuario.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Fugaesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Escape Orb)",
+    "price": "300 Poké (150 Poké en MM2)",
+    "locations": "Tienda Kecleon , Monte Acero , Campo Ventoso , Bosque Tétrico , Sima Silenciosa",
+    "description": "Permite al equipo de rescate escapar del territorio. Cuidado: ¡No podrás usarla si has robado en una Tienda Kecleon en este piso!",
+    "affects": "Todos los miembros del equipo en este piso.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Globosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Lob Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Causa daño a enemigos que se encuentren a una distancia máxima de 2 baldosas.",
+    "affects": "Enemigos desde 2 baldosas.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Granizosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Hail Orb)",
+    "price": "150 Poké",
+    "locations": "Bazar Kecleon",
+    "description": "Objeto que cambia el tiempo a granizo durante varios turnos.",
+    "affects": "Todos los Pokémon en el piso.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Invisiesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Invisify Orb)",
+    "price": "-",
+    "locations": "Grieta Espacial",
+    "description": "El Pokémon se vuelve invisible para todos los Pokémon (incluyendo el acompañante) de la sala.",
+    "affects": "El líder o el pokémon que use el objeto.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lanzosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Longtoss Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Cambia el estado del Pokémon a Lanzador . Los objetos que lance no pararán hasta chocar contra una pared o un Pokémon.",
+    "affects": "Usuario.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Letalosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(One-Shot Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Derrota al enemigo de un solo golpe, si acierta.",
+    "affects": "Enemigo enfrente.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Llamadasfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Rollcall Orb)",
+    "price": "150 Poké",
+    "locations": "Bazar Kecleon",
+    "description": "Acerca a todos los miembros del equipo.",
+    "affects": "Miembros del equipo en el piso.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lluviaesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Rainy Orb)",
+    "price": "70 Poké",
+    "locations": "Bazar Kecleon",
+    "description": "Objeto que cambia el tiempo a lluvia durante varios turnos.",
+    "affects": "Todos los Pokémon en el piso.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Luminosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Luminous Orb)",
+    "price": "",
+    "locations": "Bosque Tétrico",
+    "description": "Revela todo el piso al Pokémon.",
+    "affects": "Usuario.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Movilesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Mobile Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Cambia el estado del Pokémon a Móvil , permitiéndole moverse y atacar sin que paredes, agua, lava o nubes se lo impidan.",
+    "affects": "Usuario.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Objetoesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Itemizer Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Transforma al Pokémon enemigo en un objeto cualquiera.",
+    "affects": "Enemigo enfrente.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Ofuscoesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Totter Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Causa el estado de Confusión en todos los enemigos de la sala, restando precisión a sus ataques y movimientos.",
+    "affects": "Enemigos en la sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Perforasfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Pierce Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Cambia el estado del Pokémon a Perforador . Los objetos que lance atravesarán paredes y a otros Pokémon.",
+    "affects": "Usuario.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Permutoesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Switcher Orb)",
+    "price": "",
+    "locations": "Bosque Tétrico , Sima Silenciosa",
+    "description": "El Pokémon intercambia su posición con la de otro Pokémon, por alejado que esté.",
+    "affects": "Pokémon en línea recta.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Petreosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Petrify Orb)",
+    "price": "300 Poké",
+    "locations": "Bazar Kecleon , Monte Acero",
+    "description": "Deja petrificado a cualquier enemigo que se encuentre en la sala, impidiéndole realizar cualquier acción hasta ser alcanzados por un ataque.",
+    "affects": "Enemigos en la sala..",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Radarosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Radar Orb)",
+    "price": "300 Poké",
+    "locations": "Bazar Kecleon , Bosque Tétrico , Sima Silenciosa",
+    "description": "Revela la ubicación de todos los enemigos que hay en el piso.",
+    "affects": "Usuario.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Rafagaesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Blowback Orb)",
+    "price": "",
+    "locations": "Bosque Tétrico , Sima Silenciosa",
+    "description": "Lanza volando al rival. Si choca contra una pared o contra otro Pokémon, sufre daño.",
+    "affects": "Pokémon en línea recta.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Ralentosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Slow Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Baja un nivel la Velocidad de movimiento de los enemigos que se encuentran en la misma sala.",
+    "affects": "Enemigos en la sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Rapidosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Quick Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Sube un nivel la Velocidad de movimiento de los miembros del equipo que se encuentran en la misma sala.",
+    "affects": "Miembros del equipo en la sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Rechazasfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Spurn Orb)",
+    "price": "150 Poké",
+    "locations": "Bazar Kecleon",
+    "description": "Teletransporta a todos los enemigos de la sala a sitios al azar del mismo piso.",
+    "affects": "Enemigos en la sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Reconosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Identify Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Revela si los Pokémon de la sala llevan objetos o no.",
+    "affects": "Todos los Pokémon en la sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Rellenosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Fill-In Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Convierte en suelo firme el agua o la lava que hay delante del Pokémon.",
+    "affects": "Especial.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Robosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Snatch Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Cambia el estado del Pokémon a Robo , lo que le permite robar los movimientos de los Pokémon que estén en su mismo piso.",
+    "affects": "Usuario.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Rocaesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Rocky Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Causa daño al rival. También baja un nivel su velocidad de movimiento.",
+    "affects": "Enemigo en frente.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Señuelosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Decoy Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Transforma al enemigo en un Señuelo durante varios turnos.",
+    "affects": "Todos los Pokémon en la sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Silenciosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Silence Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Deja al enemigo amordazado e incapaz de atacar o realizar ningún movimiento usando la boca.",
+    "affects": "Enemigo enfrente.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Solesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Sunny Orb)",
+    "price": "150 Poké",
+    "locations": "Bazar Kecleon",
+    "description": "Objeto que cambia el tiempo a soleado durante varios turnos.",
+    "affects": "Todos los Pokémon en la sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Somniesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Petrify Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Deja paralizado al enemigo enfrente.",
+    "affects": "Enemigo enfrente.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Soporesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Slumber Orb)",
+    "price": "300 Poké",
+    "locations": "Bazar Kecleon",
+    "description": "Deja dormido a cualquier enemigo que se encuentre en la sala, sin que pueda realizar acción alguna.",
+    "affects": "Enemigos en la sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Tamañosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Sizebust Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Causa daño al rival. Cuanto mayor es el tamaño del enemigo, mayor es el daño causado.",
+    "affects": "Enemigo enfrente.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Telesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Warp Orb)",
+    "price": "300 Poké",
+    "locations": "Bazar Kecleon , Monte Acero , Mar Maravilla , Bosque Tétrico , Sima Silenciosa",
+    "description": "Teletransporta a los enemigos que se encuentren en esa misma sala a otros puntos del mismo piso.",
+    "affects": "Enemigos en la sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Temoresfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Foe-Fear Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Cambia al estado de todos los enemigos en la sala a aterrorizado , lo que hace huir de otros Pokémon.",
+    "affects": "Enemigos en la sala (si el usuario esta confuso le afectara a él también, lo mismo pasa con los acompañantes).",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Trampaesfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Trapper Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Coloca una trampa al azar en el lugar que el Pokémon se encuentre (al usar la trampa no hace efecto).",
+    "affects": "Usuario.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Transfosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(Transfer Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Trasforma al enemigo en un Pokémon diferente.",
+    "affects": "Enemigo enfrente.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Unisalasfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(One-Room Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Destruye todas las paredes del piso, convirtiéndolo en una única sala abierta.",
+    "affects": "Toda la sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Visiosfera",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/85/latest/20101008185348/Esfera_MM.png",
+    "englishName": "(See-Trap Orb)",
+    "price": "",
+    "locations": "",
+    "description": "Revela todas las trampas ocultas en la misma sala.",
+    "affects": "Sala.",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Manzanita",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/3/39/latest/20101009000352/Manzana_MM.png",
+    "englishName": "(Apple)",
+    "price": "25 Poké",
+    "locations": "Se puede encontrar en los suelos de casi todos los territorios o comprándola en el Bazar Kecleon .",
+    "description": "Alimento que llena 50 puntos de la Tripa del Pokémon. Comerla cuando la Tripa está llena aumenta un poco el tamaño de la misma.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Manzana",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/3/39/latest/20101009000352/Manzana_MM.png",
+    "englishName": "(Big Apple)",
+    "price": "50 Poké",
+    "locations": "Se puede encontrar en los suelos de algunos territorios en Pokémon Mundo Misterioso 2 y en muy pocos de Pokémon Mundo Misterioso 1 o comprándola en el Bazar Kecleon .",
+    "description": "Alimento que llena la Tripa del Pokémon, comerla cuando la Tripa está llena aumenta 10 puntos el tamaño de la misma.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Manzanota",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/3/39/latest/20101009000352/Manzana_MM.png",
+    "englishName": "(Huge Apple)",
+    "price": "100 Poké",
+    "locations": "Tienda Kecleon , Cueva Deseo (MM1) y en algunos territorios de MM2.",
+    "description": "Alimento que llena del todo la tripa del Pokémon. También aumenta el tamaño de su Tripa en 10 puntos.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Plátano",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/6/67/latest/20101009153514/Pl%C3%A1tano_MM.png",
+    "englishName": "(Banana)",
+    "price": "-",
+    "locations": "Gruta Helada y Pico Escarcha (muros). Mazmorra misteriosa",
+    "description": "Alimento raro que llena 50 puntos la tripa del Pokémon. Comerla cuando la Tripa está llena aumenta cinco puntos el tamaño de la misma.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Castaña",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/82/latest/20101009153344/Casta%C3%B1a_MM.png",
+    "englishName": "(Chestnut)",
+    "price": "-",
+    "locations": "Bosque Alboroto (N-9)",
+    "description": "Llena 10 puntos la tripa.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Grimmerola",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/2/29/latest/20101009000451/Grimmerola_MM.png",
+    "englishName": "(Grimy Food)",
+    "price": "-",
+    "locations": "Reliquia Oscura , Zanja Argéntea , Desierto Norte .",
+    "description": "Alimento que llena 30 puntos la Tripa del Pokémon. Sin embargo, causa a su vez diversas alteraciones de estado.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Néctar",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/2/2d/latest/20090614191946/Miel.png",
+    "englishName": "(Nectar)",
+    "price": "-",
+    "locations": "Recompensa por misión de Centinela del Pokégremio de exploradores . Probabilidad de obtenerlo de cofres misteriosos con la habilidad Recogemiel .",
+    "description": "Alimento que aumentan en 10 los puntos de CI del Pokémon y en 5 los puntos de la Tripa del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Manzana Oro",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/2/21/latest/20101009000403/Manzana_Oro_MM.png",
+    "englishName": "(Golden Apple)",
+    "price": "-",
+    "locations": "Cofres o Carta Secreta .",
+    "description": "Llena la Tripa del todo. Comerla cuando la Tripa está llena aumenta cincuenta puntos el tamaño de la misma.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Baya Aranja",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/2/2c/latest/20101008192320/Baya_Aranja_MM.png",
+    "englishName": "(Oran Berry)",
+    "price": "50 Poké",
+    "locations": "En la mayoria de los territorios y a la venta en el Bazar Kecleon (MM1 y MM2) Aranjal (MM2)",
+    "description": "Restaura 100 PS. También llena ligeramente la tripa del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Baya Atania",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/a7/latest/20101008194749/Baya_Atania_MM.png",
+    "englishName": "(Chesto Berry)",
+    "price": "-",
+    "locations": "Colina Draco , Bosque Aullador .",
+    "description": "Deja Desvelado al Pokémon, impidiéndole quedarse dormido . También llena ligeramente su tripa.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Baya Meloc",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/b/b1/latest/20101008194928/Baya_Meloc_MM.png",
+    "englishName": "(Pecha Berry)",
+    "price": "80 Poké",
+    "locations": "Arboleda Chica , Mina Onda Trueno , Risco Calado",
+    "description": "Cura al Pokémon cuando está envenenado o gravemente envenenado . También llena ligeramente su tripa.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Baya Zidra",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/58/latest/20101008234525/Baya_Zidra_MM.png",
+    "englishName": "(Sitrus Berry)",
+    "price": "-",
+    "locations": "Reliquia Perdida , Torre Regocijo , Cueva Deseo y Bosque Pureza (MM1)",
+    "description": "Alimento que restaura los PS. Si el Pokémon ya tiene todos sus PS, comerla subirá en 2 sus PS máximos, también llena ligeramente la tripa del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Baya Safre",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/7/76/latest/20101008234449/Baya_Safre_MM.png",
+    "englishName": "(Rawst Berry)",
+    "price": "150 Poké (90 Poké en MM2)",
+    "locations": "Tienda Kecleon , Bosque Tétrico , Cueva Occidental .",
+    "description": "Alimento que cura al Pokémon cuando sufre alguna quemadura , también llena ligeramente la tripa del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Baya Zreza",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/6/6d/latest/20101008234655/Baya_Zreza_MM.png",
+    "englishName": "(Cheri Berry)",
+    "price": "120 Poké",
+    "locations": "Tienda Kecleon , Mina Onda Trueno , Bosque Alboroto .",
+    "description": "Alimento que cura al Pokémon de la parálisis , también llena ligeramente la tripa del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cable Link",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/b/bb/latest/20101008212918/Cable_Link_MM.png",
+    "englishName": "(Link Cable)",
+    "price": "? Poké",
+    "locations": "Cueva Solar , Reliquia Perdida .(MM1), Tienda Kecleon (MM2).",
+    "description": "Sirve para evolucionar a los Pokémon que evolucionan por intercambio en los videojuegos principales.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Piedra agua",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/b/bc/latest/20140116224322/Piedra_Agua_MM.png",
+    "englishName": "(Water Stone)",
+    "price": "",
+    "locations": "Campo Ventoso (solo en Pokémon MM: Equipo de rescate Rojo/Azul). En Exploradores del Tiempo/Oscuridad/Cielo se obtiene como recompensa en algunas misiones y por carta secreta o en Tiendas Kecleon.",
+    "description": "Sirve para evolucionar a algunos Pokémon tipo Agua .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Piedra fuego",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/c/ce/latest/20140116214430/Piedra_fuego_MM.png",
+    "englishName": "(Fire Stone)",
+    "price": "",
+    "locations": "Campo de Fuego (solo en Pokémon MM: Equipo de rescate Rojo/Azul). En Exploradores del Tiempo/Oscuridad/Cielo se obtiene como recompensa en algunas misiones y por carta secreta",
+    "description": "Sirve para evolucionar a algunos Pokémon tipo Fuego .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Piedratrueno",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/2/2b/latest/20101009033227/Piedratrueno_MM.png",
+    "englishName": "(Thunder Stone)",
+    "price": "",
+    "locations": "Campo Centella (solo en Pokémon MM: Equipo de rescate Rojo/Azul). En Exploradores del Tiempo/Oscuridad/Cielo es posible obtenerlo por carta secreta o como recompensa tras completar alguna misión o en las tiendas Kecleon.",
+    "description": "Sirve para evolucionar a algunos Pokémon tipo Eléctrico .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Piedra solar",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/b/bb/latest/20101009033159/Piedra_solar_MM.png",
+    "englishName": "(Sun Stone)",
+    "price": "",
+    "locations": "Cueva Solar (solo en Pokémon MM: Equipo de rescate Rojo/Azul). En Exploradores del Tiempo/Oscuridad/Cielo se consigue por carta secreta y tras completar misiones.",
+    "description": "Sirve para evolucionar algunos Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Piedra hoja",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/2/21/latest/20101009174748/Piedra_hoja_MM.png",
+    "englishName": "(Leaf Stone)",
+    "price": "3000 poké",
+    "locations": "Cueva Deseo ( Tienda Kecleon solo en Pokémon MM: Equipo de rescate Rojo/Azul). En Exploradores del Tiempo/Oscuridad/Cielo es obtenible si recibimos una carta secreta o logramos completar una misión.",
+    "description": "Sirve para evolucionar a Pokémon tipo Planta .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Piedra lunar",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/c/c8/latest/20101009033038/Piedra_lunar_MM.png",
+    "englishName": "(Moon Stone)",
+    "price": "",
+    "locations": "Cueva Solar y Cueva Deseo (solo en Pokémon MM: Equipo de rescate Rojo/Azul). En Exploradores del Tiempo/Oscuridad/Cielo se puede obtener si completamos una misión (se nos da como recompensa) o bien, en cartas secretas.",
+    "description": "Sirve para evolucionar algunos Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Elixir Máx.",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/f/f4/latest/20101009000528/Vitamina_MM.png",
+    "englishName": "(Max Elixir)",
+    "price": "250 Poké",
+    "locations": "En la mayoría de Mazmorras y a la venta en el Bazar Kecleon",
+    "description": "Bebida que restaura completamente los PP de todos los movimientos del Pokémon. También llena ligeramente su Tripa.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Ginseng",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/f/f4/latest/20101009000528/Vitamina_MM.png",
+    "englishName": "(Ginseng)",
+    "price": "",
+    "locations": "Cueva Occidental , Cueva Deseo, Torre Regocijo , y Bosque Pureza (MM1)",
+    "description": "Bebida que aumenta la fuerza del movimiento asignado del Pokémon. No afecta a ciertos movimientos. También llena ligeramente su Tripa. Al beber entre 80 y 90 Ginseng, dependiendo del movimiento, hace que llegue al máximo de fuerza (+99).",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Proteína",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/f/f4/latest/20101009000528/Vitamina_MM.png",
+    "englishName": "(Protein)",
+    "price": "5000 Poké",
+    "locations": "Cueva Occidental , Cueva Deseo, Torre Regocijo , y Bosque Pureza (MM1)",
+    "description": "Bebida que refuerza la fuerza del Pokémon. También llena ligeramente su Tripa.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Calcio",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/f/f4/latest/20101009000528/Vitamina_MM.png",
+    "englishName": "(Calcium)",
+    "price": "6000 Poké",
+    "locations": "Cueva Occidental , Cueva Deseo, Torre Regocijo , y Bosque Pureza (MM1)",
+    "description": "Bebida que refuerza la fuerza especial del Pokémon. También llena ligeramente su Tripa.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Hierro",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/f/f4/latest/20101009000528/Vitamina_MM.png",
+    "englishName": "(Iron)",
+    "price": "7000 Poké",
+    "locations": "Cueva Occidental , Cueva Deseo, Torre Regocijo , y Bosque Pureza (MM1)",
+    "description": "Bebida que refuerza la defensa del Pokémon. También llena ligeramente su Tripa.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Zinc",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/f/f4/latest/20101009000528/Vitamina_MM.png",
+    "englishName": "(Zinc)",
+    "price": "7000 Poké",
+    "locations": "Cueva Occidental , Cueva Deseo, Torre Regocijo , y Bosque Pureza (MM1)",
+    "description": "Bebida que refuerza la defensa especial del Pokémon. También llena ligeramente su Tripa.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cinta Común",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Plain Ribbon)",
+    "price": "",
+    "locations": "Torre Regocijo y Bosque Pureza (MM1)",
+    "description": "Objeto que no causa ningún efecto aunque lo lleve puesto el Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cinta Cura",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Heal Ribbon)",
+    "price": "",
+    "locations": "En la mayoría de mazmorras y a la venta en el Bazar Kecleon",
+    "description": "Al llevarla, se acelera la regeneración natural de los PS del Pokémon. Sin embargo la Tripa del Pokémon también se vacía con mayor rapidez.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cinta Dieta",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Diet Ribbon)",
+    "price": "",
+    "locations": "Reliquia Perdida , Torre Regocijo , Cueva Deseo y Bosque Pureza (MM1)",
+    "description": "Al llevarla, vuelve insaciable al Pokémon e impide que pueda llenársele la Tripa. Si es el líder del equipo quien la lleva, su Tripa se vacía aún más rápido.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cinta Júbilo",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Joy Ribbon)",
+    "price": "",
+    "locations": "Se puede encontrar en Valle Escarpado n 5-10, Cueva Meridional n 36-40, con gran probabilidad en Campo de Fuego n 1-5, Campo Ventoso n 6-10 y Campo Centella n 1-5.",
+    "description": "Al llevarla, el Pokémon gana puntos de experiencia por cada PS perdido, ya sea por envenenamiento, quemadura, una trampa o por un ataque del oponente.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cinta Sol",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/c/c4/latest/20140116224730/Cinta_Sol_MM.png",
+    "englishName": "(Sun Ribbon)",
+    "price": "",
+    "locations": "Colina Draco P20 (Requiere llave) Cofres Lujosos de Cámara Dorada (MM2)",
+    "description": "Lleva el brillo del mismo sol permite evolucionar a cierto tipo de Pokémon. Dásela al Pokémon cuando esté listo para evolucionar.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cinta Luna",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/55/latest/20140116224639/Cinta_Luna_MM.png",
+    "englishName": "(Lunar Ribbon)",
+    "price": "",
+    "locations": "Usando llave en el nivel 20 del Campo Ventoso . Obtenible por cartas secretas, Bazar Kecleon (Mazmorras) y como recompensa tras completar misiones.",
+    "description": "Lleva el brillo mismo de la Luna. Permite evolucionar a un cierto tipo de Pokémon. Dásela al Pokémon cuando esté listo para evolucionar.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cinta Oro",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Gold Ribbon)",
+    "price": "4000 Poké",
+    "locations": "Torre del Cielo (MM1), Colina Trémula (MM2), etc.",
+    "description": "Objeto que no causa ningún efecto, aunque se lo des a un Pokémon para que lo lleve. Puede venderse por un buen pellizco.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cinto Ceñido",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Tight Belt)",
+    "price": "",
+    "locations": "Torre Regocijo y Bosque Pureza (MM1)",
+    "description": "Objeto que evita que te entre hambre. Así evitas llevarte manzanotas y cosas por el estilo a los lugares largos.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cinto Munch",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Munch Belt)",
+    "price": "",
+    "locations": "Torre Regocijo y Bosque Pureza (MM1) Plaza Pokémon",
+    "description": "Objeto que refuerza el Ataque y el Ataque Especial del Pokémon, pero vacía la tripa con mayor rapidez.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Rojo",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ad/latest/20101022210255/Lazo_Rojo_MM.png",
+    "englishName": "(Red Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura roja.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Azul",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/f/fe/latest/20101023065337/Lazo_Azul_MM.png",
+    "englishName": "(Blue Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura azul.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Verde",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/5d/latest/20101022220333/Lazo_Verde_MM.png",
+    "englishName": "(Green Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura verde.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Amarillo",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/d/d3/latest/20101022210605/Lazo_Amarillo_MM.png",
+    "englishName": "(Yellow Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura amarilla.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Lima",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/c/cd/latest/20101009214847/Lazo_Lima_MM.png",
+    "englishName": "(Lime Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura lima.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Cobalto",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/2/2d/latest/20101022211240/Lazo_Cobalto_MM.png",
+    "englishName": "(Cobalt Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura cobalto.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Marrón",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/3/3b/latest/20101009214944/Lazo_Marr%C3%B3n_MM.png",
+    "englishName": "(Brown Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2) Al completar el Dojo Final en el Dojo Marowak .",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura marrón.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Fucsia",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/f/f2/latest/20101022220835/Lazo_Fucsia_MM.png",
+    "englishName": "(Fuchsia Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura fucsia.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Menta",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/1/1c/latest/20101022211804/Lazo_Menta_MM.png",
+    "englishName": "(Ment Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura menta.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Naranja",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/7/70/latest/20101022210908/Lazo_Naranja_MM.png",
+    "englishName": "(Orange Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura naranja.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Rosa",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/86/latest/20101022222004/Lazo_Rosa_MM.png",
+    "englishName": "(Rosa Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura rosa.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Azul Cielo",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/b/bf/latest/20101022222317/Lazo_Azul_Cielo_MM.png",
+    "englishName": "(Sky Blue Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura azul cielo.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Violeta",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/88/latest/20101022221308/Lazo_Violeta_MM.png",
+    "englishName": "(Violet Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura violeta.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Plata",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/c/cf/latest/20101009214858/Lazo_Plata_MM.png",
+    "englishName": "(Silver Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura plata.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Púrpura",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/7/75/latest/20101022221533/Lazo_P%C3%BArpura_MM.png",
+    "englishName": "(Purple Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura púrpura.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Verde Oscuro",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/3/3d/latest/20101022220154/Lazo_Viridian_MM.png",
+    "englishName": "(Viridian Bow)",
+    "price": "",
+    "locations": "Se obtiene al inscribir al equipo en el Pokegremio de exploradores (MM2)",
+    "description": "Objeto que aumenta un poco el Ataque, Defensa, Ataque Especial y Defensa Especial, para los usuarios con aura verde oscuro.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Escama Marina",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/d/de/latest/20101008212239/Escama_Marina_MM.png",
+    "englishName": "(Deepseascale)",
+    "price": "",
+    "locations": "En el piso 15 del Gran Mar .",
+    "description": "Permite evolucionar a un cierto tipo de Pokémon. Dásela al Pokémon cuando esté listo para evolucionar.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Diente Marino",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/b/b5/latest/20101009221851/Diente_Marino_MM.png",
+    "englishName": "(Deepseatooth)",
+    "price": "",
+    "locations": "En el piso 25 del Gran Mar .",
+    "description": "Permite evolucionar a un cierto tipo de Pokémon. Dásela al Pokémon cuando esté listo para evolucionar.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Revestimiento Metálico",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/d/dd/latest/20101009221124/Rev._Met%C3%A1lico_MM.png",
+    "englishName": "(Metal Coat)",
+    "price": "",
+    "locations": "Cueva Meridional P49 y 50 (MM1)",
+    "description": "Permite evolucionar a Scyther y a Onix .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Amistad",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Friend Bow)",
+    "price": "",
+    "locations": "Monte Distante P30 (MM1, requiere llave) : Monte Mistral P15 (MM2, requiere llave) Fosa Cráter Oscuro",
+    "description": "Cuando lo lleva el líder del equipo, aumenta en 10% el Ratio de reclutamiento de Pokémon derrotados para el equipo de rescate.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Caquic",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Persim Band)",
+    "price": "",
+    "locations": "Bazar Kecleon (Mazmorras), Bazar Kecleon y en algunas mazmorras.",
+    "description": "Al llevarlo, impide que el Pokémon caiga en el estado Confusión .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Energía",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Power Band)",
+    "price": "",
+    "locations": "En la mayoría de mazmorras y a la venta en el Bazar Kecleon",
+    "description": "Al llevarlo, se fortalece el Ataque del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Especial",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Special Band)",
+    "price": "",
+    "locations": "En la mayoría de mazmorras y a la venta en el Bazar Kecleon",
+    "description": "Al llevarlo, mejora el Ataque Especial del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Espiral",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Twist Band)",
+    "price": "",
+    "locations": "En la mayoría de mazmorras y a la venta en el Bazar Kecleon",
+    "description": "Al llevarlo, impide que bajen de nivel el Ataque y el Ataque Especial del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Evasión",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Detect Band)",
+    "price": "",
+    "locations": "En la mayoría de mazmorras y a la venta en el Bazar Kecleon",
+    "description": "Al llevarlo, se incrementa la capacidad de Evasión del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Faja",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Stamina Band)",
+    "price": "",
+    "locations": "En la mayoría de mazmorras y a la venta en el Bazar Kecleon",
+    "description": "Al llevarlo, la tripa del Pokémon se vaciará más lentamente de lo normal.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Perfora",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Pierce Band)",
+    "price": "",
+    "locations": "Colina Draco , Campo de Fuego , Campo Ventoso .",
+    "description": "Al llevarlo, los objetos arrojadizos que lance el Pokémon atraviesan enemigos, muros y obstáculos sin detenerse.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Pelele",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Patsy Band)",
+    "price": "",
+    "locations": "Torre Regocijo y Bosque Pureza (MM1)",
+    "description": "Al llevarlo, aumenta la posibilidad de que el Pokémon reciba un golpe crítico en movimientos y ataques del enemigo.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Curva",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Curve Band)",
+    "price": "",
+    "locations": "Torre Regocijo y Bosque Pureza (MM1)",
+    "description": "Al llevarlo, los objetos arrojadizos rebotan en las paredes y salen despedidos hacia los lados. No afecta a las piedras ni cuando se esta en estado Perforador.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Rebote",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Bounce Band)",
+    "price": "",
+    "locations": "Reliquia Perdida , Torre Regocijo , Cueva Deseo y Bosque Pureza (MM1)",
+    "description": "Al llevarlo, los objetos arrojadizos lanzados contra el Pokémon rebotan sin causarle daño.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Zinc",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Zinc Band)",
+    "price": "",
+    "locations": "En la mayoría de mazmorras y a la venta en el Bazar Kecleon",
+    "description": "Al llevarlo, mejora la Defensa Especial del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Clima",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Weather Band)",
+    "price": "",
+    "locations": "En la mayoría de mazmorras y a la venta en el Bazar Kecleon",
+    "description": "Al llevarlo, impide que el Pokémon se vea afectado por las condiciones meteorológicas.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Ruido",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Racket Band)",
+    "price": "",
+    "locations": "",
+    "description": "Al llevarlo, el Pokémon despierta a los enemigos dormidos. Solo los despierta cuando están dormidos desde el principio.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Pañuelo Belleza",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/e/e9/latest/20101009150445/Pa%C3%B1uelo_Belleza_MM.png",
+    "englishName": "(Beauty Scarf)",
+    "price": "",
+    "locations": "Cueva Occidental P59 (Requiere llave)",
+    "description": "Prenda muy hermosa. Permite evolucionar a un cierto tipo de Pokémon. Dásela cuando este listo para evolucionar.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Pañuelo Cesión",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Pass Scarf)",
+    "price": "",
+    "locations": "Reliquia Perdida , Torre Regocijo , Cueva Deseo y Bosque Pureza (MM1)",
+    "description": "Al llevarlo, el Pokémon puede traspasar los efectos de los ataques y cierto tipo de movimientos hostiles al Pokémon que tiene al lado. No obstante, al llevarlo vacía su tripa con rapidez.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Pañuelo Evitar",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Dodge Scarf)",
+    "price": "",
+    "locations": "",
+    "description": "Al llevarlo, impide que el Pokémon resulte alcanzado por objetos arrojadizos.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Pañuelo Meloc",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Pecha Scarf)",
+    "price": "",
+    "locations": "En la mayoría de mazmorras y a la venta en el Bazar Kecleon",
+    "description": "Al llevarlo, impide que el Pokémon caiga envenenado o gravemente envenenado .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Pañuelo Sigilo",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Sneak Scarf)",
+    "price": "",
+    "locations": "",
+    "description": "Al llevarlo, el Pokémon no despierta a los enemigos dormidos. Solo funciona cuando los enemigos están dormidos desde el principio.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Pañuelo Teletransporte",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Warp Scarf)",
+    "price": "",
+    "locations": "",
+    "description": "Al llevarlo, el Pokémon puede en ocasiones teletransportarse hasta otro punto situado en el mismo piso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Pañuelo Defensa",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Def. Scarf)",
+    "price": "",
+    "locations": "En la mayoría de mazmorras y a la venta en el Bazar Kecleon Como recompensa de Chatot en el minijuego de guardia (MM2)",
+    "description": "Al llevarlo, se fortalece la Defensa del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Pañuelo Móvil",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Mobile Scarf)",
+    "price": "",
+    "locations": "Reliquia Perdida , Torre Regocijo , Cueva Deseo y Bosque Pureza (MM1) También como recompensa de Gengar tras romper la maldición de Gardevoir Cráter Oscuro (MM2)",
+    "description": "Al llevarlo, el Pokémon puede atravesar muros, caminar sobre la lava, etc. Sin embargo, la Tripa del Pokémon también se vacía con mayor rapidez al atravesar paredes.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Pañuelo Trampa",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(Trap Scarf)",
+    "price": "",
+    "locations": "",
+    "description": "Al llevarlo, impide que las trampas salten cuando el Pokémon las pisa.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Antiadhesivo",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/ae/latest/20101009150812/Pa%C3%B1uelo_MM.png",
+    "englishName": "(No-Stick Cap)",
+    "price": "",
+    "locations": "Reliquia Perdida (MM1)",
+    "description": "Al llevarlo, evita que los objetos del Pokémon se vuelvan pegajosos y no puedan usarse.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Insomnilente",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/d/d3/latest/20101009025920/Gafas_Claras_MM.png",
+    "englishName": "(Insomniscope)",
+    "price": "",
+    "locations": "",
+    "description": "Al llevarlo, impide que el Pokémon caiga dormido , se eche una siesta , tenga una pesadilla o se sienta somnoliento .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Gafas Lince",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/a3/latest/20101009025823/Gafas_Oscuras_MM.png",
+    "englishName": "(Lockon Specs)",
+    "price": "",
+    "locations": "",
+    "description": "Al llevarlas, mejora la puntería con que el Pokémon lanza objetos arrojadizos.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Gafas Azar",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/a3/latest/20101009025823/Gafas_Oscuras_MM.png",
+    "englishName": "(No-Aim Scope)",
+    "price": "",
+    "locations": "MM1: Bosque Pureza , Torre Regocijo",
+    "description": "Al llevarlas,el Pokémon lanzara los objetos arrojadizos al azar.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Gafas Rayos X",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/a3/latest/20101009025823/Gafas_Oscuras_MM.png",
+    "englishName": "(X-Ray Specs)",
+    "price": "",
+    "locations": "Se encuentra en Bosque Tétrico , Caverna magma , Cueva Meteora y Mar Tormentoso (MM1)",
+    "description": "Al llevarlas, el Pokémon puede localizar objetos y enemigos.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Revelalente",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/a3/latest/20101009025823/Gafas_Oscuras_MM.png",
+    "englishName": "(...?)",
+    "price": "",
+    "locations": "Se encuentra en Bosque Pureza",
+    "description": "Permite al Pokémon que la lleve equipada ver todas las trampas del piso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Periscopio",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/b/b9/latest/20101009025948/Periscopio_MM.png",
+    "englishName": "(Scope Lens)",
+    "price": "",
+    "locations": "Se encuentra en Caverna magma",
+    "description": "Al llevarlo, aumenta la posibilidad de que el Pokémon aseste un golpe crítico en movimientos y ataques.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Más CI",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8a/latest/20101009015540/M%C3%A1s_CI_MM.png",
+    "englishName": "(IQ Booster)",
+    "price": "",
+    "locations": "Lo puedes conseguir ganando el premio gordo de la lotería en el Reciclaje explorador",
+    "description": "Al llevarlo el Pokémon su CI aumentará más o menos dependiendo del territorio que se encuentre.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cofre Único",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/aa/latest/20101009015402/Cofre_%C3%9Anico_MM.png",
+    "englishName": "(Miracle Chest)",
+    "price": "",
+    "locations": "Islas Cero , en los cofres con llave.",
+    "description": "Al llevarlo el Pokémon ganará más puntos de experiencia cuando un rival caiga debilitado.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Caja Enlace",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/4/4d/latest/20101008192037/Caja_Enlace_MM.png",
+    "englishName": "(Link Box)",
+    "price": "9000 poké",
+    "locations": "En la mayoría de mazmorras (MM1) Dojo Final (MM2)",
+    "description": "Una caja especial que permite al Pokémon enlazar y desenlazar movimientos en el interior de un territorio. Algunos movimientos no se pueden enlazar. Los movimientos enlazados se separan si los PP de uno de ellos baja a 0.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Caja música",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/9/97/latest/20101016085227/Caja_M%C3%BAsica_MM.png",
+    "englishName": "(Music Box)",
+    "price": "-",
+    "locations": "Reliquia Perdida",
+    "description": "Una preciosa caja de música en la que suena una hermosa melodía. Se dice que tiene el poder de atraer algo especial cuando se mantiene cerca. Se obtiene al juntar las tres partes de los cristales de roca, hielo y acero.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lágrima ámbar",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/d/d9/latest/20120809212729/L%C3%A1grima_%C3%81mbar.png",
+    "englishName": "(Amber Tear)",
+    "price": "-",
+    "locations": "Mediante carta secreta (T+T8S 8546-Q1 -J61H 6+QT# -SRN@Y+ 0QSMQ)",
+    "description": "Si la lleva el líder del equipo, ayuda a reclutar. Es un líquido de color ámbar que, según se dice, es un tesoro de valor incalculable.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Gabitescama",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/2/2e/latest/20101009222732/Gabitescama_MM.png",
+    "englishName": "(Gabite Scale)",
+    "price": "-",
+    "locations": "No aparece en MM1, Cueva Laberinto (MM2).",
+    "description": "Una escama de Gabite se considera una cura para la mayoría de problemas de estado del Pokémon que la consume. También llena ligeramente su Tripa. Se puede conseguir una al derrotar al Gabite de la planta -10 de la Cueva Laberinto .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Piedra deseo",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/54/latest/20101009101655/Piedra_Deseo_MM.png",
+    "englishName": "(Wish Stone)",
+    "price": "-",
+    "locations": "Cueva Deseo .",
+    "description": "Es una misteriosa piedra en forma de nota musical, la cual sirve para que Jirachi te conceda un deseo en el piso 99 de la Cueva Deseo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Máscara oro",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/b/b0/latest/20101009015604/M%C3%A1scara_Oro_MM.png",
+    "englishName": "(Golden Mask)",
+    "price": "-",
+    "locations": "Carta secreta.",
+    "description": "Aumenta el ratio de reclutamiento en un 24% de un Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Llave",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/c/c8/latest/20101009015454/Llave_MM.png",
+    "englishName": "(Key)",
+    "price": "8000 poké",
+    "locations": "Cueva Solar , Cueva Occidental . Gran Desierto P19 y 20 y Mar Lejano P60 - P75 (MM1) Cueva Regia (MM2)",
+    "description": "Llave que abre una puerta en el interior de un territorio.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Mt Usada",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/6/60/latest/20101009011930/Mt_Usada_MM.png",
+    "englishName": "(Used TM)",
+    "price": "1 poké",
+    "locations": "",
+    "description": "Restos de una MT tras ser usada. Puede repararse usando el movimiento Reciclaje . Este objeto no puede almacenarse en la Consigna Kangaskhan , siendo el único objeto que no se puede almacenar.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Null",
+    "img": null,
+    "englishName": "(Null)",
+    "price": "-",
+    "locations": "Este objeto que no se puede obtener normalmente, es un objeto \"inexistente\" por así decirlo.",
+    "description": "Objeto que tiene diversos usos, aunque solo se obtiene al ocupar el gameshark o también con \"cheats o trucos\" en una Nintendo DS para obtener todos los objetos.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Saludablesfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Multifortisfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Rodeosfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Dosfilosfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Pausasfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Ofuscosfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Detienesfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Guardasfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Visioesfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Reclamosfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Igualasfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Multiescudosfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Multievadosfera",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Involusfera rival",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Rosquilla*",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/2/29/latest/20130420085652/Rosquilla_MM3.png",
+    "englishName": "Rosquilla*",
+    "price": "600 Poké",
+    "locations": "Senda Dulces",
+    "description": "Da 1500 Puntos de Experiencia al Pokémon que la consume.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Mini rosquilla*",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/2/29/latest/20130420085652/Rosquilla_MM3.png",
+    "englishName": "Mini rosquilla*",
+    "price": "30 Poké",
+    "locations": "Senda Dulces",
+    "description": "Da 500 Puntos de Experiencia al Pokémon que la consume.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Rosquilla grande*",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/2/29/latest/20130420085652/Rosquilla_MM3.png",
+    "englishName": "Rosquilla grande*",
+    "price": "1500 Poké",
+    "locations": "Senda Dulces",
+    "description": "Da 5000 Puntos de Experiencia al Pokémon que la consume.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cinta Auxilio",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/0/04/latest/20130402160408/Cinta_MM3.png",
+    "englishName": "(Help Ribbon)",
+    "price": "¿? Poké",
+    "locations": "Tienda Kecleon y Mazmorras aleatorias .",
+    "description": "Al llevarla, el usuario encajará un ataque en lugar de un aliado con pocos PS.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Elegido",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/0/04/latest/20130402160408/Cinta_MM3.png",
+    "englishName": "",
+    "price": "2500 Poké",
+    "locations": "Tienda Kecleon y Mazmorras aleatorias .",
+    "description": "Al llevarla, aumenta la posibilidad de dar un golpe crítico si se utiliza el mismo movimiento varias veces seguidas.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Sayo Reunión",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/0/04/latest/20130402160408/Cinta_MM3.png",
+    "englishName": "",
+    "price": "1000 Poké",
+    "locations": "Tienda Kecleon y Mazmorras aleatorias .",
+    "description": "Al llevarla, el grupo siempre estará reunido.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Conjuro",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/0/04/latest/20130402160408/Cinta_MM3.png",
+    "englishName": "",
+    "price": "3000 Poké",
+    "locations": "Tienda Kecleon y Mazmorras aleatorias .",
+    "description": "El Pokémon que lo lleva no puede sufrir daño crítico de su oponente, aunque este consiga asestar un golpe crítico.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lazo Varía",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/0/04/latest/20130402160408/Cinta_MM3.png",
+    "englishName": "",
+    "price": "2500 Poké",
+    "locations": "Tienda Kecleon y Mazmorras aleatorias .",
+    "description": "Aumenta la probabilidad de golpes críticos si el Pokémon emplea un movimiento distinto al del turno anterior.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Pañuelo Alianza",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/c/c3/latest/20130402160259/Pa%C3%B1uelo_MM3.png",
+    "englishName": "",
+    "price": "1500 Poké",
+    "locations": "Tienda Kecleon y Mazmorras aleatorias .",
+    "description": "Al llevarlo un miembro del equipo, los ataques en equipo serán más fáciles de conseguir.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Lingotescopio",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/7/77/latest/20130209153436/Gafas_MM3.png",
+    "englishName": "",
+    "price": "¿? Poké",
+    "locations": "Tienda Kecleon y Mazmorras aleatorias .",
+    "description": "",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Gafas Acuáticas*",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/7/77/latest/20130209153436/Gafas_MM3.png",
+    "englishName": "Gafas Acuáticas*",
+    "price": "2500 Poké",
+    "locations": "Tienda Kecleon y Mazmorras aleatorias .",
+    "description": "Al llevarlas, permiten al Pokémon caminar por el agua.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Bandera Inalterable",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/7/74/latest/20130209161057/Bandera_MM3.png",
+    "englishName": "",
+    "price": "35 Lingotes / 3000 Poké",
+    "locations": "Esplend'Oro y Bazar Kecleon (Mazmorra) (Tiendas Kecleon)",
+    "description": "Evita que disminuya la fuerza del aliado adyacente.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Bandera Lucidez",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/7/74/latest/20130209161057/Bandera_MM3.png",
+    "englishName": "",
+    "price": "25 Lingotes / 3000 Poké",
+    "locations": "Esplend'Oro y Bazar Kecleon (Mazmorra) (Tiendas Kecleon)",
+    "description": "Impide que el aliado adyacente sea confundido.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Bandera Antiparálisis",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/7/74/latest/20130209161057/Bandera_MM3.png",
+    "englishName": "",
+    "price": "20 Lingotes / 3000 Poké",
+    "locations": "Esplend'Oro y Bazar Kecleon (Mazmorra) (Tiendas Kecleon)",
+    "description": "Impide que el aliado adyacente sea paralizado.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Bandera Insomnio",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/7/74/latest/20130209161057/Bandera_MM3.png",
+    "englishName": "",
+    "price": "20 Lingotes / 3000 Poké",
+    "locations": "Esplend'Oro y Bazar Kecleon (Mazmorra) (Tiendas Kecleon)",
+    "description": "Impide que el aliado adyacente se duerma.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Bandera Antiveneno",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/7/74/latest/20130209161057/Bandera_MM3.png",
+    "englishName": "",
+    "price": "30 Lingotes / 3000 Poké",
+    "locations": "Esplend'Oro y Bazar Kecleon (Mazmorra) (Tiendas Kecleon)",
+    "description": "Impide que el aliado adyacente caiga envenenado.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Bandera Apoyo",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/7/74/latest/20130209161057/Bandera_MM3.png",
+    "englishName": "",
+    "price": "30 Lingotes / 3000 Poké",
+    "locations": "Esplend'Oro y Bazar Kecleon (Mazmorra) (Tiendas Kecleon)",
+    "description": "Aumenta la potencia de los movimientos del aliado adyacente.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Bandera Superviviente",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/7/74/latest/20130209161057/Bandera_MM3.png",
+    "englishName": "",
+    "price": "15 Lingotes / 5000 Poké",
+    "locations": "Esplend'Oro y Bazar Kecleon (Mazmorra) (Tiendas Kecleon)",
+    "description": "A veces permite a un aliado adyacente resistir golpes fulminantes.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Acero",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "-",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Agua",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "Playa Vieira",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Bicho",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "Tundra Sosiego",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Dragón",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "-",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Eléctrico",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "Pikalandia",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Fantasma",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "-",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Fuego",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "Montaña Cálida",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Hielo",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "-",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Lucha",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "Bosque Selénico",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Normal",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "Monte Herrumbre",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Planta",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "Parque Lianas",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Psíquico",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "-",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Roca",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "Monte Herrumbre",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Siniestro",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "-",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Tierra",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "-",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Veneno",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "Bosque Selénico",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Aparato Volador",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/8c/latest/20130212192308/Dispositivo_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "-",
+    "description": "Sube las estadísticas si lo lleva un Pokémon de tipo .",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Archen",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Archen tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Audino",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Audino tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Azurill",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Azurill tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Bagon",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Bagon tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Blitzle",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Blitzle tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Cottonee",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Cottonee tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Cranidos",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Cranidos tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Croagunk",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Croagunk tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Cryogonal",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Cryogonal tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Cubchoo",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Cubchoo tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Deino",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Deino tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Drilbur",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Drilbur tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Druddigon",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Druddigon tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Ducklett",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Ducklett tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Dunsparce",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Dunsparce tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Dwebble",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Dwebble tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Eevee",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "1000 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Eevee tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Emolga",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "1000 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Emolga tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Foongus",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Foongus tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Glameow",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Glameow tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Golett",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Golett tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Gothita",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Gothita tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Joltik",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Joltik tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Klink",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Klink tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Larvesta",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Larvesta tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Lillipup",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Lillipup tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Litwick",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Litwick tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Mienfoo",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Mienfoo tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Minccino",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Minccino tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Munna",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Munna tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Panpour",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Panpour tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Pansage",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Pansage tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Pansear",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Pansear tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Patrat",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Patrat tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Pawniard",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Pawniard tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Petilil",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Petilil tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Roggenrola",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Roggenrola tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Rufflet",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Rufflet tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Sandile",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Sandile tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Scraggy",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Scraggy tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Sewaddle",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Sewaddle tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Swinub",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Swinub tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Timburr",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Timburr tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Tirtouga",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Tirtouga tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Trubbish",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Trubbish tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Tympole",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Tympole tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Venipede",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Venipede tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Vullaby",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Vullaby tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Wingull",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Wingull tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Woobat",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Woobat tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Wooper",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Wooper tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Yamask",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Yamask tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Zorua",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "300 Poké",
+    "locations": "Tienda de Regalos de Cinccino / y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a Zorua tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Acero",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "640 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Agua",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "3520 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Bicho",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "1920 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Dragón",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "1600 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Eléctrico",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "1280 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Fantasma",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "800 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Fuego'",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "1120 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Hielo",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "1120 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Lucha",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "800 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Normal",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "27200 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Planta",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "2240 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Psíquico",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "1600 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Roca",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "1280 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Siniestro",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "1920 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Tierra",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "1280 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Veneno",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "640 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Volador",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "1640 Poké",
+    "locations": "Misiones difíciles del tablón oscuro y Bazar Kecleon (Mazmorra)",
+    "description": "Recluta automáticamente a cualquier Pokémon de tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Regalo Ideal",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/5/56/latest/20130208180327/Regalo_MM3.png",
+    "englishName": "",
+    "price": "3500 Poké",
+    "locations": "",
+    "description": "Recluta automáticamente a cualquier Pokémon de cualquier tipo sin evolucionar tras derrotarlo. Es de un solo uso.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Llave azul",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/9/95/latest/20130208184036/Llave_azul_MM3.png",
+    "englishName": "",
+    "price": "1650 Poké",
+    "locations": "Premios aleatorios o comprándosela a Cofagrigus .",
+    "description": "Abre las puertas azules con candado en los territorios.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Llave negra",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/4/4c/latest/20130208184036/Llave_negra_MM3.png",
+    "englishName": "",
+    "price": "1650 Poké",
+    "locations": "Premios aleatorios o comprándosela a Cofagrigus .",
+    "description": "Abre las puertas negras con candado en los territorios.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Llave roja",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/2/2f/latest/20130208184037/Llave_roja_MM3.png",
+    "englishName": "",
+    "price": "1650 Poké",
+    "locations": "Premios aleatorios o comprándosela a Cofagrigus .",
+    "description": "Abre las puertas rojas con candado en los territorios.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Llave verde",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/8/87/latest/20130208184037/Llave_verde_MM3.png",
+    "englishName": "",
+    "price": "1650 Poké",
+    "locations": "Premios aleatorios o comprándosela a Cofagrigus .",
+    "description": "Abre las puertas verdes con candado en los territorios.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Ticket lotería*",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/d/d1/latest/20130208184035/Ticket_loter%C3%ADa_MM3.png",
+    "englishName": "Ticket lotería*",
+    "price": "800 Poké",
+    "locations": "Premios aleatorios.",
+    "description": "Sirve para jugar la lotería.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Boleto plata",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/a/a7/latest/20130208184035/Ticket_plata_MM3.png",
+    "englishName": "",
+    "price": "2500 Poké",
+    "locations": "Premios aleatorios.",
+    "description": "Sirve para jugar la lotería.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Boleto oro",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/d/d1/latest/20130208184035/Ticket_loter%C3%ADa_MM3.png",
+    "englishName": "",
+    "price": "5000 Poké",
+    "locations": "Premios aleatorios.",
+    "description": "Sirve para jugar la lotería.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Corona Valor",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/4/45/latest/20130208184037/S%C3%ADmbolo_coraje_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "Erial Definitivo (Piso 99)",
+    "description": "Aumenta el ataque del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Corona Tesón",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/6/63/latest/20130208184038/S%C3%ADmbolo_fortaleza_MM3.png",
+    "englishName": "",
+    "price": "",
+    "locations": "Senda Maestra (Piso 99)",
+    "description": "Aumenta la estadística más alta del Pokémon.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cupón Potencia",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/1/1a/latest/20130208184034/Secreto_MM3.png",
+    "englishName": "",
+    "price": "2400 Poké",
+    "locations": "-",
+    "description": "Aumenta la potencia de los movimientos del Pokémon al usarlo en un dojo.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cupón Precisión",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/1/1a/latest/20130208184034/Secreto_MM3.png",
+    "englishName": "",
+    "price": "2400 Poké",
+    "locations": "-",
+    "description": "Aumenta la precisión de los movimientos del Pokémon al usarlo en un dojo.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Cupón PP",
+    "img": "https://images.wikidexcdn.net/mwuploads/wikidex/1/1a/latest/20130208184034/Secreto_MM3.png",
+    "englishName": "",
+    "price": "2400 Poké",
+    "locations": "-",
+    "description": "Aumenta los PP de los movimientos del Pokémon al usarlo en un dojo.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  },
+  {
+    "name": "Colgante Corazón",
+    "img": null,
+    "englishName": "",
+    "price": "",
+    "locations": "Misiones 4 estrellas rojas del tablón oscuro",
+    "description": "Aumenta en 50 la capacidad de PS del Pokémon que lo lleve.",
+    "affects": "",
+    "source": "WikiDex — Lista de objetos de Pokémon Mundo misterioso"
+  }
+]
