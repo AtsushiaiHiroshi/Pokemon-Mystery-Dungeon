@@ -16,13 +16,14 @@ const ui = {
   progressBar: document.querySelector("#progressBar"), progressTrack: document.querySelector(".progress-track"),
   backButton: document.querySelector("#backButton"), nextButton: document.querySelector("#nextButton"),
   resultNature: document.querySelector("#resultNature"), resultDescription: document.querySelector("#resultDescription"),
+  personalityChart: document.querySelector("#personalityChart"),
   candidates: document.querySelector("#candidates"), candidateCount: document.querySelector("#candidateCount"),
   copyButton: document.querySelector("#copyButton"), copyStatus: document.querySelector("#copyStatus"), restartButton: document.querySelector("#restartButton"),
   ambienceToggle: document.querySelector("#ambienceToggle")
 };
 const ULTRA_BEASTS = new Set(["nihilego", "buzzwole", "pheromosa", "xurkitree", "celesteela", "kartana", "guzzlord", "stakataka", "blacephalon", "poipole", "naganadel"]);
 const PARADOX_POKEMON = new Set(["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "roaring-moon", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "walking-wake", "raging-bolt", "gouging-fire", "iron-leaves", "iron-crown", "iron-boulder"]);
-const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", mode: "quick" };
+const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", scores: {}, mode: "quick" };
 const selectionSound = new Audio("https://nrosa01.github.io/pmd-quiz-online/audio/select-sound.mp3");
 selectionSound.preload = "auto";
 let soundEnabled = true;
@@ -65,6 +66,7 @@ function startQuiz(mode = "quick") {
   state.answers = [];
   state.index = 0;
   state.nature = "";
+  state.scores = {};
   show(ui.quiz);
   renderQuestion();
 }
@@ -109,8 +111,30 @@ function calculateResult() {
   });
   const highest = Math.max(...Object.values(scores));
   const tied = Object.entries(scores).filter(([, score]) => score === highest).map(([nature]) => nature);
+  state.scores = scores;
   state.nature = tied[Math.floor(Math.random() * tied.length)];
   renderResult();
+}
+
+function radarPoint(index, radius, total, center = 210) {
+  const angle = -Math.PI / 2 + (index / total) * Math.PI * 2;
+  return [center + Math.cos(angle) * radius, center + Math.sin(angle) * radius];
+}
+
+function renderRadarChart(scores) {
+  const natures = state.quiz.natures;
+  const total = natures.length;
+  const max = Math.max(1, ...Object.values(scores));
+  const polygon = radius => natures.map((_, index) => radarPoint(index, radius, total).join(",")).join(" ");
+  const dataPolygon = natures.map((nature, index) => radarPoint(index, 150 * ((scores[nature] ?? 0) / max), total).join(",")).join(" ");
+  const grid = [37.5, 75, 112.5, 150].map(radius => `<polygon class="radar-grid" points="${polygon(radius)}"></polygon>`).join("");
+  const axes = natures.map((nature, index) => {
+    const [x, y] = radarPoint(index, 150, total);
+    const [labelX, labelY] = radarPoint(index, 178, total);
+    const anchor = labelX < 195 ? "end" : labelX > 225 ? "start" : "middle";
+    return `<line class="radar-axis" x1="210" y1="210" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"></line><text class="radar-label" x="${labelX.toFixed(1)}" y="${labelY.toFixed(1)}" text-anchor="${anchor}">${escapeHTML(nature)}</text>`;
+  }).join("");
+  ui.personalityChart.innerHTML = `<svg viewBox="0 0 420 420" focusable="false" aria-hidden="true"><g>${grid}${axes}<polygon class="radar-data" points="${dataPolygon}"></polygon></g></svg>`;
 }
 
 function candidateList() {
@@ -131,6 +155,7 @@ function candidateList() {
 
 function renderResult() {
   const candidates = candidateList();
+  renderRadarChart(state.scores);
   ui.resultNature.textContent = state.nature;
   ui.resultDescription.textContent = state.quiz.naturedescription[state.nature] ?? "";
   const modeLabel = state.mode === "complete" ? "test completo" : "test rápido";

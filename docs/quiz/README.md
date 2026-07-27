@@ -6,6 +6,8 @@ Las recomendaciones muestran la primera etapa de cada línea evolutiva, aunque e
 
 El fondo usa las mismas capas animadas y el mismo sonido de selección que el sitio fanmade de referencia. El botón permite silenciarlo. Se respeta la preferencia `prefers-reduced-motion` para reducir las animaciones.
 
+Al terminar, el resultado muestra la frase «Pareces ser...», tu naturaleza, las recomendaciones y un gráfico radial con la distribución completa de tu test de personalidad.
+
 Para probarla localmente, abre una terminal en la carpeta del módulo y ejecuta:
 
 ```text
