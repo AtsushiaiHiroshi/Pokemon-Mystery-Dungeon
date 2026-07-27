@@ -60,6 +60,7 @@ async function loadData() {
     state.quiz = await quizResponse.json();
     state.pokemon = await pokemonResponse.json();
     show(ui.start);
+    window.scrollTo({ top: 0, behavior: "auto" });
   } catch (error) {
     ui.errorText.textContent = error.message;
     show(ui.error);
@@ -75,6 +76,7 @@ function startQuiz(mode = "quick") {
   state.nature = "";
   state.scores = {};
   show(ui.quiz);
+  window.scrollTo({ top: 0, behavior: "smooth" });
   renderQuestion();
 }
 
