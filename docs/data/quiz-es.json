@@ -2456,57 +2456,79 @@
   "naturetopokemon": {
     "Fuerte": [
       "Torchic",
-      "Treecko"
+      "Treecko",
+      "Charmander",
+      "Pikachu"
     ],
     "Dócil": [
       "Charmander",
-      "Bulbasaur"
+      "Bulbasaur",
+      "Chikorita"
     ],
     "Osada": [
       "Pikachu",
-      "Charmander"
+      "Charmander",
+      "Machop"
     ],
     "Alegre": [
       "Totodile",
+      "Munchlax",
+      "Squirtle",
       "Eevee"
     ],
     "Agitada": [
       "Piplup",
-      "Chimchar"
+      "Chimchar",
+      "Pikachu",
+      "Cubone"
     ],
     "Ingenua": [
       "Chimchar",
-      "Skitty"
+      "Skitty",
+      "Totodile",
+      "Eevee"
     ],
     "Miedosa": [
       "Cyndaquil",
       "Turtwig",
-      "Tepig"
+      "Mudkip"
     ],
     "Activa": [
       "Shinx",
       "Pikachu",
-      "Meowth"
+      "Torchic"
     ],
     "Grosera": [
       "Riolu",
-      "Totodile"
+      "Totodile",
+      "Treecko",
+      "Torchic"
     ],
     "Serena": [
       "Chikorita",
-      "Cyndaquil"
+      "Cyndaquil",
+      "Mudkip",
+      "Bulbasaur"
     ],
     "Plácida": [
       "Phanpy",
-      "Vulpix"
+      "Vulpix",
+      "Munchlax",
+      "Meowth",
+      "Psyduck",
+      "Squirtle"
     ],
     "Huraña": [
       "Bulbasaur",
-      "Mudkip"
+      "Mudkip",
+      "Cubone",
+      "Psyduck"
     ],
     "Rara": [
       "Squirtle",
-      "Piplup"
+      "Piplup",
+      "Meowth",
+      "Treecko"
     ],
     "Mansa": [
       "Treecko",
@@ -2519,6 +2541,8 @@
     "Audaz": [
       "Turtwig",
       "Squirtle",
+      "Machop",
+      "Charmander",
       "Kubfu"
     ]
   },

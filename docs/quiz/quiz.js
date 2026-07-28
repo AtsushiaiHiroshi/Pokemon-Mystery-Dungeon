@@ -200,6 +200,7 @@ function renderResult() {
   state.narrativeIndex = 0;
   ui.resultStory.textContent = state.narrative[0];
   ui.revealResult.textContent = "Continuar";
+  ui.revealResult.classList.remove("discover");
   ui.result.classList.add("pending");
   show(ui.result);
 }
@@ -256,16 +257,22 @@ function advanceNarrative() {
   if (state.narrativeIndex < state.narrative.length - 1) {
     state.narrativeIndex += 1;
     ui.resultStory.textContent = state.narrative[state.narrativeIndex];
-    ui.revealResult.textContent = state.narrativeIndex === state.narrative.length - 1 ? "Descubrir mi Pokémon" : "Continuar";
+    const isFinalPrompt = state.narrativeIndex === state.narrative.length - 1;
+    ui.revealResult.textContent = isFinalPrompt ? "Descubrir mi Pokémon" : "Continuar";
+    ui.revealResult.classList.toggle("discover", isFinalPrompt);
     return;
   }
+  // La frase «Alguien como tú podría ser:» vive en su propia escena. Al
+  // descubrir el resultado no debe reaparecer encima de las tarjetas.
+  ui.resultStory.textContent = "";
+  ui.revealResult.classList.remove("discover");
   ui.result.classList.remove("pending");
   document.body.classList.remove("narrative-mode");
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 ui.revealResult.addEventListener("click", advanceNarrative);
 ui.result.addEventListener("click", event => {
-  if (state.narrativeIndex < state.narrative.length - 1 && !event.target.closest("button")) advanceNarrative();
+  if (ui.result.classList.contains("pending") && !event.target.closest("button")) advanceNarrative();
 });
 ui.ambienceToggle.addEventListener("click", () => {
   soundEnabled = !soundEnabled;

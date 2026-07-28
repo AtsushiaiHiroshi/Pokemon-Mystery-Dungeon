@@ -170,6 +170,23 @@ body.narrative-mode::after { background: rgba(3, 6, 18, .72); }
 .result.pending .continue-button::after { content: "▼"; display: block; font-size: 1.35rem; opacity: .82; animation: pmd-arrow-bounce 1.25s ease-in-out infinite; }
 @keyframes pmd-arrow-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(7px); } }
 
+/* En la escena «Alguien como tú podría ser:» la flecha se convierte en una
+   acción visible. Sigue siendo la misma transición y también responde al
+   clic en cualquier zona de la escena. */
+.result.pending .continue-button.discover {
+  min-width: 220px;
+  padding: 12px 20px;
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  background: var(--gold);
+  color: #111827;
+  font: inherit;
+  font-size: .98rem;
+  font-weight: 800;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, .24);
+}
+.result.pending .continue-button.discover::after { content: none; }
+
 .result:not(.pending) .result-grid { align-items: center; grid-template-columns: minmax(0, 1fr) minmax(410px, .98fr); gap: clamp(24px, 5vw, 72px); }
 .result:not(.pending) .result-heading { padding-top: 0; }
 .result:not(.pending) .result-story { display: none; }
