@@ -8,6 +8,7 @@ tmp/
 packs/**/LOCK
 packs/**/LOG*
 packs/**/[0-9]*.log
+packs/**/*.log
 # Only the current generated v4 compendia are shipped; older local copies are runtime artifacts.
 packs/pmd-*/
 !packs/pmd-*-v4/
