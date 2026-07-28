@@ -2451,6 +2451,15 @@
           "id": 2
         }
       ]
+    },
+    {
+      "id": 64,
+      "kind": "gender",
+      "title": "¿Eres chico o chica?",
+      "responses": [
+        { "response": "Chico", "scores": [], "id": 0 },
+        { "response": "Chica", "scores": [], "id": 1 }
+      ]
     }
   ],
   "naturetopokemon": {

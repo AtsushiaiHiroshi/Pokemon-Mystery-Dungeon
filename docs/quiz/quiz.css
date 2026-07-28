@@ -190,6 +190,8 @@ body.narrative-mode::after { background: rgba(3, 6, 18, .72); }
 .result:not(.pending) .result-grid { align-items: center; grid-template-columns: minmax(0, 1fr) minmax(410px, .98fr); gap: clamp(24px, 5vw, 72px); }
 .result:not(.pending) .result-heading { padding-top: 0; }
 .result:not(.pending) .result-story { display: none; }
+.result:not(.pending) .continue-button { display: none; }
+.result:not(.pending) .candidate-intro { display: block; margin: 0 0 12px; color: var(--gold-2); font-size: clamp(1.15rem, 2.2vw, 1.55rem); font-weight: 800; text-align: center; }
 .result:not(.pending) .result-card { border: 0; padding: 0; background: transparent; box-shadow: none; }
 .result:not(.pending) .result-card .result-toolbar, .result:not(.pending) .result-card > .hint { display: none; }
 .result:not(.pending) .candidate-grid { grid-template-columns: repeat(2, minmax(150px, 1fr)); gap: 18px; margin-top: 24px; }
@@ -216,6 +218,7 @@ body.narrative-mode::after { background: rgba(3, 6, 18, .72); }
 .result.pending .result-card,
 .result.pending .result-actions,
 .result.pending .copy-status,
+.result.pending .candidate-intro,
 .result.pending .personality-card { display: none; }
 
 /* Selección suave: se siente como una opción interactiva, no como un panel rígido. */

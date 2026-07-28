@@ -1,4 +1,6 @@
-const QUICK_QUESTION_COUNT = 10;
+// El modo rápido conserva la pregunta final de sexo y usa 19 preguntas de
+// personalidad para que el resultado tenga una base suficiente (20 en total).
+const QUICK_QUESTION_COUNT = 20;
 const DATA_BASE = "../data";
 const TYPE_PREFERENCES = {
   Fuerte: ["Lucha", "Acero"], Dócil: ["Planta", "Normal"], Osada: ["Fuego", "Lucha"], Alegre: ["Agua", "Eléctrico"],
@@ -28,7 +30,8 @@ if (ui.backgroundVideo) {
   ui.backgroundVideo.disableRemotePlayback = true;
 }
 const ULTRA_BEASTS = new Set(["nihilego", "buzzwole", "pheromosa", "xurkitree", "celesteela", "kartana", "guzzlord", "stakataka", "blacephalon", "poipole", "naganadel"]);
-const PARADOX_POKEMON = new Set(["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "roaring-moon", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "walking-wake", "raging-bolt", "gouging-fire", "iron-leaves", "iron-crown", "iron-boulder"]);
+const PARADOX_POKEMON = new Set(["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "roaring-moon", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "walking-wake", "raging-bolt", "gouging-fire", "iron-leaves", "iron-crown", "iron-boulder", "iron-valiant", "koraidon", "miraidon"]);
+const PMD_AVATAR_NAMES = new Set(["Machop", "Meowth", "Tepig", "Snivy", "Axew", "Fennekin", "Tyrogue", "Houndour", "Sableye", "Meditite", "Absol", "Carvanha", "Stunky", "Sunkern"]);
 const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", scores: {}, mode: "quick", narrative: [], narrativeIndex: 0, autoAdvanceTimer: null };
 const selectionSound = new Audio("https://nrosa01.github.io/pmd-quiz-online/audio/select-sound.mp3");
 selectionSound.preload = "auto";
@@ -83,8 +86,15 @@ function startQuiz(mode = "quick") {
   if (state.autoAdvanceTimer) window.clearTimeout(state.autoAdvanceTimer);
   state.autoAdvanceTimer = null;
   state.mode = mode;
+  const genderQuestion = state.quiz.questions.find(question => question.kind === "gender");
+  const personalityQuestions = state.quiz.questions.filter(question => question.kind !== "gender");
   const questionCount = mode === "complete" ? state.quiz.questions.length : QUICK_QUESTION_COUNT;
-  state.questions = mode === "complete" ? [...state.quiz.questions] : shuffle(state.quiz.questions).slice(0, questionCount);
+  if (mode === "complete") state.questions = [...state.quiz.questions];
+  else {
+    const personalityCount = Math.max(1, questionCount - (genderQuestion ? 1 : 0));
+    state.questions = shuffle(personalityQuestions).slice(0, personalityCount);
+    if (genderQuestion) state.questions.push(genderQuestion);
+  }
   state.answers = [];
   state.index = 0;
   state.nature = "";
@@ -193,8 +203,9 @@ function renderResult() {
   ui.candidateCount.textContent = `${candidates.length} opciones · ${modeLabel} · generaciones 1–9`;
   const pmdStarters = new Set(state.quiz.pmdStarters ?? []);
   const visibleCandidates = candidates;
-  const iconSprite = pokemon => `https://nrosa01.github.io/pmd-quiz-online/img/pokemonicons/${String(pokemon.name).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "")}.png`;
-  ui.candidates.innerHTML = visibleCandidates.map(pokemon => { const isPmd = pmdStarters.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${iconSprite(pokemon)}" data-fallback="${escapeHTML(pokemon.sprite)}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback}else{this.hidden=true}"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
+  const iconSprite = pokemon => `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/${String(pokemon.id).padStart(4, "0")}/0000/0001/Happy.png`;
+  const legacyIcon = pokemon => `https://nrosa01.github.io/pmd-quiz-online/img/pokemonicons/${String(pokemon.name).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "")}.png`;
+  ui.candidates.innerHTML = visibleCandidates.map(pokemon => { const isPmd = pmdStarters.has(pokemon.name) || PMD_AVATAR_NAMES.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${iconSprite(pokemon)}" data-fallback="${escapeHTML(legacyIcon(pokemon))}" data-fallback2="${escapeHTML(pokemon.sprite)}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback=''}else if(this.dataset.fallback2){this.src=this.dataset.fallback2;this.dataset.fallback2=''}else{this.hidden=true}"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
   ui.candidateCount.textContent = `${visibleCandidates.length} Pokémon · resultado de tu test`;
   state.narrative = buildNarrative(state.nature, state.quiz.naturedescription[state.nature] ?? "");
   state.narrativeIndex = 0;
@@ -206,19 +217,29 @@ function renderResult() {
 }
 
 function buildNarrative(nature, description) {
-  const cleanDescription = String(description ?? "").replace(/^Eres una persona\.\.\.\s*/i, "").trim();
+  const cleanDescription = String(description ?? "")
+    .replace(/^Eres una persona\.\.\.\s*/i, "")
+    .replace(/Alguien como tú podría ser\.\.\.$/i, "")
+    .trim();
   const sentences = cleanDescription.match(/[^.!?]+[.!?]+/g)?.map(text => text.trim()).filter(Boolean) ?? [];
   const fragments = [];
   let fragment = "";
+  const maxLength = 78;
   sentences.forEach(sentence => {
-    const next = fragment ? `${fragment} ${sentence}` : sentence;
-    if (fragment && next.length > 155) { fragments.push(fragment); fragment = sentence; }
-    else fragment = next;
+    sentence.split(/(?<=[,;:])\s+/).forEach(clause => {
+      const words = clause.split(/\s+/);
+      words.forEach(word => {
+        const next = fragment ? `${fragment} ${word}` : word;
+        if (fragment && next.length > maxLength) { fragments.push(fragment); fragment = word; }
+        else fragment = next;
+      });
+      if (fragment && /[.!?]$/.test(fragment)) { fragments.push(fragment); fragment = ""; }
+    });
   });
   if (fragment) fragments.push(fragment);
   return [
     "Eres una persona…",
-    ...fragments.slice(0, 5),
+    ...fragments.slice(0, 8),
     "La oscuridad se vuelve ligera…",
     "Cuando abres los ojos, el viento huele distinto y tus manos ya no son las de antes.",
     "Alguien como tú podría ser:"
