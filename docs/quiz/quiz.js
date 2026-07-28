@@ -203,7 +203,9 @@ function renderResult() {
   ui.candidateCount.textContent = `${candidates.length} opciones · ${modeLabel} · generaciones 1–9`;
   const pmdStarters = new Set(state.quiz.pmdStarters ?? []);
   const visibleCandidates = candidates;
-  const iconSprite = pokemon => `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/${String(pokemon.id).padStart(4, "0")}/0000/0001/Happy.png`;
+  // SpriteCollab separa las paletas por variante: 0000 es la paleta normal.
+  // Usamos Normal.png explícitamente para no terminar mostrando retratos shiny.
+  const iconSprite = pokemon => `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/${String(pokemon.id).padStart(4, "0")}/0000/0001/Normal.png`;
   const legacyIcon = pokemon => `https://nrosa01.github.io/pmd-quiz-online/img/pokemonicons/${String(pokemon.name).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "")}.png`;
   ui.candidates.innerHTML = visibleCandidates.map(pokemon => { const isPmd = pmdStarters.has(pokemon.name) || PMD_AVATAR_NAMES.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${iconSprite(pokemon)}" data-fallback="${escapeHTML(legacyIcon(pokemon))}" data-fallback2="${escapeHTML(pokemon.sprite)}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback=''}else if(this.dataset.fallback2){this.src=this.dataset.fallback2;this.dataset.fallback2=''}else{this.hidden=true}"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
   ui.candidateCount.textContent = `${visibleCandidates.length} Pokémon · resultado de tu test`;
