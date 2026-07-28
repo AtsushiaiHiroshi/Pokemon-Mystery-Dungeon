@@ -7,12 +7,15 @@ tmp/
 # Foundry/LevelDB runtime lock and log files are recreated locally.
 packs/**/LOCK
 packs/**/LOG*
+packs/**/[0-9]*.log
 # Only the current generated v4 compendia are shipped; older local copies are runtime artifacts.
 packs/pmd-*/
 !packs/pmd-*-v4/
 !packs/pmd-*-v4/**
 !packs/pmd-*-v5/
 !packs/pmd-*-v5/**
+!packs/pmd-native-*-v1/
+!packs/pmd-native-*-v1/**
 __pycache__/
 *.pyc
 

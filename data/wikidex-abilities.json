@@ -1,0 +1,2846 @@
+[
+  {
+    "index": 0,
+    "nameES": "Cacofonía",
+    "nameHA": "Cacofonía",
+    "englishName": "Cacophony",
+    "generation": 3,
+    "description": "Evita ataques de sonido .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 1,
+    "nameES": "Hedor",
+    "nameHA": "Hedor",
+    "englishName": "Stench",
+    "generation": 3,
+    "description": "Puede amedrentar a un Pokémon al atacarlo debido al mal olor que emana.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 2,
+    "nameES": "Llovizna",
+    "nameHA": "Llovizna",
+    "englishName": "Drizzle",
+    "generation": 3,
+    "description": "Hace que llueva al entrar en combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 3,
+    "nameES": "Impulso",
+    "nameHA": "Impulso",
+    "englishName": "Speed Boost",
+    "generation": 3,
+    "description": "Aumenta su velocidad en cada turno.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 4,
+    "nameES": "Armadura Batalla",
+    "nameHA": "Armadura Batalla",
+    "englishName": "Battle Armor",
+    "generation": 3,
+    "description": "La robusta coraza que lo protege bloquea los golpes críticos .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 5,
+    "nameES": "Robustez",
+    "nameHA": "Robustez",
+    "englishName": "Sturdy",
+    "generation": 3,
+    "description": "El Pokémon no puede debilitarse de un solo golpe cuando tiene los PS al máximo. También evita los movimientos fulminantes .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 6,
+    "nameES": "Humedad",
+    "nameHA": "Humedad",
+    "englishName": "Damp",
+    "generation": 3,
+    "description": "Aumenta la humedad del entorno y evita que se puedan utilizar movimientos explosivos , tales como autodestrucción .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 7,
+    "nameES": "Flexibilidad",
+    "nameHA": "Flexibilidad",
+    "englishName": "Limber",
+    "generation": 3,
+    "description": "Evita ser paralizado gracias a la flexibilidad de su cuerpo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 8,
+    "nameES": "Velo Arena",
+    "nameHA": "Velo de Arena",
+    "englishName": "Sand Veil",
+    "generation": 3,
+    "description": "Aumenta su evasión durante las tormentas de arena .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 9,
+    "nameES": "Electricidad Estática",
+    "nameHA": "Electricidad Estática",
+    "englishName": "Static",
+    "generation": 3,
+    "description": "La electricidad estática que lo envuelve puede paralizar al Pokémon que lo ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 10,
+    "nameES": "Absorbe Electricidad",
+    "nameHA": "Absorbevoltios",
+    "englishName": "Volt Absorb",
+    "generation": 3,
+    "description": "Si lo alcanza un movimiento de tipo Eléctrico , recupera PS en vez de sufrir daño.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 11,
+    "nameES": "Absorbe Agua",
+    "nameHA": "Absorbeagua",
+    "englishName": "Water Absorb",
+    "generation": 3,
+    "description": "Si lo alcanza un movimiento de tipo Agua , recupera PS en vez de sufrir daño.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 12,
+    "nameES": "Despiste",
+    "nameHA": "Despistado",
+    "englishName": "Oblivious",
+    "generation": 3,
+    "description": "Su indiferencia evita que sea provocado , caiga presa del enamoramiento o sufra los efectos de intimidación .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 13,
+    "nameES": "Aclimatación",
+    "nameHA": "Aclimatación",
+    "englishName": "Cloud Nine",
+    "generation": 3,
+    "description": "Anula todos los efectos del tiempo atmosférico .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 14,
+    "nameES": "Ojo Compuesto",
+    "nameHA": "Ojo Compuesto",
+    "englishName": "Compound Eyes",
+    "generation": 3,
+    "description": "Aumenta la precisión de sus movimientos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 15,
+    "nameES": "Insomnio",
+    "nameHA": "Insomnio",
+    "englishName": "Insomnia",
+    "generation": 3,
+    "description": "Su resistencia al sueño le impide quedarse dormido .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 16,
+    "nameES": "Cambio Color",
+    "nameHA": "Cambio de Color",
+    "englishName": "Color Change",
+    "generation": 3,
+    "description": "Adopta el tipo del último movimiento del que es blanco.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 17,
+    "nameES": "Inmunidad",
+    "nameHA": "Inmunidad",
+    "englishName": "Immunity",
+    "generation": 3,
+    "description": "Su sistema inmunitario evita el envenenamiento .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 18,
+    "nameES": "Absorbe Fuego",
+    "nameHA": "Absorbefuego",
+    "englishName": "Flash Fire",
+    "generation": 3,
+    "description": "Si lo alcanza algún movimiento de tipo Fuego , potencia sus propios movimientos de dicho tipo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 19,
+    "nameES": "Polvo Escudo",
+    "nameHA": "Polvo Escudo",
+    "englishName": "Shield Dust",
+    "generation": 3,
+    "description": "El polvo de escamas que lo envuelve lo protege de los efectos secundarios de los ataques recibidos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 20,
+    "nameES": "Ritmo Propio",
+    "nameHA": "Ritmo Propio",
+    "englishName": "Own Tempo",
+    "generation": 3,
+    "description": "Como le gusta hacer las cosas a su manera, no le afecta la confusión ni sufre los efectos de intimidación .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 21,
+    "nameES": "Ventosas",
+    "nameHA": "Ventosas",
+    "englishName": "Suction Cups",
+    "generation": 3,
+    "description": "Sus ventosas se aferran al suelo, con lo cual anula movimientos y objetos que fuercen el cambio de Pokémon.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 22,
+    "nameES": "Intimidación",
+    "nameHA": "Intimidación",
+    "englishName": "Intimidate",
+    "generation": 3,
+    "description": "Al entrar en combate, amilana al rival de tal manera que reduce su ataque .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 23,
+    "nameES": "Sombra Trampa",
+    "nameHA": "Sombra Trampa",
+    "englishName": "Shadow Tag",
+    "generation": 3,
+    "description": "Pisa la sombra del rival para impedir que huya o lo cambien por otro.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 24,
+    "nameES": "Piel Tosca",
+    "nameHA": "Piel Tosca",
+    "englishName": "Rough Skin",
+    "generation": 3,
+    "description": "Hiere con su piel áspera al Pokémon que lo ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 25,
+    "nameES": "Superguarda",
+    "nameHA": "Superguardia",
+    "englishName": "Wonder Guard",
+    "generation": 3,
+    "description": "Gracias a un poder misterioso, solo le hacen daño los movimientos supereficaces.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 26,
+    "nameES": "Levitación",
+    "nameHA": "Levitación",
+    "englishName": "Levitate",
+    "generation": 3,
+    "description": "Su capacidad de flotar sobre el suelo le proporciona inmunidad frente a los movimientos de tipo Tierra .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 27,
+    "nameES": "Efecto Espora",
+    "nameHA": "Efecto Espora",
+    "englishName": "Effect Spore",
+    "generation": 3,
+    "description": "Puede dormir , envenenar o paralizar al Pokémon que lo ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 28,
+    "nameES": "Sincronía",
+    "nameHA": "Sincronía",
+    "englishName": "Synchronize",
+    "generation": 3,
+    "description": "Contagia el envenenamiento , las quemaduras o la parálisis al Pokémon que le cause ese estado.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 29,
+    "nameES": "Cuerpo Puro",
+    "nameHA": "Cuerpo Puro",
+    "englishName": "Clear Body",
+    "generation": 3,
+    "description": "Evita que se reduzcan sus características a causa de movimientos o habilidades de otros Pokémon.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 30,
+    "nameES": "Cura Natural",
+    "nameHA": "Curación Natural",
+    "englishName": "Natural Cure",
+    "generation": 3,
+    "description": "Sus problemas de estado desaparecen cuando se retira del combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 31,
+    "nameES": "Pararrayos",
+    "nameHA": "Pararrayos",
+    "englishName": "Lightning Rod",
+    "generation": 3,
+    "description": "Atrae y neutraliza los movimientos de tipo Eléctrico , que además le aumentan el ataque especial .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 32,
+    "nameES": "Dicha",
+    "nameHA": "Dicha",
+    "englishName": "Serene Grace",
+    "generation": 3,
+    "description": "Aumenta la probabilidad de que los movimientos causen efectos secundarios .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 33,
+    "nameES": "Nado Rápido",
+    "nameHA": "Nado Rápido",
+    "englishName": "Swift Swim",
+    "generation": 3,
+    "description": "Aumenta su velocidad cuando llueve .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 34,
+    "nameES": "Clorofila",
+    "nameHA": "Clorofila",
+    "englishName": "Chlorophyll",
+    "generation": 3,
+    "description": "Aumenta su velocidad cuando hace sol .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 35,
+    "nameES": "Iluminación",
+    "nameHA": "Iluminación",
+    "englishName": "Illuminate",
+    "generation": 3,
+    "description": "Al iluminar el entorno, evita que su precisión se reduzca.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 36,
+    "nameES": "Calco",
+    "nameHA": "Calco",
+    "englishName": "Trace",
+    "generation": 3,
+    "description": "Copia la habilidad del rival al entrar en combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 37,
+    "nameES": "Potencia",
+    "nameHA": "Potencia",
+    "englishName": "Huge Power",
+    "generation": 3,
+    "description": "Duplica la potencia de sus ataques físicos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 38,
+    "nameES": "Punto Tóxico",
+    "nameHA": "Punto Tóxico",
+    "englishName": "Poison Point",
+    "generation": 3,
+    "description": "Puede envenenar al Pokémon que lo ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 39,
+    "nameES": "Fuerza Mental",
+    "nameHA": "Fuerza Mental",
+    "englishName": "Inner Focus",
+    "generation": 3,
+    "description": "Gracias a su profunda concentración, no se amedrenta ante los ataques de otros Pokémon ni sufre los efectos de intimidación .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 40,
+    "nameES": "Escudo Magma",
+    "nameHA": "Escudo de Magma",
+    "englishName": "Magma Armor",
+    "generation": 3,
+    "description": "Gracias al magma candente que lo envuelve, no puede ser congelado .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 41,
+    "nameES": "Velo Agua",
+    "nameHA": "Velo de Agua",
+    "englishName": "Water Veil",
+    "generation": 3,
+    "description": "Evita las quemaduras gracias a la capa de agua que lo envuelve.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 42,
+    "nameES": "Imán",
+    "nameHA": "Imán",
+    "englishName": "Magnet Pull",
+    "generation": 3,
+    "description": "Su magnetismo atrae a los Pokémon de tipo Acero y les impide huir o ser cambiados por otros.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 43,
+    "nameES": "Insonorizar",
+    "nameHA": "Insonorización",
+    "englishName": "Soundproof",
+    "generation": 3,
+    "description": "Su aislamiento acústico lo protege de movimientos que usan sonido .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 44,
+    "nameES": "Cura Lluvia",
+    "nameHA": "Curación Pluvial",
+    "englishName": "Rain Dish",
+    "generation": 3,
+    "description": "Recupera PS de forma gradual cuando llueve .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 45,
+    "nameES": "Chorro Arena",
+    "nameHA": "Chorro de Arena",
+    "englishName": "Sand Stream",
+    "generation": 3,
+    "description": "Crea una tormenta de arena al entrar en combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 46,
+    "nameES": "Presión",
+    "nameHA": "Presión",
+    "englishName": "Pressure",
+    "generation": 3,
+    "description": "Presiona al rival de tal manera que este consume más PP al usar sus movimientos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 47,
+    "nameES": "Sebo",
+    "nameHA": "Sebo",
+    "englishName": "Thick Fat",
+    "generation": 3,
+    "description": "Gracias a la gruesa capa de grasa que lo protege, reduce a la mitad el daño que recibe de ataques de tipo Fuego o Hielo .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 48,
+    "nameES": "Madrugar",
+    "nameHA": "Madrugador",
+    "englishName": "Early Bird",
+    "generation": 3,
+    "description": "Si se duerme , tardará la mitad de tiempo en despertarse.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 49,
+    "nameES": "Cuerpo Llama",
+    "nameHA": "Cuerpo de Fuego",
+    "englishName": "Flame Body",
+    "generation": 3,
+    "description": "Puede quemar al Pokémon que lo ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 50,
+    "nameES": "Fuga",
+    "nameHA": "Fuga",
+    "englishName": "Run Away",
+    "generation": 3,
+    "description": "Puede escapar de cualquier Pokémon salvaje .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 51,
+    "nameES": "Vista Lince",
+    "nameHA": "Perspicacia",
+    "englishName": "Keen Eye",
+    "generation": 3,
+    "description": "Su aguda vista evita que su precisión se reduzca.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 52,
+    "nameES": "Corte Fuerte",
+    "nameHA": "Corte Fuerte",
+    "englishName": "Hyper Cutter",
+    "generation": 3,
+    "description": "Evita que otros Pokémon le reduzcan el ataque .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 53,
+    "nameES": "Recogida",
+    "nameHA": "Recolección",
+    "englishName": "Pickup",
+    "generation": 3,
+    "description": "Puede recoger objetos que otros Pokémon hayan usado, o bien aquellos que encuentre en plena aventura.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 54,
+    "nameES": "Pereza",
+    "nameHA": "Pereza",
+    "englishName": "Truant",
+    "generation": 3,
+    "description": "Al ejecutar un movimiento, descansará en el turno siguiente.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 55,
+    "nameES": "Entusiasmo",
+    "nameHA": "Entusiasmo",
+    "englishName": "Hustle",
+    "generation": 3,
+    "description": "Aumenta su ataque , pero reduce su precisión .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 56,
+    "nameES": "Gran Encanto",
+    "nameHA": "Gran Encanto",
+    "englishName": "Cute Charm",
+    "generation": 3,
+    "description": "Puede causar enamoramiento al Pokémon que lo ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 57,
+    "nameES": "Más",
+    "nameHA": "Más",
+    "englishName": "Plus",
+    "generation": 3,
+    "description": "Aumenta su ataque especial si un Pokémon aliado tiene la habilidad más o la habilidad menos .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 58,
+    "nameES": "Menos",
+    "nameHA": "Menos",
+    "englishName": "Minus",
+    "generation": 3,
+    "description": "Aumenta su ataque especial si un Pokémon aliado tiene la habilidad más o la habilidad menos .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 59,
+    "nameES": "Predicción",
+    "nameHA": "Predicción",
+    "englishName": "Forecast",
+    "generation": 3,
+    "description": "Cambia a tipo Agua , Fuego o Hielo en función del tiempo atmosférico .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 60,
+    "nameES": "Viscosidad",
+    "nameHA": "Viscosidad",
+    "englishName": "Sticky Hold",
+    "generation": 3,
+    "description": "Los objetos se quedan pegados a su cuerpo, por lo que no pueden robárselos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 61,
+    "nameES": "Mudar",
+    "nameHA": "Mudar",
+    "englishName": "Shed Skin",
+    "generation": 3,
+    "description": "Puede curar sus problemas de estado al mudar la piel.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 62,
+    "nameES": "Agallas",
+    "nameHA": "Agallas",
+    "englishName": "Guts",
+    "generation": 3,
+    "description": "Si sufre un problema de estado , se arma de valor y aumenta su ataque .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 63,
+    "nameES": "Escama Especial",
+    "nameHA": "Escama Especial",
+    "englishName": "Marvel Scale",
+    "generation": 3,
+    "description": "Si sufre un problema de estado, sus escamas especiales reaccionan y aumenta su defensa .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 64,
+    "nameES": "Viscosecreción",
+    "nameHA": "Toxisecreción",
+    "englishName": "Liquid Ooze",
+    "generation": 3,
+    "description": "Exuda una secreción viscosa y tóxica de intenso hedor que hiere a quienes intentan drenarle PS .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 65,
+    "nameES": "Espesura",
+    "nameHA": "Espesura",
+    "englishName": "Overgrow",
+    "generation": 3,
+    "description": "Potencia sus movimientos de tipo Planta cuando le quedan pocos PS.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 66,
+    "nameES": "Mar Llamas",
+    "nameHA": "Mar de Llamas",
+    "englishName": "Blaze",
+    "generation": 3,
+    "description": "Potencia sus movimientos de tipo Fuego cuando le quedan pocos PS.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 67,
+    "nameES": "Torrente",
+    "nameHA": "Torrente",
+    "englishName": "Torrent",
+    "generation": 3,
+    "description": "Potencia sus movimientos de tipo Agua cuando le quedan pocos PS.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 68,
+    "nameES": "Enjambre",
+    "nameHA": "Enjambre",
+    "englishName": "Swarm",
+    "generation": 3,
+    "description": "Potencia sus movimientos de tipo Insecto / tipo Bicho cuando le quedan pocos PS.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 69,
+    "nameES": "Cabeza Roca",
+    "nameHA": "Cabeza Roca",
+    "englishName": "Rock Head",
+    "generation": 3,
+    "description": "No pierde PS al usar movimientos que también hieren al usuario.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 70,
+    "nameES": "Sequía",
+    "nameHA": "Sequía",
+    "englishName": "Drought",
+    "generation": 3,
+    "description": "El tiempo pasa a ser soleado al entrar en combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 71,
+    "nameES": "Trampa Arena",
+    "nameHA": "Trampa de Arena",
+    "englishName": "Arena Trap",
+    "generation": 3,
+    "description": "Evita que el rival huya o sea cambiado por otro.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 72,
+    "nameES": "Espíritu Vital",
+    "nameHA": "Espíritu Vital",
+    "englishName": "Vital Spirit",
+    "generation": 3,
+    "description": "Su determinación le impide quedarse dormido .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 73,
+    "nameES": "Humo Blanco",
+    "nameHA": "Humo Blanco",
+    "englishName": "White Smoke",
+    "generation": 3,
+    "description": "El humo blanco que lo protege evita que otros Pokémon le reduzcan las características .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 74,
+    "nameES": "Energía Pura",
+    "nameHA": "Energía Pura",
+    "englishName": "Pure Power",
+    "generation": 3,
+    "description": "Duplica la potencia de sus ataques físicos gracias al yoga.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 75,
+    "nameES": "Caparazón",
+    "nameHA": "Caparazón",
+    "englishName": "Shell Armor",
+    "generation": 3,
+    "description": "La robusta coraza que lo protege bloquea los golpes críticos .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 76,
+    "nameES": "Esclusa de Aire",
+    "nameHA": "Esclusa de Aire",
+    "englishName": "Air Lock",
+    "generation": 3,
+    "description": "Neutraliza todos los efectos del tiempo atmosférico .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 77,
+    "nameES": "Tumbos",
+    "nameHA": "Tambaleo",
+    "englishName": "Tangled Feet",
+    "generation": 4,
+    "description": "Aumenta su evasión si está confuso .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 78,
+    "nameES": "Electromotor",
+    "nameHA": "Electromotor",
+    "englishName": "Motor Drive",
+    "generation": 4,
+    "description": "Si le alcanza un movimiento de tipo Eléctrico , aumenta su velocidad en vez de sufrir daño.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 79,
+    "nameES": "Rivalidad",
+    "nameHA": "Rivalidad",
+    "englishName": "Rivalry",
+    "generation": 4,
+    "description": "Si el objetivo es del mismo sexo , su competitividad le lleva a infligir más daño. Si es del sexo contrario, en cambio, el daño será menor.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 80,
+    "nameES": "Impasible",
+    "nameHA": "Impasible",
+    "englishName": "Steadfast",
+    "generation": 4,
+    "description": "Cada vez que se amedrenta , aumenta su velocidad debido a su voluntad inquebrantable.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 81,
+    "nameES": "Manto Níveo",
+    "nameHA": "Manto Níveo",
+    "englishName": "Snow Cloak",
+    "generation": 4,
+    "description": "Aumenta su evasión cuando nieva.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 82,
+    "nameES": "Gula",
+    "nameHA": "Gula",
+    "englishName": "Gluttony",
+    "generation": 4,
+    "description": "Cuando sus PS se ven reducidos a la mitad, engulle la baya que normalmente solo se comería cuando le quedasen pocos PS .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 83,
+    "nameES": "Irascible",
+    "nameHA": "Irascible",
+    "englishName": "Anger Point",
+    "generation": 4,
+    "description": "Si recibe un golpe crítico, monta en cólera y su ataque aumenta al máximo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 84,
+    "nameES": "Liviano",
+    "nameHA": "Liviano",
+    "englishName": "Unburden",
+    "generation": 4,
+    "description": "Aumenta su velocidad si usa o pierde el objeto que lleva.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 85,
+    "nameES": "Ignífugo",
+    "nameHA": "Ignífugo",
+    "englishName": "Heatproof",
+    "generation": 4,
+    "description": "Su cuerpo, resistente al calor, reduce a la mitad el daño recibido por movimientos de tipo Fuego .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 86,
+    "nameES": "Simple",
+    "nameHA": "Simple",
+    "englishName": "Simple",
+    "generation": 4,
+    "description": "Duplica los cambios en las características .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 87,
+    "nameES": "Piel Seca",
+    "nameHA": "Piel Seca",
+    "englishName": "Dry Skin",
+    "generation": 4,
+    "description": "Pierde PS si hace sol y los recupera si llueve o recibe un movimiento de tipo Agua . Los movimientos de tipo Fuego , por su parte, le hacen más daño de lo normal.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 88,
+    "nameES": "Descarga",
+    "nameHA": "Descarga",
+    "englishName": "Download",
+    "generation": 4,
+    "description": "Compara la defensa y la defensa especial del rival para ver cuál es inferior y aumenta su propio ataque o ataque especial según sea lo más eficaz.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 89,
+    "nameES": "Puño Férreo",
+    "nameHA": "Puño Férreo",
+    "englishName": "Iron Fist",
+    "generation": 4,
+    "description": "Aumenta la potencia de los movimientos con los puños.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 90,
+    "nameES": "Antídoto",
+    "nameHA": "Antídoto",
+    "englishName": "Poison Heal",
+    "generation": 4,
+    "description": "Si resulta envenenado , recupera PS en vez de perderlos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 91,
+    "nameES": "Adaptable",
+    "nameHA": "Adaptable",
+    "englishName": "Adaptability",
+    "generation": 4,
+    "description": "Potencia aún más los movimientos cuyo tipo coincida con el suyo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 92,
+    "nameES": "Encadenado",
+    "nameHA": "Encadenado",
+    "englishName": "Skill Link",
+    "generation": 4,
+    "description": "Ejecuta siempre los movimientos de ataque múltiple con el número máximo de golpes.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 93,
+    "nameES": "Hidratación",
+    "nameHA": "Hidratación",
+    "englishName": "Hydration",
+    "generation": 4,
+    "description": "Cura los problemas de estado si está lloviendo .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 94,
+    "nameES": "Poder Solar",
+    "nameHA": "Poder Solar",
+    "englishName": "Solar Power",
+    "generation": 4,
+    "description": "Si hace sol , aumenta su ataque especial , pero pierde PS en cada turno.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 95,
+    "nameES": "Pies Rápidos",
+    "nameHA": "Pies Rápidos",
+    "englishName": "Quick Feet",
+    "generation": 4,
+    "description": "Aumenta su velocidad si sufre problemas de estado.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 96,
+    "nameES": "Normalidad",
+    "nameHA": "Normalidad",
+    "englishName": "Normalize",
+    "generation": 4,
+    "description": "Hace que todos sus movimientos se vuelvan de tipo Normal y aumenta ligeramente su potencia.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 97,
+    "nameES": "Francotirador",
+    "nameHA": "Puntería",
+    "englishName": "Sniper",
+    "generation": 4,
+    "description": "Potencia los golpes críticos que asesta aún más de lo normal.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 98,
+    "nameES": "Muro Mágico",
+    "nameHA": "Muro Mágico",
+    "englishName": "Magic Guard",
+    "generation": 4,
+    "description": "Solo recibe daño de ataques.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 99,
+    "nameES": "Indefenso",
+    "nameHA": "Indefenso",
+    "englishName": "No Guard",
+    "generation": 4,
+    "description": "Al quedar ambos expuestos, tanto sus movimientos como los del Pokémon que lo ataque acertarán siempre.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 100,
+    "nameES": "Rezagado",
+    "nameHA": "Rezagado",
+    "englishName": "Stall",
+    "generation": 4,
+    "description": "Ejecuta su movimiento tras todos los demás.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 101,
+    "nameES": "Experto",
+    "nameHA": "Experto",
+    "englishName": "Technician",
+    "generation": 4,
+    "description": "Aumenta la potencia de sus movimientos débiles.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 102,
+    "nameES": "Defensa Hoja",
+    "nameHA": "Defensa Hoja",
+    "englishName": "Leaf Guard",
+    "generation": 4,
+    "description": "Evita los problemas de estado si hace sol .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 103,
+    "nameES": "Zoquete",
+    "nameHA": "Torpeza",
+    "englishName": "Klutz",
+    "generation": 4,
+    "description": "No puede usar objetos equipados.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 104,
+    "nameES": "Rompemoldes",
+    "nameHA": "Rompemoldes",
+    "englishName": "Mold Breaker",
+    "generation": 4,
+    "description": "Sus movimientos no se ven afectados por la habilidad del objetivo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 105,
+    "nameES": "Afortunado",
+    "nameHA": "Supersuerte",
+    "englishName": "Super Luck",
+    "generation": 4,
+    "description": "Su buena suerte aumenta la probabilidad de asestar golpes críticos .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 106,
+    "nameES": "Detonación",
+    "nameHA": "Secuela",
+    "englishName": "Aftermath",
+    "generation": 4,
+    "description": "Daña al Pokémon que le ha dado el golpe de gracia con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 107,
+    "nameES": "Anticipación",
+    "nameHA": "Anticipación",
+    "englishName": "Anticipation",
+    "generation": 4,
+    "description": "Prevé los movimientos peligrosos del rival.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 108,
+    "nameES": "Alerta",
+    "nameHA": "Alerta",
+    "englishName": "Forewarn",
+    "generation": 4,
+    "description": "Revela uno de los movimientos del rival al entrar en combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 109,
+    "nameES": "Ignorante",
+    "nameHA": "Ignorancia",
+    "englishName": "Unaware",
+    "generation": 4,
+    "description": "Pasa por alto los cambios en las características de un Pokémon al atacarlo o recibir daño.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 110,
+    "nameES": "Cromolente",
+    "nameHA": "Cromolente",
+    "englishName": "Tinted Lens",
+    "generation": 4,
+    "description": "Potencia los movimientos que no son muy eficaces, que infligen ahora un daño normal.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 111,
+    "nameES": "Filtro",
+    "nameHA": "Filtro",
+    "englishName": "Filter",
+    "generation": 4,
+    "description": "Mitiga el daño que le infligen los movimientos supereficaces.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 112,
+    "nameES": "Inicio Lento",
+    "nameHA": "Inicio Lento",
+    "englishName": "Slow Start",
+    "generation": 4,
+    "description": "Reduce a la mitad su ataque y su velocidad durante cinco turnos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 113,
+    "nameES": "Intrépido",
+    "nameHA": "Intrépido",
+    "englishName": "Scrappy",
+    "generation": 4,
+    "description": "Alcanza a Pokémon de tipo Fantasma con movimientos de tipo Normal o Pelea / Lucha . Además, no sufre los efectos de intimidación .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 114,
+    "nameES": "Colector",
+    "nameHA": "Colector",
+    "englishName": "Storm Drain",
+    "generation": 4,
+    "description": "Atrae y neutraliza los movimientos de tipo Agua , que además le aumentan el ataque especial .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 115,
+    "nameES": "Gélido",
+    "nameHA": "Cuerpo de Hielo",
+    "englishName": "Ice Body",
+    "generation": 4,
+    "description": "Recupera PS de forma gradual cuando nieva .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 116,
+    "nameES": "Roca Sólida",
+    "nameHA": "Roca Sólida",
+    "englishName": "Solid Rock",
+    "generation": 4,
+    "description": "Mitiga el daño que le infligen los movimientos supereficaces.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 117,
+    "nameES": "Nevada",
+    "nameHA": "Nevada",
+    "englishName": "Snow Warning",
+    "generation": 4,
+    "description": "Invoca una nevada al entrar en combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 118,
+    "nameES": "Recogemiel",
+    "nameHA": "Cosechamiel",
+    "englishName": "Honey Gather",
+    "generation": 4,
+    "description": "Puede que encuentre miel una vez concluido el combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 119,
+    "nameES": "Cacheo",
+    "nameHA": "Inspección",
+    "englishName": "Frisk",
+    "generation": 4,
+    "description": "Puede ver el objeto que lleva el rival al entrar en combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 120,
+    "nameES": "Audaz",
+    "nameHA": "Audaz",
+    "englishName": "Reckless",
+    "generation": 4,
+    "description": "Potencia los movimientos que también dañan al usuario .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 121,
+    "nameES": "Multitipo",
+    "nameHA": "Multitipo",
+    "englishName": "Multitype",
+    "generation": 4,
+    "description": "Cambia su tipo al de la tabla que lleve.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 122,
+    "nameES": "Don Floral",
+    "nameHA": "Don Floral",
+    "englishName": "Flower Gift",
+    "generation": 4,
+    "description": "Si hace sol , aumenta su ataque y su defensa especial , así como los de sus aliados.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 123,
+    "nameES": "Mal Sueño",
+    "nameHA": "Mal Sueño",
+    "englishName": "Bad Dreams",
+    "generation": 4,
+    "description": "Inflige daño a cualquier rival que esté dormido .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 124,
+    "nameES": "Hurto",
+    "nameHA": "Hurto",
+    "englishName": "Pickpocket",
+    "generation": 5,
+    "description": "Roba el objeto del Pokémon que lo ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 125,
+    "nameES": "Potencia Bruta",
+    "nameHA": "Potencia Bruta",
+    "englishName": "Sheer Force",
+    "generation": 5,
+    "description": "Aumenta la potencia de sus movimientos en detrimento de los efectos secundarios , que se ven anulados.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 126,
+    "nameES": "Respondón",
+    "nameHA": "Respondón",
+    "englishName": "Contrary",
+    "generation": 5,
+    "description": "Invierte los cambios en las características : bajan cuando les toca subir y suben cuando les toca bajar.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 127,
+    "nameES": "Nerviosismo",
+    "nameHA": "Nerviosismo",
+    "englishName": "Unnerve",
+    "generation": 5,
+    "description": "Pone nervioso al rival y le impide usar bayas .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 128,
+    "nameES": "Competitivo",
+    "nameHA": "Competitivo",
+    "englishName": "Defiant",
+    "generation": 5,
+    "description": "Aumenta mucho su ataque cuando el rival le reduce cualquiera de sus características .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 129,
+    "nameES": "Flaqueza",
+    "nameHA": "Flaquear",
+    "englishName": "Defeatist",
+    "generation": 5,
+    "description": "Cuando sus PS se ven reducidos a la mitad, se cansa tanto que su ataque y su ataque especial también se ven reducidos a la mitad.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 130,
+    "nameES": "Cuerpo Maldito",
+    "nameHA": "Cuerpo Maldito",
+    "englishName": "Cursed Body",
+    "generation": 5,
+    "description": "Puede anular el movimiento usado en su contra.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 131,
+    "nameES": "Alma Cura",
+    "nameHA": "Alma Sanadora",
+    "englishName": "Healer",
+    "generation": 5,
+    "description": "A veces cura los problemas de estado de un aliado.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 132,
+    "nameES": "Compiescolta",
+    "nameHA": "Compiescolta",
+    "englishName": "Friend Guard",
+    "generation": 5,
+    "description": "Reduce el daño que sufren los aliados.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 133,
+    "nameES": "Armadura Frágil",
+    "nameHA": "Armadura Frágil",
+    "englishName": "Weak Armor",
+    "generation": 5,
+    "description": "Al recibir daño de un ataque físico, se reduce defensa , pero aumenta mucho su velocidad .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 134,
+    "nameES": "Metal Pesado",
+    "nameHA": "Metal Pesado",
+    "englishName": "Heavy Metal",
+    "generation": 5,
+    "description": "Duplica su peso .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 135,
+    "nameES": "Metal Liviano",
+    "nameHA": "Metal Liviano",
+    "englishName": "Light Metal",
+    "generation": 5,
+    "description": "Reduce a la mitad su peso .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 136,
+    "nameES": "Multiescamas",
+    "nameHA": "Multiescamas",
+    "englishName": "Multiscale",
+    "generation": 5,
+    "description": "Reduce el daño que sufre si sus PS están al máximo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 137,
+    "nameES": "Ímpetu Tóxico",
+    "nameHA": "Ímpetu Tóxico",
+    "englishName": "Toxic Boost",
+    "generation": 5,
+    "description": "Aumenta la potencia de sus ataques físicos cuando está envenenado .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 138,
+    "nameES": "Ímpetu Ardiente",
+    "nameHA": "Ímpetu Ardiente",
+    "englishName": "Flare Boost",
+    "generation": 5,
+    "description": "Aumenta la potencia de sus ataques especiales cuando sufre quemaduras .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 139,
+    "nameES": "Cosecha",
+    "nameHA": "Cosecha",
+    "englishName": "Harvest",
+    "generation": 5,
+    "description": "Puede reutilizar varias veces una misma baya .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 140,
+    "nameES": "Telepatía",
+    "nameHA": "Telepatía",
+    "englishName": "Telepathy",
+    "generation": 5,
+    "description": "Elude los ataques de los aliados durante el combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 141,
+    "nameES": "Veleta",
+    "nameHA": "Temperamental",
+    "englishName": "Moody",
+    "generation": 5,
+    "description": "Aumenta mucho una característica en cada turno, pero reduce otra.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 142,
+    "nameES": "Funda",
+    "nameHA": "Funda",
+    "englishName": "Overcoat",
+    "generation": 5,
+    "description": "No recibe daño de las tormentas de arena ni sufre los efectos causados por polvos o esporas .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 143,
+    "nameES": "Toque Tóxico",
+    "nameHA": "Contacto Tóxico",
+    "englishName": "Poison Touch",
+    "generation": 5,
+    "description": "Puede envenenar al Pokémon al que ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 144,
+    "nameES": "Regeneración",
+    "nameHA": "Regeneración",
+    "englishName": "Regenerator",
+    "generation": 5,
+    "description": "Recupera unos pocos PS cuando se retira del combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 145,
+    "nameES": "Sacapecho",
+    "nameHA": "Sacapecho",
+    "englishName": "Big Pecks",
+    "generation": 5,
+    "description": "Impide que otros Pokémon le reduzcan la defensa .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 146,
+    "nameES": "Ímpetu Arena",
+    "nameHA": "Ímpetu Arena",
+    "englishName": "Sand Rush",
+    "generation": 5,
+    "description": "Aumenta su velocidad durante las tormentas de arena .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 147,
+    "nameES": "Piel Milagro",
+    "nameHA": "Piel Milagrosa",
+    "englishName": "Wonder Skin",
+    "generation": 5,
+    "description": "Presenta una mayor resistencia ante los movimientos de estado.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 148,
+    "nameES": "Cálculo Final",
+    "nameHA": "Cálculo Final",
+    "englishName": "Analytic",
+    "generation": 5,
+    "description": "Aumenta la potencia de su movimiento si es el último en atacar.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 149,
+    "nameES": "Ilusión",
+    "nameHA": "Ilusión",
+    "englishName": "Illusion",
+    "generation": 5,
+    "description": "Adopta el aspecto del último Pokémon del equipo al entrar en combate para desconcertar al rival.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 150,
+    "nameES": "Impostor",
+    "nameHA": "Impostor",
+    "englishName": "Imposter",
+    "generation": 5,
+    "description": "Se transforma en el Pokémon que tiene enfrente.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 151,
+    "nameES": "Allanamiento",
+    "nameHA": "Allanamiento",
+    "englishName": "Infiltrator",
+    "generation": 5,
+    "description": "Ataca sorteando las barreras o el sustituto del objetivo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 152,
+    "nameES": "Momia",
+    "nameHA": "Momia",
+    "englishName": "Mummy",
+    "generation": 5,
+    "description": "Contagia la habilidad momia al Pokémon que lo ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 153,
+    "nameES": "Autoestima",
+    "nameHA": "Autoestima",
+    "englishName": "Moxie",
+    "generation": 5,
+    "description": "Al debilitar a un objetivo, su confianza se refuerza de tal manera que aumenta su ataque .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 154,
+    "nameES": "Justiciero",
+    "nameHA": "Justiciero",
+    "englishName": "Justified",
+    "generation": 5,
+    "description": "Si le alcanza un movimiento de tipo Siniestro , aumenta el ataque debido a su integridad.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 155,
+    "nameES": "Cobardía",
+    "nameHA": "Cobardía",
+    "englishName": "Rattled",
+    "generation": 5,
+    "description": "Si lo alcanza un ataque de tipo Siniestro , Insecto / Bicho o Fantasma , o si sufre los efectos de intimidación , el miedo hace que aumente su velocidad .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 156,
+    "nameES": "Espejo Mágico",
+    "nameHA": "Espejo Mágico",
+    "englishName": "Magic Bounce",
+    "generation": 5,
+    "description": "Puede devolver los movimientos de estado sin verse afectado por ellos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 157,
+    "nameES": "Herbívoro",
+    "nameHA": "Herbívoro",
+    "englishName": "Sap Sipper",
+    "generation": 5,
+    "description": "Si lo alcanza un movimiento de tipo Planta , aumenta su ataque en vez de sufrir daño.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 158,
+    "nameES": "Bromista",
+    "nameHA": "Timador",
+    "englishName": "Prankster",
+    "generation": 5,
+    "description": "Sus movimientos de estado tienen prioridad alta.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 159,
+    "nameES": "Poder Arena",
+    "nameHA": "Poder Arenoso",
+    "englishName": "Sand Force",
+    "generation": 5,
+    "description": "Potencia los movimientos de tipo Tierra , Acero y Roca durante las tormentas de arena .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 160,
+    "nameES": "Punta Acero",
+    "nameHA": "Punta Acero",
+    "englishName": "Iron Barbs",
+    "generation": 5,
+    "description": "Inflige daño con sus púas de acero al Pokémon que lo ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 161,
+    "nameES": "Modo Daruma",
+    "nameHA": "Modo Zen",
+    "englishName": "Zen Mode",
+    "generation": 5,
+    "description": "Cambia de forma si sus PS se ven reducidos a la mitad o menos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 162,
+    "nameES": "Tinovictoria",
+    "nameHA": "Tinovictoria",
+    "englishName": "Victory Star",
+    "generation": 5,
+    "description": "Aumenta su precisión y la de sus aliados.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 163,
+    "nameES": "Turbollama",
+    "nameHA": "Turbollama",
+    "englishName": "Turboblaze",
+    "generation": 5,
+    "description": "Sus movimientos no se ven afectados por la habilidad del objetivo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 164,
+    "nameES": "Terravoltaje",
+    "nameHA": "Terravoltaje",
+    "englishName": "Teravolt",
+    "generation": 5,
+    "description": "Sus movimientos no se ven afectados por la habilidad del objetivo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 165,
+    "nameES": "Velo Aroma",
+    "nameHA": "Velo Aromático",
+    "englishName": "Aroma Veil",
+    "generation": 6,
+    "description": "Se protege a sí mismo y a sus aliados de efectos que impiden usar movimientos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 166,
+    "nameES": "Velo Flor",
+    "nameHA": "Velo Florido",
+    "englishName": "Flower Veil",
+    "generation": 6,
+    "description": "Evita que los Pokémon de tipo Planta aliados sufran problemas de estado o que les reduzcan sus características .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 167,
+    "nameES": "Carrillo",
+    "nameHA": "Mejillas",
+    "englishName": "Cheek Pouch",
+    "generation": 6,
+    "description": "Recupera PS al comer cualquier baya .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 168,
+    "nameES": "Mutatipo",
+    "nameHA": "Mutatipo",
+    "englishName": "Protean",
+    "generation": 6,
+    "description": "Al entrar en combate, cambia su tipo al del primer movimiento que va a usar.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 169,
+    "nameES": "Pelaje Recio",
+    "nameHA": "Pelaje Recio",
+    "englishName": "Fur Coat",
+    "generation": 6,
+    "description": "Reduce a la mitad el daño que recibe de ataques físicos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 170,
+    "nameES": "Prestidigitador",
+    "nameHA": "Prestidigitador",
+    "englishName": "Magician",
+    "generation": 6,
+    "description": "Roba el objeto del Pokémon al que alcance con un movimiento.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 171,
+    "nameES": "Antibalas",
+    "nameHA": "Antibalas",
+    "englishName": "Bulletproof",
+    "generation": 6,
+    "description": "No le afectan las bombas ni algunos proyectiles .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 172,
+    "nameES": "Tenacidad",
+    "nameHA": "Tenacidad",
+    "englishName": "Competitive",
+    "generation": 6,
+    "description": "Aumenta mucho su ataque especial cuando el rival le reduce cualquiera de sus características .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 173,
+    "nameES": "Mandíbula Fuerte",
+    "nameHA": "Mandíbula Fuerte",
+    "englishName": "Strong Jaw",
+    "generation": 6,
+    "description": "Su robusta mandíbula le confiere una mordedura mucho más potente.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 174,
+    "nameES": "Piel Helada",
+    "nameHA": "Piel Helada",
+    "englishName": "Refrigerate",
+    "generation": 6,
+    "description": "Convierte los movimientos de tipo Normal en tipo Hielo y aumenta ligeramente su potencia.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 175,
+    "nameES": "Velo Dulce",
+    "nameHA": "Velo Dulce",
+    "englishName": "Sweet Veil",
+    "generation": 6,
+    "description": "No cae dormido y evita también que sus aliados se duerman.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 176,
+    "nameES": "Cambio Táctico",
+    "nameHA": "Cambio Táctico",
+    "englishName": "Stance Change",
+    "generation": 6,
+    "description": "Adopta la forma filo al lanzar un ataque, o bien la forma escudo si usa el movimiento escudo real .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 177,
+    "nameES": "Alas Vendaval",
+    "nameHA": "Alas Vendaval",
+    "englishName": "Gale Wings",
+    "generation": 6,
+    "description": "Da prioridad a los movimientos de tipo Volador si sus PS están al máximo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 178,
+    "nameES": "Megadisparador",
+    "nameHA": "Megalanzador",
+    "englishName": "Mega Launcher",
+    "generation": 6,
+    "description": "Aumenta la potencia de algunos movimientos de pulsos y auras .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 179,
+    "nameES": "Manto Frondoso",
+    "nameHA": "Manto Frondoso",
+    "englishName": "Grass Pelt",
+    "generation": 6,
+    "description": "Aumenta su defensa si hay un campo de hierba en el terreno de combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 180,
+    "nameES": "Simbiosis",
+    "nameHA": "Simbiosis",
+    "englishName": "Symbiosis",
+    "generation": 6,
+    "description": "Pasa su objeto a un aliado cuando este use el suyo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 181,
+    "nameES": "Garra Dura",
+    "nameHA": "Garra Dura",
+    "englishName": "Tough Claws",
+    "generation": 6,
+    "description": "Aumenta la potencia de los movimientos de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 182,
+    "nameES": "Piel Feérica",
+    "nameHA": "Piel Feérica",
+    "englishName": "Pixilate",
+    "generation": 6,
+    "description": "Convierte los movimientos de tipo Normal en tipo Hada y aumenta ligeramente su potencia.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 183,
+    "nameES": "Baba",
+    "nameHA": "Baba",
+    "englishName": "Gooey",
+    "generation": 6,
+    "description": "Reduce la velocidad del Pokémon que lo ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 184,
+    "nameES": "Piel Celeste",
+    "nameHA": "Piel Celeste",
+    "englishName": "Aerilate",
+    "generation": 6,
+    "description": "Convierte los movimientos de tipo Normal en tipo Volador y aumenta ligeramente su potencia.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 185,
+    "nameES": "Amor Filial",
+    "nameHA": "Amor Filial",
+    "englishName": "Parental Bond",
+    "generation": 6,
+    "description": "Une fuerzas con su cría y ataca dos veces.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 186,
+    "nameES": "Aura Oscura",
+    "nameHA": "Aura Oscura",
+    "englishName": "Dark Aura",
+    "generation": 6,
+    "description": "Aumenta la potencia de los movimientos de tipo Siniestro de todos los Pokémon.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 187,
+    "nameES": "Aura Feérica",
+    "nameHA": "Aura Feérica",
+    "englishName": "Fairy Aura",
+    "generation": 6,
+    "description": "Aumenta la potencia de los movimientos de tipo Hada de todos los Pokémon.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 188,
+    "nameES": "Rompeaura",
+    "nameHA": "Rompeaura",
+    "englishName": "Aura Break",
+    "generation": 6,
+    "description": "Invierte los efectos de las habilidades de auras, por lo que reduce la potencia de ciertos movimientos en vez de aumentarla.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 189,
+    "nameES": "Mar del Albor",
+    "nameHA": "Mar del Albor",
+    "englishName": "Primordial Sea",
+    "generation": 6,
+    "description": "Altera el clima para anular los ataques de tipo Fuego .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 190,
+    "nameES": "Tierra del Ocaso",
+    "nameHA": "Tierra del Ocaso",
+    "englishName": "Desolate Land",
+    "generation": 6,
+    "description": "Altera el clima para anular los ataques de tipo Agua .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 191,
+    "nameES": "Ráfaga Delta",
+    "nameHA": "Ráfaga Delta",
+    "englishName": "Delta Stream",
+    "generation": 6,
+    "description": "Altera el clima para anular las vulnerabilidades del tipo Volador .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 192,
+    "nameES": "Firmeza",
+    "nameHA": "Firmeza",
+    "englishName": "Stamina",
+    "generation": 7,
+    "description": "Aumenta su defensa al recibir un ataque.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 193,
+    "nameES": "Huida",
+    "nameHA": "Huida",
+    "englishName": "Wimp Out",
+    "generation": 7,
+    "description": "Se asusta y abandona el terreno de combate cuando sus PS se ven reducidos a la mitad.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 194,
+    "nameES": "Retirada",
+    "nameHA": "Retirada",
+    "englishName": "Emergency Exit",
+    "generation": 7,
+    "description": "Abandona el terreno de combate cuando sus PS se ven reducidos a la mitad para evitar males mayores.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 195,
+    "nameES": "Hidrorrefuerzo",
+    "nameHA": "Hidrorrefuerzo",
+    "englishName": "Water Compaction",
+    "generation": 7,
+    "description": "Aumenta mucho la defensa si le alcanza un movimiento de tipo Agua .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 196,
+    "nameES": "Ensañamiento",
+    "nameHA": "Ensañamiento",
+    "englishName": "Merciless",
+    "generation": 7,
+    "description": "Hace que sus movimientos asesten siempre un golpe crítico si el objetivo está envenenado .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 197,
+    "nameES": "Escudo Limitado",
+    "nameHA": "Escudo Limitado",
+    "englishName": "Shields Down",
+    "generation": 7,
+    "description": "Rompe su coraza cuando sus PS se ven reducidos a la mitad y adopta una forma ofensiva.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 198,
+    "nameES": "Vigilante",
+    "nameHA": "Vigilante",
+    "englishName": "Stakeout",
+    "generation": 7,
+    "description": "Si el objetivo de su ataque es sustituido por otro, duplica el daño que infligirá.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 199,
+    "nameES": "Pompa",
+    "nameHA": "Acuaburbuja",
+    "englishName": "Water Bubble",
+    "generation": 7,
+    "description": "Reduce el daño que le provocan los movimientos de tipo Fuego y es inmune a las quemaduras .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 200,
+    "nameES": "Acero Templado",
+    "nameHA": "Acero Templado",
+    "englishName": "Steelworker",
+    "generation": 7,
+    "description": "Potencia los movimientos de tipo Acero .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 201,
+    "nameES": "Cólera",
+    "nameHA": "Ira",
+    "englishName": "Berserk",
+    "generation": 7,
+    "description": "Aumenta su ataque especial si sus PS se ven reducidos a la mitad debido a algún ataque.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 202,
+    "nameES": "Quitanieves",
+    "nameHA": "Quitanieves",
+    "englishName": "Slush Rush",
+    "generation": 7,
+    "description": "Aumenta su velocidad cuando nieva .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 203,
+    "nameES": "Remoto",
+    "nameHA": "Remoto",
+    "englishName": "Long Reach",
+    "generation": 7,
+    "description": "Puede usar cualquier movimiento sin entrar en contacto con su objetivo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 204,
+    "nameES": "Voz Fluida",
+    "nameHA": "Voz Fluida",
+    "englishName": "Liquid Voice",
+    "generation": 7,
+    "description": "Hace que todos sus movimientos que usan sonido pasen a ser de tipo Agua .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 205,
+    "nameES": "Primer auxilio",
+    "nameHA": "Socorro",
+    "englishName": "Triage",
+    "generation": 7,
+    "description": "Da prioridad a los movimientos que restauran PS .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 206,
+    "nameES": "Piel Eléctrica",
+    "nameHA": "Piel Eléctrica",
+    "englishName": "Galvanize",
+    "generation": 7,
+    "description": "Convierte los movimientos de tipo Normal en tipo Eléctrico y aumenta ligeramente su potencia.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 207,
+    "nameES": "Cola Surf",
+    "nameHA": "Cola Surf",
+    "englishName": "Surge Surfer",
+    "generation": 7,
+    "description": "Duplica su velocidad si hay un campo eléctrico en el terreno de combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 208,
+    "nameES": "Banco",
+    "nameHA": "Banco",
+    "englishName": "Schooling",
+    "generation": 7,
+    "description": "Forma bancos con sus congéneres cuando tiene muchos PS , lo cual le otorga más fuerza. Cuando le quedan pocos PS, el banco se dispersa.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 209,
+    "nameES": "Disfraz",
+    "nameHA": "Disfraz",
+    "englishName": "Disguise",
+    "generation": 7,
+    "description": "Puede eludir un ataque valiéndose de la tela que le cubre el cuerpo una vez por combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 210,
+    "nameES": "Fuerte Afecto",
+    "nameHA": "Fuerte Afecto",
+    "englishName": "Battle Bond",
+    "generation": 7,
+    "description": "Al derrotar a un Pokémon, los vínculos con su Entrenador se refuerzan y aumentan su ataque , su ataque especial y su velocidad .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 211,
+    "nameES": "Agrupamiento",
+    "nameHA": "Agrupamiento",
+    "englishName": "Power Construct",
+    "generation": 7,
+    "description": "Cuando sus PS se ven reducidos a la mitad, las células se reagrupan y adopta su forma completa.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 212,
+    "nameES": "Corrosión",
+    "nameHA": "Corrosión",
+    "englishName": "Corrosion",
+    "generation": 7,
+    "description": "Puede envenenar incluso a Pokémon de tipo Acero o Veneno .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 213,
+    "nameES": "Letargo Perenne",
+    "nameHA": "Letargo Perenne",
+    "englishName": "Comatose",
+    "generation": 7,
+    "description": "No despierta jamás de su profundo letargo e incluso ataca dormido.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 214,
+    "nameES": "Regia Presencia",
+    "nameHA": "Regia Presencia",
+    "englishName": "Queenly Majesty",
+    "generation": 7,
+    "description": "Intimida al rival y le impide usar movimientos con prioridad contra él y sus aliados.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 215,
+    "nameES": "Revés",
+    "nameHA": "Revés",
+    "englishName": "Innards Out",
+    "generation": 7,
+    "description": "Al caer debilitado , inflige al atacante un daño equivalente a los PS que le quedaran antes de recibir el golpe de gracia.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 216,
+    "nameES": "Pareja de Baile",
+    "nameHA": "Pareja de Baile",
+    "englishName": "Dancer",
+    "generation": 7,
+    "description": "Puede copiar inmediatamente cualquier movimiento de baile que haya usado otro Pokémon presente en el combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 217,
+    "nameES": "Batería",
+    "nameHA": "Batería",
+    "englishName": "Battery",
+    "generation": 7,
+    "description": "Potencia los ataques especiales de los aliados.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 218,
+    "nameES": "Peluche",
+    "nameHA": "Mullido",
+    "englishName": "Fluffy",
+    "generation": 7,
+    "description": "Reduce a la mitad el daño recibido por los movimientos de contacto , pero duplica el que le infligen los de tipo Fuego .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 219,
+    "nameES": "Cuerpo Vívido",
+    "nameHA": "Cuerpo Vívido",
+    "englishName": "Dazzling",
+    "generation": 7,
+    "description": "Desconcierta al rival y le impide usar movimientos con prioridad contra él y sus aliados.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 220,
+    "nameES": "Coránima",
+    "nameHA": "Coránima",
+    "englishName": "Soul-Heart",
+    "generation": 7,
+    "description": "Aumenta su ataque especial cada vez que un Pokémon cae debilitado.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 221,
+    "nameES": "Rizos Rebeldes",
+    "nameHA": "Rizos Rebeldes",
+    "englishName": "Tangling Hair",
+    "generation": 7,
+    "description": "Reduce la velocidad del Pokémon que lo ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 222,
+    "nameES": "Receptor",
+    "nameHA": "Receptor",
+    "englishName": "Receiver",
+    "generation": 7,
+    "description": "Adquiere la habilidad de un aliado debilitado.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 223,
+    "nameES": "Reacción Química",
+    "nameHA": "Reacción Química",
+    "englishName": "Power of Alchemy",
+    "generation": 7,
+    "description": "Reacciona copiando la habilidad de un aliado debilitado.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 224,
+    "nameES": "Ultraimpulso",
+    "nameHA": "Ultraimpulso",
+    "englishName": "Beast Boost",
+    "generation": 7,
+    "description": "Al derrotar a un Pokémon, aumenta su característica más fuerte.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 225,
+    "nameES": "Sistema Alfa",
+    "nameHA": "Sistema Alfa",
+    "englishName": "RKS System",
+    "generation": 7,
+    "description": "Cambia su tipo según el disco que lleve instalado.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 226,
+    "nameES": "Electrogénesis",
+    "nameHA": "Electrogénesis",
+    "englishName": "Electric Surge",
+    "generation": 7,
+    "description": "Crea un campo eléctrico al entrar en combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 227,
+    "nameES": "Psicogénesis",
+    "nameHA": "Psicogénesis",
+    "englishName": "Psychic Surge",
+    "generation": 7,
+    "description": "Crea un campo psíquico al entrar en combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 228,
+    "nameES": "Nebulogénesis",
+    "nameHA": "Nebulogénesis",
+    "englishName": "Misty Surge",
+    "generation": 7,
+    "description": "Crea un campo de niebla al entrar en combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 229,
+    "nameES": "Herbogénesis",
+    "nameHA": "Herbogénesis",
+    "englishName": "Grassy Surge",
+    "generation": 7,
+    "description": "Crea un campo de hierba al entrar en combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 230,
+    "nameES": "Guardia Metálica",
+    "nameHA": "Guardia Metálica",
+    "englishName": "Full Metal Body",
+    "generation": 7,
+    "description": "Evita que se reduzcan sus características a causa de movimientos o habilidades de otros Pokémon.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 231,
+    "nameES": "Guardia Espectro",
+    "nameHA": "Guardia Espectro",
+    "englishName": "Shadow Shield",
+    "generation": 7,
+    "description": "Reduce el daño que sufre si sus PS están al máximo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 232,
+    "nameES": "Armadura Prisma",
+    "nameHA": "Armadura Prisma",
+    "englishName": "Prism Armor",
+    "generation": 7,
+    "description": "Mitiga el daño que le infligen los movimientos supereficaces.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 233,
+    "nameES": "Fuerza Cerebral",
+    "nameHA": "Fuerza Cerebral",
+    "englishName": "Neuroforce",
+    "generation": 7,
+    "description": "Potencia los ataques supereficaces.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 234,
+    "nameES": "Espada Indómita",
+    "nameHA": "Espada Indómita",
+    "englishName": "Intrepid Sword",
+    "generation": 8,
+    "description": "Aumenta su ataque al entrar en combate por primera vez.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 235,
+    "nameES": "Escudo Recio",
+    "nameHA": "Escudo Recio",
+    "englishName": "Dauntless Shield",
+    "generation": 8,
+    "description": "Aumenta su defensa al entrar en combate por primera vez.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 236,
+    "nameES": "Líbero",
+    "nameHA": "Líbero",
+    "englishName": "Libero",
+    "generation": 8,
+    "description": "Al entrar en combate, cambia su tipo al del primer movimiento que va a usar.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 237,
+    "nameES": "Recogebolas",
+    "nameHA": "Buscabola",
+    "englishName": "Ball Fetch",
+    "generation": 8,
+    "description": "Si no lleva equipado ningún objeto, recupera la Poké Ball del primer intento de captura fallido.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 238,
+    "nameES": "Pelusa",
+    "nameHA": "Pelusa",
+    "englishName": "Cotton Down",
+    "generation": 8,
+    "description": "Al ser alcanzado por un ataque, suelta una pelusa de algodón que reduce la velocidad de todos los demás Pokémon.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 239,
+    "nameES": "Hélice Caudal",
+    "nameHA": "Hélice Caudal",
+    "englishName": "Propeller Tail",
+    "generation": 8,
+    "description": "Ignora los efectos de las habilidades o los movimientos que permiten a un Pokémon centrar la atención sobre sí.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 240,
+    "nameES": "Coraza Reflejo",
+    "nameHA": "Coraza Reflejo",
+    "englishName": "Mirror Armor",
+    "generation": 8,
+    "description": "Refleja los efectos que reducen las características .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 241,
+    "nameES": "Tragamisil",
+    "nameHA": "Tragamisil",
+    "englishName": "Gulp Missile",
+    "generation": 8,
+    "description": "Tras usar surf o buceo , emerge con una presa en la boca. Al recibir daño, ataca escupiéndola.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 242,
+    "nameES": "Acérrimo",
+    "nameHA": "Acérrimo",
+    "englishName": "Stalwart",
+    "generation": 8,
+    "description": "Ignora los efectos de las habilidades o los movimientos que permiten a un Pokémon centrar la atención sobre sí.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 243,
+    "nameES": "Combustible",
+    "nameHA": "Combustible",
+    "englishName": "Steam Engine",
+    "generation": 8,
+    "description": "Si le alcanza un movimiento de tipo Fuego o tipo Agua , aumenta muchísimo su velocidad .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 244,
+    "nameES": "Punk Rock",
+    "nameHA": "Punk Rock",
+    "englishName": "Punk Rock",
+    "generation": 8,
+    "description": "Potencia los movimientos que usan sonido y reduce a la mitad el daño que le infligen dichos movimientos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 245,
+    "nameES": "Expulsarena",
+    "nameHA": "Expulsarena",
+    "englishName": "Sand Spit",
+    "generation": 8,
+    "description": "Provoca una tormenta de arena al recibir un ataque.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 246,
+    "nameES": "Escama de Hielo",
+    "nameHA": "Escama de Hielo",
+    "englishName": "Ice Scales",
+    "generation": 8,
+    "description": "Las gélidas escamas que protegen su cuerpo reducen a la mitad el daño que le infligen los ataques especiales.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 247,
+    "nameES": "Maduración",
+    "nameHA": "Maduración",
+    "englishName": "Ripen",
+    "generation": 8,
+    "description": "Hace madurar las bayas, por lo que duplica sus efectos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 248,
+    "nameES": "Cara de Hielo",
+    "nameHA": "Cara de Hielo",
+    "englishName": "Ice Face",
+    "generation": 8,
+    "description": "Absorbe el daño de un ataque físico con el hielo de la cabeza, tras lo cual cambia de forma. El hielo se regenerará la próxima vez que nieve .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 249,
+    "nameES": "Fuente Energía",
+    "nameHA": "Fuente Energía",
+    "englishName": "Power Spot",
+    "generation": 8,
+    "description": "Potencia los movimientos de los Pokémon adyacentes.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 250,
+    "nameES": "Mimetismo",
+    "nameHA": "Mimetismo",
+    "englishName": "Mimicry",
+    "generation": 8,
+    "description": "Cambia su tipo según el campo que haya en el terreno de combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 251,
+    "nameES": "Antibarrera",
+    "nameHA": "Antibarrera",
+    "englishName": "Screen Cleaner",
+    "generation": 8,
+    "description": "Anula los efectos de pantalla de luz , reflejo y velo aurora tanto de rivales como de aliados al entrar en combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 252,
+    "nameES": "Alma Acerada",
+    "nameHA": "Alma Acerada",
+    "englishName": "Steely Spirit",
+    "generation": 8,
+    "description": "Potencia los movimientos de tipo Acero del Pokémon y sus aliados.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 253,
+    "nameES": "Cuerpo Mortal",
+    "nameHA": "Cuerpo Mortal",
+    "englishName": "Perish Body",
+    "generation": 8,
+    "description": "Si lo alcanza un movimiento de contacto , se debilitará al cabo de 3 turnos, así como el atacante, a menos que abandonen el terreno de combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 254,
+    "nameES": "Alma Errante",
+    "nameHA": "Alma Errante",
+    "englishName": "Wandering Spirit",
+    "generation": 8,
+    "description": "Si lo alcanza un movimiento de contacto , intercambia su habilidad con la del atacante.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 255,
+    "nameES": "Monotema",
+    "nameHA": "Obstinación",
+    "englishName": "Gorilla Tactics",
+    "generation": 8,
+    "description": "Aumenta su ataque , pero solo puede usar el primer movimiento escogido.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 256,
+    "nameES": "Gas Reactivo",
+    "nameHA": "Gas Reactivo",
+    "englishName": "Neutralizing Gas",
+    "generation": 8,
+    "description": "Anula los efectos de las habilidades de los demás Pokémon presentes mientras esté en el terreno de combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 257,
+    "nameES": "Velo Pastel",
+    "nameHA": "Velo Pastel",
+    "englishName": "Pastel Veil",
+    "generation": 8,
+    "description": "Se protege a sí mismo y a sus aliados del envenenamiento .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 258,
+    "nameES": "Mutapetito",
+    "nameHA": "Mutapetito",
+    "englishName": "Hunger Switch",
+    "generation": 8,
+    "description": "Alterna entre su forma saciada y forma voraz al final de cada turno.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 259,
+    "nameES": "Mano Rápida",
+    "nameHA": "Mano Rápida",
+    "englishName": "Quick Draw",
+    "generation": 8,
+    "description": "A veces, puede atacar el primero.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 260,
+    "nameES": "Puño Invisible",
+    "nameHA": "Puño Invisible",
+    "englishName": "Unseen Fist",
+    "generation": 8,
+    "description": "Si usa un movimiento de contacto , puede infligir daño al objetivo aunque este se proteja.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 261,
+    "nameES": "Medicina Extraña",
+    "nameHA": "Medicina Extraña",
+    "englishName": "Curious Medicine",
+    "generation": 8,
+    "description": "Al entrar en combate, rezuma una substancia medicinal por la caracola que revierte los cambios en las características de los aliados.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 262,
+    "nameES": "Transistor",
+    "nameHA": "Transistor",
+    "englishName": "Transistor",
+    "generation": 8,
+    "description": "Potencia los movimientos de tipo Eléctrico .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 264,
+    "nameES": "Relincho Blanco",
+    "nameHA": "Relincho Blanco",
+    "englishName": "Chilling Neigh",
+    "generation": 8,
+    "description": "Al derrotar a un objetivo, emite un relincho gélido y aumenta su ataque .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 265,
+    "nameES": "Relincho Negro",
+    "nameHA": "Relincho Negro",
+    "englishName": "Grim Neigh",
+    "generation": 8,
+    "description": "Al derrotar a un objetivo, emite un relincho aterrador y aumenta su ataque especial .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 266,
+    "nameES": "Unidad Ecuestre",
+    "nameHA": "Unidad Ecuestre",
+    "englishName": "As One",
+    "generation": 8,
+    "description": "El Pokémon tiene dos habilidades: relincho blanco de Glastrier y nerviosismo de Calyrex .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 267,
+    "nameES": "Unidad Ecuestre",
+    "nameHA": "Unidad Ecuestre",
+    "englishName": "As One",
+    "generation": 8,
+    "description": "El Pokémon tiene dos habilidades: relincho negro de Spectrier y nerviosismo de Calyrex .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 268,
+    "nameES": "Olor Persistente",
+    "nameHA": "Aroma Incesante",
+    "englishName": "Lingering Aroma",
+    "generation": 9,
+    "description": "Contagia la habilidad olor persistente al Pokémon que lo ataque con un movimiento de contacto .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 269,
+    "nameES": "Disemillar",
+    "nameHA": "Disemillar",
+    "englishName": "Seed Sower",
+    "generation": 9,
+    "description": "Crea un campo de hierba al recibir un ataque.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 270,
+    "nameES": "Termoconversión",
+    "nameHA": "Termoconversión",
+    "englishName": "Thermal Exchange",
+    "generation": 9,
+    "description": "Evita las quemaduras y, si lo alcanza un movimiento de tipo Fuego , aumenta su ataque .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 271,
+    "nameES": "Coraza Ira",
+    "nameHA": "Coraza Ira",
+    "englishName": "Anger Shell",
+    "generation": 9,
+    "description": "Cuando un ataque reduce sus PS a la mitad, un arrebato de cólera reduce su defensa y su defensa especial , pero aumenta su ataque , su ataque especial y su velocidad .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 272,
+    "nameES": "Sal Purificadora",
+    "nameHA": "Sal Purificadora",
+    "englishName": "Purifying Salt",
+    "generation": 9,
+    "description": "Su sal pura lo protege de los problemas de estado y reduce a la mitad el daño que recibe de ataques de tipo Fantasma .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 273,
+    "nameES": "Cuerpo Horneado",
+    "nameHA": "Pan Comido",
+    "englishName": "Well-Baked Body",
+    "generation": 9,
+    "description": "Si lo alcanza un movimiento de tipo Fuego , aumenta mucho su defensa en vez de sufrir daño.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 274,
+    "nameES": "Surcavientos",
+    "nameHA": "Surcavientos",
+    "englishName": "Wind Rider",
+    "generation": 9,
+    "description": "Si sopla un viento afín o lo alcanza un movimiento que usa viento, aumenta su ataque . Tampoco recibe daño de este último.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 275,
+    "nameES": "Perro Guardián",
+    "nameHA": "Perro Guardián",
+    "englishName": "Guard Dog",
+    "generation": 9,
+    "description": "Aumenta su ataque si sufre los efectos de intimidación . También anula movimientos y objetos que fuercen el cambio de Pokémon.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 276,
+    "nameES": "Transportarrocas",
+    "nameHA": "Transportarrocas",
+    "englishName": "Rocky Payload",
+    "generation": 9,
+    "description": "Potencia los movimientos de tipo Roca .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 277,
+    "nameES": "Energía Eólica",
+    "nameHA": "Energía Eólica",
+    "englishName": "Wind Power",
+    "generation": 9,
+    "description": "Su cuerpo se carga de electricidad si lo alcanza un movimiento que usa viento, lo que potencia su siguiente movimiento de tipo Eléctrico .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 278,
+    "nameES": "Cambio Heroico",
+    "nameHA": "Cambio Heroico",
+    "englishName": "Zero to Hero",
+    "generation": 9,
+    "description": "Adopta la forma heroica cuando se retira del combate.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 279,
+    "nameES": "Comandar",
+    "nameHA": "Comandante",
+    "englishName": "Commander",
+    "generation": 9,
+    "description": "Si al entrar en combate coincide con un Dondozo aliado, se cuela en el interior de su boca para tomar el control.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 280,
+    "nameES": "Dinamo",
+    "nameHA": "Dínamo",
+    "englishName": "Electromorphosis",
+    "generation": 9,
+    "description": "Su cuerpo se carga de electricidad al recibir daño, lo que potencia su siguiente movimiento de tipo Eléctrico .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 281,
+    "nameES": "Paleosíntesis",
+    "nameHA": "Paleosíntesis",
+    "englishName": "Protosynthesis",
+    "generation": 9,
+    "description": "Si hace sol o lleva un tanque de energía potenciadora , aumenta su característica más alta.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 282,
+    "nameES": "Carga Cuark",
+    "nameHA": "Carga Cuark",
+    "englishName": "Quark Drive",
+    "generation": 9,
+    "description": "Si hay un campo eléctrico en el terreno de combate o lleva un tanque de energía potenciadora , aumenta su característica más alta.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 283,
+    "nameES": "Cuerpo Áureo",
+    "nameHA": "Cuerpo Áureo",
+    "englishName": "Good as Gold",
+    "generation": 9,
+    "description": "Su robusto cuerpo de oro inoxidable lo hace inmune frente a movimientos de estado de otros Pokémon.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 284,
+    "nameES": "Caldero Debacle",
+    "nameHA": "Caldero Debacle",
+    "englishName": "Vessel of Ruin",
+    "generation": 9,
+    "description": "Reduce el ataque especial de todos los demás Pokémon con el poder de su caldero maldito.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 285,
+    "nameES": "Espada Debacle",
+    "nameHA": "Espada Debacle",
+    "englishName": "Sword of Ruin",
+    "generation": 9,
+    "description": "Reduce la defensa de todos los demás Pokémon con el poder de su espada maldita.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 286,
+    "nameES": "Tablilla Debacle",
+    "nameHA": "Tablilla Debacle",
+    "englishName": "Tablets of Ruin",
+    "generation": 9,
+    "description": "Reduce el ataque de todos los demás Pokémon con el poder de sus tablillas malditas.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 287,
+    "nameES": "Abalorio Debacle",
+    "nameHA": "Cuenta Debacle",
+    "englishName": "Beads of Ruin",
+    "generation": 9,
+    "description": "Reduce la defensa especial de todos los demás Pokémon con el poder de sus abalorios malditos.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 288,
+    "nameES": "Latido Oricalco",
+    "nameHA": "Latido Oricalco",
+    "englishName": "Orichalcum Pulse",
+    "generation": 9,
+    "description": "El tiempo pasa a ser soleado cuando entra en combate. Si hace mucho sol, su ataque aumenta gracias a su pulso primigenio.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 289,
+    "nameES": "Motor Hadrónico",
+    "nameHA": "Motor Hadrónico",
+    "englishName": "Hadron Engine",
+    "generation": 9,
+    "description": "Crea un campo eléctrico al entrar en combate. Si hay un campo eléctrico, su ataque especial aumenta gracias a su motor futurista.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 290,
+    "nameES": "Oportunista",
+    "nameHA": "Oportunista",
+    "englishName": "Opportunist",
+    "generation": 9,
+    "description": "Copia las mejoras en las características del rival, aprovechándose de la situación.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 291,
+    "nameES": "Rumia",
+    "nameHA": "Rumia",
+    "englishName": "Cud Chew",
+    "generation": 9,
+    "description": "Cuando ingiere una baya , la regurgita al final del siguiente turno y se la come por segunda vez.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 292,
+    "nameES": "Cortante",
+    "nameHA": "Cortante",
+    "englishName": "Sharpness",
+    "generation": 9,
+    "description": "Aumenta la potencia de los movimientos cortantes .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 293,
+    "nameES": "General Supremo",
+    "nameHA": "General Supremo",
+    "englishName": "Supreme Overlord",
+    "generation": 9,
+    "description": "Al entrar en combate, su ataque y su ataque especial aumentan un poco por cada miembro del equipo que haya sido derrotado hasta el momento.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 294,
+    "nameES": "Unísono",
+    "nameHA": "Unísono",
+    "englishName": "Costar",
+    "generation": 9,
+    "description": "Al entrar en combate, copia los cambios en las características de su aliado.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 295,
+    "nameES": "Capa Tóxica",
+    "nameHA": "Capa Tóxica",
+    "englishName": "Toxic Debris",
+    "generation": 9,
+    "description": "Al recibir daño de un ataque físico, lanza una trampa de púas tóxicas a los pies del rival.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 296,
+    "nameES": "Cola Armadura",
+    "nameHA": "Cola Armadura",
+    "englishName": "Armor Tail",
+    "generation": 9,
+    "description": "La extraña cola que le envuelve la cabeza impide al rival usar movimientos con prioridad contra él y sus aliados.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 297,
+    "nameES": "Geofagia",
+    "nameHA": "Geofagia",
+    "englishName": "Earth Eater",
+    "generation": 9,
+    "description": "Si lo alcanza un movimiento de tipo Tierra , recupera PS en vez de sufrir daño.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 298,
+    "nameES": "Poder Fúngico",
+    "nameHA": "Poder Fúngico",
+    "englishName": "Mycelium Might",
+    "generation": 9,
+    "description": "El Pokémon siempre actúa con lentitud cuando usa movimientos de estado, pero estos no se ven afectados por la habilidad del objetivo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 299,
+    "nameES": "Hospitalidad",
+    "nameHA": "Hospitalidad",
+    "englishName": "Hospitality",
+    "generation": 9,
+    "description": "Al entrar en combate, restaura algunos PS de su aliado como muestra de hospitalidad.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 300,
+    "nameES": "Ojo Mental",
+    "nameHA": "Ojo Mental",
+    "englishName": "Mind's Eye",
+    "generation": 9,
+    "description": "Alcanza a Pokémon de tipo Fantasma con movimientos de tipo Normal o Pelea / Lucha . Su precisión no se puede reducir e ignora los cambios en la evasión del objetivo.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 301,
+    "nameES": "Evocarrecuerdos",
+    "nameHA": "Evocarrecuerdos",
+    "englishName": "Embody Aspect",
+    "generation": 9,
+    "description": "Al evocar viejos recuerdos, el Pokémon hace brillar la máscara turquesa y aumenta su velocidad .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 302,
+    "nameES": "Evocarrecuerdos",
+    "nameHA": "Evocarrecuerdos",
+    "englishName": "Embody Aspect",
+    "generation": 9,
+    "description": "Al evocar viejos recuerdos, el Pokémon hace brillar la máscara horno y aumenta su ataque .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 303,
+    "nameES": "Evocarrecuerdos",
+    "nameHA": "Evocarrecuerdos",
+    "englishName": "Embody Aspect",
+    "generation": 9,
+    "description": "Al evocar viejos recuerdos, el Pokémon hace brillar la máscara fuente y aumenta su defensa especial .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 304,
+    "nameES": "Evocarrecuerdos",
+    "nameHA": "Evocarrecuerdos",
+    "englishName": "Embody Aspect",
+    "generation": 9,
+    "description": "Al evocar viejos recuerdos, el Pokémon hace brillar la máscara cimiento y aumenta su defensa .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 305,
+    "nameES": "Cadena Tóxica",
+    "nameHA": "Cadena Tóxica",
+    "englishName": "Toxic Chain",
+    "generation": 9,
+    "description": "Gracias al poder de su cadena impregnada de toxinas, puede envenenar gravemente al Pokémon al que ataque.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 306,
+    "nameES": "Néctar Dulce",
+    "nameHA": "Néctar Dulce",
+    "englishName": "Supersweet Syrup",
+    "generation": 9,
+    "description": "Al entrar en combate por primera vez, esparce un aroma dulzón a néctar que reduce la evasión del rival.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 307,
+    "nameES": "Teracambio",
+    "nameHA": "Teracambio",
+    "englishName": "Tera Shift",
+    "generation": 9,
+    "description": "Al entrar en combate, adopta la Forma Teracristal tras absorber la energía de su alrededor.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 308,
+    "nameES": "Teracaparazón",
+    "nameHA": "Teracaparazón",
+    "englishName": "Tera Shell",
+    "generation": 9,
+    "description": "Su caparazón encierra energía de todos los tipos. Gracias a ello, si sus PS están al máximo, el movimiento que lo alcance no será muy eficaz.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 309,
+    "nameES": "Teraformación 0",
+    "nameHA": "Teraformación 0",
+    "englishName": "Teraform Zero",
+    "generation": 9,
+    "description": "Cuando Terapagos adopta la Forma Astral, anula todos los efectos del tiempo atmosférico y de los campos que haya en el terreno gracias a su poder oculto.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 310,
+    "nameES": "Títere Tóxico",
+    "nameHA": "Títere Tóxico",
+    "englishName": "Poison Puppeteer",
+    "generation": 9,
+    "description": "Los rivales que Pecharunt envenene con sus movimientos también sufrirán confusión .",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 311,
+    "nameES": "Turbotaladro",
+    "nameHA": "Turbotaladro",
+    "englishName": "Piercing Drill",
+    "generation": 9,
+    "description": "Cuando el Pokémon ataca con un movimiento de contacto , es capaz de alcanzar incluso a objetivos que se encuentran protegidos por algún efecto y les inflige 1/4 del daño original. El resto de efectos no se ven afectados por esta habilidad y se activarán de forma habitual.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 312,
+    "nameES": "Piel Dragontina",
+    "nameHA": "Piel Dracónica",
+    "englishName": "Dragonize",
+    "generation": 9,
+    "description": "Convierte los movimientos de tipo Normal del Pokémon en movimientos de tipo Dragón y aumenta un 20 % su potencia.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 313,
+    "nameES": "Impulso Anguila",
+    "nameHA": "Impulso Anguila",
+    "englishName": "Eelevate",
+    "generation": 9,
+    "description": "Hace que el Pokémon flote y deje de estar en contacto con el suelo, lo que impide que le afecten los movimientos de tipo Tierra y los estados Púas , Púas Tóxicas y Red Pegajosa / Red Viscosa . Aumenta un nivel la característica más alta del Pokémon cuando debilita a un objetivo con un ataque.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 315,
+    "nameES": "Megasolar",
+    "nameHA": "Megasolar",
+    "englishName": "Mega Sol",
+    "generation": 9,
+    "description": "El Pokémon puede usar movimientos con los mismos resultados que si hiciese sol , aunque realmente ese no sea el tiempo atmosférico actual.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 316,
+    "nameES": "Crin de Fuego",
+    "nameHA": "Melena de Fuego",
+    "englishName": "Fire Mane",
+    "generation": 9,
+    "description": "Aumenta un 50 % la potencia de los movimientos de tipo Fuego del Pokémon.",
+    "source": "WikiDex — Lista de habilidades"
+  },
+  {
+    "index": 318,
+    "nameES": "Salpicante",
+    "nameHA": "Salpicante",
+    "englishName": "Spicy Spray",
+    "generation": 9,
+    "description": "Quema al atacante si recibe daño de un movimiento.",
+    "source": "WikiDex — Lista de habilidades"
+  }
+]

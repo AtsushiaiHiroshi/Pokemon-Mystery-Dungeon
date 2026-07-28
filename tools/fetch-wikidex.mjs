@@ -120,6 +120,28 @@ function parseMoveTable(html) {
   return moves;
 }
 
+function parseAbilityTable(html) {
+  const start = html.indexOf('class="tabpokemon sortable tablemanager"');
+  const table = html.slice(start, html.indexOf("</table>", start));
+  const abilities = [];
+  for (const row of table.matchAll(/<tr[\s\S]*?<\/tr>/gi)) {
+    const data = cells(row[0]);
+    if (data.length < 6 || !/^\d{3}|^-/.test(clean(data[0]))) continue;
+    const generation = Number(data[4].match(/alt="(\d+)"/i)?.[1] ?? clean(data[4]).match(/\d+/)?.[0] ?? 0);
+    const englishName = clean(data[3]);
+    abilities.push({
+      index: Number(clean(data[0])) || 0,
+      nameES: spanishName(data[1]),
+      nameHA: clean(data[2]),
+      englishName,
+      generation,
+      description: clean(data[5]),
+      source: "WikiDex — Lista de habilidades"
+    });
+  }
+  return abilities;
+}
+
 function parsePokemonTable(html, marker) {
   const markerIndex = html.indexOf(`class="mw-headline" ${marker}`) >= 0
     ? html.indexOf(`class="mw-headline" ${marker}`)
@@ -177,6 +199,9 @@ for (const move of moves) {
     move.name = "Brasas";
   }
 }
+const abilityHTML = await (await fetch(`${WIKI}/wiki/Lista_de_habilidades`)).text();
+const abilities = parseAbilityTable(abilityHTML)
+  .filter(ability => ability.nameHA !== "—" && ability.englishName !== "—");
 const objectHTML = await (await fetch(`${WIKI}/wiki/Lista_de_objetos_de_Pok%C3%A9mon_Mundo_misterioso`)).text();
 const objects = parseObjectTables(objectHTML);
 const games = [
@@ -228,6 +253,7 @@ for (const [game, names] of Object.entries(boukendan)) {
 
 await mkdir(OUT, { recursive: true });
 await writeFile(path.join(OUT, "wikidex-moves.json"), JSON.stringify(moves, null, 2));
+await writeFile(path.join(OUT, "wikidex-abilities.json"), JSON.stringify(abilities, null, 2));
 await writeFile(path.join(OUT, "wikidex-items.json"), JSON.stringify(objects, null, 2));
 await writeFile(path.join(OUT, "wikidex-starters.json"), JSON.stringify(starters, null, 2));
-console.log(`WikiDex: ${moves.length} movimientos; ${objects.length} objetos PMD; ${Object.values(starters).flat().length} Pokémon iniciales/seleccionables.`);
+console.log(`WikiDex: ${moves.length} movimientos; ${abilities.length} habilidades HA; ${objects.length} objetos PMD; ${Object.values(starters).flat().length} Pokémon iniciales/seleccionables.`);

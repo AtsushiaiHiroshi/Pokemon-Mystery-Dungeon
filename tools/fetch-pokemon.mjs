@@ -5,11 +5,13 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const raw = file => fetch(`https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/${file}`).then(response => response.text());
 const parse = csv => csv.trim().split(/\r?\n/).slice(1).map(line => line.split(","));
-const [pokemonCSV, speciesNamesCSV, pokemonTypesCSV, typeNamesCSV, speciesCSV] = await Promise.all([
-  raw("pokemon.csv"), raw("pokemon_species_names.csv"), raw("pokemon_types.csv"), raw("type_names.csv"), raw("pokemon_species.csv")
+const [pokemonCSV, speciesNamesCSV, pokemonTypesCSV, typeNamesCSV, speciesCSV, statsCSV, abilitiesCSV, abilityNamesCSV] = await Promise.all([
+  raw("pokemon.csv"), raw("pokemon_species_names.csv"), raw("pokemon_types.csv"), raw("type_names.csv"), raw("pokemon_species.csv"),
+  raw("pokemon_stats.csv"), raw("pokemon_abilities.csv"), raw("ability_names.csv")
 ]);
 const names = new Map(parse(speciesNamesCSV).filter(row => row[1] === "7").map(row => [row[0], row[2]]));
 const typeNames = new Map(parse(typeNamesCSV).filter(row => row[1] === "7").map(row => [row[0], row[2]]));
+const abilityNames = new Map(parse(abilityNamesCSV).filter(row => row[1] === "7").map(row => [row[0], row[2]]));
 const species = new Map(parse(speciesCSV).map(row => [row[0], {
   generation: Number(row[2] ?? 1),
   evolvesFrom: row[3] ? Number(row[3]) : null,
@@ -33,6 +35,25 @@ for (const row of parse(pokemonTypesCSV)) {
   list[Number(row[2]) - 1] = typeNames.get(row[1]) ?? "normal";
   typesByPokemon.set(row[0], list.filter(Boolean));
 }
+const statsByPokemon = new Map();
+for (const row of parse(statsCSV)) {
+  const list = statsByPokemon.get(row[0]) ?? {};
+  const stat = { 1: "hp", 2: "attack", 3: "defense", 4: "specialAttack", 5: "specialDefense", 6: "speed" }[Number(row[1])];
+  if (stat) list[stat] = Number(row[2]);
+  statsByPokemon.set(row[0], list);
+}
+const abilitiesByPokemon = new Map();
+for (const row of parse(abilitiesCSV)) {
+  const list = abilitiesByPokemon.get(row[0]) ?? [];
+  list.push({
+    id: Number(row[1]),
+    identifier: abilityNames.get(row[1]) ?? `ability-${row[1]}`,
+    name: abilityNames.get(row[1]) ?? `Habilidad ${row[1]}`,
+    hidden: row[2] === "1",
+    slot: Number(row[3])
+  });
+  abilitiesByPokemon.set(row[0], list.sort((a, b) => a.slot - b.slot));
+}
 const all = parse(pokemonCSV).filter(row => Number(row[0]) >= 1 && Number(row[0]) <= 1025)
   .map(row => ({
     id: Number(row[0]),
@@ -43,6 +64,8 @@ const all = parse(pokemonCSV).filter(row => Number(row[0]) >= 1 && Number(row[0]
     evolvesFrom: species.get(row[0])?.evolvesFrom ?? null,
     legendary: species.get(row[0])?.legendary ?? false,
     mythical: species.get(row[0])?.mythical ?? false,
+    baseStats: statsByPokemon.get(row[0]) ?? { hp: 1, attack: 1, defense: 1, specialAttack: 1, specialDefense: 1, speed: 1 },
+    abilities: abilitiesByPokemon.get(row[0]) ?? [],
     // La primera etapa puede tener evoluciones; lo que excluimos son las
     // especies que ya evolucionan desde otra. Pikachu es la excepción.
     quizEligible: !paradoxPokemon.has(row[1]) && (!ultraBeasts.has(row[1]) || row[1] === "poipole") && (!species.get(row[0])?.legendary || row[1] === "kubfu") && !species.get(row[0])?.mythical && (species.get(row[0])?.evolvesFrom == null || row[1] === "pikachu" || row[1] === "kubfu"),

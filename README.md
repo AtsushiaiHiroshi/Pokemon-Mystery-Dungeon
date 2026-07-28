@@ -1,43 +1,50 @@
-# Pokémon Mystery Dungeon para D&D 5e
+# Pokémon Mystery Dungeon para Foundry VTT
 
-Módulo local para Foundry VTT 14 y D&D 5e 5.3.x.
+El proyecto está pasando a ser un **sistema Pokémon nativo** para Foundry VTT 14.
+La referencia a D&D se limita al índice d20, los modificadores y la presentación
+de tiradas; la ficha, los actores, los objetos y el combate ya no dependen de la
+hoja D&D 5e.
+
+La arquitectura y el plan de migración están en
+[`docs/architecture/POKEMON_SYSTEM_ARCHITECTURE.md`](docs/architecture/POKEMON_SYSTEM_ARCHITECTURE.md).
+El módulo D&D legado se conserva temporalmente para mundos existentes, pero no
+debe activarse junto con el sistema nuevo.
 
 ## Funciones
 
-- Panel PMD por Actor con especie, tipos, naturaleza, aura, rango de equipo,
-  hambre, PP, amistad y fichas de aventura.
-- Tiradas PMD al chat y consumo/restauración rápida de recursos.
-- Calculadora de efectividad elemental.
-- Generador de misiones de rescate, exploración, escolta y captura.
-- Instalador de contenido inicial: diario de reglas, movimientos, objetos y Pokémon jugables.
-- Compendios de 902 movimientos, 278 objetos de mazmorra, 121 candidatos de Mundo Misterioso y 1025 especies Pokémon de las generaciones 1–9.
-- Botón **Editar perfil Pokémon** dentro de las hojas de Actor dnd5e.
-- Editor Pokémon para tipo, categoría y PP dentro de los movimientos.
-- Acceso desde el directorio de actores, controles de token y macros.
+- Hoja Pokémon nativa con PS, Ataque, Defensa, Ataque Especial, Defensa Especial,
+  Velocidad, precisión, evasión, PP, hambre, amistad, agotamiento y Poké.
+- Compendios nativos con 1025 especies, 902 movimientos, 316 habilidades HA y
+  278 objetos de mazmorra; los objetos de captura/Poké Balls se excluyen.
+- Combate preparado para prioridad, orden por Velocidad, precisión/evasión,
+  categorías físico/especial, efectividad por tipo y golpes críticos.
+- Evolución y amistad diseñadas como migraciones de especie, estadísticas,
+  movimientos y habilidades.
 
 ## Uso
 
-1. Instálalo con el manifiesto de la última versión o copia este repositorio a
-   `Data/modules/pokemon-mystery-dungeon`.
-2. Activa el módulo en un mundo que utilice `dnd5e`.
-3. En Configuración del módulo, ejecuta **Crear contenido inicial PMD**.
-4. Selecciona un token y usa el botón de huella, o abre el menú contextual de
-   un actor y elige **Ficha PMD**.
-5. Abre **Compendios** y busca las carpetas `PMD`. Arrastra un movimiento u
-   objeto a la hoja para crear una copia editable.
-6. En la hoja del Actor, usa **Editar perfil Pokémon**. En la hoja de un
-   movimiento, usa **Editar datos Pokémon** para tipo, categoría, PP, potencia,
-   precisión, prioridad, retroceso y CD; configura ataque, daño, alcance y
-   salvación con las Activities normales de dnd5e.
+1. Instala el sistema desde `system.json` o copia el repositorio a
+   `Data/systems/pokemon-mystery-dungeon`.
+2. Activa **Pokémon Mystery Dungeon** en la creación del mundo; no selecciones
+   el módulo D&D legado.
+3. Crea un Actor y elige el tipo **Pokémon**. La ficha nativa calcula sus
+   características a partir de especie, nivel, IV, EV y naturaleza.
+4. Abre los compendios nativos y arrastra movimientos, habilidades u objetos a
+   la ficha. La moneda única es **Poké**.
 
-El compendio `PMD - Pokémon (todas las generaciones)` contiene las 1025 especies
-base de las generaciones 1–9 con avatares oficiales de PokeAPI.
+Para regenerar los compendios después de actualizar los datos de WikiDex:
+
+```bash
+npm run fetch:pokemon
+npm run fetch:wikidex
+npm run build:native-packs
+```
 
 ## Test de personalidad externo
 
 El test PMD no se ejecuta dentro de Foundry ni modifica actores. Es una página
 interactiva independiente en [`docs/quiz/index.html`](docs/quiz/index.html), con
-un modo rápido de 10 preguntas y uno completo de 64 preguntas, 16 naturalezas y
+un modo rápido de 20 preguntas y uno completo de 65 preguntas, 16 naturalezas y
 recomendaciones ampliadas a las generaciones 1–9. El resultado ofrece la primera
 etapa de cada línea evolutiva, pero no sus evoluciones posteriores; Pikachu es
 la excepción y Meowth se mantiene entre las opciones iniciales. Se excluyen los
@@ -56,10 +63,16 @@ npm run validate
 ```
 
 El flujo de GitHub Actions valida el manifiesto y, al publicar una etiqueta
-`v*`, crea automáticamente `module.json` y
-`pokemon-mystery-dungeon.zip` como archivos de la versión.
+`v*`, crea los archivos de instalación del sistema y conserva el paquete legacy
+por separado.
 
-Manifiesto de instalación:
+Manifiesto del sistema nativo:
+
+```text
+https://github.com/AtsushiaiHiroshi/Pokemon-Mystery-Dungeon/releases/latest/download/system.json
+```
+
+Manifiesto del puente legacy (solo para mundos antiguos):
 
 ```text
 https://github.com/AtsushiaiHiroshi/Pokemon-Mystery-Dungeon/releases/latest/download/module.json

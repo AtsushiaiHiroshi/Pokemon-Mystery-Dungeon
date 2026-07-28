@@ -7,6 +7,7 @@
     "fetch:quiz": "node tools/fetch-quiz.mjs",
     "fetch:pokemon": "node tools/fetch-pokemon.mjs",
     "fetch:wikidex": "node tools/fetch-wikidex.mjs",
+    "build:native-packs": "node tools/build-system-packs.mjs",
     "build:packs": "node tools/build-packs.mjs",
     "validate": "node tools/validate.mjs"
   },

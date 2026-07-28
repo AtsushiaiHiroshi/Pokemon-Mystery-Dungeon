@@ -21,13 +21,21 @@ jobs:
         with:
           node-version: 22
 
-      - name: Validate module
+      - name: Validate packages
         run: npm run validate
 
-      - name: Build module archive
+      - name: Build system archive
         run: |
-          zip -r pokemon-mystery-dungeon.zip \
-            module.json LICENSE README.md lang scripts styles \
+          zip -r pokemon-mystery-dungeon-system.zip \
+            system.json LICENSE README.md lang scripts styles templates \
+            packs/pmd-native-abilities-v1 packs/pmd-native-items-v1 \
+            packs/pmd-native-moves-v1 packs/pmd-native-pokemon-v1 \
+            -x "*.DS_Store" -x "*/LOCK" -x "*/LOG*" -x "*/CURRENT" -x "*/0*.log"
+
+      - name: Build legacy module archive
+        run: |
+          zip -r pokemon-mystery-dungeon-legacy.zip \
+            module.json LICENSE README.md lang scripts styles docs \
             -x "*.DS_Store"
 
       - name: Publish release assets
@@ -36,4 +44,6 @@ jobs:
           generate_release_notes: true
           files: |
             module.json
-            pokemon-mystery-dungeon.zip
+            system.json
+            pokemon-mystery-dungeon-system.zip
+            pokemon-mystery-dungeon-legacy.zip

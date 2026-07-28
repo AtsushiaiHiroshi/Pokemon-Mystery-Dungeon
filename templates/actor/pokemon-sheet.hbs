@@ -1,0 +1,75 @@
+<section class="pmd-system-root">
+  <header class="pmd-system-header">
+    <img class="pmd-system-portrait" src="{{actor.img}}" alt="{{actor.name}}">
+    <div>
+      <input class="pmd-system-name" name="name" value="{{actor.name}}" {{#unless editable}}disabled{{/unless}}>
+      <p>Ficha Pokémon Mystery Dungeon</p>
+    </div>
+    <button type="button" data-pmd-roll="1d20" data-pmd-label="Prueba Pokémon"><i class="fas fa-dice-d20"></i> Prueba d20</button>
+  </header>
+
+  <div class="pmd-system-columns">
+    <main>
+      <section class="pmd-system-card">
+        <h2>Identidad</h2>
+        <div class="pmd-system-grid two">
+          <label>Especie<input name="system.speciesName" value="{{system.speciesName}}" {{#unless editable}}disabled{{/unless}}></label>
+          <label>Naturaleza<input name="system.natureName" value="{{system.natureName}}" {{#unless editable}}disabled{{/unless}}></label>
+          <label>Tipo principal<input name="system.types.primary" value="{{system.types.primary}}" {{#unless editable}}disabled{{/unless}}></label>
+          <label>Tipo secundario<input name="system.types.secondary" value="{{system.types.secondary}}" {{#unless editable}}disabled{{/unless}}></label>
+          <label>Nivel<input type="number" min="1" max="100" name="system.level" value="{{system.level}}" {{#unless editable}}disabled{{/unless}}></label>
+          <label>Experiencia<input type="number" min="0" name="system.experience" value="{{system.experience}}" {{#unless editable}}disabled{{/unless}}></label>
+        </div>
+      </section>
+
+      <section class="pmd-system-card">
+        <h2>Características</h2>
+        <div class="pmd-stat-grid">
+          {{#each POKEMON_STATS}}
+            <div class="pmd-stat">
+              <strong>{{lookup ../statNames this}}</strong>
+              <output>{{lookup (lookup ../stats this) "value"}}</output>
+              <small>Base {{lookup (lookup ../stats this) "base"}}</small>
+            </div>
+          {{/each}}
+        </div>
+        <div class="pmd-system-grid two pmd-combat-fields">
+          <label>Precisión (nivel)<input type="number" min="-6" max="6" name="system.combat.accuracyStage" value="{{system.combat.accuracyStage}}" {{#unless editable}}disabled{{/unless}}></label>
+          <label>Evasión (nivel)<input type="number" min="-6" max="6" name="system.combat.evasionStage" value="{{system.combat.evasionStage}}" {{#unless editable}}disabled{{/unless}}></label>
+        </div>
+      </section>
+
+      <section class="pmd-system-card">
+        <h2>Movimientos y habilidades</h2>
+        <div class="pmd-item-list">
+          {{#each items}}
+            <article class="pmd-item-row">
+              <img src="{{img}}" alt="">
+              <span>{{name}}</span>
+              <small>{{type}}</small>
+            </article>
+          {{else}}
+            <p>Aún no hay movimientos ni habilidades. Arrástralos desde un compendio.</p>
+          {{/each}}
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <section class="pmd-system-card pmd-resources">
+        <h2>Recursos</h2>
+        <label>PS actuales<input type="number" min="0" name="system.resources.hp.value" value="{{system.resources.hp.value}}" {{#unless editable}}disabled{{/unless}}></label>
+        <label>PS máximos<input type="number" min="1" name="system.resources.hp.max" value="{{system.resources.hp.max}}" {{#unless editable}}disabled{{/unless}}></label>
+        <label>PP actuales<input type="number" min="0" name="system.resources.pp.value" value="{{system.resources.pp.value}}" {{#unless editable}}disabled{{/unless}}></label>
+        <label>PP máximos<input type="number" min="1" name="system.resources.pp.max" value="{{system.resources.pp.max}}" {{#unless editable}}disabled{{/unless}}></label>
+        <label>Hambre<input type="number" min="0" name="system.resources.hunger.value" value="{{system.resources.hunger.value}}" {{#unless editable}}disabled{{/unless}}></label>
+        <label>Amistad<input type="number" min="0" max="255" name="system.resources.friendship.value" value="{{system.resources.friendship.value}}" {{#unless editable}}disabled{{/unless}}></label>
+        <label>Poké<input type="number" min="0" name="system.currency.poke" value="{{system.currency.poke}}" {{#unless editable}}disabled{{/unless}}></label>
+      </section>
+      <section class="pmd-system-card">
+        <h2>Notas</h2>
+        <textarea name="system.notes">{{system.notes}}</textarea>
+      </section>
+    </aside>
+  </div>
+</section>

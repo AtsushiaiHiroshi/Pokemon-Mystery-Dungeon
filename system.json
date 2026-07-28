@@ -1,0 +1,42 @@
+{
+  "id": "pokemon-mystery-dungeon",
+  "title": "Pokémon Mystery Dungeon",
+  "description": "Sistema Pokémon propio para Foundry VTT con combate, exploración, movimientos, habilidades, objetos y evolución.",
+  "version": "0.1.0",
+  "authors": [{ "name": "AtsushiaiHiroshi" }],
+  "compatibility": {
+    "minimum": "14.359",
+    "verified": "14.364",
+    "maximum": "14.999"
+  },
+  "templateVersion": 2,
+  "documentTypes": {
+    "Actor": {
+      "pokemon": {},
+      "npc": {},
+      "team": {}
+    },
+    "Item": {
+      "move": {},
+      "ability": {},
+      "item": {},
+      "equipment": {},
+      "evolution": {}
+    }
+  },
+  "esmodules": ["scripts/pmd-system-main.js"],
+  "styles": ["styles/pmd-system.css"],
+  "packs": [
+    { "name": "pmd-native-pokemon-v1", "label": "Pokémon — especies y estadísticas", "path": "packs/pmd-native-pokemon-v1", "type": "Actor" },
+    { "name": "pmd-native-moves-v1", "label": "Movimientos Pokémon (HA)", "path": "packs/pmd-native-moves-v1", "type": "Item" },
+    { "name": "pmd-native-abilities-v1", "label": "Habilidades Pokémon (HA)", "path": "packs/pmd-native-abilities-v1", "type": "Item" },
+    { "name": "pmd-native-items-v1", "label": "Objetos de aventura (sin Poké Balls)", "path": "packs/pmd-native-items-v1", "type": "Item" }
+  ],
+  "languages": [
+    { "lang": "es", "name": "Español latinoamericano", "path": "lang/es.json" }
+  ],
+  "url": "https://github.com/AtsushiaiHiroshi/Pokemon-Mystery-Dungeon",
+  "bugs": "https://github.com/AtsushiaiHiroshi/Pokemon-Mystery-Dungeon/issues",
+  "license": "LICENSE",
+  "readme": "README.md"
+}

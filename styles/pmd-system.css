@@ -1,0 +1,25 @@
+.pmd-system-sheet { --pmd-blue: #245e91; --pmd-gold: #d79c25; --pmd-ink: #172b3f; }
+.pmd-system-root { min-height: 100%; padding: 1rem; color: var(--pmd-ink); background: linear-gradient(135deg, #f4f8fb, #fff8df); font-family: "Signika", sans-serif; }
+.pmd-system-header { display: flex; align-items: center; gap: .85rem; padding: .75rem; border: 2px solid var(--pmd-blue); border-radius: 12px; background: #fffdf7; }
+.pmd-system-header p { margin: .2rem 0 0; opacity: .7; }
+.pmd-system-portrait { width: 64px; height: 64px; object-fit: contain; border-radius: 10px; background: #eaf3fb; }
+.pmd-system-name { width: min(34rem, 50vw); border: 0; border-bottom: 2px solid var(--pmd-gold); background: transparent; font-size: 1.55rem; font-weight: 700; color: var(--pmd-ink); }
+.pmd-system-header button { margin-left: auto; border: 1px solid var(--pmd-gold); border-radius: 8px; padding: .55rem .8rem; color: #fff; background: var(--pmd-blue); cursor: pointer; }
+.pmd-system-columns { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(250px, .75fr); gap: 1rem; margin-top: 1rem; }
+.pmd-system-card { margin-bottom: 1rem; padding: .9rem; border: 1px solid #a7c5df; border-radius: 10px; background: rgba(255,255,255,.85); box-shadow: 0 2px 8px rgba(27,61,91,.08); }
+.pmd-system-card h2 { margin: 0 0 .75rem; padding-bottom: .3rem; border-bottom: 2px solid var(--pmd-gold); color: var(--pmd-blue); font-size: 1.15rem; }
+.pmd-system-grid { display: grid; gap: .65rem; }
+.pmd-system-grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.pmd-system-card label { display: grid; gap: .25rem; font-weight: 600; }
+.pmd-system-card input, .pmd-system-card textarea { width: 100%; box-sizing: border-box; border: 1px solid #a7c5df; border-radius: 6px; padding: .45rem; color: #172b3f; background: #fffceb; }
+.pmd-system-card textarea { min-height: 7rem; resize: vertical; }
+.pmd-stat-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .65rem; }
+.pmd-stat { display: grid; gap: .18rem; padding: .55rem; border: 1px solid #c6d8e7; border-radius: 8px; text-align: center; background: #f7fbff; }
+.pmd-stat output { font-size: 1.4rem; font-weight: 700; color: var(--pmd-blue); }
+.pmd-stat small { opacity: .65; }
+.pmd-combat-fields { margin-top: .75rem; }
+.pmd-item-list { display: grid; gap: .4rem; }
+.pmd-item-row { display: grid; grid-template-columns: 2rem 1fr auto; align-items: center; gap: .55rem; padding: .35rem; border-bottom: 1px solid #dbe7f0; }
+.pmd-item-row img { width: 2rem; height: 2rem; object-fit: contain; }
+.pmd-item-row small { opacity: .65; }
+@media (max-width: 760px) { .pmd-system-columns, .pmd-system-grid.two { grid-template-columns: 1fr; } .pmd-system-name { width: 100%; } .pmd-system-header { flex-wrap: wrap; } .pmd-system-header button { margin-left: 0; } }
