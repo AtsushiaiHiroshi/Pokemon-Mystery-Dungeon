@@ -5,9 +5,7 @@ body { position: relative; isolation: isolate; margin: 0; min-height: 100vh; ove
 body::before, body::after { position: fixed; z-index: 0; inset: 0; pointer-events: none; content: ""; }
 body::before { inset: 0; background-image: url("https://nrosa01.github.io/pmd-quiz-online/img/others/dreambackloop.png"); background-repeat: repeat-x; background-position: 0 0; background-size: auto 100%; image-rendering: pixelated; animation: pmd-scroll-back 360s linear infinite, pmd-hue-shift 10s linear infinite; }
 body::after { z-index: 0; background-image: linear-gradient(rgba(5, 7, 14, .52), rgba(5, 7, 14, .68)), url("https://nrosa01.github.io/pmd-quiz-online/img/others/dreamfrontloop.png"); background-repeat: repeat-x; background-position: 100% 0; background-size: auto 100%; image-rendering: pixelated; animation: pmd-scroll-front 360s linear infinite, pmd-hue-shift-reverse 10s linear infinite; }
-/* El material original usa un patrón pixel-art; este suavizado óptico evita que
-   la recompresión y el escalado del navegador lo conviertan en bloques duros. */
-.pmd-background-video { position: fixed; z-index: 0; inset: 0; width: 100vw; height: 100vh; object-fit: cover; pointer-events: none; filter: blur(.45px) brightness(.96) saturate(1.12) contrast(1.02); transform: scale(1.006); }
+.pmd-background-video { position: fixed; z-index: 0; inset: 0; width: 100vw; height: 100vh; object-fit: cover; pointer-events: none; filter: brightness(.96) saturate(1.2) contrast(1.04); }
 body.has-video::before { display: none; }
 body.has-video::after { display: block; background: linear-gradient(180deg, rgba(4, 8, 18, .32), rgba(4, 8, 18, .58)); animation: none; }
 @keyframes pmd-scroll-back { from { background-position: 0 0; } to { background-position: 100% 0; } }
