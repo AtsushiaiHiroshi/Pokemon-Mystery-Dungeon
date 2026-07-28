@@ -23,6 +23,10 @@ const ui = {
   ambienceToggle: document.querySelector("#ambienceToggle")
 };
 ui.backgroundVideo = document.querySelector("#pmdBackgroundVideo");
+if (ui.backgroundVideo) {
+  ui.backgroundVideo.disablePictureInPicture = true;
+  ui.backgroundVideo.disableRemotePlayback = true;
+}
 const ULTRA_BEASTS = new Set(["nihilego", "buzzwole", "pheromosa", "xurkitree", "celesteela", "kartana", "guzzlord", "stakataka", "blacephalon", "poipole", "naganadel"]);
 const PARADOX_POKEMON = new Set(["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "roaring-moon", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "walking-wake", "raging-bolt", "gouging-fire", "iron-leaves", "iron-crown", "iron-boulder"]);
 const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", scores: {}, mode: "quick", narrative: [], narrativeIndex: 0, autoAdvanceTimer: null };
@@ -45,16 +49,15 @@ function playSelectionSound() {
 }
 
 function startAmbience() {
-  if (!soundEnabled) return;
   document.body.classList.add("has-video");
   if (!ui.backgroundVideo) return;
   ui.backgroundVideo.volume = 0.5;
-  ui.backgroundVideo.muted = false;
+  ui.backgroundVideo.muted = !soundEnabled;
   ui.backgroundVideo.play().catch(() => {});
 }
 
 ui.backgroundVideo?.addEventListener("pause", () => {
-  if (soundEnabled) ui.backgroundVideo.play().catch(() => {});
+  ui.backgroundVideo.play().catch(() => {});
 });
 
 function show(section) {
@@ -172,12 +175,11 @@ function candidateList() {
   const eligible = pokemon => pokemon?.quizEligible !== false && !PARADOX_POKEMON.has(pokemon?.identifier) && (!ULTRA_BEASTS.has(pokemon?.identifier) || pokemon?.identifier === "poipole") && (!pokemon?.legendary || pokemon?.identifier === "kubfu") && !pokemon?.mythical && (pokemon?.evolvesFrom == null || pokemon?.name === "Pikachu" || pokemon?.identifier === "kubfu");
   const expanded = state.pokemon.filter(pokemon => eligible(pokemon) && pokemon.types?.some(type => preferredTypes.includes(type)));
   const pmdStarters = new Set(state.quiz.pmdStarters ?? []);
-  const offset = state.quiz.natures.indexOf(state.nature) * 37;
   const candidates = [];
   const add = name => { const pokemon = state.pokemon.find(entry => entry.name === name); if (eligible(pokemon) && !candidates.some(entry => entry.id === pokemon.id)) candidates.push(pokemon); };
   base.forEach(add);
-  shuffle([...pmdStarters]).forEach(name => { if (candidates.length < 10) add(name); });
-  for (let index = 0; index < expanded.length && candidates.length < 10; index += 1) add(expanded[(offset + index * 17) % expanded.length].name);
+  shuffle([...pmdStarters]).forEach(add);
+  expanded.forEach(pokemon => add(pokemon.name));
   return candidates;
 }
 
@@ -190,10 +192,10 @@ function renderResult() {
   const modeLabel = state.mode === "complete" ? "test completo" : "test rápido";
   ui.candidateCount.textContent = `${candidates.length} opciones · ${modeLabel} · generaciones 1–9`;
   const pmdStarters = new Set(state.quiz.pmdStarters ?? []);
-  const visibleCandidates = candidates.slice(0, 2);
+  const visibleCandidates = candidates;
   const iconSprite = pokemon => `https://nrosa01.github.io/pmd-quiz-online/img/pokemonicons/${String(pokemon.name).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "")}.png`;
   ui.candidates.innerHTML = visibleCandidates.map(pokemon => { const isPmd = pmdStarters.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${iconSprite(pokemon)}" data-fallback="${escapeHTML(pokemon.sprite)}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback}else{this.hidden=true}"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
-  ui.candidateCount.textContent = "2 Pokémon · resultado de tu test";
+  ui.candidateCount.textContent = `${visibleCandidates.length} Pokémon · resultado de tu test`;
   state.narrative = buildNarrative(state.nature, state.quiz.naturedescription[state.nature] ?? "");
   state.narrativeIndex = 0;
   ui.resultStory.textContent = state.narrative[0];
@@ -203,13 +205,22 @@ function renderResult() {
 }
 
 function buildNarrative(nature, description) {
+  const cleanDescription = String(description ?? "").replace(/^Eres una persona\.\.\.\s*/i, "").trim();
+  const sentences = cleanDescription.match(/[^.!?]+[.!?]+/g)?.map(text => text.trim()).filter(Boolean) ?? [];
+  const fragments = [];
+  let fragment = "";
+  sentences.forEach(sentence => {
+    const next = fragment ? `${fragment} ${sentence}` : sentence;
+    if (fragment && next.length > 155) { fragments.push(fragment); fragment = sentence; }
+    else fragment = next;
+  });
+  if (fragment) fragments.push(fragment);
   return [
-    "Eras una persona…",
-    description,
-    `Tus decisiones revelan una naturaleza ${nature}. Incluso en los momentos difíciles, esa forma de ser siempre encontró un camino.`,
-    "La oscuridad se vuelve ligera. Una voz te pregunta si estás listo para comenzar de nuevo…",
+    "Eres una persona…",
+    ...fragments.slice(0, 5),
+    "La oscuridad se vuelve ligera…",
     "Cuando abres los ojos, el viento huele distinto y tus manos ya no son las de antes.",
-    "Alguien como tú podría ser…"
+    "Alguien como tú podría ser:"
   ];
 }
 
@@ -240,7 +251,7 @@ function restartQuiz(event) {
 }
 ui.restartButton.addEventListener("click", restartQuiz);
 ui.copyButton.addEventListener("click", copyResult);
-ui.revealResult.addEventListener("click", () => {
+function advanceNarrative() {
   playSelectionSound();
   if (state.narrativeIndex < state.narrative.length - 1) {
     state.narrativeIndex += 1;
@@ -251,10 +262,14 @@ ui.revealResult.addEventListener("click", () => {
   ui.result.classList.remove("pending");
   document.body.classList.remove("narrative-mode");
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
+ui.revealResult.addEventListener("click", advanceNarrative);
+ui.result.addEventListener("click", event => {
+  if (state.narrativeIndex < state.narrative.length - 1 && !event.target.closest("button")) advanceNarrative();
 });
 ui.ambienceToggle.addEventListener("click", () => {
   soundEnabled = !soundEnabled;
-  if (soundEnabled) startAmbience(); else { ui.backgroundVideo?.pause(); if (ui.backgroundVideo) ui.backgroundVideo.muted = true; selectionSound.pause(); }
+  if (soundEnabled) startAmbience(); else { if (ui.backgroundVideo) { ui.backgroundVideo.muted = true; ui.backgroundVideo.volume = 0.5; ui.backgroundVideo.play().catch(() => {}); } selectionSound.pause(); }
   setSoundButton();
 });
 document.addEventListener("pointerdown", startAmbience, { once: true });
