@@ -88,7 +88,14 @@ function itemDocument(record, index) {
   };
 }
 
-function pokemonActor(record, index, abilityByKey) {
+function normalSprite(record, pmdAvatar = false) {
+  const candidate = String(record.sprite || "");
+  if (pmdAvatar && record.id) return `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/${String(record.id).padStart(4, "0")}/0000/0001/Normal.png`;
+  if (candidate && !/shiny|variocolor|brillante|alternate|alt-form/i.test(candidate)) return candidate;
+  return record.id ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${record.id}.png` : "icons/svg/wingfoot.svg";
+}
+
+function pokemonActor(record, index, abilityByKey, { pmdAvatar = false } = {}) {
   const baseStats = record.baseStats || { hp: 1, attack: 1, defense: 1, specialAttack: 1, specialDefense: 1, speed: 1 };
   const types = record.types || ["normal"];
   const abilities = (record.abilities || []).map(ability => {
@@ -105,7 +112,7 @@ function pokemonActor(record, index, abilityByKey) {
     _id: documentId("pokemon", index),
     name: record.name,
     type: "pokemon",
-    img: record.sprite || "icons/svg/wingfoot.svg",
+    img: normalSprite(record, pmdAvatar),
     system: {
       kind: "pokemon",
       speciesId: record.id,
@@ -151,6 +158,7 @@ const moves = JSON.parse(await readFile(path.join(ROOT, "data", "wikidex-moves.j
 const abilities = JSON.parse(await readFile(path.join(ROOT, "data", "wikidex-abilities.json"), "utf8"));
 const rawItems = JSON.parse(await readFile(path.join(ROOT, "data", "wikidex-items.json"), "utf8"));
 const pokemon = JSON.parse(await readFile(path.join(ROOT, "data", "pokemon-all.json"), "utf8"));
+const starterData = JSON.parse(await readFile(path.join(ROOT, "data", "wikidex-starters.json"), "utf8"));
 const adventureItems = rawItems.filter(record => !isCaptureDevice(record));
 const abilityByKey = new Map();
 for (const ability of abilities) {
@@ -158,9 +166,14 @@ for (const ability of abilities) {
     if (key) abilityByKey.set(slug(key), ability);
   }
 }
+const starterNames = [...new Set(Object.values(starterData).flat().map(record => record.name))];
+const starterPokemon = starterNames
+  .map(name => pokemon.find(record => record.name === name))
+  .filter(Boolean);
 
 await writePack("pmd-native-moves-v1", "Item", moves.map(moveDocument));
 await writePack("pmd-native-abilities-v1", "Item", abilities.map(abilityDocument));
 await writePack("pmd-native-items-v1", "Item", adventureItems.map(itemDocument));
 await writePack("pmd-native-pokemon-v1", "Actor", pokemon.map((record, index) => pokemonActor(record, index, abilityByKey)));
+await writePack("pmd-native-starter-pokemon-v1", "Actor", starterPokemon.map((record, index) => pokemonActor(record, index, abilityByKey, { pmdAvatar: true })));
 console.log(`Objetos de captura excluidos: ${rawItems.length - adventureItems.length}`);

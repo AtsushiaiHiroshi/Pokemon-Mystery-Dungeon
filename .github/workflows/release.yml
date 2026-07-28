@@ -30,6 +30,7 @@ jobs:
             system.json LICENSE README.md lang scripts styles templates \
             packs/pmd-native-abilities-v1 packs/pmd-native-items-v1 \
             packs/pmd-native-moves-v1 packs/pmd-native-pokemon-v1 \
+            packs/pmd-native-starter-pokemon-v1 \
             -x "*.DS_Store" -x "*/LOCK" -x "*/LOG*" -x "*/CURRENT" -x "*/0*.log"
 
       - name: Build legacy module archive

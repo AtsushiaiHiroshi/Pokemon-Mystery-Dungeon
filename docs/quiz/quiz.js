@@ -32,13 +32,45 @@ if (ui.backgroundVideo) {
 const ULTRA_BEASTS = new Set(["nihilego", "buzzwole", "pheromosa", "xurkitree", "celesteela", "kartana", "guzzlord", "stakataka", "blacephalon", "poipole", "naganadel"]);
 const PARADOX_POKEMON = new Set(["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "roaring-moon", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "walking-wake", "raging-bolt", "gouging-fire", "iron-leaves", "iron-crown", "iron-boulder", "iron-valiant", "koraidon", "miraidon"]);
 const PMD_AVATAR_NAMES = new Set(["Machop", "Meowth", "Tepig", "Snivy", "Axew", "Fennekin", "Tyrogue", "Houndour", "Sableye", "Meditite", "Absol", "Carvanha", "Stunky", "Sunkern"]);
-const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", scores: {}, mode: "quick", narrative: [], narrativeIndex: 0, autoAdvanceTimer: null };
+const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", scores: {}, mode: "quick", narrative: [], narrativeIndex: 0, autoAdvanceTimer: null, questionHistory: new Set() };
 const selectionSound = new Audio("https://nrosa01.github.io/pmd-quiz-online/audio/select-sound.mp3");
 selectionSound.preload = "auto";
 let soundEnabled = true;
 
 const escapeHTML = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
-const shuffle = list => [...list].sort(() => Math.random() - 0.5);
+function shuffle(list) {
+  const result = [...list];
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [result[index], result[swapIndex]] = [result[swapIndex], result[index]];
+  }
+  return result;
+}
+
+function questionKey(question) {
+  return [question.kind ?? "personality", question.title, ...(question.responses ?? []).map(response => response.response)]
+    .join("|").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+}
+
+function uniqueQuestions(list) {
+  const seen = new Set();
+  return list.filter(question => {
+    const key = questionKey(question);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function chooseQuestionBag(pool, count) {
+  const unique = uniqueQuestions(pool);
+  const unseen = unique.filter(question => !state.questionHistory.has(questionKey(question)));
+  const source = unseen.length >= count ? unseen : [...unseen, ...unique.filter(question => state.questionHistory.has(questionKey(question)))];
+  const selected = shuffle(source).slice(0, count);
+  selected.forEach(question => state.questionHistory.add(questionKey(question)));
+  if (state.questionHistory.size >= unique.length) state.questionHistory.clear();
+  return selected;
+}
 
 function setSoundButton() {
   ui.ambienceToggle.textContent = soundEnabled ? "🔊 Música y sonidos" : "🔇 Sonido silenciado";
@@ -89,10 +121,14 @@ function startQuiz(mode = "quick") {
   const genderQuestion = state.quiz.questions.find(question => question.kind === "gender");
   const personalityQuestions = state.quiz.questions.filter(question => question.kind !== "gender");
   const questionCount = mode === "complete" ? state.quiz.questions.length : QUICK_QUESTION_COUNT;
-  if (mode === "complete") state.questions = [...state.quiz.questions];
+  if (mode === "complete") {
+    const completeQuestions = uniqueQuestions(personalityQuestions);
+    state.questions = shuffle(completeQuestions);
+    if (genderQuestion) state.questions.push(genderQuestion);
+  }
   else {
     const personalityCount = Math.max(1, questionCount - (genderQuestion ? 1 : 0));
-    state.questions = shuffle(personalityQuestions).slice(0, personalityCount);
+    state.questions = chooseQuestionBag(personalityQuestions, personalityCount);
     if (genderQuestion) state.questions.push(genderQuestion);
   }
   state.answers = [];
@@ -205,9 +241,14 @@ function renderResult() {
   const visibleCandidates = candidates;
   // SpriteCollab separa las paletas por variante: 0000 es la paleta normal.
   // Usamos Normal.png explícitamente para no terminar mostrando retratos shiny.
+  const normalArtwork = pokemon => {
+    const candidate = String(pokemon?.sprite ?? "");
+    if (candidate && !/shiny|variocolor|brillante|alternate|alt-form/i.test(candidate)) return candidate;
+    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`;
+  };
   const iconSprite = pokemon => `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/${String(pokemon.id).padStart(4, "0")}/0000/0001/Normal.png`;
   const legacyIcon = pokemon => `https://nrosa01.github.io/pmd-quiz-online/img/pokemonicons/${String(pokemon.name).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "")}.png`;
-  ui.candidates.innerHTML = visibleCandidates.map(pokemon => { const isPmd = pmdStarters.has(pokemon.name) || PMD_AVATAR_NAMES.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${iconSprite(pokemon)}" data-fallback="${escapeHTML(legacyIcon(pokemon))}" data-fallback2="${escapeHTML(pokemon.sprite)}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback=''}else if(this.dataset.fallback2){this.src=this.dataset.fallback2;this.dataset.fallback2=''}else{this.hidden=true}"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
+  ui.candidates.innerHTML = visibleCandidates.map(pokemon => { const isPmd = pmdStarters.has(pokemon.name) || PMD_AVATAR_NAMES.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${iconSprite(pokemon)}" data-fallback="${escapeHTML(legacyIcon(pokemon))}" data-fallback2="${escapeHTML(normalArtwork(pokemon))}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback=''}else if(this.dataset.fallback2){this.src=this.dataset.fallback2;this.dataset.fallback2=''}else{this.hidden=true}"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
   ui.candidateCount.textContent = `${visibleCandidates.length} Pokémon · resultado de tu test`;
   state.narrative = buildNarrative(state.nature, state.quiz.naturedescription[state.nature] ?? "");
   state.narrativeIndex = 0;

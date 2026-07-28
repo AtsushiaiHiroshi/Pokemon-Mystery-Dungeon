@@ -15,7 +15,8 @@ debe activarse junto con el sistema nuevo.
 - Hoja Pokémon nativa con PS, Ataque, Defensa, Ataque Especial, Defensa Especial,
   Velocidad, precisión, evasión, PP, hambre, amistad, agotamiento y Poké.
 - Compendios nativos con 1025 especies, 902 movimientos, 316 habilidades HA y
-  278 objetos de mazmorra; los objetos de captura/Poké Balls se excluyen.
+  278 objetos de mazmorra, además de un compendio separado de 42 iniciales PMD únicas;
+  los objetos de captura/Poké Balls se excluyen.
 - Combate preparado para prioridad, orden por Velocidad, precisión/evasión,
   categorías físico/especial, efectividad por tipo y golpes críticos.
 - Evolución y amistad diseñadas como migraciones de especie, estadísticas,

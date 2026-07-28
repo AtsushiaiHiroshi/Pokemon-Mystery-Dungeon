@@ -28,6 +28,7 @@
   "styles": ["styles/pmd-system.css"],
   "packs": [
     { "name": "pmd-native-pokemon-v1", "label": "Pokémon — especies y estadísticas", "path": "packs/pmd-native-pokemon-v1", "type": "Actor" },
+    { "name": "pmd-native-starter-pokemon-v1", "label": "Pokémon iniciales PMD — avatares normales", "path": "packs/pmd-native-starter-pokemon-v1", "type": "Actor" },
     { "name": "pmd-native-moves-v1", "label": "Movimientos Pokémon (HA)", "path": "packs/pmd-native-moves-v1", "type": "Item" },
     { "name": "pmd-native-abilities-v1", "label": "Habilidades Pokémon (HA)", "path": "packs/pmd-native-abilities-v1", "type": "Item" },
     { "name": "pmd-native-items-v1", "label": "Objetos de aventura (sin Poké Balls)", "path": "packs/pmd-native-items-v1", "type": "Item" }
