@@ -271,7 +271,9 @@ function advanceNarrative() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 ui.revealResult.addEventListener("click", advanceNarrative);
-ui.result.addEventListener("click", event => {
+document.addEventListener("click", event => {
+  // Durante la narrativa la escena ocupa toda la pantalla: cualquier clic
+  // fuera del botón visible avanza, igual que la flecha de los juegos PMD.
   if (ui.result.classList.contains("pending") && !event.target.closest("button")) advanceNarrative();
 });
 ui.ambienceToggle.addEventListener("click", () => {
