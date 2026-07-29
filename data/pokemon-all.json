@@ -42321,7 +42321,7 @@
         "slot": 1
       }
     ],
-    "quizEligible": true,
+    "quizEligible": false,
     "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1006.png",
     "source": "PokeAPI"
   },

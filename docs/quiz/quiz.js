@@ -2,6 +2,7 @@
 // personalidad para que el resultado tenga una base suficiente (20 en total).
 const QUICK_QUESTION_COUNT = 20;
 const DATA_BASE = "../data";
+const DATA_VERSION = "20260728-2";
 const TYPE_PREFERENCES = {
   Fuerte: ["Lucha", "Acero"], Dócil: ["Planta", "Normal"], Osada: ["Fuego", "Lucha"], Alegre: ["Agua", "Eléctrico"],
   Agitada: ["Fuego", "Eléctrico"], Ingenua: ["Normal", "Hada"], Miedosa: ["Hielo", "Siniestro"], Activa: ["Eléctrico", "Volador"],
@@ -32,6 +33,7 @@ if (ui.backgroundVideo) {
 const ULTRA_BEASTS = new Set(["nihilego", "buzzwole", "pheromosa", "xurkitree", "celesteela", "kartana", "guzzlord", "stakataka", "blacephalon", "poipole", "naganadel"]);
 const PARADOX_POKEMON = new Set(["great-tusk", "scream-tail", "brute-bonnet", "flutter-mane", "slither-wing", "sandy-shocks", "roaring-moon", "iron-treads", "iron-bundle", "iron-hands", "iron-jugulis", "iron-moth", "iron-thorns", "walking-wake", "raging-bolt", "gouging-fire", "iron-leaves", "iron-crown", "iron-boulder", "iron-valiant", "koraidon", "miraidon"]);
 const PMD_AVATAR_NAMES = new Set(["Machop", "Meowth", "Tepig", "Snivy", "Axew", "Fennekin", "Tyrogue", "Houndour", "Sableye", "Meditite", "Absol", "Carvanha", "Stunky", "Sunkern"]);
+const SHINY_MARKERS = /shiny|variocolor|brillante|alternate|alt[-_ ]?form|mega|gmax|gigantamax|totem|alola|galar|hisui|paldea|paradox/i;
 const state = { quiz: null, pokemon: [], questions: [], answers: [], index: 0, nature: "", scores: {}, mode: "quick", narrative: [], narrativeIndex: 0, autoAdvanceTimer: null, questionHistory: new Set() };
 const selectionSound = new Audio("https://nrosa01.github.io/pmd-quiz-online/audio/select-sound.mp3");
 selectionSound.preload = "auto";
@@ -101,7 +103,7 @@ function show(section) {
 
 async function loadData() {
   try {
-    const [quizResponse, pokemonResponse] = await Promise.all([fetch(`${DATA_BASE}/quiz-es.json`), fetch(`${DATA_BASE}/pokemon-all.json`)]);
+    const [quizResponse, pokemonResponse] = await Promise.all([fetch(`${DATA_BASE}/quiz-es.json?v=${DATA_VERSION}`), fetch(`${DATA_BASE}/pokemon-all.json?v=${DATA_VERSION}`)]);
     if (!quizResponse.ok || !pokemonResponse.ok) throw new Error("No se encontraron los archivos de datos.");
     state.quiz = await quizResponse.json();
     state.pokemon = await pokemonResponse.json();
@@ -218,7 +220,21 @@ function candidateList() {
   // evolvesFrom === null identifica la primera etapa, aunque tenga evoluciones.
   // Sólo Pikachu puede saltarse esta regla por ser una excepción PMD.
   // Los Ultraentes quedan fuera salvo Poipole; las formas Paradoja no se ofrecen.
-  const eligible = pokemon => pokemon?.quizEligible !== false && !PARADOX_POKEMON.has(pokemon?.identifier) && (!ULTRA_BEASTS.has(pokemon?.identifier) || pokemon?.identifier === "poipole") && (!pokemon?.legendary || pokemon?.identifier === "kubfu") && !pokemon?.mythical && (pokemon?.evolvesFrom == null || pokemon?.name === "Pikachu" || pokemon?.identifier === "kubfu");
+  const eligible = pokemon => {
+    const id = String(pokemon?.identifier ?? "").toLowerCase();
+    const sprite = String(pokemon?.sprite ?? "");
+    return Boolean(pokemon)
+      && pokemon.quizEligible !== false
+      && pokemon.shiny !== true
+      && pokemon.isShiny !== true
+      && !SHINY_MARKERS.test(id)
+      && !SHINY_MARKERS.test(sprite)
+      && !PARADOX_POKEMON.has(id)
+      && (!ULTRA_BEASTS.has(id) || id === "poipole")
+      && (!pokemon.legendary || id === "kubfu")
+      && !pokemon.mythical
+      && (pokemon.evolvesFrom == null || pokemon.name === "Pikachu" || id === "kubfu");
+  };
   const expanded = state.pokemon.filter(pokemon => eligible(pokemon) && pokemon.types?.some(type => preferredTypes.includes(type)));
   const pmdStarters = new Set(state.quiz.pmdStarters ?? []);
   const candidates = [];
@@ -239,16 +255,13 @@ function renderResult() {
   ui.candidateCount.textContent = `${candidates.length} opciones · ${modeLabel} · generaciones 1–9`;
   const pmdStarters = new Set(state.quiz.pmdStarters ?? []);
   const visibleCandidates = candidates;
-  // SpriteCollab separa las paletas por variante: 0000 es la paleta normal.
-  // Usamos Normal.png explícitamente para no terminar mostrando retratos shiny.
-  const normalArtwork = pokemon => {
-    const candidate = String(pokemon?.sprite ?? "");
-    if (candidate && !/shiny|variocolor|brillante|alternate|alt-form/i.test(candidate)) return candidate;
-    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`;
-  };
+  // SpriteCollab separa las paletas por variante: 0000/0001/Normal.png es
+  // siempre la paleta normal. Nunca usamos la URL sprite almacenada en los
+  // datos porque podría apuntar a una paleta variocolor antigua.
   const iconSprite = pokemon => `https://raw.githubusercontent.com/PMDCollab/SpriteCollab/master/portrait/${String(pokemon.id).padStart(4, "0")}/0000/0001/Normal.png`;
-  const legacyIcon = pokemon => `https://nrosa01.github.io/pmd-quiz-online/img/pokemonicons/${String(pokemon.name).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "")}.png`;
-  ui.candidates.innerHTML = visibleCandidates.map(pokemon => { const isPmd = pmdStarters.has(pokemon.name) || PMD_AVATAR_NAMES.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${iconSprite(pokemon)}" data-fallback="${escapeHTML(legacyIcon(pokemon))}" data-fallback2="${escapeHTML(normalArtwork(pokemon))}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback=''}else if(this.dataset.fallback2){this.src=this.dataset.fallback2;this.dataset.fallback2=''}else{this.hidden=true}"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
+  const normalArtwork = pokemon => `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`;
+  const normalFrontSprite = pokemon => `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`;
+  ui.candidates.innerHTML = visibleCandidates.map(pokemon => { const isPmd = pmdStarters.has(pokemon.name) || PMD_AVATAR_NAMES.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${iconSprite(pokemon)}" data-fallback="${escapeHTML(normalArtwork(pokemon))}" data-fallback2="${escapeHTML(normalFrontSprite(pokemon))}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback=''}else if(this.dataset.fallback2){this.src=this.dataset.fallback2;this.dataset.fallback2=''}else{this.hidden=true}"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
   ui.candidateCount.textContent = `${visibleCandidates.length} Pokémon · resultado de tu test`;
   state.narrative = buildNarrative(state.nature, state.quiz.naturedescription[state.nature] ?? "");
   state.narrativeIndex = 0;
