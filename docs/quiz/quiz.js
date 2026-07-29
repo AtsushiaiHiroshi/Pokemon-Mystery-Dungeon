@@ -2,7 +2,7 @@
 // personalidad para que el resultado tenga una base suficiente (20 en total).
 const QUICK_QUESTION_COUNT = 20;
 const DATA_BASE = "../data";
-const DATA_VERSION = "20260728-3";
+const DATA_VERSION = "20260728-4";
 const TYPE_PREFERENCES = {
   Fuerte: ["Lucha", "Acero"], Dócil: ["Planta", "Normal"], Osada: ["Fuego", "Lucha"], Alegre: ["Agua", "Eléctrico"],
   Agitada: ["Fuego", "Eléctrico"], Ingenua: ["Normal", "Hada"], Miedosa: ["Hielo", "Siniestro"], Activa: ["Eléctrico", "Volador"],
@@ -255,15 +255,12 @@ function renderResult() {
   ui.candidateCount.textContent = `${candidates.length} opciones · ${modeLabel} · generaciones 1–9`;
   const pmdStarters = new Set(state.quiz.pmdStarters ?? []);
   const visibleCandidates = candidates;
-  // El catálogo de iconos del quiz original contiene los retratos PMD con la
-  // paleta normal. No usamos SpriteCollab aquí: algunos de sus retratos
-  // etiquetados como «Normal» tienen una paleta variocolor para ciertos
-  // Pokémon (por ejemplo, Shinx dorado). El identificador de la Pokédex es
-  // también el nombre del archivo en este catálogo.
-  const iconSprite = pokemon => `https://nrosa01.github.io/pmd-quiz-online/img/pokemonicons/${encodeURIComponent(String(pokemon.identifier ?? "").toLowerCase())}.png`;
   const normalArtwork = pokemon => `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`;
   const normalFrontSprite = pokemon => `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`;
-  ui.candidates.innerHTML = visibleCandidates.map(pokemon => { const isPmd = pmdStarters.has(pokemon.name) || PMD_AVATAR_NAMES.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${iconSprite(pokemon)}" data-fallback="${escapeHTML(normalArtwork(pokemon))}" data-fallback2="${escapeHTML(normalFrontSprite(pokemon))}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback=''}else if(this.dataset.fallback2){this.src=this.dataset.fallback2;this.dataset.fallback2=''}else{this.hidden=true}"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
+  // PokeAPI publica estas dos rutas para la forma base normal. Se usa arte
+  // oficial como fuente principal y el sprite frontal normal como respaldo;
+  // así nunca se carga una paleta variocolor, shiny o de otra forma.
+  ui.candidates.innerHTML = visibleCandidates.map(pokemon => { const isPmd = pmdStarters.has(pokemon.name) || PMD_AVATAR_NAMES.has(pokemon.name); return `<article class="candidate-avatar ${isPmd ? "original" : "expanded"}" title="${escapeHTML(pokemon.name)}" aria-label="${escapeHTML(pokemon.name)}"><img src="${normalArtwork(pokemon)}" data-fallback="${escapeHTML(normalFrontSprite(pokemon))}" alt="${escapeHTML(pokemon.name)}" loading="lazy" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback=''}else{this.hidden=true}"><span class="sr-only">${escapeHTML(pokemon.name)} · ${escapeHTML((pokemon.types ?? []).join(" / "))} · Generación ${pokemon.generation}</span>${isPmd ? "<b>PMD</b>" : ""}</article>`; }).join("");
   ui.candidateCount.textContent = `${visibleCandidates.length} Pokémon · resultado de tu test`;
   state.narrative = buildNarrative(state.nature, state.quiz.naturedescription[state.nature] ?? "");
   state.narrativeIndex = 0;
